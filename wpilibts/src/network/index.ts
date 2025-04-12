@@ -1,9 +1,19 @@
 /**
  * Network classes for WPILib.
+ *
+ * This module provides access to NetworkTables and other network-related functionality.
  */
 
-export { DSWebSocketServer, DSMessageType, DSMessage } from './DSWebSocketServer';
+// Export our NetworkTables interface
 export { NetworkTablesInterface, networkTables } from './NetworkTablesInterface';
+
+// Export the Driver Station WebSocket server
+export { DSWebSocketServer, DSMessageType, DSMessage } from './DSWebSocketServer';
+
+// Export NetworkTables WebSocket server
 export { NetworkTablesWebSocketServer, ntWebSocketServer, NTMessageType } from './NetworkTablesWebSocketServer';
-export { NT4_Client } from 'ntcore-client';
-export { NT4Bridge, nt4Bridge } from './NT4Bridge';
+
+// Re-export ntcore-client classes for convenience
+export {
+  NT4_Client
+} from 'ntcore-client';

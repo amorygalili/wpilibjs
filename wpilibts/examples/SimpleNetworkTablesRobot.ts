@@ -1,48 +1,34 @@
 /**
- * Example robot program that demonstrates how to use NetworkTables with OutlineViewer.
+ * Simple robot example that demonstrates how to use NetworkTables.
  * 
  * This example shows how to:
- * 1. Connect to an external NetworkTables server (like OutlineViewer)
- * 2. Publish data to NetworkTables
- * 3. Read data from NetworkTables
- * 
- * To use this example:
- * 1. Start OutlineViewer and configure it as a server
- * 2. Run this example
- * 3. Observe the data in OutlineViewer
+ * 1. Publish data to NetworkTables
+ * 2. Read data from NetworkTables
+ * 3. Use NetworkTables with a TimedRobot
  */
 import { TimedRobot, RobotBase } from '../src';
 import { NetworkTableInstance } from 'ntcore-client';
 
 /**
- * Example robot that demonstrates how to use NetworkTables with OutlineViewer.
+ * A simple robot example that demonstrates how to use NetworkTables.
  */
-class OutlineViewerRobot extends TimedRobot {
+class SimpleNetworkTablesRobot extends TimedRobot {
   // Get the default NetworkTables instance
   private ntInstance = NetworkTableInstance.getDefault();
   
-  // Get tables for organizing our data
+  // Get a table for our robot data
   private robotTable = this.ntInstance.getTable('Robot');
-  private sensorsTable = this.ntInstance.getTable('Sensors');
-  private motorsTable = this.ntInstance.getTable('Motors');
   
   // Create entries for our robot data
   private counterEntry = this.robotTable.getEntry('Counter');
   private enabledEntry = this.robotTable.getEntry('Enabled');
   private modeEntry = this.robotTable.getEntry('Mode');
-  private messageEntry = this.robotTable.getEntry('Message');
   
-  // Create entries for simulated motors
-  private leftMotorEntry = this.motorsTable.getEntry('LeftMotor');
-  private rightMotorEntry = this.motorsTable.getEntry('RightMotor');
-  
-  // Create entries for simulated sensors
-  private encoderEntry = this.sensorsTable.getEntry('Encoder');
-  private limitSwitchEntry = this.sensorsTable.getEntry('LimitSwitch');
-  private potentiometerEntry = this.sensorsTable.getEntry('Potentiometer');
-  
-  // Create entries for external input
-  private externalInputEntry = this.ntInstance.getTable('External').getEntry('Input');
+  // Create entries for simulated motors and sensors
+  private leftMotorEntry = this.robotTable.getEntry('LeftMotor');
+  private rightMotorEntry = this.robotTable.getEntry('RightMotor');
+  private encoderEntry = this.robotTable.getEntry('Encoder');
+  private limitSwitchEntry = this.robotTable.getEntry('LimitSwitch');
   
   // Counter for periodic updates
   private counter = 0;
@@ -57,30 +43,18 @@ class OutlineViewerRobot extends TimedRobot {
   public override robotInit(): void {
     console.log('Robot initialized!');
     
-    // Connect to the NetworkTables server (OutlineViewer)
-    // By default, OutlineViewer uses port 5810 for NT4
-    this.ntInstance.startClient4('WPILib-Robot', 'localhost', 5810);
-    console.log('Connecting to NetworkTables server...');
+    // Start the NetworkTables server
+    this.ntInstance.startServer();
+    console.log('NetworkTables server started');
     
     // Initialize values
     this.counterEntry.setInteger(0);
     this.enabledEntry.setBoolean(false);
     this.modeEntry.setString('Disabled');
-    this.messageEntry.setString('Robot initialized');
     this.leftMotorEntry.setDouble(0);
     this.rightMotorEntry.setDouble(0);
     this.encoderEntry.setDouble(0);
     this.limitSwitchEntry.setBoolean(false);
-    this.potentiometerEntry.setDouble(0);
-    
-    // Check connection status periodically
-    setInterval(() => {
-      if (this.ntInstance.isConnected()) {
-        console.log('Connected to NetworkTables server');
-      } else {
-        console.log('Waiting for connection...');
-      }
-    }, 5000);
   }
   
   /**
@@ -114,7 +88,6 @@ class OutlineViewerRobot extends TimedRobot {
    */
   public override disabledInit(): void {
     console.log('Disabled mode initialized');
-    this.messageEntry.setString('Robot is disabled');
     this.leftMotorEntry.setDouble(0);
     this.rightMotorEntry.setDouble(0);
   }
@@ -124,7 +97,6 @@ class OutlineViewerRobot extends TimedRobot {
    */
   public override autonomousInit(): void {
     console.log('Autonomous mode initialized');
-    this.messageEntry.setString('Running autonomous mode');
   }
   
   /**
@@ -148,17 +120,16 @@ class OutlineViewerRobot extends TimedRobot {
    */
   public override teleopInit(): void {
     console.log('Teleop mode initialized');
-    this.messageEntry.setString('Running teleop mode');
   }
   
   /**
    * This function is called periodically during Teleop mode.
    */
   public override teleopPeriodic(): void {
-    // Use the external input as the motor speed in teleop
-    const input = this.externalInputEntry.getDouble(0);
-    this.leftMotorEntry.setDouble(input);
-    this.rightMotorEntry.setDouble(input);
+    // In a real robot, we would read joystick values here
+    // For this example, we'll just set the motors to a fixed value
+    this.leftMotorEntry.setDouble(0.3);
+    this.rightMotorEntry.setDouble(0.3);
   }
   
   /**
@@ -166,7 +137,6 @@ class OutlineViewerRobot extends TimedRobot {
    */
   public override testInit(): void {
     console.log('Test mode initialized');
-    this.messageEntry.setString('Running test mode');
   }
   
   /**
@@ -189,7 +159,7 @@ class OutlineViewerRobot extends TimedRobot {
     const rightSpeed = this.rightMotorEntry.getDouble(0);
     
     // Update position based on motor speeds
-    const speed = (leftSpeed + rightMotorEntry) / 2;
+    const speed = (leftSpeed + rightSpeed) / 2;
     this.position += speed * 0.02; // 20ms period
     
     // Update encoder
@@ -197,13 +167,10 @@ class OutlineViewerRobot extends TimedRobot {
     
     // Update limit switch
     this.limitSwitchEntry.setBoolean(this.position > 10);
-    
-    // Update potentiometer
-    this.potentiometerEntry.setDouble(Math.min(5, Math.max(0, this.position / 2)));
   }
 }
 
 // Start the robot program
 if (require.main === module) {
-  RobotBase.main(OutlineViewerRobot);
+  RobotBase.main(SimpleNetworkTablesRobot);
 }
