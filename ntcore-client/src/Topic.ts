@@ -78,7 +78,7 @@ export class Topic {
     try {
       // Try to update the topic properties
       // This is a best-effort approach since we don't have direct access to the NT4 client's internal state
-      client.publishTopic(this.name, this.type, this.properties);
+      client.setProperties(this.name, { [name]: value });
     } catch (error) {
       console.warn(`Could not update property ${name} for topic ${this.name}:`, error);
     }
@@ -106,7 +106,7 @@ export class Topic {
     try {
       // Try to update the topic properties
       // This is a best-effort approach since we don't have direct access to the NT4 client's internal state
-      client.publishTopic(this.name, this.type, this.properties);
+      client.setProperties(this.name, properties);
     } catch (error) {
       console.warn(`Could not update properties for topic ${this.name}:`, error);
     }
@@ -122,7 +122,10 @@ export class Topic {
   public publish(typeStr: string, properties: Record<string, any> = {}): boolean {
     try {
       const client = this.instance.getClient();
-      client.publishTopic(this.name, typeStr, properties);
+      client.publishTopic(this.name, typeStr);
+      if (Object.keys(properties).length > 0) {
+        client.setProperties(this.name, properties);
+      }
       this.type = typeStr;
       this.properties = { ...properties };
       this.exists_ = true;

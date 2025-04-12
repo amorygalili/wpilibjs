@@ -133,6 +133,7 @@ export class NT4_Client {
    * @param onNewTopicData Gets called when any new data is available
    * @param onConnect Gets called once client completes initial handshake with server
    * @param onDisconnect Gets called once client detects server has disconnected
+   * @param port Server port (default: 5810)
    */
   constructor(
     serverAddr: string,
@@ -146,8 +147,10 @@ export class NT4_Client {
     ) => void,
     onConnect: () => void,
     onDisconnect: () => void,
+    port: number = 5810,
   ) {
     this.serverBaseAddr = serverAddr;
+    this.PORT = port;
     this.appName = appName;
     this.onTopicAnnounce = onTopicAnnounce;
     this.onTopicUnannounce = onTopicUnannounce;

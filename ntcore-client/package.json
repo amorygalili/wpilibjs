@@ -16,7 +16,8 @@
     "example:node": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/node-example.ts",
     "example:ntcore": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/ntcore-api-example.ts",
     "example:simple-ntcore": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/simple-ntcore-example.ts",
-    "example:outlineviewer": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/outlineviewer-test.ts"
+    "example:outlineviewer": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/outlineviewer-test.ts",
+    "example:connection-test": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/connection-test.ts"
   },
   "keywords": ["networktables", "wpilib", "frc", "robotics"],
   "author": "",

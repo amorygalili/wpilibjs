@@ -102,14 +102,16 @@ export class NetworkTableInstance {
    * @param port server port
    */
   public startClient4(identity: string, serverAddr: string = 'localhost', port: number = NetworkTableInstance.kDefaultPort4): void {
+    // Pass the server address and port separately to the NT4_Client constructor
     this.client = new NT4_Client(
-      `${serverAddr}:${port}`,
+      serverAddr,
       identity,
       this.onTopicAnnounce.bind(this),
       this.onTopicUnannounce.bind(this),
       this.onNewTopicData.bind(this),
       this.onConnect.bind(this),
-      this.onDisconnect.bind(this)
+      this.onDisconnect.bind(this),
+      port
     );
     this.client.connect();
   }
