@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.14.1",
-    "@types/ws": "^8.18.1",
+    "@types/ws": "^8.5.8",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "eslint": "^9.24.0",
@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "@msgpack/msgpack": "3.0.0-beta2",
-    "ws": "^8.18.1"
+    "ws": "^8.14.2",
+    "node-fetch": "^3.3.2"
   }
 }
+

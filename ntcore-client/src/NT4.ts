@@ -1,4 +1,6 @@
 import { Decoder, Encoder } from '@msgpack/msgpack';
+import WebSocket from 'ws';
+import fetch from 'node-fetch';
 
 const typestrIdxLookup: { [id: string]: number } = {
   boolean: 0,
@@ -389,7 +391,9 @@ export class NT4_Client {
 
   /** Returns the current client time in microseconds. */
   getClientTime_us(): number {
-    return new Date().getTime() * 1000;
+    // Use process.hrtime() for more precise timing in Node.js
+    const [seconds, nanoseconds] = process.hrtime();
+    return seconds * 1_000_000 + nanoseconds / 1000;
   }
 
   /** Returns the current server time in microseconds (or null if unknown). */
@@ -734,22 +738,31 @@ export class NT4_Client {
         ? ['rtt.networktables.first.wpi.edu']
         : ['v4.1.networktables.first.wpi.edu', 'networktables.first.wpi.edu'],
     );
+    
     if (rttWs) {
       this.rttWs = ws;
     } else {
       this.ws = ws;
     }
-    ws.binaryType = 'arraybuffer';
-    ws.addEventListener('open', () => this.ws_onOpen(ws));
-    ws.addEventListener('message', (event: MessageEvent) =>
-      this.ws_onMessage(event, rttWs),
-    );
+
+    // Node.js WebSocket doesn't have binaryType
+    ws.on('open', () => this.ws_onOpen(ws));
+    ws.on('message', (data: Buffer, isBinary: boolean) => {
+      const event = {
+        data: isBinary ? data : data.toString(),
+      } as MessageEvent;
+      this.ws_onMessage(event, rttWs);
+    });
+
     if (!rttWs) {
-      // Don't run two callbacks when on normal and RTT close
-      ws.addEventListener('error', () => this.ws_onError(ws));
-      ws.addEventListener('close', (event: CloseEvent) =>
-        this.ws_onClose(event, ws),
-      );
+      ws.on('error', () => this.ws_onError(ws));
+      ws.on('close', (code: number, reason: Buffer) => {
+        const event = {
+          code,
+          reason: reason.toString(),
+        } as CloseEvent;
+        this.ws_onClose(event, ws);
+      });
     }
   }
 
