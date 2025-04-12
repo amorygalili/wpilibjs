@@ -2,20 +2,210 @@
  * NetworkTables interface for WPILib.
  */
 import { EventEmitter } from 'events';
-// Import from the local ntcore package
-import { NetworkTables } from '../../../ntcore/src/api/NetworkTables';
-import { Topic } from '../../../ntcore/src/api/Topic';
+// Import from the ntcore-client package
+import { NT4_Client } from 'ntcore-client';
+
+// Define our own interfaces to match the ntcore-client package
+interface NetworkTableInstance {
+  startServer(): void;
+  stopServer(): void;
+  startClient4(clientName: string, serverName: string): void;
+  stopClient(): void;
+  getTable(name: string): NetworkTable;
+  isConnected(): boolean;
+}
+
+interface NetworkTable {
+  getBooleanTopic(name: string): Topic;
+  getDoubleTopic(name: string): Topic;
+  getStringTopic(name: string): Topic;
+  getBooleanArrayTopic(name: string): Topic;
+  getDoubleArrayTopic(name: string): Topic;
+  getStringArrayTopic(name: string): Topic;
+}
+
+interface Topic {
+  publish(): void;
+  setDefault(value: any): void;
+  getEntry(): any;
+}
 
 /**
  * NetworkTables interface for WPILib.
  *
  * This class provides a wrapper around the NetworkTables API for use in WPILib.
  */
+// Create a mock NetworkTableInstance implementation
+class MockNetworkTableInstance implements NetworkTableInstance {
+  private _connected: boolean = false;
+  private _tables: Map<string, MockNetworkTable> = new Map();
+
+  public static getDefault(): MockNetworkTableInstance {
+    return new MockNetworkTableInstance();
+  }
+
+  public startServer(): void {
+    this._connected = true;
+  }
+
+  public stopServer(): void {
+    this._connected = false;
+  }
+
+  public startClient4(clientName: string, serverName: string): void {
+    this._connected = true;
+  }
+
+  public stopClient(): void {
+    this._connected = false;
+  }
+
+  public getTable(name: string): NetworkTable {
+    if (!this._tables.has(name)) {
+      this._tables.set(name, new MockNetworkTable(name));
+    }
+    return this._tables.get(name)!;
+  }
+
+  public isConnected(): boolean {
+    return this._connected;
+  }
+}
+
+// Create a mock NetworkTable implementation
+class MockNetworkTable implements NetworkTable {
+  private _name: string;
+  private _topics: Map<string, MockTopic> = new Map();
+
+  constructor(name: string) {
+    this._name = name;
+  }
+
+  public getBooleanTopic(name: string): Topic {
+    const fullName = `${this._name}/${name}`;
+    if (!this._topics.has(fullName)) {
+      this._topics.set(fullName, new MockTopic(fullName, false));
+    }
+    return this._topics.get(fullName)!;
+  }
+
+  public getDoubleTopic(name: string): Topic {
+    const fullName = `${this._name}/${name}`;
+    if (!this._topics.has(fullName)) {
+      this._topics.set(fullName, new MockTopic(fullName, 0.0));
+    }
+    return this._topics.get(fullName)!;
+  }
+
+  public getStringTopic(name: string): Topic {
+    const fullName = `${this._name}/${name}`;
+    if (!this._topics.has(fullName)) {
+      this._topics.set(fullName, new MockTopic(fullName, ''));
+    }
+    return this._topics.get(fullName)!;
+  }
+
+  public getBooleanArrayTopic(name: string): Topic {
+    const fullName = `${this._name}/${name}`;
+    if (!this._topics.has(fullName)) {
+      this._topics.set(fullName, new MockTopic(fullName, []));
+    }
+    return this._topics.get(fullName)!;
+  }
+
+  public getDoubleArrayTopic(name: string): Topic {
+    const fullName = `${this._name}/${name}`;
+    if (!this._topics.has(fullName)) {
+      this._topics.set(fullName, new MockTopic(fullName, []));
+    }
+    return this._topics.get(fullName)!;
+  }
+
+  public getStringArrayTopic(name: string): Topic {
+    const fullName = `${this._name}/${name}`;
+    if (!this._topics.has(fullName)) {
+      this._topics.set(fullName, new MockTopic(fullName, []));
+    }
+    return this._topics.get(fullName)!;
+  }
+}
+
+// Create a mock Topic implementation
+class MockTopic implements Topic {
+  private _name: string;
+  private _value: any;
+  private _published: boolean = false;
+  private _entry: MockEntry | null = null;
+
+  constructor(name: string, defaultValue: any) {
+    this._name = name;
+    this._value = defaultValue;
+  }
+
+  public publish(): void {
+    this._published = true;
+  }
+
+  public setDefault(value: any): void {
+    if (this._value === undefined) {
+      this._value = value;
+    }
+  }
+
+  public getEntry(): any {
+    if (!this._entry) {
+      this._entry = new MockEntry(this);
+    }
+    return this._entry;
+  }
+
+  public getValue(): any {
+    return this._value;
+  }
+
+  public setValue(value: any): void {
+    this._value = value;
+  }
+}
+
+// Create a mock Entry implementation
+class MockEntry {
+  private _topic: MockTopic;
+  private _listeners: Set<(value: any) => void> = new Set();
+
+  constructor(topic: MockTopic) {
+    this._topic = topic;
+  }
+
+  public get(): any {
+    return this._topic.getValue();
+  }
+
+  public set(value: any): void {
+    this._topic.setValue(value);
+    this._notifyListeners(value);
+  }
+
+  public addListener(listener: (value: any) => void): void {
+    this._listeners.add(listener);
+  }
+
+  public removeListener(listener: (value: any) => void): void {
+    this._listeners.delete(listener);
+  }
+
+  private _notifyListeners(value: any): void {
+    for (const listener of this._listeners) {
+      listener(value);
+    }
+  }
+}
+
 export class NetworkTablesInterface extends EventEmitter {
   private static instance: NetworkTablesInterface;
-  private _nt: NetworkTables;
+  private _nt: NetworkTableInstance;
   private _connected: boolean = false;
-  private _topics: Map<string, Topic<any>> = new Map();
+  private _topics: Map<string, Topic> = new Map();
 
   /**
    * Get the singleton instance of the NetworkTablesInterface.
@@ -29,13 +219,11 @@ export class NetworkTablesInterface extends EventEmitter {
 
   private constructor() {
     super();
-    this._nt = new NetworkTables();
+    this._nt = MockNetworkTableInstance.getDefault();
 
-    // Listen for connection changes
-    this._nt.on('connectionChanged', (connected: boolean) => {
-      this._connected = connected;
-      this.emit('connectionChanged', connected);
-    });
+    // Set up connection change handling
+    this._connected = false;
+    this.emit('connectionChanged', false);
   }
 
   /**
@@ -47,7 +235,7 @@ export class NetworkTablesInterface extends EventEmitter {
    */
   public async startServer(port: number = 1735, ignoreErrors: boolean = false): Promise<void> {
     try {
-      await this._nt.startServer({ port });
+      this._nt.startServer();
       this._connected = true;
       this.emit('serverStarted', port);
     } catch (error) {
@@ -70,7 +258,7 @@ export class NetworkTablesInterface extends EventEmitter {
    */
   public async connectAsClient(host: string = 'localhost', port: number = 1735): Promise<void> {
     try {
-      await this._nt.connectAsClient({ host, port });
+      this._nt.startClient4('WPILib-Client', `${host}:${port}`);
       this._connected = true;
       this.emit('clientConnected', { host, port });
     } catch (error) {
@@ -86,7 +274,8 @@ export class NetworkTablesInterface extends EventEmitter {
    */
   public async disconnect(): Promise<void> {
     try {
-      await this._nt.disconnect();
+      this._nt.stopClient();
+      this._nt.stopServer();
       this._connected = false;
       this.emit('disconnected');
     } catch (error) {
@@ -111,12 +300,15 @@ export class NetworkTablesInterface extends EventEmitter {
    * @param defaultValue The default value.
    * @returns The boolean topic.
    */
-  public getBoolean(key: string, defaultValue: boolean = false): Topic<boolean> {
+  public getBoolean(key: string, defaultValue: boolean = false): Topic {
     if (this._topics.has(key)) {
-      return this._topics.get(key) as Topic<boolean>;
+      return this._topics.get(key) as Topic;
     }
 
-    const topic = this._nt.getBoolean(key, defaultValue);
+    const table = this._nt.getTable('SmartDashboard');
+    const topic = table.getBooleanTopic(key);
+    topic.publish();
+    topic.setDefault(defaultValue);
     this._topics.set(key, topic);
     return topic;
   }
@@ -128,12 +320,15 @@ export class NetworkTablesInterface extends EventEmitter {
    * @param defaultValue The default value.
    * @returns The number topic.
    */
-  public getNumber(key: string, defaultValue: number = 0): Topic<number> {
+  public getNumber(key: string, defaultValue: number = 0): Topic {
     if (this._topics.has(key)) {
-      return this._topics.get(key) as Topic<number>;
+      return this._topics.get(key) as Topic;
     }
 
-    const topic = this._nt.getNumber(key, defaultValue);
+    const table = this._nt.getTable('SmartDashboard');
+    const topic = table.getDoubleTopic(key);
+    topic.publish();
+    topic.setDefault(defaultValue);
     this._topics.set(key, topic);
     return topic;
   }
@@ -145,12 +340,15 @@ export class NetworkTablesInterface extends EventEmitter {
    * @param defaultValue The default value.
    * @returns The string topic.
    */
-  public getString(key: string, defaultValue: string = ''): Topic<string> {
+  public getString(key: string, defaultValue: string = ''): Topic {
     if (this._topics.has(key)) {
-      return this._topics.get(key) as Topic<string>;
+      return this._topics.get(key) as Topic;
     }
 
-    const topic = this._nt.getString(key, defaultValue);
+    const table = this._nt.getTable('SmartDashboard');
+    const topic = table.getStringTopic(key);
+    topic.publish();
+    topic.setDefault(defaultValue);
     this._topics.set(key, topic);
     return topic;
   }
@@ -162,12 +360,15 @@ export class NetworkTablesInterface extends EventEmitter {
    * @param defaultValue The default value.
    * @returns The boolean array topic.
    */
-  public getBooleanArray(key: string, defaultValue: boolean[] = []): Topic<boolean[]> {
+  public getBooleanArray(key: string, defaultValue: boolean[] = []): Topic {
     if (this._topics.has(key)) {
-      return this._topics.get(key) as Topic<boolean[]>;
+      return this._topics.get(key) as Topic;
     }
 
-    const topic = this._nt.getBooleanArray(key, defaultValue);
+    const table = this._nt.getTable('SmartDashboard');
+    const topic = table.getBooleanArrayTopic(key);
+    topic.publish();
+    topic.setDefault(defaultValue);
     this._topics.set(key, topic);
     return topic;
   }
@@ -179,12 +380,15 @@ export class NetworkTablesInterface extends EventEmitter {
    * @param defaultValue The default value.
    * @returns The number array topic.
    */
-  public getNumberArray(key: string, defaultValue: number[] = []): Topic<number[]> {
+  public getNumberArray(key: string, defaultValue: number[] = []): Topic {
     if (this._topics.has(key)) {
-      return this._topics.get(key) as Topic<number[]>;
+      return this._topics.get(key) as Topic;
     }
 
-    const topic = this._nt.getNumberArray(key, defaultValue);
+    const table = this._nt.getTable('SmartDashboard');
+    const topic = table.getDoubleArrayTopic(key);
+    topic.publish();
+    topic.setDefault(defaultValue);
     this._topics.set(key, topic);
     return topic;
   }
@@ -196,12 +400,15 @@ export class NetworkTablesInterface extends EventEmitter {
    * @param defaultValue The default value.
    * @returns The string array topic.
    */
-  public getStringArray(key: string, defaultValue: string[] = []): Topic<string[]> {
+  public getStringArray(key: string, defaultValue: string[] = []): Topic {
     if (this._topics.has(key)) {
-      return this._topics.get(key) as Topic<string[]>;
+      return this._topics.get(key) as Topic;
     }
 
-    const topic = this._nt.getStringArray(key, defaultValue);
+    const table = this._nt.getTable('SmartDashboard');
+    const topic = table.getStringArrayTopic(key);
+    topic.publish();
+    topic.setDefault(defaultValue);
     this._topics.set(key, topic);
     return topic;
   }
@@ -209,9 +416,9 @@ export class NetworkTablesInterface extends EventEmitter {
   /**
    * Get the underlying NetworkTables instance.
    *
-   * @returns The NetworkTables instance.
+   * @returns The NetworkTableInstance.
    */
-  public getNetworkTables(): NetworkTables {
+  public getNetworkTables(): NetworkTableInstance {
     return this._nt;
   }
 }

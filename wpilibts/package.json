@@ -29,7 +29,8 @@
   "author": "WPILib",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "ws": "^8.18.1"
+    "ws": "^8.18.1",
+    "ntcore-client": "file:../ntcore-client"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",

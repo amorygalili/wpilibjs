@@ -7,7 +7,7 @@ import { EventEmitter } from 'events';
 import { RobotBase } from '../RobotBase';
 import { SimHooks } from './SimHooks';
 import { NT4Bridge } from '../network/NT4Bridge';
-import { NT4Client } from '../network/NT4Client';
+import { NT4_Client } from 'ntcore-client';
 import { DriverStation } from '../DriverStation';
 
 /**
@@ -19,7 +19,7 @@ export class SimulationFramework extends EventEmitter {
   private robotClass: new () => RobotBase;
   private robot: RobotBase | null = null;
   private ntBridge: NT4Bridge;
-  private ntClient: NT4Client;
+  private ntClient: NT4_Client;
   private running: boolean = false;
 
   /**
@@ -31,7 +31,13 @@ export class SimulationFramework extends EventEmitter {
   constructor(robotClass: new () => RobotBase, ntServerUrl: string = 'ws://localhost:5810') {
     super();
     this.robotClass = robotClass;
-    this.ntClient = new NT4Client(ntServerUrl);
+    this.ntClient = new NT4_Client(ntServerUrl, 'WPILib-Simulation',
+      () => {}, // onTopicAnnounce
+      () => {}, // onTopicUnannounce
+      () => {}, // onNewTopicData
+      () => {}, // onConnect
+      () => {} // onDisconnect
+    );
     this.ntBridge = new NT4Bridge(this.ntClient);
   }
 

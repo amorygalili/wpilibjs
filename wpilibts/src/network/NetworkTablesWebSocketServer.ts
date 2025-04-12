@@ -116,8 +116,26 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
 
       // Remove all topic listeners
       this._topicListeners.forEach((listener, key) => {
-        const topic = networkTables.getBoolean(key);
-        topic.off('valueChanged', listener);
+        try {
+          const topic = networkTables.getBoolean(key);
+          const entry = topic.getEntry();
+          entry.removeListener(listener);
+        } catch (e) {
+          // Try other types
+          try {
+            const topic = networkTables.getNumber(key);
+            const entry = topic.getEntry();
+            entry.removeListener(listener);
+          } catch (e) {
+            try {
+              const topic = networkTables.getString(key);
+              const entry = topic.getEntry();
+              entry.removeListener(listener);
+            } catch (e) {
+              console.error(`Failed to remove listener for topic ${key}:`, e);
+            }
+          }
+        }
       });
       this._topicListeners.clear();
 
@@ -225,9 +243,29 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
         if (!hasOtherSubscribers) {
           const listener = this._topicListeners.get(key);
           if (listener) {
-            const topic = networkTables.getBoolean(key);
-            topic.off('valueChanged', listener);
-            this._topicListeners.delete(key);
+            try {
+              const topic = networkTables.getBoolean(key);
+              const entry = topic.getEntry();
+              entry.removeListener(listener);
+              this._topicListeners.delete(key);
+            } catch (e) {
+              // Try other types
+              try {
+                const topic = networkTables.getNumber(key);
+                const entry = topic.getEntry();
+                entry.removeListener(listener);
+                this._topicListeners.delete(key);
+              } catch (e) {
+                try {
+                  const topic = networkTables.getString(key);
+                  const entry = topic.getEntry();
+                  entry.removeListener(listener);
+                  this._topicListeners.delete(key);
+                } catch (e) {
+                  console.error(`Failed to remove listener for topic ${key}:`, e);
+                }
+              }
+            }
           }
         }
       });
@@ -273,12 +311,13 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
         });
       };
 
-      // Add the listener
-      topic.on('valueChanged', listener);
+      // Add the listener to the entry
+      const entry = topic.getEntry();
+      entry.addListener(listener);
       this._topicListeners.set(key, listener);
 
       // Send the current value
-      this.sendValueChanged(ws, key, topic.value);
+      this.sendValueChanged(ws, key, entry.get());
     }
   }
 
@@ -315,9 +354,29 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
     if (!hasOtherSubscribers) {
       const listener = this._topicListeners.get(key);
       if (listener) {
-        const topic = networkTables.getBoolean(key);
-        topic.off('valueChanged', listener);
-        this._topicListeners.delete(key);
+        try {
+          const topic = networkTables.getBoolean(key);
+          const entry = topic.getEntry();
+          entry.removeListener(listener);
+          this._topicListeners.delete(key);
+        } catch (e) {
+          // Try other types
+          try {
+            const topic = networkTables.getNumber(key);
+            const entry = topic.getEntry();
+            entry.removeListener(listener);
+            this._topicListeners.delete(key);
+          } catch (e) {
+            try {
+              const topic = networkTables.getString(key);
+              const entry = topic.getEntry();
+              entry.removeListener(listener);
+              this._topicListeners.delete(key);
+            } catch (e) {
+              console.error(`Failed to remove listener for topic ${key}:`, e);
+            }
+          }
+        }
       }
     }
   }
@@ -374,7 +433,8 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
       }
 
       // Set the value
-      topic.value = value;
+      const entry = topic.getEntry();
+      entry.set(value);
     } catch (error) {
       console.error('Error setting NetworkTables value:', error);
       this.sendError(ws, `Error setting value: ${error}`);
