@@ -1,0 +1,183 @@
+[2025-04-11T02:19:38.580Z] Server started on port 5810
+[2025-04-11T02:19:38.584Z] Connect OutlineViewer to localhost:5810
+[2025-04-11T02:19:38.584Z] Creating test topics...
+[2025-04-11T02:19:38.584Z] Topic announced: /test/boolean (boolean)
+[2025-04-11T02:19:38.584Z] Announce message: [{"method":"announce","params":{"name":"/test/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true,"rawType":"boolean","typeString":"boolean",".type":"boolean","source":"ntcorejs"},"pubuid":1}}]
+[2025-04-11T02:19:38.584Z] Created topic /test/boolean with ID 1:
+ - Type: boolean (ID: 0)
+ - Properties: {"persistent":true,"retained":true,"rawType":"boolean","typeString":"boolean",".type":"boolean","source":"ntcorejs"}
+ - Value: true
+[2025-04-11T02:19:38.584Z] Topic announced: /test/number (double)
+[2025-04-11T02:19:38.584Z] Announce message: [{"method":"announce","params":{"name":"/test/number","id":2,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"},"pubuid":2}}]
+[2025-04-11T02:19:38.585Z] Created topic /test/number with ID 2:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 3.14159
+[2025-04-11T02:19:38.585Z] Topic announced: /test/string (string)
+[2025-04-11T02:19:38.585Z] Announce message: [{"method":"announce","params":{"name":"/test/string","id":3,"type":"string","properties":{"persistent":true,"retained":true,"rawType":"string","typeString":"string",".type":"string","source":"ntcorejs"},"pubuid":3}}]
+[2025-04-11T02:19:38.585Z] Created topic /test/string with ID 3:
+ - Type: string (ID: 4)
+ - Properties: {"persistent":true,"retained":true,"rawType":"string","typeString":"string",".type":"string","source":"ntcorejs"}
+ - Value: "Hello from ntcorejs!"
+[2025-04-11T02:19:38.585Z] Topic announced: /test/boolean_array (boolean[])
+[2025-04-11T02:19:38.586Z] Announce message: [{"method":"announce","params":{"name":"/test/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true,"rawType":"boolean[]","typeString":"boolean[]",".type":"boolean[]","source":"ntcorejs"},"pubuid":4}}]
+[2025-04-11T02:19:38.586Z] Created topic /test/boolean_array with ID 4:
+ - Type: boolean[] (ID: 16)
+ - Properties: {"persistent":true,"retained":true,"rawType":"boolean[]","typeString":"boolean[]",".type":"boolean[]","source":"ntcorejs"}
+ - Value: [true,false,true]
+[2025-04-11T02:19:38.586Z] Topic announced: /test/number_array (double[])
+[2025-04-11T02:19:38.586Z] Announce message: [{"method":"announce","params":{"name":"/test/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true,"rawType":"double[]","typeString":"double[]",".type":"double[]","source":"ntcorejs"},"pubuid":5}}]
+[2025-04-11T02:19:38.586Z] Created topic /test/number_array with ID 5:
+ - Type: double[] (ID: 17)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double[]","typeString":"double[]",".type":"double[]","source":"ntcorejs"}
+ - Value: [1.1,2.2,3.3,4.4]
+[2025-04-11T02:19:38.587Z] Topic announced: /test/string_array (string[])
+[2025-04-11T02:19:38.587Z] Announce message: [{"method":"announce","params":{"name":"/test/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true,"rawType":"string[]","typeString":"string[]",".type":"string[]","source":"ntcorejs"},"pubuid":6}}]
+[2025-04-11T02:19:38.587Z] Created topic /test/string_array with ID 6:
+ - Type: string[] (ID: 20)
+ - Properties: {"persistent":true,"retained":true,"rawType":"string[]","typeString":"string[]",".type":"string[]","source":"ntcorejs"}
+ - Value: ["one","two","three"]
+[2025-04-11T02:19:38.587Z] Topic announced: /test/counter (double)
+[2025-04-11T02:19:38.587Z] Announce message: [{"method":"announce","params":{"name":"/test/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"},"pubuid":7}}]
+[2025-04-11T02:19:38.587Z] Created topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 0
+[2025-04-11T02:19:38.620Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T02:19:38.621Z] Using NT 4.1 protocol
+[2025-04-11T02:19:38.622Z] Client connected: ::ffff:127.0.0.1
+[2025-04-11T02:19:38.623Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T02:19:38.624Z] Announced topic to client: /test/boolean (boolean)
+[2025-04-11T02:19:38.624Z] Sent value to client: id=1, type=0
+[2025-04-11T02:19:38.624Z] Announced topic to client: /test/number (double)
+[2025-04-11T02:19:38.625Z] Sent value to client: id=2, type=1
+[2025-04-11T02:19:38.625Z] Announced topic to client: /test/string (string)
+[2025-04-11T02:19:38.625Z] Sent value to client: id=3, type=4
+[2025-04-11T02:19:38.625Z] Announced topic to client: /test/boolean_array (boolean[])
+[2025-04-11T02:19:38.626Z] Sent value to client: id=4, type=16
+[2025-04-11T02:19:38.626Z] Announced topic to client: /test/number_array (double[])
+[2025-04-11T02:19:38.626Z] Sent value to client: id=5, type=17
+[2025-04-11T02:19:38.626Z] Announced topic to client: /test/string_array (string[])
+[2025-04-11T02:19:38.627Z] Sent value to client: id=6, type=20
+[2025-04-11T02:19:38.627Z] Announced topic to client: /test/counter (double)
+[2025-04-11T02:19:38.627Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:38.628Z] Binary message received, length: 13
+[2025-04-11T02:19:38.628Z] First 16 bytes: 94 ff 00 02 cf 00 06 32 77 55 95 82 a3
+[2025-04-11T02:19:38.629Z] Decoded MessagePack: [-1,0,2,1744337978622627]
+[2025-04-11T02:19:38.629Z] Value update from client: id=-1, type=2, value=1744337978622627
+[2025-04-11T02:19:38.629Z] Topic with ID -1 not found
+[2025-04-11T02:19:39.594Z] Value updated for /test/counter: id=7, type=1, value=0
+[2025-04-11T02:19:39.595Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:39.596Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 0
+[2025-04-11T02:19:40.599Z] Value updated for /test/counter: id=7, type=1, value=1
+[2025-04-11T02:19:40.600Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:40.600Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 1
+[2025-04-11T02:19:41.608Z] Value updated for /test/counter: id=7, type=1, value=2
+[2025-04-11T02:19:41.609Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:41.609Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 2
+[2025-04-11T02:19:42.620Z] Value updated for /test/counter: id=7, type=1, value=3
+[2025-04-11T02:19:42.620Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:42.621Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 3
+[2025-04-11T02:19:43.623Z] Value updated for /test/counter: id=7, type=1, value=4
+[2025-04-11T02:19:43.624Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:43.624Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 4
+[2025-04-11T02:19:44.634Z] Value updated for /test/counter: id=7, type=1, value=5
+[2025-04-11T02:19:44.635Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:44.635Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 5
+[2025-04-11T02:19:45.649Z] Value updated for /test/counter: id=7, type=1, value=6
+[2025-04-11T02:19:45.650Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:45.650Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 6
+[2025-04-11T02:19:46.658Z] Value updated for /test/counter: id=7, type=1, value=7
+[2025-04-11T02:19:46.658Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:46.659Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 7
+[2025-04-11T02:19:47.662Z] Value updated for /test/counter: id=7, type=1, value=8
+[2025-04-11T02:19:47.663Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:47.663Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 8
+[2025-04-11T02:19:48.666Z] Value updated for /test/counter: id=7, type=1, value=9
+[2025-04-11T02:19:48.667Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:48.667Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 9
+[2025-04-11T02:19:48.668Z] Counter updated: 9
+[2025-04-11T02:19:49.666Z] Value updated for /test/counter: id=7, type=1, value=10
+[2025-04-11T02:19:49.667Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:49.667Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 10
+[2025-04-11T02:19:50.674Z] Value updated for /test/counter: id=7, type=1, value=11
+[2025-04-11T02:19:50.674Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:50.674Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 11
+[2025-04-11T02:19:51.687Z] Value updated for /test/counter: id=7, type=1, value=12
+[2025-04-11T02:19:51.688Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:51.688Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 12
+[2025-04-11T02:19:52.698Z] Value updated for /test/counter: id=7, type=1, value=13
+[2025-04-11T02:19:52.698Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:52.698Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 13
+[2025-04-11T02:19:53.708Z] Value updated for /test/counter: id=7, type=1, value=14
+[2025-04-11T02:19:53.709Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:53.709Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 14
+[2025-04-11T02:19:54.709Z] Value updated for /test/counter: id=7, type=1, value=15
+[2025-04-11T02:19:54.709Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:54.709Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 15
+[2025-04-11T02:19:55.722Z] Value updated for /test/counter: id=7, type=1, value=16
+[2025-04-11T02:19:55.723Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:55.723Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 16
+[2025-04-11T02:19:56.723Z] Value updated for /test/counter: id=7, type=1, value=17
+[2025-04-11T02:19:56.724Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:56.724Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 17
+[2025-04-11T02:19:57.728Z] Value updated for /test/counter: id=7, type=1, value=18
+[2025-04-11T02:19:57.729Z] Sent value to client: id=7, type=1
+[2025-04-11T02:19:57.729Z] Updated topic /test/counter with ID 7:
+ - Type: double (ID: 1)
+ - Properties: {"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"ntcorejs"}
+ - Value: 18

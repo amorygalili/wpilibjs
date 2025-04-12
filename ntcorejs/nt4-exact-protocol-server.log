@@ -1,0 +1,171 @@
+[2025-04-11T01:49:08.539Z] NetworkTables 4.1 Exact Protocol Server started on port 5810
+[2025-04-11T01:49:08.542Z] Connect OutlineViewer to localhost:5810
+[2025-04-11T01:49:12.097Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:49:12.098Z] Using NT 4.1 protocol
+[2025-04-11T01:49:12.098Z] Client connected from ::1
+[2025-04-11T01:49:12.099Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:49:12.099Z] Creating test topics...
+[2025-04-11T01:49:12.099Z] Created topic: /server/boolean (boolean)
+[2025-04-11T01:49:12.099Z] Created topic: /server/number (double)
+[2025-04-11T01:49:12.099Z] Created topic: /server/string (string)
+[2025-04-11T01:49:12.099Z] Created topic: /server/boolean_array (boolean[])
+[2025-04-11T01:49:12.100Z] Created topic: /server/number_array (double[])
+[2025-04-11T01:49:12.100Z] Created topic: /server/string_array (string[])
+[2025-04-11T01:49:12.100Z] Created topic: /server/counter (double)
+[2025-04-11T01:49:12.100Z] Created 7 test topics
+[2025-04-11T01:49:12.100Z] Sending 7 topics to client...
+[2025-04-11T01:49:12.101Z] Sent announce message for /server/boolean
+[2025-04-11T01:49:12.102Z] Sent announce message for /server/number
+[2025-04-11T01:49:12.102Z] Sent announce message for /server/string
+[2025-04-11T01:49:12.102Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:49:12.102Z] Sent announce message for /server/number_array
+[2025-04-11T01:49:12.103Z] Sent announce message for /server/string_array
+[2025-04-11T01:49:12.103Z] Sent announce message for /server/counter
+[2025-04-11T01:49:12.104Z] All topics sent to client
+[2025-04-11T01:49:12.104Z] Binary message received, length: 91
+[2025-04-11T01:49:12.104Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 73 75 62 73 63 72 69 62 65 22 2c 22 70 61 72 61 6d 73 22 3a
+[2025-04-11T01:49:12.105Z] Failed to decode MessagePack: RangeError: Extra 90 of 91 byte(s) found at buffer[1]
+[2025-04-11T01:49:12.202Z] Sent binary value message for /server/boolean
+[2025-04-11T01:49:12.203Z] Sent binary value message for /server/number
+[2025-04-11T01:49:12.203Z] Sent binary value message for /server/string
+[2025-04-11T01:49:12.204Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:49:12.204Z] Sent binary value message for /server/number_array
+[2025-04-11T01:49:12.205Z] Sent binary value message for /server/string_array
+[2025-04-11T01:49:22.196Z] Counter updated: 9
+[2025-04-11T01:49:32.288Z] Counter updated: 19
+[2025-04-11T01:49:32.633Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:49:32.633Z] Using NT 4.1 protocol
+[2025-04-11T01:49:32.634Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:49:32.634Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:49:32.634Z] Sending 7 topics to client...
+[2025-04-11T01:49:32.634Z] Sent announce message for /server/boolean
+[2025-04-11T01:49:32.634Z] Sent announce message for /server/number
+[2025-04-11T01:49:32.635Z] Sent announce message for /server/string
+[2025-04-11T01:49:32.635Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:49:32.635Z] Sent announce message for /server/number_array
+[2025-04-11T01:49:32.635Z] Sent announce message for /server/string_array
+[2025-04-11T01:49:32.635Z] Sent announce message for /server/counter
+[2025-04-11T01:49:32.635Z] All topics sent to client
+[2025-04-11T01:49:32.636Z] Binary message received, length: 13
+[2025-04-11T01:49:32.636Z] First 32 bytes: 94 ff 00 02 cf 00 06 32 76 e9 f0 50 50
+[2025-04-11T01:49:32.636Z] Decoded MessagePack: [-1,0,2,1744336172634192]
+[2025-04-11T01:49:32.636Z] Sending 7 topics to client...
+[2025-04-11T01:49:32.636Z] Sent announce message for /server/boolean
+[2025-04-11T01:49:32.637Z] Sent announce message for /server/number
+[2025-04-11T01:49:32.637Z] Sent announce message for /server/string
+[2025-04-11T01:49:32.637Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:49:32.637Z] Sent announce message for /server/number_array
+[2025-04-11T01:49:32.637Z] Sent announce message for /server/string_array
+[2025-04-11T01:49:32.637Z] Sent announce message for /server/counter
+[2025-04-11T01:49:32.637Z] All topics sent to client
+[2025-04-11T01:49:32.740Z] Sent binary value message for /server/boolean
+[2025-04-11T01:49:32.740Z] Sent binary value message for /server/number
+[2025-04-11T01:49:32.741Z] Sent binary value message for /server/string
+[2025-04-11T01:49:32.741Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:49:32.742Z] Sent binary value message for /server/number_array
+[2025-04-11T01:49:32.742Z] Sent binary value message for /server/string_array
+[2025-04-11T01:49:32.743Z] Sent binary value message for /server/boolean
+[2025-04-11T01:49:32.743Z] Sent binary value message for /server/number
+[2025-04-11T01:49:32.743Z] Sent binary value message for /server/string
+[2025-04-11T01:49:32.743Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:49:32.744Z] Sent binary value message for /server/number_array
+[2025-04-11T01:49:32.744Z] Sent binary value message for /server/string_array
+[2025-04-11T01:49:42.383Z] Counter updated: 29
+[2025-04-11T01:49:59.241Z] NetworkTables 4.1 Exact Protocol Server started on port 5810
+[2025-04-11T01:49:59.244Z] Connect OutlineViewer to localhost:5810
+[2025-04-11T01:49:59.561Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:49:59.562Z] Using NT 4.1 protocol
+[2025-04-11T01:49:59.563Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:49:59.563Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:49:59.563Z] Creating test topics...
+[2025-04-11T01:49:59.564Z] Created topic: /server/boolean (boolean)
+[2025-04-11T01:49:59.564Z] Created topic: /server/number (double)
+[2025-04-11T01:49:59.564Z] Created topic: /server/string (string)
+[2025-04-11T01:49:59.564Z] Created topic: /server/boolean_array (boolean[])
+[2025-04-11T01:49:59.565Z] Created topic: /server/number_array (double[])
+[2025-04-11T01:49:59.565Z] Created topic: /server/string_array (string[])
+[2025-04-11T01:49:59.565Z] Created topic: /server/counter (double)
+[2025-04-11T01:49:59.565Z] Created 7 test topics
+[2025-04-11T01:49:59.566Z] Sending 7 topics to client...
+[2025-04-11T01:49:59.567Z] Sent announce message for /server/boolean
+[2025-04-11T01:49:59.568Z] Sent announce message for /server/number
+[2025-04-11T01:49:59.568Z] Sent announce message for /server/string
+[2025-04-11T01:49:59.568Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:49:59.569Z] Sent announce message for /server/number_array
+[2025-04-11T01:49:59.569Z] Sent announce message for /server/string_array
+[2025-04-11T01:49:59.569Z] Sent announce message for /server/counter
+[2025-04-11T01:49:59.569Z] All topics sent to client
+[2025-04-11T01:49:59.570Z] Binary message received, length: 13
+[2025-04-11T01:49:59.570Z] First 32 bytes: 94 ff 00 02 cf 00 06 32 76 eb 8b 39 e6
+[2025-04-11T01:49:59.571Z] Decoded MessagePack: [-1,0,2,1744336199563750]
+[2025-04-11T01:49:59.571Z] Sending 7 topics to client...
+[2025-04-11T01:49:59.571Z] Sent announce message for /server/boolean
+[2025-04-11T01:49:59.572Z] Sent announce message for /server/number
+[2025-04-11T01:49:59.572Z] Sent announce message for /server/string
+[2025-04-11T01:49:59.572Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:49:59.573Z] Sent announce message for /server/number_array
+[2025-04-11T01:49:59.574Z] Sent announce message for /server/string_array
+[2025-04-11T01:49:59.574Z] Sent announce message for /server/counter
+[2025-04-11T01:49:59.574Z] All topics sent to client
+[2025-04-11T01:49:59.680Z] Sent binary value message for /server/boolean
+[2025-04-11T01:49:59.680Z] Sent binary value message for /server/number
+[2025-04-11T01:49:59.681Z] Sent binary value message for /server/string
+[2025-04-11T01:49:59.681Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:49:59.681Z] Sent binary value message for /server/number_array
+[2025-04-11T01:49:59.682Z] Sent binary value message for /server/string_array
+[2025-04-11T01:49:59.682Z] Sent binary value message for /server/boolean
+[2025-04-11T01:49:59.682Z] Sent binary value message for /server/number
+[2025-04-11T01:49:59.682Z] Sent binary value message for /server/string
+[2025-04-11T01:49:59.683Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:49:59.683Z] Sent binary value message for /server/number_array
+[2025-04-11T01:49:59.683Z] Sent binary value message for /server/string_array
+[2025-04-11T01:50:03.479Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:50:03.479Z] Using NT 4.1 protocol
+[2025-04-11T01:50:03.479Z] Client connected from ::1
+[2025-04-11T01:50:03.479Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:50:03.479Z] Sending 7 topics to client...
+[2025-04-11T01:50:03.480Z] Sent announce message for /server/boolean
+[2025-04-11T01:50:03.480Z] Sent announce message for /server/number
+[2025-04-11T01:50:03.480Z] Sent announce message for /server/string
+[2025-04-11T01:50:03.480Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:50:03.480Z] Sent announce message for /server/number_array
+[2025-04-11T01:50:03.480Z] Sent announce message for /server/string_array
+[2025-04-11T01:50:03.481Z] Sent announce message for /server/counter
+[2025-04-11T01:50:03.481Z] All topics sent to client
+[2025-04-11T01:50:03.481Z] Binary message received, length: 91
+[2025-04-11T01:50:03.481Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 73 75 62 73 63 72 69 62 65 22 2c 22 70 61 72 61 6d 73 22 3a
+[2025-04-11T01:50:03.481Z] Failed to decode MessagePack: RangeError: Extra 90 of 91 byte(s) found at buffer[1]
+[2025-04-11T01:50:03.481Z] As UTF-8: [{"method":"subscribe","params":{"subuid":1,"topics":[""],"options":{"prefixMatch":true}}}]
+[2025-04-11T01:50:03.481Z] Parsed JSON: [{"method":"subscribe","params":{"subuid":1,"topics":[""],"options":{"prefixMatch":true}}}]
+[2025-04-11T01:50:03.482Z] Control message: subscribe
+[2025-04-11T01:50:03.482Z] Client subscribing to topics: 
+[2025-04-11T01:50:03.482Z] Sending 7 topics to client...
+[2025-04-11T01:50:03.482Z] Sent announce message for /server/boolean
+[2025-04-11T01:50:03.482Z] Sent announce message for /server/number
+[2025-04-11T01:50:03.482Z] Sent announce message for /server/string
+[2025-04-11T01:50:03.482Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:50:03.482Z] Sent announce message for /server/number_array
+[2025-04-11T01:50:03.483Z] Sent announce message for /server/string_array
+[2025-04-11T01:50:03.483Z] Sent announce message for /server/counter
+[2025-04-11T01:50:03.483Z] All topics sent to client
+[2025-04-11T01:50:03.586Z] Sent binary value message for /server/boolean
+[2025-04-11T01:50:03.587Z] Sent binary value message for /server/number
+[2025-04-11T01:50:03.587Z] Sent binary value message for /server/string
+[2025-04-11T01:50:03.588Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:50:03.588Z] Sent binary value message for /server/number_array
+[2025-04-11T01:50:03.589Z] Sent binary value message for /server/string_array
+[2025-04-11T01:50:03.590Z] Sent binary value message for /server/boolean
+[2025-04-11T01:50:03.590Z] Sent binary value message for /server/number
+[2025-04-11T01:50:03.591Z] Sent binary value message for /server/string
+[2025-04-11T01:50:03.591Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:50:03.592Z] Sent binary value message for /server/number_array
+[2025-04-11T01:50:03.592Z] Sent binary value message for /server/string_array
+[2025-04-11T01:50:09.641Z] Counter updated: 9
+[2025-04-11T01:50:19.728Z] Counter updated: 19
+[2025-04-11T01:50:29.822Z] Counter updated: 29
+[2025-04-11T01:50:39.916Z] Counter updated: 39
+[2025-04-11T01:50:50.007Z] Counter updated: 49
+[2025-04-11T01:51:00.103Z] Counter updated: 59
+[2025-04-11T01:51:10.223Z] Counter updated: 69
+[2025-04-11T01:51:20.332Z] Counter updated: 79
+[2025-04-11T01:51:30.434Z] Counter updated: 89

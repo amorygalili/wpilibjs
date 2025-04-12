@@ -1,0 +1,2592 @@
+[2025-04-11T01:56:58.806Z] Minimal NetworkTables Client for OutlineViewer
+[2025-04-11T01:56:58.810Z] Make sure OutlineViewer is running in server mode
+[2025-04-11T01:56:58.810Z] In OutlineViewer, go to File -> Start Server
+[2025-04-11T01:56:58.810Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:56:58.826Z] WebSocket error: AggregateError
+[2025-04-11T01:56:58.826Z] Disconnected from server
+[2025-04-11T01:57:03.835Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:03.838Z] WebSocket error: AggregateError
+[2025-04-11T01:57:03.839Z] Disconnected from server
+[2025-04-11T01:57:08.850Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:08.854Z] WebSocket error: AggregateError
+[2025-04-11T01:57:08.854Z] Disconnected from server
+[2025-04-11T01:57:13.858Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:13.861Z] WebSocket error: AggregateError
+[2025-04-11T01:57:13.862Z] Disconnected from server
+[2025-04-11T01:57:18.869Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:18.873Z] WebSocket error: AggregateError
+[2025-04-11T01:57:18.873Z] Disconnected from server
+[2025-04-11T01:57:23.877Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:23.878Z] WebSocket error: AggregateError
+[2025-04-11T01:57:23.879Z] Disconnected from server
+[2025-04-11T01:57:28.883Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:28.886Z] WebSocket error: AggregateError
+[2025-04-11T01:57:28.886Z] Disconnected from server
+[2025-04-11T01:57:33.895Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:33.898Z] WebSocket error: AggregateError
+[2025-04-11T01:57:33.898Z] Disconnected from server
+[2025-04-11T01:57:38.901Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:38.904Z] WebSocket error: AggregateError
+[2025-04-11T01:57:38.905Z] Disconnected from server
+[2025-04-11T01:57:43.909Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:43.911Z] WebSocket error: AggregateError
+[2025-04-11T01:57:43.911Z] Disconnected from server
+[2025-04-11T01:57:48.923Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:48.926Z] WebSocket error: AggregateError
+[2025-04-11T01:57:48.926Z] Disconnected from server
+[2025-04-11T01:57:53.934Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:53.937Z] WebSocket error: AggregateError
+[2025-04-11T01:57:53.937Z] Disconnected from server
+[2025-04-11T01:57:58.941Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:57:58.942Z] WebSocket error: AggregateError
+[2025-04-11T01:57:58.943Z] Disconnected from server
+[2025-04-11T01:58:03.954Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:03.956Z] WebSocket error: AggregateError
+[2025-04-11T01:58:03.957Z] Disconnected from server
+[2025-04-11T01:58:08.964Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:08.966Z] WebSocket error: AggregateError
+[2025-04-11T01:58:08.966Z] Disconnected from server
+[2025-04-11T01:58:13.974Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:13.976Z] WebSocket error: AggregateError
+[2025-04-11T01:58:13.976Z] Disconnected from server
+[2025-04-11T01:58:18.978Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:18.980Z] WebSocket error: AggregateError
+[2025-04-11T01:58:18.980Z] Disconnected from server
+[2025-04-11T01:58:23.990Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:23.993Z] WebSocket error: AggregateError
+[2025-04-11T01:58:23.994Z] Disconnected from server
+[2025-04-11T01:58:29.003Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:29.005Z] WebSocket error: AggregateError
+[2025-04-11T01:58:29.005Z] Disconnected from server
+[2025-04-11T01:58:34.010Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:34.012Z] WebSocket error: AggregateError
+[2025-04-11T01:58:34.012Z] Disconnected from server
+[2025-04-11T01:58:39.027Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:39.029Z] WebSocket error: AggregateError
+[2025-04-11T01:58:39.029Z] Disconnected from server
+[2025-04-11T01:58:44.041Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:44.044Z] WebSocket error: AggregateError
+[2025-04-11T01:58:44.045Z] Disconnected from server
+[2025-04-11T01:58:49.058Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:49.062Z] WebSocket error: AggregateError
+[2025-04-11T01:58:49.062Z] Disconnected from server
+[2025-04-11T01:58:54.066Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:54.069Z] WebSocket error: AggregateError
+[2025-04-11T01:58:54.070Z] Disconnected from server
+[2025-04-11T01:58:59.077Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:58:59.078Z] WebSocket error: AggregateError
+[2025-04-11T01:58:59.078Z] Disconnected from server
+[2025-04-11T01:59:04.088Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:04.091Z] WebSocket error: AggregateError
+[2025-04-11T01:59:04.092Z] Disconnected from server
+[2025-04-11T01:59:09.093Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:09.095Z] WebSocket error: AggregateError
+[2025-04-11T01:59:09.095Z] Disconnected from server
+[2025-04-11T01:59:14.099Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:14.102Z] WebSocket error: AggregateError
+[2025-04-11T01:59:14.102Z] Disconnected from server
+[2025-04-11T01:59:19.113Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:19.116Z] WebSocket error: AggregateError
+[2025-04-11T01:59:19.116Z] Disconnected from server
+[2025-04-11T01:59:24.121Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:24.123Z] WebSocket error: AggregateError
+[2025-04-11T01:59:24.123Z] Disconnected from server
+[2025-04-11T01:59:29.133Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:29.136Z] WebSocket error: AggregateError
+[2025-04-11T01:59:29.136Z] Disconnected from server
+[2025-04-11T01:59:34.137Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:34.140Z] WebSocket error: AggregateError
+[2025-04-11T01:59:34.140Z] Disconnected from server
+[2025-04-11T01:59:39.154Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:39.156Z] WebSocket error: AggregateError
+[2025-04-11T01:59:39.157Z] Disconnected from server
+[2025-04-11T01:59:44.164Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:44.166Z] WebSocket error: AggregateError
+[2025-04-11T01:59:44.166Z] Disconnected from server
+[2025-04-11T01:59:49.172Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:49.175Z] WebSocket error: AggregateError
+[2025-04-11T01:59:49.175Z] Disconnected from server
+[2025-04-11T01:59:54.179Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:54.183Z] WebSocket error: AggregateError
+[2025-04-11T01:59:54.184Z] Disconnected from server
+[2025-04-11T01:59:59.191Z] Connecting to ws://localhost:5810...
+[2025-04-11T01:59:59.193Z] WebSocket error: AggregateError
+[2025-04-11T01:59:59.193Z] Disconnected from server
+[2025-04-11T02:00:04.196Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:04.199Z] WebSocket error: AggregateError
+[2025-04-11T02:00:04.200Z] Disconnected from server
+[2025-04-11T02:00:09.214Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:09.216Z] WebSocket error: AggregateError
+[2025-04-11T02:00:09.216Z] Disconnected from server
+[2025-04-11T02:00:14.222Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:14.223Z] WebSocket error: AggregateError
+[2025-04-11T02:00:14.224Z] Disconnected from server
+[2025-04-11T02:00:19.237Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:19.241Z] WebSocket error: AggregateError
+[2025-04-11T02:00:19.241Z] Disconnected from server
+[2025-04-11T02:00:24.256Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:24.259Z] WebSocket error: AggregateError
+[2025-04-11T02:00:24.259Z] Disconnected from server
+[2025-04-11T02:00:29.267Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:29.270Z] WebSocket error: AggregateError
+[2025-04-11T02:00:29.271Z] Disconnected from server
+[2025-04-11T02:00:34.280Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:34.284Z] WebSocket error: AggregateError
+[2025-04-11T02:00:34.284Z] Disconnected from server
+[2025-04-11T02:00:39.291Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:39.295Z] WebSocket error: AggregateError
+[2025-04-11T02:00:39.296Z] Disconnected from server
+[2025-04-11T02:00:44.307Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:44.308Z] WebSocket error: AggregateError
+[2025-04-11T02:00:44.309Z] Disconnected from server
+[2025-04-11T02:00:49.322Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:49.323Z] WebSocket error: AggregateError
+[2025-04-11T02:00:49.324Z] Disconnected from server
+[2025-04-11T02:00:54.325Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:54.330Z] WebSocket error: AggregateError
+[2025-04-11T02:00:54.331Z] Disconnected from server
+[2025-04-11T02:00:59.339Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:00:59.342Z] WebSocket error: AggregateError
+[2025-04-11T02:00:59.343Z] Disconnected from server
+[2025-04-11T02:01:04.346Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:04.349Z] WebSocket error: AggregateError
+[2025-04-11T02:01:04.349Z] Disconnected from server
+[2025-04-11T02:01:09.351Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:09.354Z] WebSocket error: AggregateError
+[2025-04-11T02:01:09.354Z] Disconnected from server
+[2025-04-11T02:01:14.363Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:14.366Z] WebSocket error: AggregateError
+[2025-04-11T02:01:14.366Z] Disconnected from server
+[2025-04-11T02:01:19.370Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:19.373Z] WebSocket error: AggregateError
+[2025-04-11T02:01:19.374Z] Disconnected from server
+[2025-04-11T02:01:24.382Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:24.384Z] WebSocket error: AggregateError
+[2025-04-11T02:01:24.384Z] Disconnected from server
+[2025-04-11T02:01:29.388Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:29.390Z] WebSocket error: AggregateError
+[2025-04-11T02:01:29.390Z] Disconnected from server
+[2025-04-11T02:01:34.404Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:34.407Z] WebSocket error: AggregateError
+[2025-04-11T02:01:34.408Z] Disconnected from server
+[2025-04-11T02:01:39.411Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:39.412Z] WebSocket error: AggregateError
+[2025-04-11T02:01:39.413Z] Disconnected from server
+[2025-04-11T02:01:44.413Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:44.415Z] WebSocket error: AggregateError
+[2025-04-11T02:01:44.415Z] Disconnected from server
+[2025-04-11T02:01:49.430Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:49.433Z] WebSocket error: AggregateError
+[2025-04-11T02:01:49.434Z] Disconnected from server
+[2025-04-11T02:01:54.438Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:54.441Z] WebSocket error: AggregateError
+[2025-04-11T02:01:54.441Z] Disconnected from server
+[2025-04-11T02:01:59.450Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:01:59.452Z] WebSocket error: AggregateError
+[2025-04-11T02:01:59.452Z] Disconnected from server
+[2025-04-11T02:02:04.456Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:02:04.458Z] WebSocket error: AggregateError
+[2025-04-11T02:02:04.459Z] Disconnected from server
+[2025-04-11T02:02:09.469Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:02:09.470Z] WebSocket error: AggregateError
+[2025-04-11T02:02:09.470Z] Disconnected from server
+[2025-04-11T02:02:14.477Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:02:14.481Z] Connected to ws://localhost:5810
+[2025-04-11T02:02:14.482Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T02:02:14.482Z] Sending subscribe message: [{"method":"subscribe","params":{"subuid":1,"topics":[""],"options":{"prefixMatch":true}}}]
+[2025-04-11T02:02:14.483Z] Binary message received, length: 143
+[2025-04-11T02:02:14.484Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.484Z] Failed to decode MessagePack: RangeError: Extra 142 of 143 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.484Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:02:14.485Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:02:14.485Z] Control message: announce
+[2025-04-11T02:02:14.485Z] Topic announced: /server/boolean (boolean) with ID 1
+[2025-04-11T02:02:14.485Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.485Z] Binary message received, length: 13
+[2025-04-11T02:02:14.485Z] First 32 bytes: 94 01 cf 00 06 32 77 17 34 1c 20 00 c3
+[2025-04-11T02:02:14.485Z] Decoded MessagePack: [1,1744336932052000,0,true]
+[2025-04-11T02:02:14.485Z] Value update: id=1, type=0, value=true
+[2025-04-11T02:02:14.486Z] Value updated for topic /server/boolean: true
+[2025-04-11T02:02:14.486Z] Binary message received, length: 141
+[2025-04-11T02:02:14.486Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.486Z] Failed to decode MessagePack: RangeError: Extra 140 of 141 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.486Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:02:14.486Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:02:14.486Z] Control message: announce
+[2025-04-11T02:02:14.486Z] Topic announced: /server/number (double) with ID 2
+[2025-04-11T02:02:14.486Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.486Z] Binary message received, length: 21
+[2025-04-11T02:02:14.486Z] First 32 bytes: 94 02 cf 00 06 32 77 17 34 1c 20 01 cb 40 09 21 f9 f0 1b 86 6e
+[2025-04-11T02:02:14.487Z] Decoded MessagePack: [2,1744336932052000,1,3.14159]
+[2025-04-11T02:02:14.487Z] Value update: id=2, type=1, value=3.14159
+[2025-04-11T02:02:14.487Z] Value updated for topic /server/number: 3.14159
+[2025-04-11T02:02:14.487Z] Binary message received, length: 141
+[2025-04-11T02:02:14.487Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.487Z] Failed to decode MessagePack: RangeError: Extra 140 of 141 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.487Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:02:14.487Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:02:14.487Z] Control message: announce
+[2025-04-11T02:02:14.487Z] Topic announced: /server/string (string) with ID 3
+[2025-04-11T02:02:14.487Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.488Z] Binary message received, length: 35
+[2025-04-11T02:02:14.488Z] First 32 bytes: 94 03 cf 00 06 32 77 17 34 20 08 04 b6 48 65 6c 6c 6f 20 66 72 6f 6d 20 4e 54 34 20 73 65 72 76
+[2025-04-11T02:02:14.488Z] Decoded MessagePack: [3,1744336932053000,4,"Hello from NT4 server!"]
+[2025-04-11T02:02:14.488Z] Value update: id=3, type=4, value="Hello from NT4 server!"
+[2025-04-11T02:02:14.488Z] Value updated for topic /server/string: "Hello from NT4 server!"
+[2025-04-11T02:02:14.488Z] Binary message received, length: 151
+[2025-04-11T02:02:14.488Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.489Z] Failed to decode MessagePack: RangeError: Extra 150 of 151 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.489Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:02:14.489Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:02:14.489Z] Control message: announce
+[2025-04-11T02:02:14.489Z] Topic announced: /server/boolean_array (boolean[]) with ID 4
+[2025-04-11T02:02:14.489Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.489Z] Binary message received, length: 16
+[2025-04-11T02:02:14.489Z] First 32 bytes: 94 04 cf 00 06 32 77 17 34 20 08 10 93 c3 c2 c3
+[2025-04-11T02:02:14.489Z] Decoded MessagePack: [4,1744336932053000,16,[true,false,true]]
+[2025-04-11T02:02:14.489Z] Value update: id=4, type=16, value=[true,false,true]
+[2025-04-11T02:02:14.490Z] Value updated for topic /server/boolean_array: [true,false,true]
+[2025-04-11T02:02:14.490Z] Binary message received, length: 149
+[2025-04-11T02:02:14.490Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.490Z] Failed to decode MessagePack: RangeError: Extra 148 of 149 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.490Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:02:14.490Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:02:14.490Z] Control message: announce
+[2025-04-11T02:02:14.490Z] Topic announced: /server/number_array (double[]) with ID 5
+[2025-04-11T02:02:14.490Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.491Z] Binary message received, length: 49
+[2025-04-11T02:02:14.491Z] First 32 bytes: 94 05 cf 00 06 32 77 17 34 20 08 11 94 cb 3f f1 99 99 99 99 99 9a cb 40 01 99 99 99 99 99 9a cb
+[2025-04-11T02:02:14.491Z] Decoded MessagePack: [5,1744336932053000,17,[1.1,2.2,3.3,4.4]]
+[2025-04-11T02:02:14.491Z] Value update: id=5, type=17, value=[1.1,2.2,3.3,4.4]
+[2025-04-11T02:02:14.491Z] Value updated for topic /server/number_array: [1.1,2.2,3.3,4.4]
+[2025-04-11T02:02:14.491Z] Binary message received, length: 149
+[2025-04-11T02:02:14.491Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.491Z] Failed to decode MessagePack: RangeError: Extra 148 of 149 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.491Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:02:14.491Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:02:14.491Z] Control message: announce
+[2025-04-11T02:02:14.491Z] Topic announced: /server/string_array (string[]) with ID 6
+[2025-04-11T02:02:14.492Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.492Z] Binary message received, length: 27
+[2025-04-11T02:02:14.492Z] First 32 bytes: 94 06 cf 00 06 32 77 17 34 20 08 14 93 a3 6f 6e 65 a3 74 77 6f a5 74 68 72 65 65
+[2025-04-11T02:02:14.492Z] Decoded MessagePack: [6,1744336932053000,20,["one","two","three"]]
+[2025-04-11T02:02:14.492Z] Value update: id=6, type=20, value=["one","two","three"]
+[2025-04-11T02:02:14.492Z] Value updated for topic /server/string_array: ["one","two","three"]
+[2025-04-11T02:02:14.492Z] Binary message received, length: 142
+[2025-04-11T02:02:14.492Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:14.492Z] Failed to decode MessagePack: RangeError: Extra 141 of 142 byte(s) found at buffer[1]
+[2025-04-11T02:02:14.493Z] As UTF-8: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:02:14.493Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:02:14.493Z] Control message: announce
+[2025-04-11T02:02:14.493Z] Topic announced: /server/counter (double) with ID 7
+[2025-04-11T02:02:14.493Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:14.493Z] Binary message received, length: 13
+[2025-04-11T02:02:14.493Z] First 32 bytes: 94 07 cf 00 06 32 77 17 52 e3 08 01 01
+[2025-04-11T02:02:14.493Z] Decoded MessagePack: [7,1744336934069000,1,1]
+[2025-04-11T02:02:14.493Z] Value update: id=7, type=1, value=1
+[2025-04-11T02:02:14.494Z] Value updated for topic /server/counter: 1
+[2025-04-11T02:02:14.494Z] Binary message received, length: 13
+[2025-04-11T02:02:14.494Z] First 32 bytes: 94 01 cf 00 06 32 77 17 34 1c 20 00 c3
+[2025-04-11T02:02:14.494Z] Decoded MessagePack: [1,1744336932052000,0,true]
+[2025-04-11T02:02:14.494Z] Value update: id=1, type=0, value=true
+[2025-04-11T02:02:14.494Z] Value updated for topic /server/boolean: true
+[2025-04-11T02:02:14.494Z] Binary message received, length: 21
+[2025-04-11T02:02:14.494Z] First 32 bytes: 94 02 cf 00 06 32 77 17 34 1c 20 01 cb 40 09 21 f9 f0 1b 86 6e
+[2025-04-11T02:02:14.494Z] Decoded MessagePack: [2,1744336932052000,1,3.14159]
+[2025-04-11T02:02:14.494Z] Value update: id=2, type=1, value=3.14159
+[2025-04-11T02:02:14.494Z] Value updated for topic /server/number: 3.14159
+[2025-04-11T02:02:14.495Z] Binary message received, length: 35
+[2025-04-11T02:02:14.495Z] First 32 bytes: 94 03 cf 00 06 32 77 17 34 20 08 04 b6 48 65 6c 6c 6f 20 66 72 6f 6d 20 4e 54 34 20 73 65 72 76
+[2025-04-11T02:02:14.495Z] Decoded MessagePack: [3,1744336932053000,4,"Hello from NT4 server!"]
+[2025-04-11T02:02:14.495Z] Value update: id=3, type=4, value="Hello from NT4 server!"
+[2025-04-11T02:02:14.495Z] Value updated for topic /server/string: "Hello from NT4 server!"
+[2025-04-11T02:02:14.496Z] Binary message received, length: 16
+[2025-04-11T02:02:14.496Z] First 32 bytes: 94 04 cf 00 06 32 77 17 34 20 08 10 93 c3 c2 c3
+[2025-04-11T02:02:14.496Z] Decoded MessagePack: [4,1744336932053000,16,[true,false,true]]
+[2025-04-11T02:02:14.496Z] Value update: id=4, type=16, value=[true,false,true]
+[2025-04-11T02:02:14.496Z] Value updated for topic /server/boolean_array: [true,false,true]
+[2025-04-11T02:02:14.496Z] Binary message received, length: 49
+[2025-04-11T02:02:14.496Z] First 32 bytes: 94 05 cf 00 06 32 77 17 34 20 08 11 94 cb 3f f1 99 99 99 99 99 9a cb 40 01 99 99 99 99 99 9a cb
+[2025-04-11T02:02:14.496Z] Decoded MessagePack: [5,1744336932053000,17,[1.1,2.2,3.3,4.4]]
+[2025-04-11T02:02:14.496Z] Value update: id=5, type=17, value=[1.1,2.2,3.3,4.4]
+[2025-04-11T02:02:14.496Z] Value updated for topic /server/number_array: [1.1,2.2,3.3,4.4]
+[2025-04-11T02:02:14.496Z] Binary message received, length: 27
+[2025-04-11T02:02:14.497Z] First 32 bytes: 94 06 cf 00 06 32 77 17 34 20 08 14 93 a3 6f 6e 65 a3 74 77 6f a5 74 68 72 65 65
+[2025-04-11T02:02:14.497Z] Decoded MessagePack: [6,1744336932053000,20,["one","two","three"]]
+[2025-04-11T02:02:14.497Z] Value update: id=6, type=20, value=["one","two","three"]
+[2025-04-11T02:02:14.497Z] Value updated for topic /server/string_array: ["one","two","three"]
+[2025-04-11T02:02:14.497Z] Binary message received, length: 13
+[2025-04-11T02:02:14.497Z] First 32 bytes: 94 07 cf 00 06 32 77 17 52 e3 08 01 01
+[2025-04-11T02:02:14.497Z] Decoded MessagePack: [7,1744336934069000,1,1]
+[2025-04-11T02:02:14.497Z] Value update: id=7, type=1, value=1
+[2025-04-11T02:02:14.497Z] Value updated for topic /server/counter: 1
+[2025-04-11T02:02:15.085Z] Binary message received, length: 13
+[2025-04-11T02:02:15.086Z] First 32 bytes: 94 07 cf 00 06 32 77 17 62 63 c8 01 02
+[2025-04-11T02:02:15.086Z] Decoded MessagePack: [7,1744336935085000,1,2]
+[2025-04-11T02:02:15.086Z] Value update: id=7, type=1, value=2
+[2025-04-11T02:02:15.086Z] Value updated for topic /server/counter: 2
+[2025-04-11T02:02:16.098Z] Binary message received, length: 13
+[2025-04-11T02:02:16.099Z] First 32 bytes: 94 07 cf 00 06 32 77 17 71 d8 d0 01 03
+[2025-04-11T02:02:16.099Z] Decoded MessagePack: [7,1744336936098000,1,3]
+[2025-04-11T02:02:16.099Z] Value update: id=7, type=1, value=3
+[2025-04-11T02:02:16.099Z] Value updated for topic /server/counter: 3
+[2025-04-11T02:02:17.110Z] Binary message received, length: 13
+[2025-04-11T02:02:17.111Z] First 32 bytes: 94 07 cf 00 06 32 77 17 81 49 f0 01 04
+[2025-04-11T02:02:17.111Z] Decoded MessagePack: [7,1744336937110000,1,4]
+[2025-04-11T02:02:17.111Z] Value update: id=7, type=1, value=4
+[2025-04-11T02:02:17.111Z] Value updated for topic /server/counter: 4
+[2025-04-11T02:02:18.121Z] Binary message received, length: 13
+[2025-04-11T02:02:18.122Z] First 32 bytes: 94 07 cf 00 06 32 77 17 90 b7 28 01 05
+[2025-04-11T02:02:18.122Z] Decoded MessagePack: [7,1744336938121000,1,5]
+[2025-04-11T02:02:18.122Z] Value update: id=7, type=1, value=5
+[2025-04-11T02:02:18.122Z] Value updated for topic /server/counter: 5
+[2025-04-11T02:02:19.133Z] Binary message received, length: 13
+[2025-04-11T02:02:19.133Z] First 32 bytes: 94 07 cf 00 06 32 77 17 a0 24 60 01 06
+[2025-04-11T02:02:19.133Z] Decoded MessagePack: [7,1744336939132000,1,6]
+[2025-04-11T02:02:19.133Z] Value update: id=7, type=1, value=6
+[2025-04-11T02:02:19.134Z] Value updated for topic /server/counter: 6
+[2025-04-11T02:02:20.134Z] Binary message received, length: 13
+[2025-04-11T02:02:20.134Z] First 32 bytes: 94 07 cf 00 06 32 77 17 af 6a 88 01 07
+[2025-04-11T02:02:20.134Z] Decoded MessagePack: [7,1744336940133000,1,7]
+[2025-04-11T02:02:20.135Z] Value update: id=7, type=1, value=7
+[2025-04-11T02:02:20.135Z] Value updated for topic /server/counter: 7
+[2025-04-11T02:02:21.139Z] Binary message received, length: 13
+[2025-04-11T02:02:21.139Z] First 32 bytes: 94 07 cf 00 06 32 77 17 be c0 50 01 08
+[2025-04-11T02:02:21.139Z] Decoded MessagePack: [7,1744336941138000,1,8]
+[2025-04-11T02:02:21.139Z] Value update: id=7, type=1, value=8
+[2025-04-11T02:02:21.140Z] Value updated for topic /server/counter: 8
+[2025-04-11T02:02:22.147Z] Binary message received, length: 13
+[2025-04-11T02:02:22.147Z] First 32 bytes: 94 07 cf 00 06 32 77 17 ce 21 d0 01 09
+[2025-04-11T02:02:22.147Z] Decoded MessagePack: [7,1744336942146000,1,9]
+[2025-04-11T02:02:22.148Z] Value update: id=7, type=1, value=9
+[2025-04-11T02:02:22.148Z] Value updated for topic /server/counter: 9
+[2025-04-11T02:02:23.151Z] Binary message received, length: 13
+[2025-04-11T02:02:23.152Z] First 32 bytes: 94 07 cf 00 06 32 77 17 dd 77 98 01 0a
+[2025-04-11T02:02:23.152Z] Decoded MessagePack: [7,1744336943151000,1,10]
+[2025-04-11T02:02:23.153Z] Value update: id=7, type=1, value=10
+[2025-04-11T02:02:23.153Z] Value updated for topic /server/counter: 10
+[2025-04-11T02:02:24.157Z] Binary message received, length: 13
+[2025-04-11T02:02:24.158Z] First 32 bytes: 94 07 cf 00 06 32 77 17 ec cd 60 01 0b
+[2025-04-11T02:02:24.158Z] Decoded MessagePack: [7,1744336944156000,1,11]
+[2025-04-11T02:02:24.158Z] Value update: id=7, type=1, value=11
+[2025-04-11T02:02:24.158Z] Value updated for topic /server/counter: 11
+[2025-04-11T02:02:25.158Z] Binary message received, length: 13
+[2025-04-11T02:02:25.159Z] First 32 bytes: 94 07 cf 00 06 32 77 17 fc 17 70 01 0c
+[2025-04-11T02:02:25.159Z] Decoded MessagePack: [7,1744336945158000,1,12]
+[2025-04-11T02:02:25.159Z] Value update: id=7, type=1, value=12
+[2025-04-11T02:02:25.159Z] Value updated for topic /server/counter: 12
+[2025-04-11T02:02:26.168Z] Binary message received, length: 13
+[2025-04-11T02:02:26.169Z] First 32 bytes: 94 07 cf 00 06 32 77 18 0b 7c d8 01 0d
+[2025-04-11T02:02:26.169Z] Decoded MessagePack: [7,1744336946167000,1,13]
+[2025-04-11T02:02:26.170Z] Value update: id=7, type=1, value=13
+[2025-04-11T02:02:26.170Z] Value updated for topic /server/counter: 13
+[2025-04-11T02:02:27.177Z] Binary message received, length: 13
+[2025-04-11T02:02:27.177Z] First 32 bytes: 94 07 cf 00 06 32 77 18 1a e2 40 01 0e
+[2025-04-11T02:02:27.177Z] Decoded MessagePack: [7,1744336947176000,1,14]
+[2025-04-11T02:02:27.178Z] Value update: id=7, type=1, value=14
+[2025-04-11T02:02:27.178Z] Value updated for topic /server/counter: 14
+[2025-04-11T02:02:28.190Z] Binary message received, length: 13
+[2025-04-11T02:02:28.190Z] First 32 bytes: 94 07 cf 00 06 32 77 18 2a 5b 30 01 0f
+[2025-04-11T02:02:28.191Z] Decoded MessagePack: [7,1744336948190000,1,15]
+[2025-04-11T02:02:28.191Z] Value update: id=7, type=1, value=15
+[2025-04-11T02:02:28.191Z] Value updated for topic /server/counter: 15
+[2025-04-11T02:02:29.203Z] Binary message received, length: 13
+[2025-04-11T02:02:29.204Z] First 32 bytes: 94 07 cf 00 06 32 77 18 39 d0 38 01 10
+[2025-04-11T02:02:29.204Z] Decoded MessagePack: [7,1744336949203000,1,16]
+[2025-04-11T02:02:29.204Z] Value update: id=7, type=1, value=16
+[2025-04-11T02:02:29.205Z] Value updated for topic /server/counter: 16
+[2025-04-11T02:02:30.215Z] Binary message received, length: 13
+[2025-04-11T02:02:30.216Z] First 32 bytes: 94 07 cf 00 06 32 77 18 49 41 58 01 11
+[2025-04-11T02:02:30.216Z] Decoded MessagePack: [7,1744336950215000,1,17]
+[2025-04-11T02:02:30.216Z] Value update: id=7, type=1, value=17
+[2025-04-11T02:02:30.216Z] Value updated for topic /server/counter: 17
+[2025-04-11T02:02:31.215Z] Binary message received, length: 13
+[2025-04-11T02:02:31.216Z] First 32 bytes: 94 07 cf 00 06 32 77 18 58 83 98 01 12
+[2025-04-11T02:02:31.216Z] Decoded MessagePack: [7,1744336951215000,1,18]
+[2025-04-11T02:02:31.216Z] Value update: id=7, type=1, value=18
+[2025-04-11T02:02:31.217Z] Value updated for topic /server/counter: 18
+[2025-04-11T02:02:32.227Z] Binary message received, length: 13
+[2025-04-11T02:02:32.227Z] First 32 bytes: 94 07 cf 00 06 32 77 18 67 f0 d0 01 13
+[2025-04-11T02:02:32.227Z] Decoded MessagePack: [7,1744336952226000,1,19]
+[2025-04-11T02:02:32.228Z] Value update: id=7, type=1, value=19
+[2025-04-11T02:02:32.228Z] Value updated for topic /server/counter: 19
+[2025-04-11T02:02:33.240Z] Binary message received, length: 13
+[2025-04-11T02:02:33.240Z] First 32 bytes: 94 07 cf 00 06 32 77 18 77 69 c0 01 14
+[2025-04-11T02:02:33.240Z] Decoded MessagePack: [7,1744336953240000,1,20]
+[2025-04-11T02:02:33.240Z] Value update: id=7, type=1, value=20
+[2025-04-11T02:02:33.241Z] Value updated for topic /server/counter: 20
+[2025-04-11T02:02:34.243Z] Binary message received, length: 13
+[2025-04-11T02:02:34.244Z] First 32 bytes: 94 07 cf 00 06 32 77 18 86 b7 b8 01 15
+[2025-04-11T02:02:34.244Z] Decoded MessagePack: [7,1744336954243000,1,21]
+[2025-04-11T02:02:34.244Z] Value update: id=7, type=1, value=21
+[2025-04-11T02:02:34.244Z] Value updated for topic /server/counter: 21
+[2025-04-11T02:02:34.675Z] Binary message received, length: 143
+[2025-04-11T02:02:34.675Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.675Z] Failed to decode MessagePack: RangeError: Extra 142 of 143 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.675Z] As UTF-8: [{"method":"announce","params":{"name":"/client/boolean","id":8,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:02:34.675Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/boolean","id":8,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:02:34.675Z] Control message: announce
+[2025-04-11T02:02:34.675Z] Topic announced: /client/boolean (boolean) with ID 8
+[2025-04-11T02:02:34.676Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:34.676Z] Binary message received, length: 141
+[2025-04-11T02:02:34.676Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.676Z] Failed to decode MessagePack: RangeError: Extra 140 of 141 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.676Z] As UTF-8: [{"method":"announce","params":{"name":"/client/number","id":9,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:02:34.676Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/number","id":9,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:02:34.676Z] Control message: announce
+[2025-04-11T02:02:34.676Z] Topic announced: /client/number (double) with ID 9
+[2025-04-11T02:02:34.676Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:34.677Z] Binary message received, length: 142
+[2025-04-11T02:02:34.677Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.677Z] Failed to decode MessagePack: RangeError: Extra 141 of 142 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.677Z] As UTF-8: [{"method":"announce","params":{"name":"/client/string","id":10,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:02:34.677Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/string","id":10,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:02:34.678Z] Control message: announce
+[2025-04-11T02:02:34.678Z] Topic announced: /client/string (string) with ID 10
+[2025-04-11T02:02:34.678Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:34.678Z] Binary message received, length: 152
+[2025-04-11T02:02:34.678Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.678Z] Failed to decode MessagePack: RangeError: Extra 151 of 152 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.678Z] As UTF-8: [{"method":"announce","params":{"name":"/client/boolean_array","id":11,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:02:34.678Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/boolean_array","id":11,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:02:34.679Z] Control message: announce
+[2025-04-11T02:02:34.679Z] Topic announced: /client/boolean_array (boolean[]) with ID 11
+[2025-04-11T02:02:34.679Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:34.679Z] Binary message received, length: 150
+[2025-04-11T02:02:34.679Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.679Z] Failed to decode MessagePack: RangeError: Extra 149 of 150 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.679Z] As UTF-8: [{"method":"announce","params":{"name":"/client/number_array","id":12,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:02:34.679Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/number_array","id":12,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:02:34.679Z] Control message: announce
+[2025-04-11T02:02:34.679Z] Topic announced: /client/number_array (double[]) with ID 12
+[2025-04-11T02:02:34.680Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:34.680Z] Binary message received, length: 150
+[2025-04-11T02:02:34.680Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.680Z] Failed to decode MessagePack: RangeError: Extra 149 of 150 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.680Z] As UTF-8: [{"method":"announce","params":{"name":"/client/string_array","id":13,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:02:34.681Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/string_array","id":13,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:02:34.681Z] Control message: announce
+[2025-04-11T02:02:34.681Z] Topic announced: /client/string_array (string[]) with ID 13
+[2025-04-11T02:02:34.681Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:34.681Z] Binary message received, length: 143
+[2025-04-11T02:02:34.681Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:02:34.682Z] Failed to decode MessagePack: RangeError: Extra 142 of 143 byte(s) found at buffer[1]
+[2025-04-11T02:02:34.682Z] As UTF-8: [{"method":"announce","params":{"name":"/client/counter","id":14,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:02:34.682Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/counter","id":14,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:02:34.682Z] Control message: announce
+[2025-04-11T02:02:34.682Z] Topic announced: /client/counter (double) with ID 14
+[2025-04-11T02:02:34.682Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:02:35.244Z] Binary message received, length: 13
+[2025-04-11T02:02:35.244Z] First 32 bytes: 94 07 cf 00 06 32 77 18 95 fd e0 01 16
+[2025-04-11T02:02:35.244Z] Decoded MessagePack: [7,1744336955244000,1,22]
+[2025-04-11T02:02:35.244Z] Value update: id=7, type=1, value=22
+[2025-04-11T02:02:35.245Z] Value updated for topic /server/counter: 22
+[2025-04-11T02:02:36.259Z] Binary message received, length: 13
+[2025-04-11T02:02:36.259Z] First 32 bytes: 94 07 cf 00 06 32 77 18 a5 76 d0 01 17
+[2025-04-11T02:02:36.259Z] Decoded MessagePack: [7,1744336956258000,1,23]
+[2025-04-11T02:02:36.260Z] Value update: id=7, type=1, value=23
+[2025-04-11T02:02:36.260Z] Value updated for topic /server/counter: 23
+[2025-04-11T02:02:37.267Z] Binary message received, length: 13
+[2025-04-11T02:02:37.268Z] First 32 bytes: 94 07 cf 00 06 32 77 18 b4 dc 38 01 18
+[2025-04-11T02:02:37.268Z] Decoded MessagePack: [7,1744336957267000,1,24]
+[2025-04-11T02:02:37.268Z] Value update: id=7, type=1, value=24
+[2025-04-11T02:02:37.269Z] Value updated for topic /server/counter: 24
+[2025-04-11T02:02:38.275Z] Binary message received, length: 13
+[2025-04-11T02:02:38.275Z] First 32 bytes: 94 07 cf 00 06 32 77 18 c4 3d b8 01 19
+[2025-04-11T02:02:38.276Z] Decoded MessagePack: [7,1744336958275000,1,25]
+[2025-04-11T02:02:38.276Z] Value update: id=7, type=1, value=25
+[2025-04-11T02:02:38.276Z] Value updated for topic /server/counter: 25
+[2025-04-11T02:02:39.288Z] Binary message received, length: 13
+[2025-04-11T02:02:39.289Z] First 32 bytes: 94 07 cf 00 06 32 77 18 d3 b2 c0 01 1a
+[2025-04-11T02:02:39.289Z] Decoded MessagePack: [7,1744336959288000,1,26]
+[2025-04-11T02:02:39.289Z] Value update: id=7, type=1, value=26
+[2025-04-11T02:02:39.289Z] Value updated for topic /server/counter: 26
+[2025-04-11T02:02:40.296Z] Binary message received, length: 13
+[2025-04-11T02:02:40.296Z] First 32 bytes: 94 07 cf 00 06 32 77 18 e3 10 58 01 1b
+[2025-04-11T02:02:40.297Z] Decoded MessagePack: [7,1744336960295000,1,27]
+[2025-04-11T02:02:40.297Z] Value update: id=7, type=1, value=27
+[2025-04-11T02:02:40.298Z] Value updated for topic /server/counter: 27
+[2025-04-11T02:02:41.298Z] Binary message received, length: 13
+[2025-04-11T02:02:41.298Z] First 32 bytes: 94 07 cf 00 06 32 77 18 f2 56 80 01 1c
+[2025-04-11T02:02:41.299Z] Decoded MessagePack: [7,1744336961296000,1,28]
+[2025-04-11T02:02:41.299Z] Value update: id=7, type=1, value=28
+[2025-04-11T02:02:41.299Z] Value updated for topic /server/counter: 28
+[2025-04-11T02:02:42.298Z] Binary message received, length: 13
+[2025-04-11T02:02:42.299Z] First 32 bytes: 94 07 cf 00 06 32 77 19 01 9c a8 01 1d
+[2025-04-11T02:02:42.299Z] Decoded MessagePack: [7,1744336962297000,1,29]
+[2025-04-11T02:02:42.299Z] Value update: id=7, type=1, value=29
+[2025-04-11T02:02:42.299Z] Value updated for topic /server/counter: 29
+[2025-04-11T02:02:43.311Z] Binary message received, length: 13
+[2025-04-11T02:02:43.312Z] First 32 bytes: 94 07 cf 00 06 32 77 19 11 15 98 01 1e
+[2025-04-11T02:02:43.312Z] Decoded MessagePack: [7,1744336963311000,1,30]
+[2025-04-11T02:02:43.312Z] Value update: id=7, type=1, value=30
+[2025-04-11T02:02:43.312Z] Value updated for topic /server/counter: 30
+[2025-04-11T02:02:44.312Z] Binary message received, length: 13
+[2025-04-11T02:02:44.313Z] First 32 bytes: 94 07 cf 00 06 32 77 19 20 5b c0 01 1f
+[2025-04-11T02:02:44.313Z] Decoded MessagePack: [7,1744336964312000,1,31]
+[2025-04-11T02:02:44.313Z] Value update: id=7, type=1, value=31
+[2025-04-11T02:02:44.313Z] Value updated for topic /server/counter: 31
+[2025-04-11T02:02:45.323Z] Binary message received, length: 13
+[2025-04-11T02:02:45.324Z] First 32 bytes: 94 07 cf 00 06 32 77 19 2f c5 10 01 20
+[2025-04-11T02:02:45.325Z] Decoded MessagePack: [7,1744336965322000,1,32]
+[2025-04-11T02:02:45.325Z] Value update: id=7, type=1, value=32
+[2025-04-11T02:02:45.325Z] Value updated for topic /server/counter: 32
+[2025-04-11T02:02:46.327Z] Binary message received, length: 13
+[2025-04-11T02:02:46.328Z] First 32 bytes: 94 07 cf 00 06 32 77 19 3f 1a d8 01 21
+[2025-04-11T02:02:46.328Z] Decoded MessagePack: [7,1744336966327000,1,33]
+[2025-04-11T02:02:46.328Z] Value update: id=7, type=1, value=33
+[2025-04-11T02:02:46.329Z] Value updated for topic /server/counter: 33
+[2025-04-11T02:02:47.331Z] Binary message received, length: 13
+[2025-04-11T02:02:47.331Z] First 32 bytes: 94 07 cf 00 06 32 77 19 4e 68 d0 01 22
+[2025-04-11T02:02:47.332Z] Decoded MessagePack: [7,1744336967330000,1,34]
+[2025-04-11T02:02:47.332Z] Value update: id=7, type=1, value=34
+[2025-04-11T02:02:47.332Z] Value updated for topic /server/counter: 34
+[2025-04-11T02:02:48.338Z] Binary message received, length: 13
+[2025-04-11T02:02:48.338Z] First 32 bytes: 94 07 cf 00 06 32 77 19 5d ca 50 01 23
+[2025-04-11T02:02:48.338Z] Decoded MessagePack: [7,1744336968338000,1,35]
+[2025-04-11T02:02:48.339Z] Value update: id=7, type=1, value=35
+[2025-04-11T02:02:48.339Z] Value updated for topic /server/counter: 35
+[2025-04-11T02:02:49.342Z] Binary message received, length: 13
+[2025-04-11T02:02:49.342Z] First 32 bytes: 94 07 cf 00 06 32 77 19 6d 18 48 01 24
+[2025-04-11T02:02:49.342Z] Decoded MessagePack: [7,1744336969341000,1,36]
+[2025-04-11T02:02:49.343Z] Value update: id=7, type=1, value=36
+[2025-04-11T02:02:49.343Z] Value updated for topic /server/counter: 36
+[2025-04-11T02:02:50.346Z] Binary message received, length: 13
+[2025-04-11T02:02:50.346Z] First 32 bytes: 94 07 cf 00 06 32 77 19 7c 6a 28 01 25
+[2025-04-11T02:02:50.346Z] Decoded MessagePack: [7,1744336970345000,1,37]
+[2025-04-11T02:02:50.346Z] Value update: id=7, type=1, value=37
+[2025-04-11T02:02:50.346Z] Value updated for topic /server/counter: 37
+[2025-04-11T02:02:51.346Z] Binary message received, length: 13
+[2025-04-11T02:02:51.347Z] First 32 bytes: 94 07 cf 00 06 32 77 19 8b b0 50 01 26
+[2025-04-11T02:02:51.347Z] Decoded MessagePack: [7,1744336971346000,1,38]
+[2025-04-11T02:02:51.347Z] Value update: id=7, type=1, value=38
+[2025-04-11T02:02:51.348Z] Value updated for topic /server/counter: 38
+[2025-04-11T02:02:52.353Z] Binary message received, length: 13
+[2025-04-11T02:02:52.354Z] First 32 bytes: 94 07 cf 00 06 32 77 19 9b 0d e8 01 27
+[2025-04-11T02:02:52.354Z] Decoded MessagePack: [7,1744336972353000,1,39]
+[2025-04-11T02:02:52.354Z] Value update: id=7, type=1, value=39
+[2025-04-11T02:02:52.354Z] Value updated for topic /server/counter: 39
+[2025-04-11T02:02:53.355Z] Binary message received, length: 13
+[2025-04-11T02:02:53.355Z] First 32 bytes: 94 07 cf 00 06 32 77 19 aa 57 f8 01 28
+[2025-04-11T02:02:53.355Z] Decoded MessagePack: [7,1744336973355000,1,40]
+[2025-04-11T02:02:53.355Z] Value update: id=7, type=1, value=40
+[2025-04-11T02:02:53.355Z] Value updated for topic /server/counter: 40
+[2025-04-11T02:02:54.358Z] Binary message received, length: 13
+[2025-04-11T02:02:54.359Z] First 32 bytes: 94 07 cf 00 06 32 77 19 b9 a5 f0 01 29
+[2025-04-11T02:02:54.359Z] Decoded MessagePack: [7,1744336974358000,1,41]
+[2025-04-11T02:02:54.360Z] Value update: id=7, type=1, value=41
+[2025-04-11T02:02:54.360Z] Value updated for topic /server/counter: 41
+[2025-04-11T02:02:55.359Z] Binary message received, length: 13
+[2025-04-11T02:02:55.359Z] First 32 bytes: 94 07 cf 00 06 32 77 19 c8 e8 30 01 2a
+[2025-04-11T02:02:55.359Z] Decoded MessagePack: [7,1744336975358000,1,42]
+[2025-04-11T02:02:55.360Z] Value update: id=7, type=1, value=42
+[2025-04-11T02:02:55.360Z] Value updated for topic /server/counter: 42
+[2025-04-11T02:02:56.365Z] Binary message received, length: 13
+[2025-04-11T02:02:56.366Z] First 32 bytes: 94 07 cf 00 06 32 77 19 d8 45 c8 01 2b
+[2025-04-11T02:02:56.366Z] Decoded MessagePack: [7,1744336976365000,1,43]
+[2025-04-11T02:02:56.366Z] Value update: id=7, type=1, value=43
+[2025-04-11T02:02:56.367Z] Value updated for topic /server/counter: 43
+[2025-04-11T02:02:57.369Z] Binary message received, length: 13
+[2025-04-11T02:02:57.369Z] First 32 bytes: 94 07 cf 00 06 32 77 19 e7 93 c0 01 2c
+[2025-04-11T02:02:57.369Z] Decoded MessagePack: [7,1744336977368000,1,44]
+[2025-04-11T02:02:57.369Z] Value update: id=7, type=1, value=44
+[2025-04-11T02:02:57.370Z] Value updated for topic /server/counter: 44
+[2025-04-11T02:02:58.371Z] Binary message received, length: 13
+[2025-04-11T02:02:58.371Z] First 32 bytes: 94 07 cf 00 06 32 77 19 f6 dd d0 01 2d
+[2025-04-11T02:02:58.371Z] Decoded MessagePack: [7,1744336978370000,1,45]
+[2025-04-11T02:02:58.371Z] Value update: id=7, type=1, value=45
+[2025-04-11T02:02:58.371Z] Value updated for topic /server/counter: 45
+[2025-04-11T02:02:59.373Z] Binary message received, length: 13
+[2025-04-11T02:02:59.374Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 06 2b c8 01 2e
+[2025-04-11T02:02:59.374Z] Decoded MessagePack: [7,1744336979373000,1,46]
+[2025-04-11T02:02:59.375Z] Value update: id=7, type=1, value=46
+[2025-04-11T02:02:59.375Z] Value updated for topic /server/counter: 46
+[2025-04-11T02:03:00.377Z] Binary message received, length: 13
+[2025-04-11T02:03:00.377Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 15 79 c0 01 2f
+[2025-04-11T02:03:00.378Z] Decoded MessagePack: [7,1744336980376000,1,47]
+[2025-04-11T02:03:00.378Z] Value update: id=7, type=1, value=47
+[2025-04-11T02:03:00.378Z] Value updated for topic /server/counter: 47
+[2025-04-11T02:03:01.380Z] Binary message received, length: 13
+[2025-04-11T02:03:01.380Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 24 c7 b8 01 30
+[2025-04-11T02:03:01.380Z] Decoded MessagePack: [7,1744336981379000,1,48]
+[2025-04-11T02:03:01.380Z] Value update: id=7, type=1, value=48
+[2025-04-11T02:03:01.380Z] Value updated for topic /server/counter: 48
+[2025-04-11T02:03:02.383Z] Binary message received, length: 13
+[2025-04-11T02:03:02.383Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 34 15 b0 01 31
+[2025-04-11T02:03:02.383Z] Decoded MessagePack: [7,1744336982382000,1,49]
+[2025-04-11T02:03:02.383Z] Value update: id=7, type=1, value=49
+[2025-04-11T02:03:02.384Z] Value updated for topic /server/counter: 49
+[2025-04-11T02:03:03.386Z] Binary message received, length: 13
+[2025-04-11T02:03:03.387Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 43 67 90 01 32
+[2025-04-11T02:03:03.387Z] Decoded MessagePack: [7,1744336983386000,1,50]
+[2025-04-11T02:03:03.387Z] Value update: id=7, type=1, value=50
+[2025-04-11T02:03:03.387Z] Value updated for topic /server/counter: 50
+[2025-04-11T02:03:04.388Z] Binary message received, length: 13
+[2025-04-11T02:03:04.388Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 52 b1 a0 01 33
+[2025-04-11T02:03:04.389Z] Decoded MessagePack: [7,1744336984388000,1,51]
+[2025-04-11T02:03:04.389Z] Value update: id=7, type=1, value=51
+[2025-04-11T02:03:04.389Z] Value updated for topic /server/counter: 51
+[2025-04-11T02:03:05.394Z] Binary message received, length: 13
+[2025-04-11T02:03:05.394Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 62 07 68 01 34
+[2025-04-11T02:03:05.394Z] Decoded MessagePack: [7,1744336985393000,1,52]
+[2025-04-11T02:03:05.394Z] Value update: id=7, type=1, value=52
+[2025-04-11T02:03:05.395Z] Value updated for topic /server/counter: 52
+[2025-04-11T02:03:06.398Z] Binary message received, length: 13
+[2025-04-11T02:03:06.398Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 71 59 48 01 35
+[2025-04-11T02:03:06.398Z] Decoded MessagePack: [7,1744336986397000,1,53]
+[2025-04-11T02:03:06.399Z] Value update: id=7, type=1, value=53
+[2025-04-11T02:03:06.399Z] Value updated for topic /server/counter: 53
+[2025-04-11T02:03:07.398Z] Binary message received, length: 13
+[2025-04-11T02:03:07.398Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 80 9b 88 01 36
+[2025-04-11T02:03:07.398Z] Decoded MessagePack: [7,1744336987397000,1,54]
+[2025-04-11T02:03:07.398Z] Value update: id=7, type=1, value=54
+[2025-04-11T02:03:07.399Z] Value updated for topic /server/counter: 54
+[2025-04-11T02:03:08.405Z] Binary message received, length: 13
+[2025-04-11T02:03:08.405Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 8f f9 20 01 37
+[2025-04-11T02:03:08.405Z] Decoded MessagePack: [7,1744336988404000,1,55]
+[2025-04-11T02:03:08.405Z] Value update: id=7, type=1, value=55
+[2025-04-11T02:03:08.406Z] Value updated for topic /server/counter: 55
+[2025-04-11T02:03:09.409Z] Binary message received, length: 13
+[2025-04-11T02:03:09.410Z] First 32 bytes: 94 07 cf 00 06 32 77 1a 9f 4e e8 01 38
+[2025-04-11T02:03:09.411Z] Decoded MessagePack: [7,1744336989409000,1,56]
+[2025-04-11T02:03:09.411Z] Value update: id=7, type=1, value=56
+[2025-04-11T02:03:09.412Z] Value updated for topic /server/counter: 56
+[2025-04-11T02:03:10.411Z] Binary message received, length: 13
+[2025-04-11T02:03:10.412Z] First 32 bytes: 94 07 cf 00 06 32 77 1a ae 95 10 01 39
+[2025-04-11T02:03:10.412Z] Decoded MessagePack: [7,1744336990410000,1,57]
+[2025-04-11T02:03:10.412Z] Value update: id=7, type=1, value=57
+[2025-04-11T02:03:10.412Z] Value updated for topic /server/counter: 57
+[2025-04-11T02:03:11.413Z] Binary message received, length: 13
+[2025-04-11T02:03:11.414Z] First 32 bytes: 94 07 cf 00 06 32 77 1a bd e3 08 01 3a
+[2025-04-11T02:03:11.414Z] Decoded MessagePack: [7,1744336991413000,1,58]
+[2025-04-11T02:03:11.414Z] Value update: id=7, type=1, value=58
+[2025-04-11T02:03:11.415Z] Value updated for topic /server/counter: 58
+[2025-04-11T02:03:12.414Z] Binary message received, length: 13
+[2025-04-11T02:03:12.415Z] First 32 bytes: 94 07 cf 00 06 32 77 1a cd 29 30 01 3b
+[2025-04-11T02:03:12.415Z] Decoded MessagePack: [7,1744336992414000,1,59]
+[2025-04-11T02:03:12.415Z] Value update: id=7, type=1, value=59
+[2025-04-11T02:03:12.416Z] Value updated for topic /server/counter: 59
+[2025-04-11T02:03:13.417Z] Binary message received, length: 13
+[2025-04-11T02:03:13.418Z] First 32 bytes: 94 07 cf 00 06 32 77 1a dc 77 28 01 3c
+[2025-04-11T02:03:13.418Z] Decoded MessagePack: [7,1744336993417000,1,60]
+[2025-04-11T02:03:13.419Z] Value update: id=7, type=1, value=60
+[2025-04-11T02:03:13.419Z] Value updated for topic /server/counter: 60
+[2025-04-11T02:03:14.426Z] Binary message received, length: 13
+[2025-04-11T02:03:14.427Z] First 32 bytes: 94 07 cf 00 06 32 77 1a eb d4 c0 01 3d
+[2025-04-11T02:03:14.427Z] Decoded MessagePack: [7,1744336994424000,1,61]
+[2025-04-11T02:03:14.428Z] Value update: id=7, type=1, value=61
+[2025-04-11T02:03:14.428Z] Value updated for topic /server/counter: 61
+[2025-04-11T02:03:15.438Z] Binary message received, length: 13
+[2025-04-11T02:03:15.438Z] First 32 bytes: 94 07 cf 00 06 32 77 1a fb 49 c8 01 3e
+[2025-04-11T02:03:15.438Z] Decoded MessagePack: [7,1744336995437000,1,62]
+[2025-04-11T02:03:15.439Z] Value update: id=7, type=1, value=62
+[2025-04-11T02:03:15.439Z] Value updated for topic /server/counter: 62
+[2025-04-11T02:03:16.441Z] Binary message received, length: 13
+[2025-04-11T02:03:16.441Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 0a 97 c0 01 3f
+[2025-04-11T02:03:16.441Z] Decoded MessagePack: [7,1744336996440000,1,63]
+[2025-04-11T02:03:16.442Z] Value update: id=7, type=1, value=63
+[2025-04-11T02:03:16.442Z] Value updated for topic /server/counter: 63
+[2025-04-11T02:03:17.446Z] Binary message received, length: 13
+[2025-04-11T02:03:17.446Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 19 ed 88 01 40
+[2025-04-11T02:03:17.446Z] Decoded MessagePack: [7,1744336997445000,1,64]
+[2025-04-11T02:03:17.446Z] Value update: id=7, type=1, value=64
+[2025-04-11T02:03:17.446Z] Value updated for topic /server/counter: 64
+[2025-04-11T02:03:18.451Z] Binary message received, length: 13
+[2025-04-11T02:03:18.451Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 29 43 50 01 41
+[2025-04-11T02:03:18.451Z] Decoded MessagePack: [7,1744336998450000,1,65]
+[2025-04-11T02:03:18.452Z] Value update: id=7, type=1, value=65
+[2025-04-11T02:03:18.452Z] Value updated for topic /server/counter: 65
+[2025-04-11T02:03:19.456Z] Binary message received, length: 13
+[2025-04-11T02:03:19.457Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 38 9d 00 01 42
+[2025-04-11T02:03:19.457Z] Decoded MessagePack: [7,1744336999456000,1,66]
+[2025-04-11T02:03:19.457Z] Value update: id=7, type=1, value=66
+[2025-04-11T02:03:19.458Z] Value updated for topic /server/counter: 66
+[2025-04-11T02:03:20.462Z] Binary message received, length: 13
+[2025-04-11T02:03:20.463Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 47 f6 b0 01 43
+[2025-04-11T02:03:20.463Z] Decoded MessagePack: [7,1744337000462000,1,67]
+[2025-04-11T02:03:20.463Z] Value update: id=7, type=1, value=67
+[2025-04-11T02:03:20.463Z] Value updated for topic /server/counter: 67
+[2025-04-11T02:03:21.464Z] Binary message received, length: 13
+[2025-04-11T02:03:21.464Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 57 38 f0 01 44
+[2025-04-11T02:03:21.464Z] Decoded MessagePack: [7,1744337001462000,1,68]
+[2025-04-11T02:03:21.465Z] Value update: id=7, type=1, value=68
+[2025-04-11T02:03:21.465Z] Value updated for topic /server/counter: 68
+[2025-04-11T02:03:22.470Z] Binary message received, length: 13
+[2025-04-11T02:03:22.471Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 66 9a 70 01 45
+[2025-04-11T02:03:22.471Z] Decoded MessagePack: [7,1744337002470000,1,69]
+[2025-04-11T02:03:22.471Z] Value update: id=7, type=1, value=69
+[2025-04-11T02:03:22.472Z] Value updated for topic /server/counter: 69
+[2025-04-11T02:03:23.475Z] Binary message received, length: 13
+[2025-04-11T02:03:23.476Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 75 ec 50 01 46
+[2025-04-11T02:03:23.476Z] Decoded MessagePack: [7,1744337003474000,1,70]
+[2025-04-11T02:03:23.476Z] Value update: id=7, type=1, value=70
+[2025-04-11T02:03:23.476Z] Value updated for topic /server/counter: 70
+[2025-04-11T02:03:24.479Z] Binary message received, length: 13
+[2025-04-11T02:03:24.480Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 85 3e 30 01 47
+[2025-04-11T02:03:24.481Z] Decoded MessagePack: [7,1744337004478000,1,71]
+[2025-04-11T02:03:24.481Z] Value update: id=7, type=1, value=71
+[2025-04-11T02:03:24.481Z] Value updated for topic /server/counter: 71
+[2025-04-11T02:03:25.485Z] Binary message received, length: 13
+[2025-04-11T02:03:25.486Z] First 32 bytes: 94 07 cf 00 06 32 77 1b 94 97 e0 01 48
+[2025-04-11T02:03:25.486Z] Decoded MessagePack: [7,1744337005484000,1,72]
+[2025-04-11T02:03:25.487Z] Value update: id=7, type=1, value=72
+[2025-04-11T02:03:25.487Z] Value updated for topic /server/counter: 72
+[2025-04-11T02:03:26.486Z] Binary message received, length: 13
+[2025-04-11T02:03:26.487Z] First 32 bytes: 94 07 cf 00 06 32 77 1b a3 de 08 01 49
+[2025-04-11T02:03:26.487Z] Decoded MessagePack: [7,1744337006485000,1,73]
+[2025-04-11T02:03:26.487Z] Value update: id=7, type=1, value=73
+[2025-04-11T02:03:26.487Z] Value updated for topic /server/counter: 73
+[2025-04-11T02:03:27.496Z] Binary message received, length: 13
+[2025-04-11T02:03:27.496Z] First 32 bytes: 94 07 cf 00 06 32 77 1b b3 47 58 01 4a
+[2025-04-11T02:03:27.497Z] Decoded MessagePack: [7,1744337007495000,1,74]
+[2025-04-11T02:03:27.497Z] Value update: id=7, type=1, value=74
+[2025-04-11T02:03:27.498Z] Value updated for topic /server/counter: 74
+[2025-04-11T02:03:28.500Z] Binary message received, length: 13
+[2025-04-11T02:03:28.500Z] First 32 bytes: 94 07 cf 00 06 32 77 1b c2 99 38 01 4b
+[2025-04-11T02:03:28.500Z] Decoded MessagePack: [7,1744337008499000,1,75]
+[2025-04-11T02:03:28.500Z] Value update: id=7, type=1, value=75
+[2025-04-11T02:03:28.500Z] Value updated for topic /server/counter: 75
+[2025-04-11T02:03:29.504Z] Binary message received, length: 13
+[2025-04-11T02:03:29.504Z] First 32 bytes: 94 07 cf 00 06 32 77 1b d1 ef 00 01 4c
+[2025-04-11T02:03:29.505Z] Decoded MessagePack: [7,1744337009504000,1,76]
+[2025-04-11T02:03:29.505Z] Value update: id=7, type=1, value=76
+[2025-04-11T02:03:29.505Z] Value updated for topic /server/counter: 76
+[2025-04-11T02:03:30.509Z] Binary message received, length: 13
+[2025-04-11T02:03:30.510Z] First 32 bytes: 94 07 cf 00 06 32 77 1b e1 40 e0 01 4d
+[2025-04-11T02:03:30.510Z] Decoded MessagePack: [7,1744337010508000,1,77]
+[2025-04-11T02:03:30.510Z] Value update: id=7, type=1, value=77
+[2025-04-11T02:03:30.511Z] Value updated for topic /server/counter: 77
+[2025-04-11T02:03:31.511Z] Binary message received, length: 13
+[2025-04-11T02:03:31.511Z] First 32 bytes: 94 07 cf 00 06 32 77 1b f0 8e d8 01 4e
+[2025-04-11T02:03:31.512Z] Decoded MessagePack: [7,1744337011511000,1,78]
+[2025-04-11T02:03:31.512Z] Value update: id=7, type=1, value=78
+[2025-04-11T02:03:31.512Z] Value updated for topic /server/counter: 78
+[2025-04-11T02:03:32.516Z] Binary message received, length: 13
+[2025-04-11T02:03:32.516Z] First 32 bytes: 94 07 cf 00 06 32 77 1b ff e0 b8 01 4f
+[2025-04-11T02:03:32.517Z] Decoded MessagePack: [7,1744337012515000,1,79]
+[2025-04-11T02:03:32.517Z] Value update: id=7, type=1, value=79
+[2025-04-11T02:03:32.517Z] Value updated for topic /server/counter: 79
+[2025-04-11T02:03:33.521Z] Binary message received, length: 13
+[2025-04-11T02:03:33.522Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 0f 3a 68 01 50
+[2025-04-11T02:03:33.522Z] Decoded MessagePack: [7,1744337013521000,1,80]
+[2025-04-11T02:03:33.522Z] Value update: id=7, type=1, value=80
+[2025-04-11T02:03:33.522Z] Value updated for topic /server/counter: 80
+[2025-04-11T02:03:34.526Z] Binary message received, length: 13
+[2025-04-11T02:03:34.527Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 1e 90 30 01 51
+[2025-04-11T02:03:34.527Z] Decoded MessagePack: [7,1744337014526000,1,81]
+[2025-04-11T02:03:34.528Z] Value update: id=7, type=1, value=81
+[2025-04-11T02:03:34.528Z] Value updated for topic /server/counter: 81
+[2025-04-11T02:03:35.529Z] Binary message received, length: 13
+[2025-04-11T02:03:35.530Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 2d de 28 01 52
+[2025-04-11T02:03:35.530Z] Decoded MessagePack: [7,1744337015529000,1,82]
+[2025-04-11T02:03:35.530Z] Value update: id=7, type=1, value=82
+[2025-04-11T02:03:35.530Z] Value updated for topic /server/counter: 82
+[2025-04-11T02:03:36.533Z] Binary message received, length: 13
+[2025-04-11T02:03:36.534Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 3d 30 08 01 53
+[2025-04-11T02:03:36.534Z] Decoded MessagePack: [7,1744337016533000,1,83]
+[2025-04-11T02:03:36.534Z] Value update: id=7, type=1, value=83
+[2025-04-11T02:03:36.535Z] Value updated for topic /server/counter: 83
+[2025-04-11T02:03:37.538Z] Binary message received, length: 13
+[2025-04-11T02:03:37.540Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 4c 85 d0 01 54
+[2025-04-11T02:03:37.540Z] Decoded MessagePack: [7,1744337017538000,1,84]
+[2025-04-11T02:03:37.540Z] Value update: id=7, type=1, value=84
+[2025-04-11T02:03:37.541Z] Value updated for topic /server/counter: 84
+[2025-04-11T02:03:38.540Z] Binary message received, length: 13
+[2025-04-11T02:03:38.540Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 5b cb f8 01 55
+[2025-04-11T02:03:38.540Z] Decoded MessagePack: [7,1744337018539000,1,85]
+[2025-04-11T02:03:38.540Z] Value update: id=7, type=1, value=85
+[2025-04-11T02:03:38.540Z] Value updated for topic /server/counter: 85
+[2025-04-11T02:03:39.544Z] Binary message received, length: 13
+[2025-04-11T02:03:39.544Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 6b 1d d8 01 56
+[2025-04-11T02:03:39.545Z] Decoded MessagePack: [7,1744337019543000,1,86]
+[2025-04-11T02:03:39.546Z] Value update: id=7, type=1, value=86
+[2025-04-11T02:03:39.546Z] Value updated for topic /server/counter: 86
+[2025-04-11T02:03:40.546Z] Binary message received, length: 13
+[2025-04-11T02:03:40.546Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 7a 67 e8 01 57
+[2025-04-11T02:03:40.547Z] Decoded MessagePack: [7,1744337020545000,1,87]
+[2025-04-11T02:03:40.547Z] Value update: id=7, type=1, value=87
+[2025-04-11T02:03:40.547Z] Value updated for topic /server/counter: 87
+[2025-04-11T02:03:41.555Z] Binary message received, length: 13
+[2025-04-11T02:03:41.555Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 89 d1 38 01 58
+[2025-04-11T02:03:41.556Z] Decoded MessagePack: [7,1744337021555000,1,88]
+[2025-04-11T02:03:41.556Z] Value update: id=7, type=1, value=88
+[2025-04-11T02:03:41.556Z] Value updated for topic /server/counter: 88
+[2025-04-11T02:03:42.558Z] Binary message received, length: 13
+[2025-04-11T02:03:42.558Z] First 32 bytes: 94 07 cf 00 06 32 77 1c 99 1b 48 01 59
+[2025-04-11T02:03:42.559Z] Decoded MessagePack: [7,1744337022557000,1,89]
+[2025-04-11T02:03:42.559Z] Value update: id=7, type=1, value=89
+[2025-04-11T02:03:42.559Z] Value updated for topic /server/counter: 89
+[2025-04-11T02:03:43.559Z] Binary message received, length: 13
+[2025-04-11T02:03:43.559Z] First 32 bytes: 94 07 cf 00 06 32 77 1c a8 61 70 01 5a
+[2025-04-11T02:03:43.560Z] Decoded MessagePack: [7,1744337023558000,1,90]
+[2025-04-11T02:03:43.560Z] Value update: id=7, type=1, value=90
+[2025-04-11T02:03:43.561Z] Value updated for topic /server/counter: 90
+[2025-04-11T02:03:44.561Z] Binary message received, length: 13
+[2025-04-11T02:03:44.561Z] First 32 bytes: 94 07 cf 00 06 32 77 1c b7 ab 80 01 5b
+[2025-04-11T02:03:44.562Z] Decoded MessagePack: [7,1744337024560000,1,91]
+[2025-04-11T02:03:44.562Z] Value update: id=7, type=1, value=91
+[2025-04-11T02:03:44.562Z] Value updated for topic /server/counter: 91
+[2025-04-11T02:03:45.562Z] Binary message received, length: 13
+[2025-04-11T02:03:45.563Z] First 32 bytes: 94 07 cf 00 06 32 77 1c c6 f5 90 01 5c
+[2025-04-11T02:03:45.563Z] Decoded MessagePack: [7,1744337025562000,1,92]
+[2025-04-11T02:03:45.563Z] Value update: id=7, type=1, value=92
+[2025-04-11T02:03:45.564Z] Value updated for topic /server/counter: 92
+[2025-04-11T02:03:46.565Z] Binary message received, length: 13
+[2025-04-11T02:03:46.565Z] First 32 bytes: 94 07 cf 00 06 32 77 1c d6 3f a0 01 5d
+[2025-04-11T02:03:46.565Z] Decoded MessagePack: [7,1744337026564000,1,93]
+[2025-04-11T02:03:46.566Z] Value update: id=7, type=1, value=93
+[2025-04-11T02:03:46.566Z] Value updated for topic /server/counter: 93
+[2025-04-11T02:03:47.567Z] Binary message received, length: 13
+[2025-04-11T02:03:47.567Z] First 32 bytes: 94 07 cf 00 06 32 77 1c e5 89 b0 01 5e
+[2025-04-11T02:03:47.567Z] Decoded MessagePack: [7,1744337027566000,1,94]
+[2025-04-11T02:03:47.568Z] Value update: id=7, type=1, value=94
+[2025-04-11T02:03:47.568Z] Value updated for topic /server/counter: 94
+[2025-04-11T02:03:48.570Z] Binary message received, length: 13
+[2025-04-11T02:03:48.570Z] First 32 bytes: 94 07 cf 00 06 32 77 1c f4 d7 a8 01 5f
+[2025-04-11T02:03:48.571Z] Decoded MessagePack: [7,1744337028569000,1,95]
+[2025-04-11T02:03:48.571Z] Value update: id=7, type=1, value=95
+[2025-04-11T02:03:48.571Z] Value updated for topic /server/counter: 95
+[2025-04-11T02:03:49.571Z] Binary message received, length: 13
+[2025-04-11T02:03:49.571Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 04 1d d0 01 60
+[2025-04-11T02:03:49.571Z] Decoded MessagePack: [7,1744337029570000,1,96]
+[2025-04-11T02:03:49.572Z] Value update: id=7, type=1, value=96
+[2025-04-11T02:03:49.572Z] Value updated for topic /server/counter: 96
+[2025-04-11T02:03:50.573Z] Binary message received, length: 13
+[2025-04-11T02:03:50.573Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 13 6b c8 01 61
+[2025-04-11T02:03:50.574Z] Decoded MessagePack: [7,1744337030573000,1,97]
+[2025-04-11T02:03:50.574Z] Value update: id=7, type=1, value=97
+[2025-04-11T02:03:50.574Z] Value updated for topic /server/counter: 97
+[2025-04-11T02:03:51.577Z] Binary message received, length: 13
+[2025-04-11T02:03:51.577Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 22 b9 c0 01 62
+[2025-04-11T02:03:51.577Z] Decoded MessagePack: [7,1744337031576000,1,98]
+[2025-04-11T02:03:51.577Z] Value update: id=7, type=1, value=98
+[2025-04-11T02:03:51.577Z] Value updated for topic /server/counter: 98
+[2025-04-11T02:03:52.580Z] Binary message received, length: 13
+[2025-04-11T02:03:52.581Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 32 0b a0 01 63
+[2025-04-11T02:03:52.581Z] Decoded MessagePack: [7,1744337032580000,1,99]
+[2025-04-11T02:03:52.582Z] Value update: id=7, type=1, value=99
+[2025-04-11T02:03:52.582Z] Value updated for topic /server/counter: 99
+[2025-04-11T02:03:53.582Z] Binary message received, length: 13
+[2025-04-11T02:03:53.582Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 41 51 c8 01 64
+[2025-04-11T02:03:53.582Z] Decoded MessagePack: [7,1744337033581000,1,100]
+[2025-04-11T02:03:53.582Z] Value update: id=7, type=1, value=100
+[2025-04-11T02:03:53.582Z] Value updated for topic /server/counter: 100
+[2025-04-11T02:03:54.583Z] Binary message received, length: 13
+[2025-04-11T02:03:54.584Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 50 9b d8 01 65
+[2025-04-11T02:03:54.584Z] Decoded MessagePack: [7,1744337034583000,1,101]
+[2025-04-11T02:03:54.584Z] Value update: id=7, type=1, value=101
+[2025-04-11T02:03:54.584Z] Value updated for topic /server/counter: 101
+[2025-04-11T02:03:55.586Z] Binary message received, length: 13
+[2025-04-11T02:03:55.587Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 5f e9 d0 01 66
+[2025-04-11T02:03:55.587Z] Decoded MessagePack: [7,1744337035586000,1,102]
+[2025-04-11T02:03:55.588Z] Value update: id=7, type=1, value=102
+[2025-04-11T02:03:55.588Z] Value updated for topic /server/counter: 102
+[2025-04-11T02:03:56.586Z] Binary message received, length: 13
+[2025-04-11T02:03:56.587Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 6f 2c 10 01 67
+[2025-04-11T02:03:56.587Z] Decoded MessagePack: [7,1744337036586000,1,103]
+[2025-04-11T02:03:56.587Z] Value update: id=7, type=1, value=103
+[2025-04-11T02:03:56.587Z] Value updated for topic /server/counter: 103
+[2025-04-11T02:03:57.588Z] Binary message received, length: 13
+[2025-04-11T02:03:57.589Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 7e 76 20 01 68
+[2025-04-11T02:03:57.589Z] Decoded MessagePack: [7,1744337037588000,1,104]
+[2025-04-11T02:03:57.589Z] Value update: id=7, type=1, value=104
+[2025-04-11T02:03:57.589Z] Value updated for topic /server/counter: 104
+[2025-04-11T02:03:58.591Z] Binary message received, length: 13
+[2025-04-11T02:03:58.591Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 8d c0 30 01 69
+[2025-04-11T02:03:58.591Z] Decoded MessagePack: [7,1744337038590000,1,105]
+[2025-04-11T02:03:58.591Z] Value update: id=7, type=1, value=105
+[2025-04-11T02:03:58.591Z] Value updated for topic /server/counter: 105
+[2025-04-11T02:03:59.593Z] Binary message received, length: 13
+[2025-04-11T02:03:59.593Z] First 32 bytes: 94 07 cf 00 06 32 77 1d 9d 0e 28 01 6a
+[2025-04-11T02:03:59.594Z] Decoded MessagePack: [7,1744337039593000,1,106]
+[2025-04-11T02:03:59.594Z] Value update: id=7, type=1, value=106
+[2025-04-11T02:03:59.594Z] Value updated for topic /server/counter: 106
+[2025-04-11T02:04:00.594Z] Binary message received, length: 13
+[2025-04-11T02:04:00.596Z] First 32 bytes: 94 07 cf 00 06 32 77 1d ac 50 68 01 6b
+[2025-04-11T02:04:00.596Z] Decoded MessagePack: [7,1744337040593000,1,107]
+[2025-04-11T02:04:00.597Z] Value update: id=7, type=1, value=107
+[2025-04-11T02:04:00.597Z] Value updated for topic /server/counter: 107
+[2025-04-11T02:04:01.595Z] Binary message received, length: 13
+[2025-04-11T02:04:01.596Z] First 32 bytes: 94 07 cf 00 06 32 77 1d bb 9e 60 01 6c
+[2025-04-11T02:04:01.596Z] Decoded MessagePack: [7,1744337041596000,1,108]
+[2025-04-11T02:04:01.596Z] Value update: id=7, type=1, value=108
+[2025-04-11T02:04:01.597Z] Value updated for topic /server/counter: 108
+[2025-04-11T02:04:02.597Z] Binary message received, length: 13
+[2025-04-11T02:04:02.597Z] First 32 bytes: 94 07 cf 00 06 32 77 1d ca e4 88 01 6d
+[2025-04-11T02:04:02.597Z] Decoded MessagePack: [7,1744337042597000,1,109]
+[2025-04-11T02:04:02.597Z] Value update: id=7, type=1, value=109
+[2025-04-11T02:04:02.598Z] Value updated for topic /server/counter: 109
+[2025-04-11T02:04:03.600Z] Binary message received, length: 13
+[2025-04-11T02:04:03.601Z] First 32 bytes: 94 07 cf 00 06 32 77 1d da 36 68 01 6e
+[2025-04-11T02:04:03.601Z] Decoded MessagePack: [7,1744337043601000,1,110]
+[2025-04-11T02:04:03.602Z] Value update: id=7, type=1, value=110
+[2025-04-11T02:04:03.602Z] Value updated for topic /server/counter: 110
+[2025-04-11T02:04:04.602Z] Binary message received, length: 13
+[2025-04-11T02:04:04.602Z] First 32 bytes: 94 07 cf 00 06 32 77 1d e9 7c 90 01 6f
+[2025-04-11T02:04:04.602Z] Decoded MessagePack: [7,1744337044602000,1,111]
+[2025-04-11T02:04:04.603Z] Value update: id=7, type=1, value=111
+[2025-04-11T02:04:04.603Z] Value updated for topic /server/counter: 111
+[2025-04-11T02:04:05.605Z] Binary message received, length: 13
+[2025-04-11T02:04:05.605Z] First 32 bytes: 94 07 cf 00 06 32 77 1d f8 ca 88 01 70
+[2025-04-11T02:04:05.606Z] Decoded MessagePack: [7,1744337045605000,1,112]
+[2025-04-11T02:04:05.606Z] Value update: id=7, type=1, value=112
+[2025-04-11T02:04:05.606Z] Value updated for topic /server/counter: 112
+[2025-04-11T02:04:06.606Z] Binary message received, length: 13
+[2025-04-11T02:04:06.606Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 08 10 b0 01 71
+[2025-04-11T02:04:06.606Z] Decoded MessagePack: [7,1744337046606000,1,113]
+[2025-04-11T02:04:06.606Z] Value update: id=7, type=1, value=113
+[2025-04-11T02:04:06.607Z] Value updated for topic /server/counter: 113
+[2025-04-11T02:04:07.607Z] Binary message received, length: 13
+[2025-04-11T02:04:07.608Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 17 5a c0 01 72
+[2025-04-11T02:04:07.608Z] Decoded MessagePack: [7,1744337047608000,1,114]
+[2025-04-11T02:04:07.609Z] Value update: id=7, type=1, value=114
+[2025-04-11T02:04:07.609Z] Value updated for topic /server/counter: 114
+[2025-04-11T02:04:08.608Z] Binary message received, length: 13
+[2025-04-11T02:04:08.609Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 26 a0 e8 01 73
+[2025-04-11T02:04:08.609Z] Decoded MessagePack: [7,1744337048609000,1,115]
+[2025-04-11T02:04:08.609Z] Value update: id=7, type=1, value=115
+[2025-04-11T02:04:08.610Z] Value updated for topic /server/counter: 115
+[2025-04-11T02:04:09.608Z] Binary message received, length: 13
+[2025-04-11T02:04:09.608Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 35 df 40 01 74
+[2025-04-11T02:04:09.608Z] Decoded MessagePack: [7,1744337049608000,1,116]
+[2025-04-11T02:04:09.608Z] Value update: id=7, type=1, value=116
+[2025-04-11T02:04:09.609Z] Value updated for topic /server/counter: 116
+[2025-04-11T02:04:10.610Z] Binary message received, length: 13
+[2025-04-11T02:04:10.611Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 45 2d 38 01 75
+[2025-04-11T02:04:10.611Z] Decoded MessagePack: [7,1744337050611000,1,117]
+[2025-04-11T02:04:10.611Z] Value update: id=7, type=1, value=117
+[2025-04-11T02:04:10.612Z] Value updated for topic /server/counter: 117
+[2025-04-11T02:04:11.613Z] Binary message received, length: 13
+[2025-04-11T02:04:11.613Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 54 77 48 01 76
+[2025-04-11T02:04:11.614Z] Decoded MessagePack: [7,1744337051613000,1,118]
+[2025-04-11T02:04:11.614Z] Value update: id=7, type=1, value=118
+[2025-04-11T02:04:11.614Z] Value updated for topic /server/counter: 118
+[2025-04-11T02:04:12.615Z] Binary message received, length: 13
+[2025-04-11T02:04:12.615Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 63 bd 70 01 77
+[2025-04-11T02:04:12.615Z] Decoded MessagePack: [7,1744337052614000,1,119]
+[2025-04-11T02:04:12.616Z] Value update: id=7, type=1, value=119
+[2025-04-11T02:04:12.616Z] Value updated for topic /server/counter: 119
+[2025-04-11T02:04:13.617Z] Binary message received, length: 13
+[2025-04-11T02:04:13.617Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 73 0b 68 01 78
+[2025-04-11T02:04:13.617Z] Decoded MessagePack: [7,1744337053617000,1,120]
+[2025-04-11T02:04:13.617Z] Value update: id=7, type=1, value=120
+[2025-04-11T02:04:13.617Z] Value updated for topic /server/counter: 120
+[2025-04-11T02:04:14.618Z] Binary message received, length: 13
+[2025-04-11T02:04:14.618Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 82 51 90 01 79
+[2025-04-11T02:04:14.618Z] Decoded MessagePack: [7,1744337054618000,1,121]
+[2025-04-11T02:04:14.619Z] Value update: id=7, type=1, value=121
+[2025-04-11T02:04:14.619Z] Value updated for topic /server/counter: 121
+[2025-04-11T02:04:15.620Z] Binary message received, length: 13
+[2025-04-11T02:04:15.620Z] First 32 bytes: 94 07 cf 00 06 32 77 1e 91 9b a0 01 7a
+[2025-04-11T02:04:15.620Z] Decoded MessagePack: [7,1744337055620000,1,122]
+[2025-04-11T02:04:15.620Z] Value update: id=7, type=1, value=122
+[2025-04-11T02:04:15.620Z] Value updated for topic /server/counter: 122
+[2025-04-11T02:04:16.622Z] Binary message received, length: 13
+[2025-04-11T02:04:16.623Z] First 32 bytes: 94 07 cf 00 06 32 77 1e a0 e9 98 01 7b
+[2025-04-11T02:04:16.623Z] Decoded MessagePack: [7,1744337056623000,1,123]
+[2025-04-11T02:04:16.623Z] Value update: id=7, type=1, value=123
+[2025-04-11T02:04:16.623Z] Value updated for topic /server/counter: 123
+[2025-04-11T02:04:17.624Z] Binary message received, length: 13
+[2025-04-11T02:04:17.625Z] First 32 bytes: 94 07 cf 00 06 32 77 1e b0 33 a8 01 7c
+[2025-04-11T02:04:17.625Z] Decoded MessagePack: [7,1744337057625000,1,124]
+[2025-04-11T02:04:17.625Z] Value update: id=7, type=1, value=124
+[2025-04-11T02:04:17.625Z] Value updated for topic /server/counter: 124
+[2025-04-11T02:04:18.626Z] Binary message received, length: 13
+[2025-04-11T02:04:18.626Z] First 32 bytes: 94 07 cf 00 06 32 77 1e bf 79 d0 01 7d
+[2025-04-11T02:04:18.626Z] Decoded MessagePack: [7,1744337058626000,1,125]
+[2025-04-11T02:04:18.626Z] Value update: id=7, type=1, value=125
+[2025-04-11T02:04:18.626Z] Value updated for topic /server/counter: 125
+[2025-04-11T02:04:19.630Z] Binary message received, length: 13
+[2025-04-11T02:04:19.630Z] First 32 bytes: 94 07 cf 00 06 32 77 1e ce cb b0 01 7e
+[2025-04-11T02:04:19.630Z] Decoded MessagePack: [7,1744337059630000,1,126]
+[2025-04-11T02:04:19.630Z] Value update: id=7, type=1, value=126
+[2025-04-11T02:04:19.630Z] Value updated for topic /server/counter: 126
+[2025-04-11T02:04:20.633Z] Binary message received, length: 13
+[2025-04-11T02:04:20.633Z] First 32 bytes: 94 07 cf 00 06 32 77 1e de 19 a8 01 7f
+[2025-04-11T02:04:20.634Z] Decoded MessagePack: [7,1744337060633000,1,127]
+[2025-04-11T02:04:20.634Z] Value update: id=7, type=1, value=127
+[2025-04-11T02:04:20.634Z] Value updated for topic /server/counter: 127
+[2025-04-11T02:04:21.635Z] Binary message received, length: 14
+[2025-04-11T02:04:21.635Z] First 32 bytes: 94 07 cf 00 06 32 77 1e ed 63 b8 01 cc 80
+[2025-04-11T02:04:21.635Z] Decoded MessagePack: [7,1744337061635000,1,128]
+[2025-04-11T02:04:21.635Z] Value update: id=7, type=1, value=128
+[2025-04-11T02:04:21.636Z] Value updated for topic /server/counter: 128
+[2025-04-11T02:04:22.637Z] Binary message received, length: 14
+[2025-04-11T02:04:22.638Z] First 32 bytes: 94 07 cf 00 06 32 77 1e fc ad c8 01 cc 81
+[2025-04-11T02:04:22.638Z] Decoded MessagePack: [7,1744337062637000,1,129]
+[2025-04-11T02:04:22.638Z] Value update: id=7, type=1, value=129
+[2025-04-11T02:04:22.638Z] Value updated for topic /server/counter: 129
+[2025-04-11T02:04:23.640Z] Binary message received, length: 14
+[2025-04-11T02:04:23.640Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 0b fb c0 01 cc 82
+[2025-04-11T02:04:23.640Z] Decoded MessagePack: [7,1744337063640000,1,130]
+[2025-04-11T02:04:23.640Z] Value update: id=7, type=1, value=130
+[2025-04-11T02:04:23.640Z] Value updated for topic /server/counter: 130
+[2025-04-11T02:04:24.643Z] Binary message received, length: 14
+[2025-04-11T02:04:24.644Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 1b 4d a0 01 cc 83
+[2025-04-11T02:04:24.644Z] Decoded MessagePack: [7,1744337064644000,1,131]
+[2025-04-11T02:04:24.644Z] Value update: id=7, type=1, value=131
+[2025-04-11T02:04:24.644Z] Value updated for topic /server/counter: 131
+[2025-04-11T02:04:25.643Z] Binary message received, length: 14
+[2025-04-11T02:04:25.643Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 2a 8b f8 01 cc 84
+[2025-04-11T02:04:25.643Z] Decoded MessagePack: [7,1744337065643000,1,132]
+[2025-04-11T02:04:25.643Z] Value update: id=7, type=1, value=132
+[2025-04-11T02:04:25.644Z] Value updated for topic /server/counter: 132
+[2025-04-11T02:04:26.646Z] Binary message received, length: 14
+[2025-04-11T02:04:26.646Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 39 d9 f0 01 cc 85
+[2025-04-11T02:04:26.646Z] Decoded MessagePack: [7,1744337066646000,1,133]
+[2025-04-11T02:04:26.646Z] Value update: id=7, type=1, value=133
+[2025-04-11T02:04:26.647Z] Value updated for topic /server/counter: 133
+[2025-04-11T02:04:27.647Z] Binary message received, length: 14
+[2025-04-11T02:04:27.648Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 49 20 18 01 cc 86
+[2025-04-11T02:04:27.648Z] Decoded MessagePack: [7,1744337067647000,1,134]
+[2025-04-11T02:04:27.648Z] Value update: id=7, type=1, value=134
+[2025-04-11T02:04:27.648Z] Value updated for topic /server/counter: 134
+[2025-04-11T02:04:28.649Z] Binary message received, length: 14
+[2025-04-11T02:04:28.649Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 58 6a 28 01 cc 87
+[2025-04-11T02:04:28.649Z] Decoded MessagePack: [7,1744337068649000,1,135]
+[2025-04-11T02:04:28.649Z] Value update: id=7, type=1, value=135
+[2025-04-11T02:04:28.649Z] Value updated for topic /server/counter: 135
+[2025-04-11T02:04:29.653Z] Binary message received, length: 14
+[2025-04-11T02:04:29.653Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 67 bc 08 01 cc 88
+[2025-04-11T02:04:29.653Z] Decoded MessagePack: [7,1744337069653000,1,136]
+[2025-04-11T02:04:29.654Z] Value update: id=7, type=1, value=136
+[2025-04-11T02:04:29.654Z] Value updated for topic /server/counter: 136
+[2025-04-11T02:04:30.655Z] Binary message received, length: 14
+[2025-04-11T02:04:30.656Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 77 06 18 01 cc 89
+[2025-04-11T02:04:30.656Z] Decoded MessagePack: [7,1744337070655000,1,137]
+[2025-04-11T02:04:30.656Z] Value update: id=7, type=1, value=137
+[2025-04-11T02:04:30.657Z] Value updated for topic /server/counter: 137
+[2025-04-11T02:04:31.662Z] Binary message received, length: 14
+[2025-04-11T02:04:31.663Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 86 67 98 01 cc 8a
+[2025-04-11T02:04:31.663Z] Decoded MessagePack: [7,1744337071663000,1,138]
+[2025-04-11T02:04:31.663Z] Value update: id=7, type=1, value=138
+[2025-04-11T02:04:31.664Z] Value updated for topic /server/counter: 138
+[2025-04-11T02:04:32.666Z] Binary message received, length: 14
+[2025-04-11T02:04:32.666Z] First 32 bytes: 94 07 cf 00 06 32 77 1f 95 b9 78 01 cc 8b
+[2025-04-11T02:04:32.667Z] Decoded MessagePack: [7,1744337072667000,1,139]
+[2025-04-11T02:04:32.667Z] Value update: id=7, type=1, value=139
+[2025-04-11T02:04:32.667Z] Value updated for topic /server/counter: 139
+[2025-04-11T02:04:33.672Z] Binary message received, length: 14
+[2025-04-11T02:04:33.672Z] First 32 bytes: 94 07 cf 00 06 32 77 1f a5 0f 40 01 cc 8c
+[2025-04-11T02:04:33.672Z] Decoded MessagePack: [7,1744337073672000,1,140]
+[2025-04-11T02:04:33.672Z] Value update: id=7, type=1, value=140
+[2025-04-11T02:04:33.672Z] Value updated for topic /server/counter: 140
+[2025-04-11T02:04:34.680Z] Binary message received, length: 14
+[2025-04-11T02:04:34.681Z] First 32 bytes: 94 07 cf 00 06 32 77 1f b4 70 c0 01 cc 8d
+[2025-04-11T02:04:34.681Z] Decoded MessagePack: [7,1744337074680000,1,141]
+[2025-04-11T02:04:34.681Z] Value update: id=7, type=1, value=141
+[2025-04-11T02:04:34.681Z] Value updated for topic /server/counter: 141
+[2025-04-11T02:04:35.688Z] Binary message received, length: 14
+[2025-04-11T02:04:35.689Z] First 32 bytes: 94 07 cf 00 06 32 77 1f c3 ce 58 01 cc 8e
+[2025-04-11T02:04:35.690Z] Decoded MessagePack: [7,1744337075687000,1,142]
+[2025-04-11T02:04:35.690Z] Value update: id=7, type=1, value=142
+[2025-04-11T02:04:35.691Z] Value updated for topic /server/counter: 142
+[2025-04-11T02:04:36.702Z] Binary message received, length: 14
+[2025-04-11T02:04:36.703Z] First 32 bytes: 94 07 cf 00 06 32 77 1f d3 4b 30 01 cc 8f
+[2025-04-11T02:04:36.703Z] Decoded MessagePack: [7,1744337076702000,1,143]
+[2025-04-11T02:04:36.703Z] Value update: id=7, type=1, value=143
+[2025-04-11T02:04:36.703Z] Value updated for topic /server/counter: 143
+[2025-04-11T02:04:37.714Z] Binary message received, length: 14
+[2025-04-11T02:04:37.715Z] First 32 bytes: 94 07 cf 00 06 32 77 1f e2 c0 38 01 cc 90
+[2025-04-11T02:04:37.715Z] Decoded MessagePack: [7,1744337077715000,1,144]
+[2025-04-11T02:04:37.715Z] Value update: id=7, type=1, value=144
+[2025-04-11T02:04:37.715Z] Value updated for topic /server/counter: 144
+[2025-04-11T02:04:38.724Z] Binary message received, length: 14
+[2025-04-11T02:04:38.725Z] First 32 bytes: 94 07 cf 00 06 32 77 1f f2 29 88 01 cc 91
+[2025-04-11T02:04:38.725Z] Decoded MessagePack: [7,1744337078725000,1,145]
+[2025-04-11T02:04:38.725Z] Value update: id=7, type=1, value=145
+[2025-04-11T02:04:38.725Z] Value updated for topic /server/counter: 145
+[2025-04-11T02:04:39.734Z] Binary message received, length: 14
+[2025-04-11T02:04:39.735Z] First 32 bytes: 94 07 cf 00 06 32 77 20 01 92 d8 01 cc 92
+[2025-04-11T02:04:39.735Z] Decoded MessagePack: [7,1744337079735000,1,146]
+[2025-04-11T02:04:39.735Z] Value update: id=7, type=1, value=146
+[2025-04-11T02:04:39.735Z] Value updated for topic /server/counter: 146
+[2025-04-11T02:04:40.745Z] Binary message received, length: 14
+[2025-04-11T02:04:40.745Z] First 32 bytes: 94 07 cf 00 06 32 77 20 10 fc 28 01 cc 93
+[2025-04-11T02:04:40.745Z] Decoded MessagePack: [7,1744337080745000,1,147]
+[2025-04-11T02:04:40.745Z] Value update: id=7, type=1, value=147
+[2025-04-11T02:04:40.745Z] Value updated for topic /server/counter: 147
+[2025-04-11T02:04:41.756Z] Binary message received, length: 14
+[2025-04-11T02:04:41.756Z] First 32 bytes: 94 07 cf 00 06 32 77 20 20 69 60 01 cc 94
+[2025-04-11T02:04:41.756Z] Decoded MessagePack: [7,1744337081756000,1,148]
+[2025-04-11T02:04:41.757Z] Value update: id=7, type=1, value=148
+[2025-04-11T02:04:41.757Z] Value updated for topic /server/counter: 148
+[2025-04-11T02:04:42.770Z] Binary message received, length: 14
+[2025-04-11T02:04:42.770Z] First 32 bytes: 94 07 cf 00 06 32 77 20 2f e2 50 01 cc 95
+[2025-04-11T02:04:42.770Z] Decoded MessagePack: [7,1744337082770000,1,149]
+[2025-04-11T02:04:42.770Z] Value update: id=7, type=1, value=149
+[2025-04-11T02:04:42.770Z] Value updated for topic /server/counter: 149
+[2025-04-11T02:04:43.779Z] Binary message received, length: 14
+[2025-04-11T02:04:43.779Z] First 32 bytes: 94 07 cf 00 06 32 77 20 3f 47 b8 01 cc 96
+[2025-04-11T02:04:43.780Z] Decoded MessagePack: [7,1744337083779000,1,150]
+[2025-04-11T02:04:43.780Z] Value update: id=7, type=1, value=150
+[2025-04-11T02:04:43.780Z] Value updated for topic /server/counter: 150
+[2025-04-11T02:04:44.792Z] Binary message received, length: 14
+[2025-04-11T02:04:44.793Z] First 32 bytes: 94 07 cf 00 06 32 77 20 4e bc c0 01 cc 97
+[2025-04-11T02:04:44.793Z] Decoded MessagePack: [7,1744337084792000,1,151]
+[2025-04-11T02:04:44.794Z] Value update: id=7, type=1, value=151
+[2025-04-11T02:04:44.794Z] Value updated for topic /server/counter: 151
+[2025-04-11T02:04:45.803Z] Binary message received, length: 14
+[2025-04-11T02:04:45.806Z] First 32 bytes: 94 07 cf 00 06 32 77 20 5e 29 f8 01 cc 98
+[2025-04-11T02:04:45.806Z] Decoded MessagePack: [7,1744337085803000,1,152]
+[2025-04-11T02:04:45.806Z] Value update: id=7, type=1, value=152
+[2025-04-11T02:04:45.806Z] Value updated for topic /server/counter: 152
+[2025-04-11T02:04:46.816Z] Binary message received, length: 14
+[2025-04-11T02:04:46.817Z] First 32 bytes: 94 07 cf 00 06 32 77 20 6d a2 e8 01 cc 99
+[2025-04-11T02:04:46.817Z] Decoded MessagePack: [7,1744337086817000,1,153]
+[2025-04-11T02:04:46.818Z] Value update: id=7, type=1, value=153
+[2025-04-11T02:04:46.818Z] Value updated for topic /server/counter: 153
+[2025-04-11T02:04:47.822Z] Binary message received, length: 14
+[2025-04-11T02:04:47.822Z] First 32 bytes: 94 07 cf 00 06 32 77 20 7c f8 b0 01 cc 9a
+[2025-04-11T02:04:47.823Z] Decoded MessagePack: [7,1744337087822000,1,154]
+[2025-04-11T02:04:47.823Z] Value update: id=7, type=1, value=154
+[2025-04-11T02:04:47.823Z] Value updated for topic /server/counter: 154
+[2025-04-11T02:04:48.833Z] Binary message received, length: 14
+[2025-04-11T02:04:48.834Z] First 32 bytes: 94 07 cf 00 06 32 77 20 8c 65 e8 01 cc 9b
+[2025-04-11T02:04:48.834Z] Decoded MessagePack: [7,1744337088833000,1,155]
+[2025-04-11T02:04:48.834Z] Value update: id=7, type=1, value=155
+[2025-04-11T02:04:48.835Z] Value updated for topic /server/counter: 155
+[2025-04-11T02:04:49.842Z] Binary message received, length: 14
+[2025-04-11T02:04:49.843Z] First 32 bytes: 94 07 cf 00 06 32 77 20 9b cb 50 01 cc 9c
+[2025-04-11T02:04:49.843Z] Decoded MessagePack: [7,1744337089842000,1,156]
+[2025-04-11T02:04:49.843Z] Value update: id=7, type=1, value=156
+[2025-04-11T02:04:49.843Z] Value updated for topic /server/counter: 156
+[2025-04-11T02:04:50.851Z] Binary message received, length: 14
+[2025-04-11T02:04:50.852Z] First 32 bytes: 94 07 cf 00 06 32 77 20 ab 34 a0 01 cc 9d
+[2025-04-11T02:04:50.852Z] Decoded MessagePack: [7,1744337090852000,1,157]
+[2025-04-11T02:04:50.852Z] Value update: id=7, type=1, value=157
+[2025-04-11T02:04:50.852Z] Value updated for topic /server/counter: 157
+[2025-04-11T02:04:51.864Z] Binary message received, length: 14
+[2025-04-11T02:04:51.864Z] First 32 bytes: 94 07 cf 00 06 32 77 20 ba a5 c0 01 cc 9e
+[2025-04-11T02:04:51.865Z] Decoded MessagePack: [7,1744337091864000,1,158]
+[2025-04-11T02:04:51.865Z] Value update: id=7, type=1, value=158
+[2025-04-11T02:04:51.865Z] Value updated for topic /server/counter: 158
+[2025-04-11T02:04:52.874Z] Binary message received, length: 14
+[2025-04-11T02:04:52.875Z] First 32 bytes: 94 07 cf 00 06 32 77 20 ca 0f 10 01 cc 9f
+[2025-04-11T02:04:52.875Z] Decoded MessagePack: [7,1744337092874000,1,159]
+[2025-04-11T02:04:52.875Z] Value update: id=7, type=1, value=159
+[2025-04-11T02:04:52.876Z] Value updated for topic /server/counter: 159
+[2025-04-11T02:04:53.886Z] Binary message received, length: 14
+[2025-04-11T02:04:53.886Z] First 32 bytes: 94 07 cf 00 06 32 77 20 d9 80 30 01 cc a0
+[2025-04-11T02:04:53.887Z] Decoded MessagePack: [7,1744337093886000,1,160]
+[2025-04-11T02:04:53.887Z] Value update: id=7, type=1, value=160
+[2025-04-11T02:04:53.887Z] Value updated for topic /server/counter: 160
+[2025-04-11T02:04:54.898Z] Binary message received, length: 14
+[2025-04-11T02:04:54.898Z] First 32 bytes: 94 07 cf 00 06 32 77 20 e8 f1 50 01 cc a1
+[2025-04-11T02:04:54.898Z] Decoded MessagePack: [7,1744337094898000,1,161]
+[2025-04-11T02:04:54.898Z] Value update: id=7, type=1, value=161
+[2025-04-11T02:04:54.898Z] Value updated for topic /server/counter: 161
+[2025-04-11T02:04:55.904Z] Binary message received, length: 14
+[2025-04-11T02:04:55.905Z] First 32 bytes: 94 07 cf 00 06 32 77 20 f8 4e e8 01 cc a2
+[2025-04-11T02:04:55.906Z] Decoded MessagePack: [7,1744337095905000,1,162]
+[2025-04-11T02:04:55.906Z] Value update: id=7, type=1, value=162
+[2025-04-11T02:04:55.906Z] Value updated for topic /server/counter: 162
+[2025-04-11T02:04:56.916Z] Binary message received, length: 14
+[2025-04-11T02:04:56.916Z] First 32 bytes: 94 07 cf 00 06 32 77 21 07 bc 20 01 cc a3
+[2025-04-11T02:04:56.917Z] Decoded MessagePack: [7,1744337096916000,1,163]
+[2025-04-11T02:04:56.917Z] Value update: id=7, type=1, value=163
+[2025-04-11T02:04:56.917Z] Value updated for topic /server/counter: 163
+[2025-04-11T02:04:57.925Z] Binary message received, length: 14
+[2025-04-11T02:04:57.926Z] First 32 bytes: 94 07 cf 00 06 32 77 21 17 25 70 01 cc a4
+[2025-04-11T02:04:57.927Z] Decoded MessagePack: [7,1744337097926000,1,164]
+[2025-04-11T02:04:57.927Z] Value update: id=7, type=1, value=164
+[2025-04-11T02:04:57.927Z] Value updated for topic /server/counter: 164
+[2025-04-11T02:04:58.939Z] Binary message received, length: 14
+[2025-04-11T02:04:58.939Z] First 32 bytes: 94 07 cf 00 06 32 77 21 26 9a 78 01 cc a5
+[2025-04-11T02:04:58.939Z] Decoded MessagePack: [7,1744337098939000,1,165]
+[2025-04-11T02:04:58.940Z] Value update: id=7, type=1, value=165
+[2025-04-11T02:04:58.940Z] Value updated for topic /server/counter: 165
+[2025-04-11T02:04:59.950Z] Binary message received, length: 14
+[2025-04-11T02:04:59.950Z] First 32 bytes: 94 07 cf 00 06 32 77 21 36 0b 98 01 cc a6
+[2025-04-11T02:04:59.951Z] Decoded MessagePack: [7,1744337099951000,1,166]
+[2025-04-11T02:04:59.951Z] Value update: id=7, type=1, value=166
+[2025-04-11T02:04:59.951Z] Value updated for topic /server/counter: 166
+[2025-04-11T02:05:00.950Z] Binary message received, length: 14
+[2025-04-11T02:05:00.950Z] First 32 bytes: 94 07 cf 00 06 32 77 21 45 49 f0 01 cc a7
+[2025-04-11T02:05:00.950Z] Decoded MessagePack: [7,1744337100950000,1,167]
+[2025-04-11T02:05:00.951Z] Value update: id=7, type=1, value=167
+[2025-04-11T02:05:00.951Z] Value updated for topic /server/counter: 167
+[2025-04-11T02:05:01.959Z] Binary message received, length: 14
+[2025-04-11T02:05:01.959Z] First 32 bytes: 94 07 cf 00 06 32 77 21 54 af 58 01 cc a8
+[2025-04-11T02:05:01.959Z] Decoded MessagePack: [7,1744337101959000,1,168]
+[2025-04-11T02:05:01.959Z] Value update: id=7, type=1, value=168
+[2025-04-11T02:05:01.960Z] Value updated for topic /server/counter: 168
+[2025-04-11T02:05:02.765Z] Disconnected from server
+[2025-04-11T02:05:07.775Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:05:07.777Z] WebSocket error: AggregateError
+[2025-04-11T02:05:07.778Z] Disconnected from server
+[2025-04-11T02:05:12.786Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:05:12.789Z] WebSocket error: AggregateError
+[2025-04-11T02:05:12.789Z] Disconnected from server
+[2025-04-11T02:05:17.793Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:05:17.796Z] WebSocket error: AggregateError
+[2025-04-11T02:05:17.796Z] Disconnected from server
+[2025-04-11T02:05:22.797Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:05:22.801Z] WebSocket error: AggregateError
+[2025-04-11T02:05:22.802Z] Disconnected from server
+[2025-04-11T02:05:27.806Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:05:27.809Z] WebSocket error: AggregateError
+[2025-04-11T02:05:27.809Z] Disconnected from server
+[2025-04-11T02:05:32.818Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:05:32.825Z] Connected to ws://localhost:5810
+[2025-04-11T02:05:32.826Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T02:05:32.826Z] Sending subscribe message: [{"method":"subscribe","params":{"subuid":1,"topics":[""],"options":{"prefixMatch":true}}}]
+[2025-04-11T02:05:32.826Z] Binary message received, length: 143
+[2025-04-11T02:05:32.826Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.826Z] Failed to decode MessagePack: RangeError: Extra 142 of 143 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.827Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:05:32.827Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:05:32.827Z] Control message: announce
+[2025-04-11T02:05:32.827Z] Topic announced: /server/boolean (boolean) with ID 1
+[2025-04-11T02:05:32.827Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.827Z] Binary message received, length: 13
+[2025-04-11T02:05:32.827Z] First 32 bytes: 94 01 cf 00 06 32 77 22 e0 f8 90 00 c3
+[2025-04-11T02:05:32.827Z] Decoded MessagePack: [1,1744337127930000,0,true]
+[2025-04-11T02:05:32.827Z] Value update: id=1, type=0, value=true
+[2025-04-11T02:05:32.828Z] Value updated for topic /server/boolean: true
+[2025-04-11T02:05:32.828Z] Binary message received, length: 141
+[2025-04-11T02:05:32.828Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.828Z] Failed to decode MessagePack: RangeError: Extra 140 of 141 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.828Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:05:32.829Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:05:32.829Z] Control message: announce
+[2025-04-11T02:05:32.829Z] Topic announced: /server/number (double) with ID 2
+[2025-04-11T02:05:32.829Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.829Z] Binary message received, length: 21
+[2025-04-11T02:05:32.829Z] First 32 bytes: 94 02 cf 00 06 32 77 22 e0 fc 78 01 cb 40 09 21 f9 f0 1b 86 6e
+[2025-04-11T02:05:32.829Z] Decoded MessagePack: [2,1744337127931000,1,3.14159]
+[2025-04-11T02:05:32.829Z] Value update: id=2, type=1, value=3.14159
+[2025-04-11T02:05:32.830Z] Value updated for topic /server/number: 3.14159
+[2025-04-11T02:05:32.830Z] Binary message received, length: 141
+[2025-04-11T02:05:32.830Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.830Z] Failed to decode MessagePack: RangeError: Extra 140 of 141 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.830Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:05:32.830Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:05:32.830Z] Control message: announce
+[2025-04-11T02:05:32.830Z] Topic announced: /server/string (string) with ID 3
+[2025-04-11T02:05:32.830Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.830Z] Binary message received, length: 35
+[2025-04-11T02:05:32.830Z] First 32 bytes: 94 03 cf 00 06 32 77 22 e0 fc 78 04 b6 48 65 6c 6c 6f 20 66 72 6f 6d 20 4e 54 34 20 73 65 72 76
+[2025-04-11T02:05:32.830Z] Decoded MessagePack: [3,1744337127931000,4,"Hello from NT4 server!"]
+[2025-04-11T02:05:32.831Z] Value update: id=3, type=4, value="Hello from NT4 server!"
+[2025-04-11T02:05:32.831Z] Value updated for topic /server/string: "Hello from NT4 server!"
+[2025-04-11T02:05:32.831Z] Binary message received, length: 151
+[2025-04-11T02:05:32.831Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.831Z] Failed to decode MessagePack: RangeError: Extra 150 of 151 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.831Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:05:32.831Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:05:32.831Z] Control message: announce
+[2025-04-11T02:05:32.831Z] Topic announced: /server/boolean_array (boolean[]) with ID 4
+[2025-04-11T02:05:32.831Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.832Z] Binary message received, length: 16
+[2025-04-11T02:05:32.832Z] First 32 bytes: 94 04 cf 00 06 32 77 22 e0 fc 78 10 93 c3 c2 c3
+[2025-04-11T02:05:32.832Z] Decoded MessagePack: [4,1744337127931000,16,[true,false,true]]
+[2025-04-11T02:05:32.832Z] Value update: id=4, type=16, value=[true,false,true]
+[2025-04-11T02:05:32.832Z] Value updated for topic /server/boolean_array: [true,false,true]
+[2025-04-11T02:05:32.832Z] Binary message received, length: 149
+[2025-04-11T02:05:32.832Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.832Z] Failed to decode MessagePack: RangeError: Extra 148 of 149 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.832Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:05:32.832Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:05:32.832Z] Control message: announce
+[2025-04-11T02:05:32.832Z] Topic announced: /server/number_array (double[]) with ID 5
+[2025-04-11T02:05:32.832Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.832Z] Binary message received, length: 49
+[2025-04-11T02:05:32.832Z] First 32 bytes: 94 05 cf 00 06 32 77 22 e0 fc 78 11 94 cb 3f f1 99 99 99 99 99 9a cb 40 01 99 99 99 99 99 9a cb
+[2025-04-11T02:05:32.832Z] Decoded MessagePack: [5,1744337127931000,17,[1.1,2.2,3.3,4.4]]
+[2025-04-11T02:05:32.833Z] Value update: id=5, type=17, value=[1.1,2.2,3.3,4.4]
+[2025-04-11T02:05:32.833Z] Value updated for topic /server/number_array: [1.1,2.2,3.3,4.4]
+[2025-04-11T02:05:32.833Z] Binary message received, length: 149
+[2025-04-11T02:05:32.833Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.833Z] Failed to decode MessagePack: RangeError: Extra 148 of 149 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.833Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:05:32.833Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:05:32.833Z] Control message: announce
+[2025-04-11T02:05:32.833Z] Topic announced: /server/string_array (string[]) with ID 6
+[2025-04-11T02:05:32.833Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.833Z] Binary message received, length: 27
+[2025-04-11T02:05:32.833Z] First 32 bytes: 94 06 cf 00 06 32 77 22 e0 fc 78 14 93 a3 6f 6e 65 a3 74 77 6f a5 74 68 72 65 65
+[2025-04-11T02:05:32.833Z] Decoded MessagePack: [6,1744337127931000,20,["one","two","three"]]
+[2025-04-11T02:05:32.833Z] Value update: id=6, type=20, value=["one","two","three"]
+[2025-04-11T02:05:32.833Z] Value updated for topic /server/string_array: ["one","two","three"]
+[2025-04-11T02:05:32.834Z] Binary message received, length: 142
+[2025-04-11T02:05:32.834Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:05:32.834Z] Failed to decode MessagePack: RangeError: Extra 141 of 142 byte(s) found at buffer[1]
+[2025-04-11T02:05:32.834Z] As UTF-8: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:05:32.834Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:05:32.834Z] Control message: announce
+[2025-04-11T02:05:32.834Z] Topic announced: /server/counter (double) with ID 7
+[2025-04-11T02:05:32.834Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:05:32.835Z] Binary message received, length: 13
+[2025-04-11T02:05:32.835Z] First 32 bytes: 94 07 cf 00 06 32 77 23 1e 8a 48 01 03
+[2025-04-11T02:05:32.835Z] Decoded MessagePack: [7,1744337131965000,1,3]
+[2025-04-11T02:05:32.835Z] Value update: id=7, type=1, value=3
+[2025-04-11T02:05:32.835Z] Value updated for topic /server/counter: 3
+[2025-04-11T02:05:32.835Z] Binary message received, length: 13
+[2025-04-11T02:05:32.835Z] First 32 bytes: 94 01 cf 00 06 32 77 22 e0 f8 90 00 c3
+[2025-04-11T02:05:32.835Z] Decoded MessagePack: [1,1744337127930000,0,true]
+[2025-04-11T02:05:32.836Z] Value update: id=1, type=0, value=true
+[2025-04-11T02:05:32.836Z] Value updated for topic /server/boolean: true
+[2025-04-11T02:05:32.836Z] Binary message received, length: 21
+[2025-04-11T02:05:32.836Z] First 32 bytes: 94 02 cf 00 06 32 77 22 e0 fc 78 01 cb 40 09 21 f9 f0 1b 86 6e
+[2025-04-11T02:05:32.836Z] Decoded MessagePack: [2,1744337127931000,1,3.14159]
+[2025-04-11T02:05:32.836Z] Value update: id=2, type=1, value=3.14159
+[2025-04-11T02:05:32.836Z] Value updated for topic /server/number: 3.14159
+[2025-04-11T02:05:32.836Z] Binary message received, length: 35
+[2025-04-11T02:05:32.836Z] First 32 bytes: 94 03 cf 00 06 32 77 22 e0 fc 78 04 b6 48 65 6c 6c 6f 20 66 72 6f 6d 20 4e 54 34 20 73 65 72 76
+[2025-04-11T02:05:32.836Z] Decoded MessagePack: [3,1744337127931000,4,"Hello from NT4 server!"]
+[2025-04-11T02:05:32.836Z] Value update: id=3, type=4, value="Hello from NT4 server!"
+[2025-04-11T02:05:32.836Z] Value updated for topic /server/string: "Hello from NT4 server!"
+[2025-04-11T02:05:32.836Z] Binary message received, length: 16
+[2025-04-11T02:05:32.837Z] First 32 bytes: 94 04 cf 00 06 32 77 22 e0 fc 78 10 93 c3 c2 c3
+[2025-04-11T02:05:32.837Z] Decoded MessagePack: [4,1744337127931000,16,[true,false,true]]
+[2025-04-11T02:05:32.837Z] Value update: id=4, type=16, value=[true,false,true]
+[2025-04-11T02:05:32.837Z] Value updated for topic /server/boolean_array: [true,false,true]
+[2025-04-11T02:05:32.837Z] Binary message received, length: 49
+[2025-04-11T02:05:32.837Z] First 32 bytes: 94 05 cf 00 06 32 77 22 e0 fc 78 11 94 cb 3f f1 99 99 99 99 99 9a cb 40 01 99 99 99 99 99 9a cb
+[2025-04-11T02:05:32.837Z] Decoded MessagePack: [5,1744337127931000,17,[1.1,2.2,3.3,4.4]]
+[2025-04-11T02:05:32.837Z] Value update: id=5, type=17, value=[1.1,2.2,3.3,4.4]
+[2025-04-11T02:05:32.837Z] Value updated for topic /server/number_array: [1.1,2.2,3.3,4.4]
+[2025-04-11T02:05:32.837Z] Binary message received, length: 27
+[2025-04-11T02:05:32.837Z] First 32 bytes: 94 06 cf 00 06 32 77 22 e0 fc 78 14 93 a3 6f 6e 65 a3 74 77 6f a5 74 68 72 65 65
+[2025-04-11T02:05:32.837Z] Decoded MessagePack: [6,1744337127931000,20,["one","two","three"]]
+[2025-04-11T02:05:32.837Z] Value update: id=6, type=20, value=["one","two","three"]
+[2025-04-11T02:05:32.837Z] Value updated for topic /server/string_array: ["one","two","three"]
+[2025-04-11T02:05:32.837Z] Binary message received, length: 13
+[2025-04-11T02:05:32.837Z] First 32 bytes: 94 07 cf 00 06 32 77 23 1e 8a 48 01 03
+[2025-04-11T02:05:32.837Z] Decoded MessagePack: [7,1744337131965000,1,3]
+[2025-04-11T02:05:32.838Z] Value update: id=7, type=1, value=3
+[2025-04-11T02:05:32.838Z] Value updated for topic /server/counter: 3
+[2025-04-11T02:05:32.975Z] Binary message received, length: 13
+[2025-04-11T02:05:32.975Z] First 32 bytes: 94 07 cf 00 06 32 77 23 2d ef b0 01 04
+[2025-04-11T02:05:32.975Z] Decoded MessagePack: [7,1744337132974000,1,4]
+[2025-04-11T02:05:32.976Z] Value update: id=7, type=1, value=4
+[2025-04-11T02:05:32.976Z] Value updated for topic /server/counter: 4
+[2025-04-11T02:05:33.989Z] Binary message received, length: 13
+[2025-04-11T02:05:33.989Z] First 32 bytes: 94 07 cf 00 06 32 77 23 3d 68 a0 01 05
+[2025-04-11T02:05:33.989Z] Decoded MessagePack: [7,1744337133988000,1,5]
+[2025-04-11T02:05:33.989Z] Value update: id=7, type=1, value=5
+[2025-04-11T02:05:33.989Z] Value updated for topic /server/counter: 5
+[2025-04-11T02:05:35.001Z] Binary message received, length: 13
+[2025-04-11T02:05:35.001Z] First 32 bytes: 94 07 cf 00 06 32 77 23 4c d9 c0 01 06
+[2025-04-11T02:05:35.001Z] Decoded MessagePack: [7,1744337135000000,1,6]
+[2025-04-11T02:05:35.002Z] Value update: id=7, type=1, value=6
+[2025-04-11T02:05:35.002Z] Value updated for topic /server/counter: 6
+[2025-04-11T02:05:36.011Z] Binary message received, length: 13
+[2025-04-11T02:05:36.011Z] First 32 bytes: 94 07 cf 00 06 32 77 23 5c 43 10 01 07
+[2025-04-11T02:05:36.011Z] Decoded MessagePack: [7,1744337136010000,1,7]
+[2025-04-11T02:05:36.012Z] Value update: id=7, type=1, value=7
+[2025-04-11T02:05:36.012Z] Value updated for topic /server/counter: 7
+[2025-04-11T02:05:37.022Z] Binary message received, length: 13
+[2025-04-11T02:05:37.022Z] First 32 bytes: 94 07 cf 00 06 32 77 23 6b b0 48 01 08
+[2025-04-11T02:05:37.023Z] Decoded MessagePack: [7,1744337137021000,1,8]
+[2025-04-11T02:05:37.023Z] Value update: id=7, type=1, value=8
+[2025-04-11T02:05:37.023Z] Value updated for topic /server/counter: 8
+[2025-04-11T02:05:38.030Z] Binary message received, length: 13
+[2025-04-11T02:05:38.030Z] First 32 bytes: 94 07 cf 00 06 32 77 23 7b 11 c8 01 09
+[2025-04-11T02:05:38.030Z] Decoded MessagePack: [7,1744337138029000,1,9]
+[2025-04-11T02:05:38.030Z] Value update: id=7, type=1, value=9
+[2025-04-11T02:05:38.031Z] Value updated for topic /server/counter: 9
+[2025-04-11T02:05:39.037Z] Binary message received, length: 13
+[2025-04-11T02:05:39.038Z] First 32 bytes: 94 07 cf 00 06 32 77 23 8a 6f 60 01 0a
+[2025-04-11T02:05:39.038Z] Decoded MessagePack: [7,1744337139036000,1,10]
+[2025-04-11T02:05:39.038Z] Value update: id=7, type=1, value=10
+[2025-04-11T02:05:39.039Z] Value updated for topic /server/counter: 10
+[2025-04-11T02:05:40.047Z] Binary message received, length: 13
+[2025-04-11T02:05:40.047Z] First 32 bytes: 94 07 cf 00 06 32 77 23 99 d8 b0 01 0b
+[2025-04-11T02:05:40.048Z] Decoded MessagePack: [7,1744337140046000,1,11]
+[2025-04-11T02:05:40.048Z] Value update: id=7, type=1, value=11
+[2025-04-11T02:05:40.049Z] Value updated for topic /server/counter: 11
+[2025-04-11T02:05:41.053Z] Binary message received, length: 13
+[2025-04-11T02:05:41.053Z] First 32 bytes: 94 07 cf 00 06 32 77 23 a9 32 60 01 0c
+[2025-04-11T02:05:41.053Z] Decoded MessagePack: [7,1744337141052000,1,12]
+[2025-04-11T02:05:41.053Z] Value update: id=7, type=1, value=12
+[2025-04-11T02:05:41.054Z] Value updated for topic /server/counter: 12
+[2025-04-11T02:05:42.066Z] Binary message received, length: 13
+[2025-04-11T02:05:42.066Z] First 32 bytes: 94 07 cf 00 06 32 77 23 b8 a7 68 01 0d
+[2025-04-11T02:05:42.067Z] Decoded MessagePack: [7,1744337142065000,1,13]
+[2025-04-11T02:05:42.067Z] Value update: id=7, type=1, value=13
+[2025-04-11T02:05:42.067Z] Value updated for topic /server/counter: 13
+[2025-04-11T02:05:43.070Z] Binary message received, length: 13
+[2025-04-11T02:05:43.070Z] First 32 bytes: 94 07 cf 00 06 32 77 23 c7 fd 30 01 0e
+[2025-04-11T02:05:43.071Z] Decoded MessagePack: [7,1744337143070000,1,14]
+[2025-04-11T02:05:43.071Z] Value update: id=7, type=1, value=14
+[2025-04-11T02:05:43.071Z] Value updated for topic /server/counter: 14
+[2025-04-11T02:05:44.080Z] Binary message received, length: 13
+[2025-04-11T02:05:44.081Z] First 32 bytes: 94 07 cf 00 06 32 77 23 d7 62 98 01 0f
+[2025-04-11T02:05:44.081Z] Decoded MessagePack: [7,1744337144079000,1,15]
+[2025-04-11T02:05:44.082Z] Value update: id=7, type=1, value=15
+[2025-04-11T02:05:44.082Z] Value updated for topic /server/counter: 15
+[2025-04-11T02:05:45.080Z] Binary message received, length: 13
+[2025-04-11T02:05:45.081Z] First 32 bytes: 94 07 cf 00 06 32 77 23 e6 a8 c0 01 10
+[2025-04-11T02:05:45.081Z] Decoded MessagePack: [7,1744337145080000,1,16]
+[2025-04-11T02:05:45.081Z] Value update: id=7, type=1, value=16
+[2025-04-11T02:05:45.081Z] Value updated for topic /server/counter: 16
+[2025-04-11T02:05:46.089Z] Binary message received, length: 13
+[2025-04-11T02:05:46.089Z] First 32 bytes: 94 07 cf 00 06 32 77 23 f6 0a 40 01 11
+[2025-04-11T02:05:46.090Z] Decoded MessagePack: [7,1744337146088000,1,17]
+[2025-04-11T02:05:46.090Z] Value update: id=7, type=1, value=17
+[2025-04-11T02:05:46.090Z] Value updated for topic /server/counter: 17
+[2025-04-11T02:05:47.104Z] Binary message received, length: 13
+[2025-04-11T02:05:47.104Z] First 32 bytes: 94 07 cf 00 06 32 77 24 05 87 18 01 12
+[2025-04-11T02:05:47.104Z] Decoded MessagePack: [7,1744337147103000,1,18]
+[2025-04-11T02:05:47.104Z] Value update: id=7, type=1, value=18
+[2025-04-11T02:05:47.104Z] Value updated for topic /server/counter: 18
+[2025-04-11T02:05:48.117Z] Binary message received, length: 13
+[2025-04-11T02:05:48.117Z] First 32 bytes: 94 07 cf 00 06 32 77 24 14 fc 20 01 13
+[2025-04-11T02:05:48.118Z] Decoded MessagePack: [7,1744337148116000,1,19]
+[2025-04-11T02:05:48.118Z] Value update: id=7, type=1, value=19
+[2025-04-11T02:05:48.118Z] Value updated for topic /server/counter: 19
+[2025-04-11T02:05:49.126Z] Binary message received, length: 13
+[2025-04-11T02:05:49.126Z] First 32 bytes: 94 07 cf 00 06 32 77 24 24 61 88 01 14
+[2025-04-11T02:05:49.127Z] Decoded MessagePack: [7,1744337149125000,1,20]
+[2025-04-11T02:05:49.127Z] Value update: id=7, type=1, value=20
+[2025-04-11T02:05:49.127Z] Value updated for topic /server/counter: 20
+[2025-04-11T02:05:50.134Z] Binary message received, length: 13
+[2025-04-11T02:05:50.134Z] First 32 bytes: 94 07 cf 00 06 32 77 24 33 c3 08 01 15
+[2025-04-11T02:05:50.134Z] Decoded MessagePack: [7,1744337150133000,1,21]
+[2025-04-11T02:05:50.134Z] Value update: id=7, type=1, value=21
+[2025-04-11T02:05:50.135Z] Value updated for topic /server/counter: 21
+[2025-04-11T02:05:51.139Z] Binary message received, length: 13
+[2025-04-11T02:05:51.139Z] First 32 bytes: 94 07 cf 00 06 32 77 24 43 18 d0 01 16
+[2025-04-11T02:05:51.139Z] Decoded MessagePack: [7,1744337151138000,1,22]
+[2025-04-11T02:05:51.139Z] Value update: id=7, type=1, value=22
+[2025-04-11T02:05:51.140Z] Value updated for topic /server/counter: 22
+[2025-04-11T02:05:52.144Z] Binary message received, length: 13
+[2025-04-11T02:05:52.145Z] First 32 bytes: 94 07 cf 00 06 32 77 24 52 72 80 01 17
+[2025-04-11T02:05:52.145Z] Decoded MessagePack: [7,1744337152144000,1,23]
+[2025-04-11T02:05:52.145Z] Value update: id=7, type=1, value=23
+[2025-04-11T02:05:52.145Z] Value updated for topic /server/counter: 23
+[2025-04-11T02:05:53.147Z] Binary message received, length: 13
+[2025-04-11T02:05:53.148Z] First 32 bytes: 94 07 cf 00 06 32 77 24 61 c0 78 01 18
+[2025-04-11T02:05:53.149Z] Decoded MessagePack: [7,1744337153147000,1,24]
+[2025-04-11T02:05:53.149Z] Value update: id=7, type=1, value=24
+[2025-04-11T02:05:53.149Z] Value updated for topic /server/counter: 24
+[2025-04-11T02:05:54.155Z] Binary message received, length: 13
+[2025-04-11T02:05:54.156Z] First 32 bytes: 94 07 cf 00 06 32 77 24 71 21 f8 01 19
+[2025-04-11T02:05:54.156Z] Decoded MessagePack: [7,1744337154155000,1,25]
+[2025-04-11T02:05:54.156Z] Value update: id=7, type=1, value=25
+[2025-04-11T02:05:54.156Z] Value updated for topic /server/counter: 25
+[2025-04-11T02:05:55.169Z] Binary message received, length: 13
+[2025-04-11T02:05:55.170Z] First 32 bytes: 94 07 cf 00 06 32 77 24 80 9a e8 01 1a
+[2025-04-11T02:05:55.170Z] Decoded MessagePack: [7,1744337155169000,1,26]
+[2025-04-11T02:05:55.170Z] Value update: id=7, type=1, value=26
+[2025-04-11T02:05:55.170Z] Value updated for topic /server/counter: 26
+[2025-04-11T02:05:56.184Z] Binary message received, length: 13
+[2025-04-11T02:05:56.185Z] First 32 bytes: 94 07 cf 00 06 32 77 24 90 17 c0 01 1b
+[2025-04-11T02:05:56.185Z] Decoded MessagePack: [7,1744337156184000,1,27]
+[2025-04-11T02:05:56.185Z] Value update: id=7, type=1, value=27
+[2025-04-11T02:05:56.185Z] Value updated for topic /server/counter: 27
+[2025-04-11T02:05:57.194Z] Binary message received, length: 13
+[2025-04-11T02:05:57.194Z] First 32 bytes: 94 07 cf 00 06 32 77 24 9f 7d 28 01 1c
+[2025-04-11T02:05:57.195Z] Decoded MessagePack: [7,1744337157193000,1,28]
+[2025-04-11T02:05:57.195Z] Value update: id=7, type=1, value=28
+[2025-04-11T02:05:57.195Z] Value updated for topic /server/counter: 28
+[2025-04-11T02:05:58.195Z] Binary message received, length: 13
+[2025-04-11T02:05:58.195Z] First 32 bytes: 94 07 cf 00 06 32 77 24 ae c3 50 01 1d
+[2025-04-11T02:05:58.195Z] Decoded MessagePack: [7,1744337158194000,1,29]
+[2025-04-11T02:05:58.196Z] Value update: id=7, type=1, value=29
+[2025-04-11T02:05:58.196Z] Value updated for topic /server/counter: 29
+[2025-04-11T02:05:59.199Z] Binary message received, length: 13
+[2025-04-11T02:05:59.199Z] First 32 bytes: 94 07 cf 00 06 32 77 24 be 15 30 01 1e
+[2025-04-11T02:05:59.200Z] Decoded MessagePack: [7,1744337159198000,1,30]
+[2025-04-11T02:05:59.200Z] Value update: id=7, type=1, value=30
+[2025-04-11T02:05:59.200Z] Value updated for topic /server/counter: 30
+[2025-04-11T02:06:00.211Z] Binary message received, length: 13
+[2025-04-11T02:06:00.211Z] First 32 bytes: 94 07 cf 00 06 32 77 24 cd 86 50 01 1f
+[2025-04-11T02:06:00.211Z] Decoded MessagePack: [7,1744337160210000,1,31]
+[2025-04-11T02:06:00.212Z] Value update: id=7, type=1, value=31
+[2025-04-11T02:06:00.212Z] Value updated for topic /server/counter: 31
+[2025-04-11T02:06:01.221Z] Binary message received, length: 13
+[2025-04-11T02:06:01.221Z] First 32 bytes: 94 07 cf 00 06 32 77 24 dc f3 88 01 20
+[2025-04-11T02:06:01.222Z] Decoded MessagePack: [7,1744337161221000,1,32]
+[2025-04-11T02:06:01.222Z] Value update: id=7, type=1, value=32
+[2025-04-11T02:06:01.222Z] Value updated for topic /server/counter: 32
+[2025-04-11T02:06:02.223Z] Binary message received, length: 13
+[2025-04-11T02:06:02.223Z] First 32 bytes: 94 07 cf 00 06 32 77 24 ec 39 b0 01 21
+[2025-04-11T02:06:02.223Z] Decoded MessagePack: [7,1744337162222000,1,33]
+[2025-04-11T02:06:02.223Z] Value update: id=7, type=1, value=33
+[2025-04-11T02:06:02.223Z] Value updated for topic /server/counter: 33
+[2025-04-11T02:06:03.234Z] Binary message received, length: 13
+[2025-04-11T02:06:03.234Z] First 32 bytes: 94 07 cf 00 06 32 77 24 fb a6 e8 01 22
+[2025-04-11T02:06:03.234Z] Decoded MessagePack: [7,1744337163233000,1,34]
+[2025-04-11T02:06:03.235Z] Value update: id=7, type=1, value=34
+[2025-04-11T02:06:03.235Z] Value updated for topic /server/counter: 34
+[2025-04-11T02:06:04.242Z] Binary message received, length: 13
+[2025-04-11T02:06:04.242Z] First 32 bytes: 94 07 cf 00 06 32 77 25 0b 08 68 01 23
+[2025-04-11T02:06:04.242Z] Decoded MessagePack: [7,1744337164241000,1,35]
+[2025-04-11T02:06:04.243Z] Value update: id=7, type=1, value=35
+[2025-04-11T02:06:04.243Z] Value updated for topic /server/counter: 35
+[2025-04-11T02:06:05.259Z] Binary message received, length: 13
+[2025-04-11T02:06:05.259Z] First 32 bytes: 94 07 cf 00 06 32 77 25 1a 85 40 01 24
+[2025-04-11T02:06:05.260Z] Decoded MessagePack: [7,1744337165256000,1,36]
+[2025-04-11T02:06:05.260Z] Value update: id=7, type=1, value=36
+[2025-04-11T02:06:05.260Z] Value updated for topic /server/counter: 36
+[2025-04-11T02:06:06.258Z] Binary message received, length: 13
+[2025-04-11T02:06:06.258Z] First 32 bytes: 94 07 cf 00 06 32 77 25 29 cb 68 01 25
+[2025-04-11T02:06:06.259Z] Decoded MessagePack: [7,1744337166257000,1,37]
+[2025-04-11T02:06:06.259Z] Value update: id=7, type=1, value=37
+[2025-04-11T02:06:06.259Z] Value updated for topic /server/counter: 37
+[2025-04-11T02:06:07.266Z] Binary message received, length: 13
+[2025-04-11T02:06:07.266Z] First 32 bytes: 94 07 cf 00 06 32 77 25 39 2c e8 01 26
+[2025-04-11T02:06:07.266Z] Decoded MessagePack: [7,1744337167265000,1,38]
+[2025-04-11T02:06:07.266Z] Value update: id=7, type=1, value=38
+[2025-04-11T02:06:07.266Z] Value updated for topic /server/counter: 38
+[2025-04-11T02:06:08.267Z] Binary message received, length: 13
+[2025-04-11T02:06:08.268Z] First 32 bytes: 94 07 cf 00 06 32 77 25 48 76 f8 01 27
+[2025-04-11T02:06:08.268Z] Decoded MessagePack: [7,1744337168267000,1,39]
+[2025-04-11T02:06:08.268Z] Value update: id=7, type=1, value=39
+[2025-04-11T02:06:08.268Z] Value updated for topic /server/counter: 39
+[2025-04-11T02:06:09.280Z] Binary message received, length: 13
+[2025-04-11T02:06:09.280Z] First 32 bytes: 94 07 cf 00 06 32 77 25 57 e8 18 01 28
+[2025-04-11T02:06:09.280Z] Decoded MessagePack: [7,1744337169279000,1,40]
+[2025-04-11T02:06:09.281Z] Value update: id=7, type=1, value=40
+[2025-04-11T02:06:09.281Z] Value updated for topic /server/counter: 40
+[2025-04-11T02:06:10.293Z] Binary message received, length: 13
+[2025-04-11T02:06:10.293Z] First 32 bytes: 94 07 cf 00 06 32 77 25 67 5d 20 01 29
+[2025-04-11T02:06:10.293Z] Decoded MessagePack: [7,1744337170292000,1,41]
+[2025-04-11T02:06:10.293Z] Value update: id=7, type=1, value=41
+[2025-04-11T02:06:10.293Z] Value updated for topic /server/counter: 41
+[2025-04-11T02:06:11.307Z] Binary message received, length: 13
+[2025-04-11T02:06:11.308Z] First 32 bytes: 94 07 cf 00 06 32 77 25 76 d9 f8 01 2a
+[2025-04-11T02:06:11.308Z] Decoded MessagePack: [7,1744337171307000,1,42]
+[2025-04-11T02:06:11.308Z] Value update: id=7, type=1, value=42
+[2025-04-11T02:06:11.308Z] Value updated for topic /server/counter: 42
+[2025-04-11T02:06:12.320Z] Binary message received, length: 13
+[2025-04-11T02:06:12.321Z] First 32 bytes: 94 07 cf 00 06 32 77 25 86 4f 00 01 2b
+[2025-04-11T02:06:12.321Z] Decoded MessagePack: [7,1744337172320000,1,43]
+[2025-04-11T02:06:12.321Z] Value update: id=7, type=1, value=43
+[2025-04-11T02:06:12.321Z] Value updated for topic /server/counter: 43
+[2025-04-11T02:06:13.331Z] Binary message received, length: 13
+[2025-04-11T02:06:13.331Z] First 32 bytes: 94 07 cf 00 06 32 77 25 95 b8 50 01 2c
+[2025-04-11T02:06:13.331Z] Decoded MessagePack: [7,1744337173330000,1,44]
+[2025-04-11T02:06:13.331Z] Value update: id=7, type=1, value=44
+[2025-04-11T02:06:13.332Z] Value updated for topic /server/counter: 44
+[2025-04-11T02:06:14.335Z] Binary message received, length: 13
+[2025-04-11T02:06:14.335Z] First 32 bytes: 94 07 cf 00 06 32 77 25 a5 0e 18 01 2d
+[2025-04-11T02:06:14.335Z] Decoded MessagePack: [7,1744337174335000,1,45]
+[2025-04-11T02:06:14.336Z] Value update: id=7, type=1, value=45
+[2025-04-11T02:06:14.336Z] Value updated for topic /server/counter: 45
+[2025-04-11T02:06:15.349Z] Binary message received, length: 13
+[2025-04-11T02:06:15.349Z] First 32 bytes: 94 07 cf 00 06 32 77 25 b4 87 08 01 2e
+[2025-04-11T02:06:15.349Z] Decoded MessagePack: [7,1744337175349000,1,46]
+[2025-04-11T02:06:15.349Z] Value update: id=7, type=1, value=46
+[2025-04-11T02:06:15.349Z] Value updated for topic /server/counter: 46
+[2025-04-11T02:06:16.354Z] Binary message received, length: 13
+[2025-04-11T02:06:16.355Z] First 32 bytes: 94 07 cf 00 06 32 77 25 c3 dc d0 01 2f
+[2025-04-11T02:06:16.355Z] Decoded MessagePack: [7,1744337176354000,1,47]
+[2025-04-11T02:06:16.356Z] Value update: id=7, type=1, value=47
+[2025-04-11T02:06:16.356Z] Value updated for topic /server/counter: 47
+[2025-04-11T02:06:17.356Z] Binary message received, length: 13
+[2025-04-11T02:06:17.356Z] First 32 bytes: 94 07 cf 00 06 32 77 25 d3 22 f8 01 30
+[2025-04-11T02:06:17.356Z] Decoded MessagePack: [7,1744337177355000,1,48]
+[2025-04-11T02:06:17.357Z] Value update: id=7, type=1, value=48
+[2025-04-11T02:06:17.357Z] Value updated for topic /server/counter: 48
+[2025-04-11T02:06:18.366Z] Binary message received, length: 13
+[2025-04-11T02:06:18.367Z] First 32 bytes: 94 07 cf 00 06 32 77 25 e2 8c 48 01 31
+[2025-04-11T02:06:18.367Z] Decoded MessagePack: [7,1744337178365000,1,49]
+[2025-04-11T02:06:18.368Z] Value update: id=7, type=1, value=49
+[2025-04-11T02:06:18.368Z] Value updated for topic /server/counter: 49
+[2025-04-11T02:06:19.379Z] Binary message received, length: 13
+[2025-04-11T02:06:19.379Z] First 32 bytes: 94 07 cf 00 06 32 77 25 f2 05 38 01 32
+[2025-04-11T02:06:19.380Z] Decoded MessagePack: [7,1744337179379000,1,50]
+[2025-04-11T02:06:19.380Z] Value update: id=7, type=1, value=50
+[2025-04-11T02:06:19.380Z] Value updated for topic /server/counter: 50
+[2025-04-11T02:06:20.389Z] Binary message received, length: 13
+[2025-04-11T02:06:20.389Z] First 32 bytes: 94 07 cf 00 06 32 77 26 01 6a a0 01 33
+[2025-04-11T02:06:20.389Z] Decoded MessagePack: [7,1744337180388000,1,51]
+[2025-04-11T02:06:20.389Z] Value update: id=7, type=1, value=51
+[2025-04-11T02:06:20.389Z] Value updated for topic /server/counter: 51
+[2025-04-11T02:06:21.395Z] Binary message received, length: 13
+[2025-04-11T02:06:21.396Z] First 32 bytes: 94 07 cf 00 06 32 77 26 10 c8 38 01 34
+[2025-04-11T02:06:21.396Z] Decoded MessagePack: [7,1744337181395000,1,52]
+[2025-04-11T02:06:21.397Z] Value update: id=7, type=1, value=52
+[2025-04-11T02:06:21.397Z] Value updated for topic /server/counter: 52
+[2025-04-11T02:06:22.407Z] Binary message received, length: 13
+[2025-04-11T02:06:22.407Z] First 32 bytes: 94 07 cf 00 06 32 77 26 20 35 70 01 35
+[2025-04-11T02:06:22.408Z] Decoded MessagePack: [7,1744337182406000,1,53]
+[2025-04-11T02:06:22.408Z] Value update: id=7, type=1, value=53
+[2025-04-11T02:06:22.408Z] Value updated for topic /server/counter: 53
+[2025-04-11T02:06:23.415Z] Binary message received, length: 13
+[2025-04-11T02:06:23.416Z] First 32 bytes: 94 07 cf 00 06 32 77 26 2f 96 f0 01 36
+[2025-04-11T02:06:23.416Z] Decoded MessagePack: [7,1744337183414000,1,54]
+[2025-04-11T02:06:23.416Z] Value update: id=7, type=1, value=54
+[2025-04-11T02:06:23.416Z] Value updated for topic /server/counter: 54
+[2025-04-11T02:06:24.431Z] Binary message received, length: 13
+[2025-04-11T02:06:24.432Z] First 32 bytes: 94 07 cf 00 06 32 77 26 3f 13 c8 01 37
+[2025-04-11T02:06:24.432Z] Decoded MessagePack: [7,1744337184429000,1,55]
+[2025-04-11T02:06:24.432Z] Value update: id=7, type=1, value=55
+[2025-04-11T02:06:24.433Z] Value updated for topic /server/counter: 55
+[2025-04-11T02:06:25.442Z] Binary message received, length: 13
+[2025-04-11T02:06:25.442Z] First 32 bytes: 94 07 cf 00 06 32 77 26 4e 84 e8 01 38
+[2025-04-11T02:06:25.442Z] Decoded MessagePack: [7,1744337185441000,1,56]
+[2025-04-11T02:06:25.442Z] Value update: id=7, type=1, value=56
+[2025-04-11T02:06:25.442Z] Value updated for topic /server/counter: 56
+[2025-04-11T02:06:26.448Z] Binary message received, length: 13
+[2025-04-11T02:06:26.449Z] First 32 bytes: 94 07 cf 00 06 32 77 26 5d de 98 01 39
+[2025-04-11T02:06:26.449Z] Decoded MessagePack: [7,1744337186447000,1,57]
+[2025-04-11T02:06:26.449Z] Value update: id=7, type=1, value=57
+[2025-04-11T02:06:26.450Z] Value updated for topic /server/counter: 57
+[2025-04-11T02:06:27.458Z] Binary message received, length: 13
+[2025-04-11T02:06:27.458Z] First 32 bytes: 94 07 cf 00 06 32 77 26 6d 47 e8 01 3a
+[2025-04-11T02:06:27.458Z] Decoded MessagePack: [7,1744337187457000,1,58]
+[2025-04-11T02:06:27.458Z] Value update: id=7, type=1, value=58
+[2025-04-11T02:06:27.459Z] Value updated for topic /server/counter: 58
+[2025-04-11T02:06:28.469Z] Binary message received, length: 13
+[2025-04-11T02:06:28.470Z] First 32 bytes: 94 07 cf 00 06 32 77 26 7c b9 08 01 3b
+[2025-04-11T02:06:28.470Z] Decoded MessagePack: [7,1744337188469000,1,59]
+[2025-04-11T02:06:28.470Z] Value update: id=7, type=1, value=59
+[2025-04-11T02:06:28.470Z] Value updated for topic /server/counter: 59
+[2025-04-11T02:06:29.473Z] Binary message received, length: 13
+[2025-04-11T02:06:29.473Z] First 32 bytes: 94 07 cf 00 06 32 77 26 8c 07 00 01 3c
+[2025-04-11T02:06:29.473Z] Decoded MessagePack: [7,1744337189472000,1,60]
+[2025-04-11T02:06:29.473Z] Value update: id=7, type=1, value=60
+[2025-04-11T02:06:29.474Z] Value updated for topic /server/counter: 60
+[2025-04-11T02:06:30.476Z] Binary message received, length: 13
+[2025-04-11T02:06:30.476Z] First 32 bytes: 94 07 cf 00 06 32 77 26 9b 58 e0 01 3d
+[2025-04-11T02:06:30.476Z] Decoded MessagePack: [7,1744337190476000,1,61]
+[2025-04-11T02:06:30.477Z] Value update: id=7, type=1, value=61
+[2025-04-11T02:06:30.477Z] Value updated for topic /server/counter: 61
+[2025-04-11T02:06:31.484Z] Binary message received, length: 13
+[2025-04-11T02:06:31.484Z] First 32 bytes: 94 07 cf 00 06 32 77 26 aa ba 60 01 3e
+[2025-04-11T02:06:31.485Z] Decoded MessagePack: [7,1744337191484000,1,62]
+[2025-04-11T02:06:31.485Z] Value update: id=7, type=1, value=62
+[2025-04-11T02:06:31.485Z] Value updated for topic /server/counter: 62
+[2025-04-11T02:06:32.490Z] Binary message received, length: 13
+[2025-04-11T02:06:32.491Z] First 32 bytes: 94 07 cf 00 06 32 77 26 ba 14 10 01 3f
+[2025-04-11T02:06:32.491Z] Decoded MessagePack: [7,1744337192490000,1,63]
+[2025-04-11T02:06:32.491Z] Value update: id=7, type=1, value=63
+[2025-04-11T02:06:32.492Z] Value updated for topic /server/counter: 63
+[2025-04-11T02:06:33.503Z] Binary message received, length: 13
+[2025-04-11T02:06:33.504Z] First 32 bytes: 94 07 cf 00 06 32 77 26 c9 85 30 01 40
+[2025-04-11T02:06:33.504Z] Decoded MessagePack: [7,1744337193502000,1,64]
+[2025-04-11T02:06:33.504Z] Value update: id=7, type=1, value=64
+[2025-04-11T02:06:33.505Z] Value updated for topic /server/counter: 64
+[2025-04-11T02:06:34.511Z] Binary message received, length: 13
+[2025-04-11T02:06:34.511Z] First 32 bytes: 94 07 cf 00 06 32 77 26 d8 e6 b0 01 41
+[2025-04-11T02:06:34.512Z] Decoded MessagePack: [7,1744337194510000,1,65]
+[2025-04-11T02:06:34.512Z] Value update: id=7, type=1, value=65
+[2025-04-11T02:06:34.512Z] Value updated for topic /server/counter: 65
+[2025-04-11T02:06:35.520Z] Binary message received, length: 13
+[2025-04-11T02:06:35.520Z] First 32 bytes: 94 07 cf 00 06 32 77 26 e8 50 00 01 42
+[2025-04-11T02:06:35.520Z] Decoded MessagePack: [7,1744337195520000,1,66]
+[2025-04-11T02:06:35.521Z] Value update: id=7, type=1, value=66
+[2025-04-11T02:06:35.521Z] Value updated for topic /server/counter: 66
+[2025-04-11T02:06:36.524Z] Binary message received, length: 13
+[2025-04-11T02:06:36.524Z] First 32 bytes: 94 07 cf 00 06 32 77 26 f7 a1 e0 01 43
+[2025-04-11T02:06:36.525Z] Decoded MessagePack: [7,1744337196524000,1,67]
+[2025-04-11T02:06:36.525Z] Value update: id=7, type=1, value=67
+[2025-04-11T02:06:36.525Z] Value updated for topic /server/counter: 67
+[2025-04-11T02:06:37.532Z] Binary message received, length: 13
+[2025-04-11T02:06:37.532Z] First 32 bytes: 94 07 cf 00 06 32 77 27 06 ff 78 01 44
+[2025-04-11T02:06:37.533Z] Decoded MessagePack: [7,1744337197531000,1,68]
+[2025-04-11T02:06:37.533Z] Value update: id=7, type=1, value=68
+[2025-04-11T02:06:37.533Z] Value updated for topic /server/counter: 68
+[2025-04-11T02:06:38.544Z] Binary message received, length: 13
+[2025-04-11T02:06:38.545Z] First 32 bytes: 94 07 cf 00 06 32 77 27 16 74 80 01 45
+[2025-04-11T02:06:38.545Z] Decoded MessagePack: [7,1744337198544000,1,69]
+[2025-04-11T02:06:38.546Z] Value update: id=7, type=1, value=69
+[2025-04-11T02:06:38.546Z] Value updated for topic /server/counter: 69
+[2025-04-11T02:06:39.556Z] Binary message received, length: 13
+[2025-04-11T02:06:39.556Z] First 32 bytes: 94 07 cf 00 06 32 77 27 25 e1 b8 01 46
+[2025-04-11T02:06:39.556Z] Decoded MessagePack: [7,1744337199555000,1,70]
+[2025-04-11T02:06:39.556Z] Value update: id=7, type=1, value=70
+[2025-04-11T02:06:39.556Z] Value updated for topic /server/counter: 70
+[2025-04-11T02:06:40.564Z] Binary message received, length: 13
+[2025-04-11T02:06:40.564Z] First 32 bytes: 94 07 cf 00 06 32 77 27 35 47 20 01 47
+[2025-04-11T02:06:40.565Z] Decoded MessagePack: [7,1744337200564000,1,71]
+[2025-04-11T02:06:40.565Z] Value update: id=7, type=1, value=71
+[2025-04-11T02:06:40.565Z] Value updated for topic /server/counter: 71
+[2025-04-11T02:06:41.573Z] Binary message received, length: 13
+[2025-04-11T02:06:41.573Z] First 32 bytes: 94 07 cf 00 06 32 77 27 44 a8 a0 01 48
+[2025-04-11T02:06:41.574Z] Decoded MessagePack: [7,1744337201572000,1,72]
+[2025-04-11T02:06:41.574Z] Value update: id=7, type=1, value=72
+[2025-04-11T02:06:41.574Z] Value updated for topic /server/counter: 72
+[2025-04-11T02:06:42.586Z] Binary message received, length: 13
+[2025-04-11T02:06:42.586Z] First 32 bytes: 94 07 cf 00 06 32 77 27 54 21 90 01 49
+[2025-04-11T02:06:42.586Z] Decoded MessagePack: [7,1744337202586000,1,73]
+[2025-04-11T02:06:42.587Z] Value update: id=7, type=1, value=73
+[2025-04-11T02:06:42.587Z] Value updated for topic /server/counter: 73
+[2025-04-11T02:06:43.589Z] Binary message received, length: 13
+[2025-04-11T02:06:43.589Z] First 32 bytes: 94 07 cf 00 06 32 77 27 63 6f 88 01 4a
+[2025-04-11T02:06:43.589Z] Decoded MessagePack: [7,1744337203589000,1,74]
+[2025-04-11T02:06:43.589Z] Value update: id=7, type=1, value=74
+[2025-04-11T02:06:43.590Z] Value updated for topic /server/counter: 74
+[2025-04-11T02:06:44.603Z] Binary message received, length: 13
+[2025-04-11T02:06:44.603Z] First 32 bytes: 94 07 cf 00 06 32 77 27 72 e8 78 01 4b
+[2025-04-11T02:06:44.603Z] Decoded MessagePack: [7,1744337204603000,1,75]
+[2025-04-11T02:06:44.603Z] Value update: id=7, type=1, value=75
+[2025-04-11T02:06:44.603Z] Value updated for topic /server/counter: 75
+[2025-04-11T02:06:45.616Z] Binary message received, length: 13
+[2025-04-11T02:06:45.616Z] First 32 bytes: 94 07 cf 00 06 32 77 27 82 5d 80 01 4c
+[2025-04-11T02:06:45.616Z] Decoded MessagePack: [7,1744337205616000,1,76]
+[2025-04-11T02:06:45.616Z] Value update: id=7, type=1, value=76
+[2025-04-11T02:06:45.617Z] Value updated for topic /server/counter: 76
+[2025-04-11T02:06:46.629Z] Binary message received, length: 13
+[2025-04-11T02:06:46.629Z] First 32 bytes: 94 07 cf 00 06 32 77 27 91 ce a0 01 4d
+[2025-04-11T02:06:46.629Z] Decoded MessagePack: [7,1744337206628000,1,77]
+[2025-04-11T02:06:46.630Z] Value update: id=7, type=1, value=77
+[2025-04-11T02:06:46.630Z] Value updated for topic /server/counter: 77
+[2025-04-11T02:06:47.642Z] Binary message received, length: 13
+[2025-04-11T02:06:47.642Z] First 32 bytes: 94 07 cf 00 06 32 77 27 a1 47 90 01 4e
+[2025-04-11T02:06:47.642Z] Decoded MessagePack: [7,1744337207642000,1,78]
+[2025-04-11T02:06:47.642Z] Value update: id=7, type=1, value=78
+[2025-04-11T02:06:47.643Z] Value updated for topic /server/counter: 78
+[2025-04-11T02:06:48.655Z] Binary message received, length: 13
+[2025-04-11T02:06:48.655Z] First 32 bytes: 94 07 cf 00 06 32 77 27 b0 bc 98 01 4f
+[2025-04-11T02:06:48.655Z] Decoded MessagePack: [7,1744337208655000,1,79]
+[2025-04-11T02:06:48.655Z] Value update: id=7, type=1, value=79
+[2025-04-11T02:06:48.656Z] Value updated for topic /server/counter: 79
+[2025-04-11T02:06:49.664Z] Binary message received, length: 13
+[2025-04-11T02:06:49.664Z] First 32 bytes: 94 07 cf 00 06 32 77 27 c0 22 00 01 50
+[2025-04-11T02:06:49.664Z] Decoded MessagePack: [7,1744337209664000,1,80]
+[2025-04-11T02:06:49.665Z] Value update: id=7, type=1, value=80
+[2025-04-11T02:06:49.665Z] Value updated for topic /server/counter: 80
+[2025-04-11T02:06:50.678Z] Binary message received, length: 13
+[2025-04-11T02:06:50.678Z] First 32 bytes: 94 07 cf 00 06 32 77 27 cf 9a f0 01 51
+[2025-04-11T02:06:50.678Z] Decoded MessagePack: [7,1744337210678000,1,81]
+[2025-04-11T02:06:50.678Z] Value update: id=7, type=1, value=81
+[2025-04-11T02:06:50.678Z] Value updated for topic /server/counter: 81
+[2025-04-11T02:06:51.690Z] Binary message received, length: 13
+[2025-04-11T02:06:51.690Z] First 32 bytes: 94 07 cf 00 06 32 77 27 df 0c 10 01 52
+[2025-04-11T02:06:51.691Z] Decoded MessagePack: [7,1744337211690000,1,82]
+[2025-04-11T02:06:51.691Z] Value update: id=7, type=1, value=82
+[2025-04-11T02:06:51.691Z] Value updated for topic /server/counter: 82
+[2025-04-11T02:06:52.698Z] Binary message received, length: 13
+[2025-04-11T02:06:52.698Z] First 32 bytes: 94 07 cf 00 06 32 77 27 ee 69 a8 01 53
+[2025-04-11T02:06:52.698Z] Decoded MessagePack: [7,1744337212697000,1,83]
+[2025-04-11T02:06:52.699Z] Value update: id=7, type=1, value=83
+[2025-04-11T02:06:52.699Z] Value updated for topic /server/counter: 83
+[2025-04-11T02:06:53.704Z] Binary message received, length: 13
+[2025-04-11T02:06:53.705Z] First 32 bytes: 94 07 cf 00 06 32 77 27 fd c7 40 01 54
+[2025-04-11T02:06:53.705Z] Decoded MessagePack: [7,1744337213704000,1,84]
+[2025-04-11T02:06:53.705Z] Value update: id=7, type=1, value=84
+[2025-04-11T02:06:53.705Z] Value updated for topic /server/counter: 84
+[2025-04-11T02:06:54.715Z] Binary message received, length: 13
+[2025-04-11T02:06:54.715Z] First 32 bytes: 94 07 cf 00 06 32 77 28 0d 34 78 01 55
+[2025-04-11T02:06:54.715Z] Decoded MessagePack: [7,1744337214715000,1,85]
+[2025-04-11T02:06:54.715Z] Value update: id=7, type=1, value=85
+[2025-04-11T02:06:54.716Z] Value updated for topic /server/counter: 85
+[2025-04-11T02:06:55.721Z] Binary message received, length: 13
+[2025-04-11T02:06:55.721Z] First 32 bytes: 94 07 cf 00 06 32 77 28 1c 8e 28 01 56
+[2025-04-11T02:06:55.721Z] Decoded MessagePack: [7,1744337215721000,1,86]
+[2025-04-11T02:06:55.721Z] Value update: id=7, type=1, value=86
+[2025-04-11T02:06:55.721Z] Value updated for topic /server/counter: 86
+[2025-04-11T02:06:56.732Z] Binary message received, length: 13
+[2025-04-11T02:06:56.732Z] First 32 bytes: 94 07 cf 00 06 32 77 28 2b fb 60 01 57
+[2025-04-11T02:06:56.732Z] Decoded MessagePack: [7,1744337216732000,1,87]
+[2025-04-11T02:06:56.732Z] Value update: id=7, type=1, value=87
+[2025-04-11T02:06:56.732Z] Value updated for topic /server/counter: 87
+[2025-04-11T02:06:57.742Z] Binary message received, length: 13
+[2025-04-11T02:06:57.742Z] First 32 bytes: 94 07 cf 00 06 32 77 28 3b 64 b0 01 58
+[2025-04-11T02:06:57.742Z] Decoded MessagePack: [7,1744337217742000,1,88]
+[2025-04-11T02:06:57.742Z] Value update: id=7, type=1, value=88
+[2025-04-11T02:06:57.742Z] Value updated for topic /server/counter: 88
+[2025-04-11T02:06:58.750Z] Binary message received, length: 13
+[2025-04-11T02:06:58.750Z] First 32 bytes: 94 07 cf 00 06 32 77 28 4a c6 30 01 59
+[2025-04-11T02:06:58.751Z] Decoded MessagePack: [7,1744337218750000,1,89]
+[2025-04-11T02:06:58.751Z] Value update: id=7, type=1, value=89
+[2025-04-11T02:06:58.751Z] Value updated for topic /server/counter: 89
+[2025-04-11T02:06:59.763Z] Binary message received, length: 13
+[2025-04-11T02:06:59.763Z] First 32 bytes: 94 07 cf 00 06 32 77 28 5a 3b 38 01 5a
+[2025-04-11T02:06:59.764Z] Decoded MessagePack: [7,1744337219763000,1,90]
+[2025-04-11T02:06:59.764Z] Value update: id=7, type=1, value=90
+[2025-04-11T02:06:59.764Z] Value updated for topic /server/counter: 90
+[2025-04-11T02:07:00.776Z] Binary message received, length: 13
+[2025-04-11T02:07:00.776Z] First 32 bytes: 94 07 cf 00 06 32 77 28 69 b0 40 01 5b
+[2025-04-11T02:07:00.776Z] Decoded MessagePack: [7,1744337220776000,1,91]
+[2025-04-11T02:07:00.776Z] Value update: id=7, type=1, value=91
+[2025-04-11T02:07:00.776Z] Value updated for topic /server/counter: 91
+[2025-04-11T02:07:01.789Z] Binary message received, length: 13
+[2025-04-11T02:07:01.789Z] First 32 bytes: 94 07 cf 00 06 32 77 28 79 25 48 01 5c
+[2025-04-11T02:07:01.790Z] Decoded MessagePack: [7,1744337221789000,1,92]
+[2025-04-11T02:07:01.790Z] Value update: id=7, type=1, value=92
+[2025-04-11T02:07:01.790Z] Value updated for topic /server/counter: 92
+[2025-04-11T02:07:02.795Z] Binary message received, length: 13
+[2025-04-11T02:07:02.795Z] First 32 bytes: 94 07 cf 00 06 32 77 28 88 7e f8 01 5d
+[2025-04-11T02:07:02.796Z] Decoded MessagePack: [7,1744337222795000,1,93]
+[2025-04-11T02:07:02.796Z] Value update: id=7, type=1, value=93
+[2025-04-11T02:07:02.796Z] Value updated for topic /server/counter: 93
+[2025-04-11T02:07:03.806Z] Binary message received, length: 13
+[2025-04-11T02:07:03.806Z] First 32 bytes: 94 07 cf 00 06 32 77 28 97 ec 30 01 5e
+[2025-04-11T02:07:03.807Z] Decoded MessagePack: [7,1744337223806000,1,94]
+[2025-04-11T02:07:03.807Z] Value update: id=7, type=1, value=94
+[2025-04-11T02:07:03.807Z] Value updated for topic /server/counter: 94
+[2025-04-11T02:07:04.820Z] Binary message received, length: 13
+[2025-04-11T02:07:04.820Z] First 32 bytes: 94 07 cf 00 06 32 77 28 a7 65 20 01 5f
+[2025-04-11T02:07:04.820Z] Decoded MessagePack: [7,1744337224820000,1,95]
+[2025-04-11T02:07:04.820Z] Value update: id=7, type=1, value=95
+[2025-04-11T02:07:04.820Z] Value updated for topic /server/counter: 95
+[2025-04-11T02:07:05.832Z] Binary message received, length: 13
+[2025-04-11T02:07:05.832Z] First 32 bytes: 94 07 cf 00 06 32 77 28 b6 d6 40 01 60
+[2025-04-11T02:07:05.833Z] Decoded MessagePack: [7,1744337225832000,1,96]
+[2025-04-11T02:07:05.833Z] Value update: id=7, type=1, value=96
+[2025-04-11T02:07:05.833Z] Value updated for topic /server/counter: 96
+[2025-04-11T02:07:06.841Z] Binary message received, length: 13
+[2025-04-11T02:07:06.842Z] First 32 bytes: 94 07 cf 00 06 32 77 28 c6 3b a8 01 61
+[2025-04-11T02:07:06.842Z] Decoded MessagePack: [7,1744337226841000,1,97]
+[2025-04-11T02:07:06.843Z] Value update: id=7, type=1, value=97
+[2025-04-11T02:07:06.843Z] Value updated for topic /server/counter: 97
+[2025-04-11T02:07:07.854Z] Binary message received, length: 13
+[2025-04-11T02:07:07.855Z] First 32 bytes: 94 07 cf 00 06 32 77 28 d5 b0 b0 01 62
+[2025-04-11T02:07:07.855Z] Decoded MessagePack: [7,1744337227854000,1,98]
+[2025-04-11T02:07:07.855Z] Value update: id=7, type=1, value=98
+[2025-04-11T02:07:07.856Z] Value updated for topic /server/counter: 98
+[2025-04-11T02:07:08.856Z] Binary message received, length: 13
+[2025-04-11T02:07:08.857Z] First 32 bytes: 94 07 cf 00 06 32 77 28 e4 fe a8 01 63
+[2025-04-11T02:07:08.857Z] Decoded MessagePack: [7,1744337228857000,1,99]
+[2025-04-11T02:07:08.857Z] Value update: id=7, type=1, value=99
+[2025-04-11T02:07:08.858Z] Value updated for topic /server/counter: 99
+[2025-04-11T02:07:09.866Z] Binary message received, length: 13
+[2025-04-11T02:07:09.866Z] First 32 bytes: 94 07 cf 00 06 32 77 28 f4 67 f8 01 64
+[2025-04-11T02:07:09.867Z] Decoded MessagePack: [7,1744337229867000,1,100]
+[2025-04-11T02:07:09.867Z] Value update: id=7, type=1, value=100
+[2025-04-11T02:07:09.867Z] Value updated for topic /server/counter: 100
+[2025-04-11T02:07:10.880Z] Binary message received, length: 13
+[2025-04-11T02:07:10.881Z] First 32 bytes: 94 07 cf 00 06 32 77 29 03 dd 00 01 65
+[2025-04-11T02:07:10.881Z] Decoded MessagePack: [7,1744337230880000,1,101]
+[2025-04-11T02:07:10.881Z] Value update: id=7, type=1, value=101
+[2025-04-11T02:07:10.882Z] Value updated for topic /server/counter: 101
+[2025-04-11T02:07:11.884Z] Binary message received, length: 13
+[2025-04-11T02:07:11.885Z] First 32 bytes: 94 07 cf 00 06 32 77 29 13 2e e0 01 66
+[2025-04-11T02:07:11.885Z] Decoded MessagePack: [7,1744337231884000,1,102]
+[2025-04-11T02:07:11.885Z] Value update: id=7, type=1, value=102
+[2025-04-11T02:07:11.885Z] Value updated for topic /server/counter: 102
+[2025-04-11T02:07:12.884Z] Binary message received, length: 13
+[2025-04-11T02:07:12.884Z] First 32 bytes: 94 07 cf 00 06 32 77 29 22 71 20 01 67
+[2025-04-11T02:07:12.884Z] Decoded MessagePack: [7,1744337232884000,1,103]
+[2025-04-11T02:07:12.884Z] Value update: id=7, type=1, value=103
+[2025-04-11T02:07:12.885Z] Value updated for topic /server/counter: 103
+[2025-04-11T02:07:13.896Z] Binary message received, length: 13
+[2025-04-11T02:07:13.896Z] First 32 bytes: 94 07 cf 00 06 32 77 29 31 e2 40 01 68
+[2025-04-11T02:07:13.896Z] Decoded MessagePack: [7,1744337233896000,1,104]
+[2025-04-11T02:07:13.896Z] Value update: id=7, type=1, value=104
+[2025-04-11T02:07:13.896Z] Value updated for topic /server/counter: 104
+[2025-04-11T02:07:14.909Z] Binary message received, length: 13
+[2025-04-11T02:07:14.910Z] First 32 bytes: 94 07 cf 00 06 32 77 29 41 57 48 01 69
+[2025-04-11T02:07:14.910Z] Decoded MessagePack: [7,1744337234909000,1,105]
+[2025-04-11T02:07:14.910Z] Value update: id=7, type=1, value=105
+[2025-04-11T02:07:14.911Z] Value updated for topic /server/counter: 105
+[2025-04-11T02:07:15.919Z] Binary message received, length: 13
+[2025-04-11T02:07:15.919Z] First 32 bytes: 94 07 cf 00 06 32 77 29 50 c0 98 01 6a
+[2025-04-11T02:07:15.919Z] Decoded MessagePack: [7,1744337235919000,1,106]
+[2025-04-11T02:07:15.919Z] Value update: id=7, type=1, value=106
+[2025-04-11T02:07:15.919Z] Value updated for topic /server/counter: 106
+[2025-04-11T02:07:16.926Z] Binary message received, length: 13
+[2025-04-11T02:07:16.926Z] First 32 bytes: 94 07 cf 00 06 32 77 29 60 1e 30 01 6b
+[2025-04-11T02:07:16.927Z] Decoded MessagePack: [7,1744337236926000,1,107]
+[2025-04-11T02:07:16.927Z] Value update: id=7, type=1, value=107
+[2025-04-11T02:07:16.927Z] Value updated for topic /server/counter: 107
+[2025-04-11T02:07:17.934Z] Binary message received, length: 13
+[2025-04-11T02:07:17.934Z] First 32 bytes: 94 07 cf 00 06 32 77 29 6f 7f b0 01 6c
+[2025-04-11T02:07:17.934Z] Decoded MessagePack: [7,1744337237934000,1,108]
+[2025-04-11T02:07:17.934Z] Value update: id=7, type=1, value=108
+[2025-04-11T02:07:17.934Z] Value updated for topic /server/counter: 108
+[2025-04-11T02:07:18.949Z] Binary message received, length: 13
+[2025-04-11T02:07:18.949Z] First 32 bytes: 94 07 cf 00 06 32 77 29 7e fc 88 01 6d
+[2025-04-11T02:07:18.949Z] Decoded MessagePack: [7,1744337238949000,1,109]
+[2025-04-11T02:07:18.949Z] Value update: id=7, type=1, value=109
+[2025-04-11T02:07:18.949Z] Value updated for topic /server/counter: 109
+[2025-04-11T02:07:19.961Z] Binary message received, length: 13
+[2025-04-11T02:07:19.961Z] First 32 bytes: 94 07 cf 00 06 32 77 29 8e 6d a8 01 6e
+[2025-04-11T02:07:19.961Z] Decoded MessagePack: [7,1744337239961000,1,110]
+[2025-04-11T02:07:19.961Z] Value update: id=7, type=1, value=110
+[2025-04-11T02:07:19.961Z] Value updated for topic /server/counter: 110
+[2025-04-11T02:07:20.975Z] Binary message received, length: 13
+[2025-04-11T02:07:20.975Z] First 32 bytes: 94 07 cf 00 06 32 77 29 9d e6 98 01 6f
+[2025-04-11T02:07:20.975Z] Decoded MessagePack: [7,1744337240975000,1,111]
+[2025-04-11T02:07:20.975Z] Value update: id=7, type=1, value=111
+[2025-04-11T02:07:20.976Z] Value updated for topic /server/counter: 111
+[2025-04-11T02:07:21.985Z] Binary message received, length: 13
+[2025-04-11T02:07:21.985Z] First 32 bytes: 94 07 cf 00 06 32 77 29 ad 4f e8 01 70
+[2025-04-11T02:07:21.986Z] Decoded MessagePack: [7,1744337241985000,1,112]
+[2025-04-11T02:07:21.986Z] Value update: id=7, type=1, value=112
+[2025-04-11T02:07:21.986Z] Value updated for topic /server/counter: 112
+[2025-04-11T02:07:22.995Z] Binary message received, length: 13
+[2025-04-11T02:07:22.995Z] First 32 bytes: 94 07 cf 00 06 32 77 29 bc b9 38 01 71
+[2025-04-11T02:07:22.996Z] Decoded MessagePack: [7,1744337242995000,1,113]
+[2025-04-11T02:07:22.996Z] Value update: id=7, type=1, value=113
+[2025-04-11T02:07:22.996Z] Value updated for topic /server/counter: 113
+[2025-04-11T02:07:24.004Z] Binary message received, length: 13
+[2025-04-11T02:07:24.005Z] First 32 bytes: 94 07 cf 00 06 32 77 29 cc 22 88 01 72
+[2025-04-11T02:07:24.005Z] Decoded MessagePack: [7,1744337244005000,1,114]
+[2025-04-11T02:07:24.005Z] Value update: id=7, type=1, value=114
+[2025-04-11T02:07:24.005Z] Value updated for topic /server/counter: 114
+[2025-04-11T02:07:25.018Z] Binary message received, length: 13
+[2025-04-11T02:07:25.018Z] First 32 bytes: 94 07 cf 00 06 32 77 29 db 97 90 01 73
+[2025-04-11T02:07:25.019Z] Decoded MessagePack: [7,1744337245018000,1,115]
+[2025-04-11T02:07:25.019Z] Value update: id=7, type=1, value=115
+[2025-04-11T02:07:25.020Z] Value updated for topic /server/counter: 115
+[2025-04-11T02:07:26.025Z] Binary message received, length: 13
+[2025-04-11T02:07:26.025Z] First 32 bytes: 94 07 cf 00 06 32 77 29 ea f5 28 01 74
+[2025-04-11T02:07:26.025Z] Decoded MessagePack: [7,1744337246025000,1,116]
+[2025-04-11T02:07:26.026Z] Value update: id=7, type=1, value=116
+[2025-04-11T02:07:26.026Z] Value updated for topic /server/counter: 116
+[2025-04-11T02:07:27.034Z] Binary message received, length: 13
+[2025-04-11T02:07:27.034Z] First 32 bytes: 94 07 cf 00 06 32 77 29 fa 5a 90 01 75
+[2025-04-11T02:07:27.034Z] Decoded MessagePack: [7,1744337247034000,1,117]
+[2025-04-11T02:07:27.034Z] Value update: id=7, type=1, value=117
+[2025-04-11T02:07:27.034Z] Value updated for topic /server/counter: 117
+[2025-04-11T02:07:28.039Z] Binary message received, length: 13
+[2025-04-11T02:07:28.039Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 09 b0 58 01 76
+[2025-04-11T02:07:28.039Z] Decoded MessagePack: [7,1744337248039000,1,118]
+[2025-04-11T02:07:28.039Z] Value update: id=7, type=1, value=118
+[2025-04-11T02:07:28.040Z] Value updated for topic /server/counter: 118
+[2025-04-11T02:07:29.053Z] Binary message received, length: 13
+[2025-04-11T02:07:29.053Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 19 29 48 01 77
+[2025-04-11T02:07:29.053Z] Decoded MessagePack: [7,1744337249053000,1,119]
+[2025-04-11T02:07:29.054Z] Value update: id=7, type=1, value=119
+[2025-04-11T02:07:29.054Z] Value updated for topic /server/counter: 119
+[2025-04-11T02:07:30.060Z] Binary message received, length: 13
+[2025-04-11T02:07:30.060Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 28 86 e0 01 78
+[2025-04-11T02:07:30.060Z] Decoded MessagePack: [7,1744337250060000,1,120]
+[2025-04-11T02:07:30.060Z] Value update: id=7, type=1, value=120
+[2025-04-11T02:07:30.061Z] Value updated for topic /server/counter: 120
+[2025-04-11T02:07:31.062Z] Binary message received, length: 13
+[2025-04-11T02:07:31.063Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 37 d4 d8 01 79
+[2025-04-11T02:07:31.063Z] Decoded MessagePack: [7,1744337251063000,1,121]
+[2025-04-11T02:07:31.063Z] Value update: id=7, type=1, value=121
+[2025-04-11T02:07:31.063Z] Value updated for topic /server/counter: 121
+[2025-04-11T02:07:32.071Z] Binary message received, length: 13
+[2025-04-11T02:07:32.072Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 47 36 58 01 7a
+[2025-04-11T02:07:32.072Z] Decoded MessagePack: [7,1744337252071000,1,122]
+[2025-04-11T02:07:32.072Z] Value update: id=7, type=1, value=122
+[2025-04-11T02:07:32.073Z] Value updated for topic /server/counter: 122
+[2025-04-11T02:07:33.086Z] Binary message received, length: 13
+[2025-04-11T02:07:33.086Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 56 b3 30 01 7b
+[2025-04-11T02:07:33.087Z] Decoded MessagePack: [7,1744337253086000,1,123]
+[2025-04-11T02:07:33.087Z] Value update: id=7, type=1, value=123
+[2025-04-11T02:07:33.087Z] Value updated for topic /server/counter: 123
+[2025-04-11T02:07:34.096Z] Binary message received, length: 13
+[2025-04-11T02:07:34.096Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 66 1c 80 01 7c
+[2025-04-11T02:07:34.097Z] Decoded MessagePack: [7,1744337254096000,1,124]
+[2025-04-11T02:07:34.097Z] Value update: id=7, type=1, value=124
+[2025-04-11T02:07:34.097Z] Value updated for topic /server/counter: 124
+[2025-04-11T02:07:35.104Z] Binary message received, length: 13
+[2025-04-11T02:07:35.104Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 75 7e 00 01 7d
+[2025-04-11T02:07:35.104Z] Decoded MessagePack: [7,1744337255104000,1,125]
+[2025-04-11T02:07:35.105Z] Value update: id=7, type=1, value=125
+[2025-04-11T02:07:35.105Z] Value updated for topic /server/counter: 125
+[2025-04-11T02:07:36.116Z] Binary message received, length: 13
+[2025-04-11T02:07:36.117Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 84 f3 08 01 7e
+[2025-04-11T02:07:36.117Z] Decoded MessagePack: [7,1744337256117000,1,126]
+[2025-04-11T02:07:36.118Z] Value update: id=7, type=1, value=126
+[2025-04-11T02:07:36.118Z] Value updated for topic /server/counter: 126
+[2025-04-11T02:07:37.128Z] Binary message received, length: 13
+[2025-04-11T02:07:37.128Z] First 32 bytes: 94 07 cf 00 06 32 77 2a 94 60 40 01 7f
+[2025-04-11T02:07:37.129Z] Decoded MessagePack: [7,1744337257128000,1,127]
+[2025-04-11T02:07:37.129Z] Value update: id=7, type=1, value=127
+[2025-04-11T02:07:37.130Z] Value updated for topic /server/counter: 127
+[2025-04-11T02:07:38.136Z] Binary message received, length: 14
+[2025-04-11T02:07:38.136Z] First 32 bytes: 94 07 cf 00 06 32 77 2a a3 c1 c0 01 cc 80
+[2025-04-11T02:07:38.137Z] Decoded MessagePack: [7,1744337258136000,1,128]
+[2025-04-11T02:07:38.137Z] Value update: id=7, type=1, value=128
+[2025-04-11T02:07:38.137Z] Value updated for topic /server/counter: 128
+[2025-04-11T02:07:39.154Z] Binary message received, length: 14
+[2025-04-11T02:07:39.156Z] First 32 bytes: 94 07 cf 00 06 32 77 2a b3 4a 50 01 cc 81
+[2025-04-11T02:07:39.157Z] Decoded MessagePack: [7,1744337259154000,1,129]
+[2025-04-11T02:07:39.158Z] Value update: id=7, type=1, value=129
+[2025-04-11T02:07:39.158Z] Value updated for topic /server/counter: 129
+[2025-04-11T02:07:40.161Z] Binary message received, length: 14
+[2025-04-11T02:07:40.162Z] First 32 bytes: 94 07 cf 00 06 32 77 2a c2 ab d0 01 cc 82
+[2025-04-11T02:07:40.162Z] Decoded MessagePack: [7,1744337260162000,1,130]
+[2025-04-11T02:07:40.162Z] Value update: id=7, type=1, value=130
+[2025-04-11T02:07:40.162Z] Value updated for topic /server/counter: 130
+[2025-04-11T02:07:41.174Z] Binary message received, length: 14
+[2025-04-11T02:07:41.174Z] First 32 bytes: 94 07 cf 00 06 32 77 2a d2 1c f0 01 cc 83
+[2025-04-11T02:07:41.174Z] Decoded MessagePack: [7,1744337261174000,1,131]
+[2025-04-11T02:07:41.175Z] Value update: id=7, type=1, value=131
+[2025-04-11T02:07:41.175Z] Value updated for topic /server/counter: 131
+[2025-04-11T02:07:42.186Z] Binary message received, length: 14
+[2025-04-11T02:07:42.186Z] First 32 bytes: 94 07 cf 00 06 32 77 2a e1 8e 10 01 cc 84
+[2025-04-11T02:07:42.186Z] Decoded MessagePack: [7,1744337262186000,1,132]
+[2025-04-11T02:07:42.187Z] Value update: id=7, type=1, value=132
+[2025-04-11T02:07:42.187Z] Value updated for topic /server/counter: 132
+[2025-04-11T02:07:43.195Z] Binary message received, length: 14
+[2025-04-11T02:07:43.195Z] First 32 bytes: 94 07 cf 00 06 32 77 2a f0 f3 78 01 cc 85
+[2025-04-11T02:07:43.195Z] Decoded MessagePack: [7,1744337263195000,1,133]
+[2025-04-11T02:07:43.196Z] Value update: id=7, type=1, value=133
+[2025-04-11T02:07:43.196Z] Value updated for topic /server/counter: 133
+[2025-04-11T02:07:44.203Z] Binary message received, length: 14
+[2025-04-11T02:07:44.203Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 00 54 f8 01 cc 86
+[2025-04-11T02:07:44.204Z] Decoded MessagePack: [7,1744337264203000,1,134]
+[2025-04-11T02:07:44.204Z] Value update: id=7, type=1, value=134
+[2025-04-11T02:07:44.204Z] Value updated for topic /server/counter: 134
+[2025-04-11T02:07:45.214Z] Binary message received, length: 14
+[2025-04-11T02:07:45.214Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 0f c2 30 01 cc 87
+[2025-04-11T02:07:45.215Z] Decoded MessagePack: [7,1744337265214000,1,135]
+[2025-04-11T02:07:45.215Z] Value update: id=7, type=1, value=135
+[2025-04-11T02:07:45.215Z] Value updated for topic /server/counter: 135
+[2025-04-11T02:07:46.226Z] Binary message received, length: 14
+[2025-04-11T02:07:46.227Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 1f 37 38 01 cc 88
+[2025-04-11T02:07:46.227Z] Decoded MessagePack: [7,1744337266227000,1,136]
+[2025-04-11T02:07:46.227Z] Value update: id=7, type=1, value=136
+[2025-04-11T02:07:46.227Z] Value updated for topic /server/counter: 136
+[2025-04-11T02:07:47.241Z] Binary message received, length: 14
+[2025-04-11T02:07:47.242Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 2e b0 28 01 cc 89
+[2025-04-11T02:07:47.242Z] Decoded MessagePack: [7,1744337267241000,1,137]
+[2025-04-11T02:07:47.242Z] Value update: id=7, type=1, value=137
+[2025-04-11T02:07:47.243Z] Value updated for topic /server/counter: 137
+[2025-04-11T02:07:48.255Z] Binary message received, length: 14
+[2025-04-11T02:07:48.255Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 3e 29 18 01 cc 8a
+[2025-04-11T02:07:48.256Z] Decoded MessagePack: [7,1744337268255000,1,138]
+[2025-04-11T02:07:48.256Z] Value update: id=7, type=1, value=138
+[2025-04-11T02:07:48.256Z] Value updated for topic /server/counter: 138
+[2025-04-11T02:07:49.267Z] Binary message received, length: 14
+[2025-04-11T02:07:49.267Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 4d 9a 38 01 cc 8b
+[2025-04-11T02:07:49.267Z] Decoded MessagePack: [7,1744337269267000,1,139]
+[2025-04-11T02:07:49.267Z] Value update: id=7, type=1, value=139
+[2025-04-11T02:07:49.267Z] Value updated for topic /server/counter: 139
+[2025-04-11T02:07:50.280Z] Binary message received, length: 14
+[2025-04-11T02:07:50.280Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 5d 0f 40 01 cc 8c
+[2025-04-11T02:07:50.280Z] Decoded MessagePack: [7,1744337270280000,1,140]
+[2025-04-11T02:07:50.280Z] Value update: id=7, type=1, value=140
+[2025-04-11T02:07:50.281Z] Value updated for topic /server/counter: 140
+[2025-04-11T02:07:51.291Z] Binary message received, length: 14
+[2025-04-11T02:07:51.291Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 6c 7c 78 01 cc 8d
+[2025-04-11T02:07:51.292Z] Decoded MessagePack: [7,1744337271291000,1,141]
+[2025-04-11T02:07:51.292Z] Value update: id=7, type=1, value=141
+[2025-04-11T02:07:51.292Z] Value updated for topic /server/counter: 141
+[2025-04-11T02:07:52.294Z] Binary message received, length: 14
+[2025-04-11T02:07:52.294Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 7b ca 70 01 cc 8e
+[2025-04-11T02:07:52.294Z] Decoded MessagePack: [7,1744337272294000,1,142]
+[2025-04-11T02:07:52.294Z] Value update: id=7, type=1, value=142
+[2025-04-11T02:07:52.294Z] Value updated for topic /server/counter: 142
+[2025-04-11T02:07:53.302Z] Binary message received, length: 14
+[2025-04-11T02:07:53.303Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 8b 2b f0 01 cc 8f
+[2025-04-11T02:07:53.303Z] Decoded MessagePack: [7,1744337273302000,1,143]
+[2025-04-11T02:07:53.303Z] Value update: id=7, type=1, value=143
+[2025-04-11T02:07:53.304Z] Value updated for topic /server/counter: 143
+[2025-04-11T02:07:54.303Z] Binary message received, length: 14
+[2025-04-11T02:07:54.303Z] First 32 bytes: 94 07 cf 00 06 32 77 2b 9a 72 18 01 cc 90
+[2025-04-11T02:07:54.303Z] Decoded MessagePack: [7,1744337274303000,1,144]
+[2025-04-11T02:07:54.303Z] Value update: id=7, type=1, value=144
+[2025-04-11T02:07:54.303Z] Value updated for topic /server/counter: 144
+[2025-04-11T02:07:55.311Z] Binary message received, length: 14
+[2025-04-11T02:07:55.312Z] First 32 bytes: 94 07 cf 00 06 32 77 2b a9 d3 98 01 cc 91
+[2025-04-11T02:07:55.312Z] Decoded MessagePack: [7,1744337275311000,1,145]
+[2025-04-11T02:07:55.313Z] Value update: id=7, type=1, value=145
+[2025-04-11T02:07:55.313Z] Value updated for topic /server/counter: 145
+[2025-04-11T02:07:56.319Z] Binary message received, length: 14
+[2025-04-11T02:07:56.319Z] First 32 bytes: 94 07 cf 00 06 32 77 2b b9 35 18 01 cc 92
+[2025-04-11T02:07:56.319Z] Decoded MessagePack: [7,1744337276319000,1,146]
+[2025-04-11T02:07:56.319Z] Value update: id=7, type=1, value=146
+[2025-04-11T02:07:56.319Z] Value updated for topic /server/counter: 146
+[2025-04-11T02:07:57.330Z] Binary message received, length: 14
+[2025-04-11T02:07:57.330Z] First 32 bytes: 94 07 cf 00 06 32 77 2b c8 a2 50 01 cc 93
+[2025-04-11T02:07:57.330Z] Decoded MessagePack: [7,1744337277330000,1,147]
+[2025-04-11T02:07:57.330Z] Value update: id=7, type=1, value=147
+[2025-04-11T02:07:57.330Z] Value updated for topic /server/counter: 147
+[2025-04-11T02:07:58.341Z] Binary message received, length: 14
+[2025-04-11T02:07:58.341Z] First 32 bytes: 94 07 cf 00 06 32 77 2b d8 0f 88 01 cc 94
+[2025-04-11T02:07:58.341Z] Decoded MessagePack: [7,1744337278341000,1,148]
+[2025-04-11T02:07:58.342Z] Value update: id=7, type=1, value=148
+[2025-04-11T02:07:58.342Z] Value updated for topic /server/counter: 148
+[2025-04-11T02:07:59.349Z] Binary message received, length: 14
+[2025-04-11T02:07:59.349Z] First 32 bytes: 94 07 cf 00 06 32 77 2b e7 71 08 01 cc 95
+[2025-04-11T02:07:59.350Z] Decoded MessagePack: [7,1744337279349000,1,149]
+[2025-04-11T02:07:59.350Z] Value update: id=7, type=1, value=149
+[2025-04-11T02:07:59.350Z] Value updated for topic /server/counter: 149
+[2025-04-11T02:08:00.358Z] Binary message received, length: 14
+[2025-04-11T02:08:00.359Z] First 32 bytes: 94 07 cf 00 06 32 77 2b f6 da 58 01 cc 96
+[2025-04-11T02:08:00.359Z] Decoded MessagePack: [7,1744337280359000,1,150]
+[2025-04-11T02:08:00.359Z] Value update: id=7, type=1, value=150
+[2025-04-11T02:08:00.359Z] Value updated for topic /server/counter: 150
+[2025-04-11T02:08:01.372Z] Binary message received, length: 14
+[2025-04-11T02:08:01.372Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 06 4f 60 01 cc 97
+[2025-04-11T02:08:01.372Z] Decoded MessagePack: [7,1744337281372000,1,151]
+[2025-04-11T02:08:01.372Z] Value update: id=7, type=1, value=151
+[2025-04-11T02:08:01.372Z] Value updated for topic /server/counter: 151
+[2025-04-11T02:08:02.386Z] Binary message received, length: 14
+[2025-04-11T02:08:02.386Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 15 c8 50 01 cc 98
+[2025-04-11T02:08:02.386Z] Decoded MessagePack: [7,1744337282386000,1,152]
+[2025-04-11T02:08:02.386Z] Value update: id=7, type=1, value=152
+[2025-04-11T02:08:02.386Z] Value updated for topic /server/counter: 152
+[2025-04-11T02:08:03.388Z] Binary message received, length: 14
+[2025-04-11T02:08:03.389Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 25 12 60 01 cc 99
+[2025-04-11T02:08:03.389Z] Decoded MessagePack: [7,1744337283388000,1,153]
+[2025-04-11T02:08:03.389Z] Value update: id=7, type=1, value=153
+[2025-04-11T02:08:03.389Z] Value updated for topic /server/counter: 153
+[2025-04-11T02:08:04.390Z] Binary message received, length: 14
+[2025-04-11T02:08:04.391Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 34 5c 70 01 cc 9a
+[2025-04-11T02:08:04.391Z] Decoded MessagePack: [7,1744337284390000,1,154]
+[2025-04-11T02:08:04.391Z] Value update: id=7, type=1, value=154
+[2025-04-11T02:08:04.392Z] Value updated for topic /server/counter: 154
+[2025-04-11T02:08:05.403Z] Binary message received, length: 14
+[2025-04-11T02:08:05.403Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 43 d1 78 01 cc 9b
+[2025-04-11T02:08:05.404Z] Decoded MessagePack: [7,1744337285403000,1,155]
+[2025-04-11T02:08:05.404Z] Value update: id=7, type=1, value=155
+[2025-04-11T02:08:05.404Z] Value updated for topic /server/counter: 155
+[2025-04-11T02:08:06.413Z] Binary message received, length: 14
+[2025-04-11T02:08:06.413Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 53 3a c8 01 cc 9c
+[2025-04-11T02:08:06.414Z] Decoded MessagePack: [7,1744337286413000,1,156]
+[2025-04-11T02:08:06.414Z] Value update: id=7, type=1, value=156
+[2025-04-11T02:08:06.414Z] Value updated for topic /server/counter: 156
+[2025-04-11T02:08:07.429Z] Binary message received, length: 14
+[2025-04-11T02:08:07.429Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 62 b7 a0 01 cc 9d
+[2025-04-11T02:08:07.430Z] Decoded MessagePack: [7,1744337287428000,1,157]
+[2025-04-11T02:08:07.430Z] Value update: id=7, type=1, value=157
+[2025-04-11T02:08:07.430Z] Value updated for topic /server/counter: 157
+[2025-04-11T02:08:08.430Z] Binary message received, length: 14
+[2025-04-11T02:08:08.430Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 72 01 b0 01 cc 9e
+[2025-04-11T02:08:08.430Z] Decoded MessagePack: [7,1744337288430000,1,158]
+[2025-04-11T02:08:08.430Z] Value update: id=7, type=1, value=158
+[2025-04-11T02:08:08.430Z] Value updated for topic /server/counter: 158
+[2025-04-11T02:08:09.441Z] Binary message received, length: 14
+[2025-04-11T02:08:09.441Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 81 6e e8 01 cc 9f
+[2025-04-11T02:08:09.441Z] Decoded MessagePack: [7,1744337289441000,1,159]
+[2025-04-11T02:08:09.441Z] Value update: id=7, type=1, value=159
+[2025-04-11T02:08:09.442Z] Value updated for topic /server/counter: 159
+[2025-04-11T02:08:10.452Z] Binary message received, length: 14
+[2025-04-11T02:08:10.453Z] First 32 bytes: 94 07 cf 00 06 32 77 2c 90 dc 20 01 cc a0
+[2025-04-11T02:08:10.453Z] Decoded MessagePack: [7,1744337290452000,1,160]
+[2025-04-11T02:08:10.453Z] Value update: id=7, type=1, value=160
+[2025-04-11T02:08:10.454Z] Value updated for topic /server/counter: 160
+[2025-04-11T02:08:11.461Z] Binary message received, length: 14
+[2025-04-11T02:08:11.461Z] First 32 bytes: 94 07 cf 00 06 32 77 2c a0 41 88 01 cc a1
+[2025-04-11T02:08:11.462Z] Decoded MessagePack: [7,1744337291461000,1,161]
+[2025-04-11T02:08:11.462Z] Value update: id=7, type=1, value=161
+[2025-04-11T02:08:11.462Z] Value updated for topic /server/counter: 161
+[2025-04-11T02:08:12.473Z] Binary message received, length: 14
+[2025-04-11T02:08:12.473Z] First 32 bytes: 94 07 cf 00 06 32 77 2c af ae c0 01 cc a2
+[2025-04-11T02:08:12.473Z] Decoded MessagePack: [7,1744337292472000,1,162]
+[2025-04-11T02:08:12.473Z] Value update: id=7, type=1, value=162
+[2025-04-11T02:08:12.474Z] Value updated for topic /server/counter: 162
+[2025-04-11T02:08:13.485Z] Binary message received, length: 14
+[2025-04-11T02:08:13.485Z] First 32 bytes: 94 07 cf 00 06 32 77 2c bf 23 c8 01 cc a3
+[2025-04-11T02:08:13.486Z] Decoded MessagePack: [7,1744337293485000,1,163]
+[2025-04-11T02:08:13.486Z] Value update: id=7, type=1, value=163
+[2025-04-11T02:08:13.486Z] Value updated for topic /server/counter: 163
+[2025-04-11T02:08:14.485Z] Binary message received, length: 14
+[2025-04-11T02:08:14.485Z] First 32 bytes: 94 07 cf 00 06 32 77 2c ce 66 08 01 cc a4
+[2025-04-11T02:08:14.485Z] Decoded MessagePack: [7,1744337294485000,1,164]
+[2025-04-11T02:08:14.485Z] Value update: id=7, type=1, value=164
+[2025-04-11T02:08:14.485Z] Value updated for topic /server/counter: 164
+[2025-04-11T02:08:15.493Z] Binary message received, length: 14
+[2025-04-11T02:08:15.493Z] First 32 bytes: 94 07 cf 00 06 32 77 2c dd c7 88 01 cc a5
+[2025-04-11T02:08:15.494Z] Decoded MessagePack: [7,1744337295493000,1,165]
+[2025-04-11T02:08:15.494Z] Value update: id=7, type=1, value=165
+[2025-04-11T02:08:15.494Z] Value updated for topic /server/counter: 165
+[2025-04-11T02:08:16.495Z] Binary message received, length: 14
+[2025-04-11T02:08:16.496Z] First 32 bytes: 94 07 cf 00 06 32 77 2c ed 11 98 01 cc a6
+[2025-04-11T02:08:16.496Z] Decoded MessagePack: [7,1744337296495000,1,166]
+[2025-04-11T02:08:16.496Z] Value update: id=7, type=1, value=166
+[2025-04-11T02:08:16.496Z] Value updated for topic /server/counter: 166
+[2025-04-11T02:08:17.510Z] Binary message received, length: 14
+[2025-04-11T02:08:17.510Z] First 32 bytes: 94 07 cf 00 06 32 77 2c fc 8a 88 01 cc a7
+[2025-04-11T02:08:17.510Z] Decoded MessagePack: [7,1744337297509000,1,167]
+[2025-04-11T02:08:17.510Z] Value update: id=7, type=1, value=167
+[2025-04-11T02:08:17.511Z] Value updated for topic /server/counter: 167
+[2025-04-11T02:08:18.523Z] Binary message received, length: 14
+[2025-04-11T02:08:18.524Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 0c 07 60 01 cc a8
+[2025-04-11T02:08:18.524Z] Decoded MessagePack: [7,1744337298524000,1,168]
+[2025-04-11T02:08:18.524Z] Value update: id=7, type=1, value=168
+[2025-04-11T02:08:18.524Z] Value updated for topic /server/counter: 168
+[2025-04-11T02:08:19.536Z] Binary message received, length: 14
+[2025-04-11T02:08:19.536Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 1b 78 80 01 cc a9
+[2025-04-11T02:08:19.536Z] Decoded MessagePack: [7,1744337299536000,1,169]
+[2025-04-11T02:08:19.536Z] Value update: id=7, type=1, value=169
+[2025-04-11T02:08:19.536Z] Value updated for topic /server/counter: 169
+[2025-04-11T02:08:20.268Z] Binary message received, length: 143
+[2025-04-11T02:08:20.268Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.268Z] Failed to decode MessagePack: RangeError: Extra 142 of 143 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.268Z] As UTF-8: [{"method":"announce","params":{"name":"/client/boolean","id":8,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:08:20.269Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/boolean","id":8,"type":"boolean","properties":{"persistent":true,"retained":true},"pubuid":1}}]
+[2025-04-11T02:08:20.269Z] Control message: announce
+[2025-04-11T02:08:20.269Z] Topic announced: /client/boolean (boolean) with ID 8
+[2025-04-11T02:08:20.269Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.269Z] Binary message received, length: 141
+[2025-04-11T02:08:20.269Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.270Z] Failed to decode MessagePack: RangeError: Extra 140 of 141 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.270Z] As UTF-8: [{"method":"announce","params":{"name":"/client/number","id":9,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:08:20.270Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/number","id":9,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":2}}]
+[2025-04-11T02:08:20.270Z] Control message: announce
+[2025-04-11T02:08:20.270Z] Topic announced: /client/number (double) with ID 9
+[2025-04-11T02:08:20.270Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.271Z] Binary message received, length: 142
+[2025-04-11T02:08:20.271Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.271Z] Failed to decode MessagePack: RangeError: Extra 141 of 142 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.271Z] As UTF-8: [{"method":"announce","params":{"name":"/client/string","id":10,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:08:20.271Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/string","id":10,"type":"string","properties":{"persistent":true,"retained":true},"pubuid":3}}]
+[2025-04-11T02:08:20.272Z] Control message: announce
+[2025-04-11T02:08:20.272Z] Topic announced: /client/string (string) with ID 10
+[2025-04-11T02:08:20.272Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.272Z] Binary message received, length: 152
+[2025-04-11T02:08:20.272Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.273Z] Failed to decode MessagePack: RangeError: Extra 151 of 152 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.273Z] As UTF-8: [{"method":"announce","params":{"name":"/client/boolean_array","id":11,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:08:20.273Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/boolean_array","id":11,"type":"boolean[]","properties":{"persistent":true,"retained":true},"pubuid":4}}]
+[2025-04-11T02:08:20.273Z] Control message: announce
+[2025-04-11T02:08:20.273Z] Topic announced: /client/boolean_array (boolean[]) with ID 11
+[2025-04-11T02:08:20.273Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.274Z] Binary message received, length: 150
+[2025-04-11T02:08:20.274Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.274Z] Failed to decode MessagePack: RangeError: Extra 149 of 150 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.274Z] As UTF-8: [{"method":"announce","params":{"name":"/client/number_array","id":12,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:08:20.274Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/number_array","id":12,"type":"double[]","properties":{"persistent":true,"retained":true},"pubuid":5}}]
+[2025-04-11T02:08:20.274Z] Control message: announce
+[2025-04-11T02:08:20.275Z] Topic announced: /client/number_array (double[]) with ID 12
+[2025-04-11T02:08:20.275Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.275Z] Binary message received, length: 150
+[2025-04-11T02:08:20.275Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.275Z] Failed to decode MessagePack: RangeError: Extra 149 of 150 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.275Z] As UTF-8: [{"method":"announce","params":{"name":"/client/string_array","id":13,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:08:20.275Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/string_array","id":13,"type":"string[]","properties":{"persistent":true,"retained":true},"pubuid":6}}]
+[2025-04-11T02:08:20.276Z] Control message: announce
+[2025-04-11T02:08:20.276Z] Topic announced: /client/string_array (string[]) with ID 13
+[2025-04-11T02:08:20.276Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.276Z] Binary message received, length: 143
+[2025-04-11T02:08:20.276Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T02:08:20.276Z] Failed to decode MessagePack: RangeError: Extra 142 of 143 byte(s) found at buffer[1]
+[2025-04-11T02:08:20.277Z] As UTF-8: [{"method":"announce","params":{"name":"/client/counter","id":14,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:08:20.277Z] Parsed JSON: [{"method":"announce","params":{"name":"/client/counter","id":14,"type":"double","properties":{"persistent":true,"retained":true},"pubuid":7}}]
+[2025-04-11T02:08:20.277Z] Control message: announce
+[2025-04-11T02:08:20.277Z] Topic announced: /client/counter (double) with ID 14
+[2025-04-11T02:08:20.277Z] Properties: {"persistent":true,"retained":true}
+[2025-04-11T02:08:20.550Z] Binary message received, length: 14
+[2025-04-11T02:08:20.550Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 2a f1 70 01 cc aa
+[2025-04-11T02:08:20.550Z] Decoded MessagePack: [7,1744337300550000,1,170]
+[2025-04-11T02:08:20.550Z] Value update: id=7, type=1, value=170
+[2025-04-11T02:08:20.550Z] Value updated for topic /server/counter: 170
+[2025-04-11T02:08:21.563Z] Binary message received, length: 14
+[2025-04-11T02:08:21.564Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 3a 66 78 01 cc ab
+[2025-04-11T02:08:21.564Z] Decoded MessagePack: [7,1744337301563000,1,171]
+[2025-04-11T02:08:21.564Z] Value update: id=7, type=1, value=171
+[2025-04-11T02:08:21.564Z] Value updated for topic /server/counter: 171
+[2025-04-11T02:08:22.579Z] Binary message received, length: 14
+[2025-04-11T02:08:22.579Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 49 e7 38 01 cc ac
+[2025-04-11T02:08:22.579Z] Decoded MessagePack: [7,1744337302579000,1,172]
+[2025-04-11T02:08:22.579Z] Value update: id=7, type=1, value=172
+[2025-04-11T02:08:22.579Z] Value updated for topic /server/counter: 172
+[2025-04-11T02:08:23.592Z] Binary message received, length: 14
+[2025-04-11T02:08:23.593Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 59 58 58 01 cc ad
+[2025-04-11T02:08:23.593Z] Decoded MessagePack: [7,1744337303591000,1,173]
+[2025-04-11T02:08:23.593Z] Value update: id=7, type=1, value=173
+[2025-04-11T02:08:23.594Z] Value updated for topic /server/counter: 173
+[2025-04-11T02:08:24.604Z] Binary message received, length: 14
+[2025-04-11T02:08:24.605Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 68 cd 60 01 cc ae
+[2025-04-11T02:08:24.605Z] Decoded MessagePack: [7,1744337304604000,1,174]
+[2025-04-11T02:08:24.605Z] Value update: id=7, type=1, value=174
+[2025-04-11T02:08:24.605Z] Value updated for topic /server/counter: 174
+[2025-04-11T02:08:25.610Z] Binary message received, length: 14
+[2025-04-11T02:08:25.610Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 78 27 10 01 cc af
+[2025-04-11T02:08:25.610Z] Decoded MessagePack: [7,1744337305610000,1,175]
+[2025-04-11T02:08:25.610Z] Value update: id=7, type=1, value=175
+[2025-04-11T02:08:25.610Z] Value updated for topic /server/counter: 175
+[2025-04-11T02:08:26.624Z] Binary message received, length: 14
+[2025-04-11T02:08:26.625Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 87 9c 18 01 cc b0
+[2025-04-11T02:08:26.626Z] Decoded MessagePack: [7,1744337306623000,1,176]
+[2025-04-11T02:08:26.626Z] Value update: id=7, type=1, value=176
+[2025-04-11T02:08:26.626Z] Value updated for topic /server/counter: 176
+[2025-04-11T02:08:27.633Z] Binary message received, length: 14
+[2025-04-11T02:08:27.633Z] First 32 bytes: 94 07 cf 00 06 32 77 2d 97 05 68 01 cc b1
+[2025-04-11T02:08:27.634Z] Decoded MessagePack: [7,1744337307633000,1,177]
+[2025-04-11T02:08:27.634Z] Value update: id=7, type=1, value=177
+[2025-04-11T02:08:27.634Z] Value updated for topic /server/counter: 177
+[2025-04-11T02:08:28.634Z] Binary message received, length: 14
+[2025-04-11T02:08:28.634Z] First 32 bytes: 94 07 cf 00 06 32 77 2d a6 4b 90 01 cc b2
+[2025-04-11T02:08:28.635Z] Decoded MessagePack: [7,1744337308634000,1,178]
+[2025-04-11T02:08:28.635Z] Value update: id=7, type=1, value=178
+[2025-04-11T02:08:28.635Z] Value updated for topic /server/counter: 178
+[2025-04-11T02:08:29.647Z] Binary message received, length: 14
+[2025-04-11T02:08:29.647Z] First 32 bytes: 94 07 cf 00 06 32 77 2d b5 c0 98 01 cc b3
+[2025-04-11T02:08:29.648Z] Decoded MessagePack: [7,1744337309647000,1,179]
+[2025-04-11T02:08:29.648Z] Value update: id=7, type=1, value=179
+[2025-04-11T02:08:29.648Z] Value updated for topic /server/counter: 179
+[2025-04-11T02:08:30.659Z] Binary message received, length: 14
+[2025-04-11T02:08:30.659Z] First 32 bytes: 94 07 cf 00 06 32 77 2d c5 2d d0 01 cc b4
+[2025-04-11T02:08:30.660Z] Decoded MessagePack: [7,1744337310658000,1,180]
+[2025-04-11T02:08:30.660Z] Value update: id=7, type=1, value=180
+[2025-04-11T02:08:30.660Z] Value updated for topic /server/counter: 180
+[2025-04-11T02:08:31.669Z] Binary message received, length: 14
+[2025-04-11T02:08:31.670Z] First 32 bytes: 94 07 cf 00 06 32 77 2d d4 9b 08 01 cc b5
+[2025-04-11T02:08:31.670Z] Decoded MessagePack: [7,1744337311669000,1,181]
+[2025-04-11T02:08:31.670Z] Value update: id=7, type=1, value=181
+[2025-04-11T02:08:31.670Z] Value updated for topic /server/counter: 181
+[2025-04-11T02:08:32.677Z] Binary message received, length: 14
+[2025-04-11T02:08:32.677Z] First 32 bytes: 94 07 cf 00 06 32 77 2d e3 fc 88 01 cc b6
+[2025-04-11T02:08:32.677Z] Decoded MessagePack: [7,1744337312677000,1,182]
+[2025-04-11T02:08:32.677Z] Value update: id=7, type=1, value=182
+[2025-04-11T02:08:32.677Z] Value updated for topic /server/counter: 182
+[2025-04-11T02:08:33.680Z] Binary message received, length: 14
+[2025-04-11T02:08:33.680Z] First 32 bytes: 94 07 cf 00 06 32 77 2d f3 4a 80 01 cc b7
+[2025-04-11T02:08:33.680Z] Decoded MessagePack: [7,1744337313680000,1,183]
+[2025-04-11T02:08:33.680Z] Value update: id=7, type=1, value=183
+[2025-04-11T02:08:33.680Z] Value updated for topic /server/counter: 183
+[2025-04-11T02:08:34.689Z] Binary message received, length: 14
+[2025-04-11T02:08:34.689Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 02 af e8 01 cc b8
+[2025-04-11T02:08:34.690Z] Decoded MessagePack: [7,1744337314689000,1,184]
+[2025-04-11T02:08:34.690Z] Value update: id=7, type=1, value=184
+[2025-04-11T02:08:34.690Z] Value updated for topic /server/counter: 184
+[2025-04-11T02:08:35.702Z] Binary message received, length: 14
+[2025-04-11T02:08:35.702Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 12 24 f0 01 cc b9
+[2025-04-11T02:08:35.703Z] Decoded MessagePack: [7,1744337315702000,1,185]
+[2025-04-11T02:08:35.703Z] Value update: id=7, type=1, value=185
+[2025-04-11T02:08:35.703Z] Value updated for topic /server/counter: 185
+[2025-04-11T02:08:36.709Z] Binary message received, length: 14
+[2025-04-11T02:08:36.710Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 21 82 88 01 cc ba
+[2025-04-11T02:08:36.710Z] Decoded MessagePack: [7,1744337316709000,1,186]
+[2025-04-11T02:08:36.710Z] Value update: id=7, type=1, value=186
+[2025-04-11T02:08:36.710Z] Value updated for topic /server/counter: 186
+[2025-04-11T02:08:37.722Z] Binary message received, length: 14
+[2025-04-11T02:08:37.723Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 30 f3 a8 01 cc bb
+[2025-04-11T02:08:37.723Z] Decoded MessagePack: [7,1744337317721000,1,187]
+[2025-04-11T02:08:37.724Z] Value update: id=7, type=1, value=187
+[2025-04-11T02:08:37.724Z] Value updated for topic /server/counter: 187
+[2025-04-11T02:08:38.732Z] Binary message received, length: 14
+[2025-04-11T02:08:38.733Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 40 60 e0 01 cc bc
+[2025-04-11T02:08:38.734Z] Decoded MessagePack: [7,1744337318732000,1,188]
+[2025-04-11T02:08:38.734Z] Value update: id=7, type=1, value=188
+[2025-04-11T02:08:38.734Z] Value updated for topic /server/counter: 188
+[2025-04-11T02:08:39.744Z] Binary message received, length: 14
+[2025-04-11T02:08:39.744Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 4f ce 18 01 cc bd
+[2025-04-11T02:08:39.744Z] Decoded MessagePack: [7,1744337319743000,1,189]
+[2025-04-11T02:08:39.744Z] Value update: id=7, type=1, value=189
+[2025-04-11T02:08:39.745Z] Value updated for topic /server/counter: 189
+[2025-04-11T02:08:40.757Z] Binary message received, length: 14
+[2025-04-11T02:08:40.758Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 5f 47 08 01 cc be
+[2025-04-11T02:08:40.758Z] Decoded MessagePack: [7,1744337320757000,1,190]
+[2025-04-11T02:08:40.758Z] Value update: id=7, type=1, value=190
+[2025-04-11T02:08:40.759Z] Value updated for topic /server/counter: 190
+[2025-04-11T02:08:41.771Z] Binary message received, length: 14
+[2025-04-11T02:08:41.772Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 6e bf f8 01 cc bf
+[2025-04-11T02:08:41.772Z] Decoded MessagePack: [7,1744337321771000,1,191]
+[2025-04-11T02:08:41.772Z] Value update: id=7, type=1, value=191
+[2025-04-11T02:08:41.772Z] Value updated for topic /server/counter: 191
+[2025-04-11T02:08:42.783Z] Binary message received, length: 14
+[2025-04-11T02:08:42.784Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 7e 31 18 01 cc c0
+[2025-04-11T02:08:42.784Z] Decoded MessagePack: [7,1744337322783000,1,192]
+[2025-04-11T02:08:42.784Z] Value update: id=7, type=1, value=192
+[2025-04-11T02:08:42.784Z] Value updated for topic /server/counter: 192
+[2025-04-11T02:08:43.794Z] Binary message received, length: 14
+[2025-04-11T02:08:43.794Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 8d 9e 50 01 cc c1
+[2025-04-11T02:08:43.794Z] Decoded MessagePack: [7,1744337323794000,1,193]
+[2025-04-11T02:08:43.794Z] Value update: id=7, type=1, value=193
+[2025-04-11T02:08:43.794Z] Value updated for topic /server/counter: 193
+[2025-04-11T02:08:44.794Z] Binary message received, length: 14
+[2025-04-11T02:08:44.795Z] First 32 bytes: 94 07 cf 00 06 32 77 2e 9c e0 90 01 cc c2
+[2025-04-11T02:08:44.795Z] Decoded MessagePack: [7,1744337324794000,1,194]
+[2025-04-11T02:08:44.795Z] Value update: id=7, type=1, value=194
+[2025-04-11T02:08:44.796Z] Value updated for topic /server/counter: 194
+[2025-04-11T02:08:45.806Z] Binary message received, length: 14
+[2025-04-11T02:08:45.806Z] First 32 bytes: 94 07 cf 00 06 32 77 2e ac 51 b0 01 cc c3
+[2025-04-11T02:08:45.807Z] Decoded MessagePack: [7,1744337325806000,1,195]
+[2025-04-11T02:08:45.807Z] Value update: id=7, type=1, value=195
+[2025-04-11T02:08:45.807Z] Value updated for topic /server/counter: 195
+[2025-04-11T02:08:46.819Z] Binary message received, length: 14
+[2025-04-11T02:08:46.820Z] First 32 bytes: 94 07 cf 00 06 32 77 2e bb c6 b8 01 cc c4
+[2025-04-11T02:08:46.820Z] Decoded MessagePack: [7,1744337326819000,1,196]
+[2025-04-11T02:08:46.820Z] Value update: id=7, type=1, value=196
+[2025-04-11T02:08:46.820Z] Value updated for topic /server/counter: 196
+[2025-04-11T02:08:47.828Z] Binary message received, length: 14
+[2025-04-11T02:08:47.829Z] First 32 bytes: 94 07 cf 00 06 32 77 2e cb 2c 20 01 cc c5
+[2025-04-11T02:08:47.829Z] Decoded MessagePack: [7,1744337327828000,1,197]
+[2025-04-11T02:08:47.829Z] Value update: id=7, type=1, value=197
+[2025-04-11T02:08:47.829Z] Value updated for topic /server/counter: 197
+[2025-04-11T02:08:48.830Z] Binary message received, length: 14
+[2025-04-11T02:08:48.831Z] First 32 bytes: 94 07 cf 00 06 32 77 2e da 76 30 01 cc c6
+[2025-04-11T02:08:48.831Z] Decoded MessagePack: [7,1744337328830000,1,198]
+[2025-04-11T02:08:48.831Z] Value update: id=7, type=1, value=198
+[2025-04-11T02:08:48.831Z] Value updated for topic /server/counter: 198
+[2025-04-11T02:08:49.840Z] Binary message received, length: 14
+[2025-04-11T02:08:49.840Z] First 32 bytes: 94 07 cf 00 06 32 77 2e e9 df 80 01 cc c7
+[2025-04-11T02:08:49.840Z] Decoded MessagePack: [7,1744337329840000,1,199]
+[2025-04-11T02:08:49.841Z] Value update: id=7, type=1, value=199
+[2025-04-11T02:08:49.841Z] Value updated for topic /server/counter: 199
+[2025-04-11T02:08:50.841Z] Binary message received, length: 14
+[2025-04-11T02:08:50.841Z] First 32 bytes: 94 07 cf 00 06 32 77 2e f9 25 a8 01 cc c8
+[2025-04-11T02:08:50.841Z] Decoded MessagePack: [7,1744337330841000,1,200]
+[2025-04-11T02:08:50.842Z] Value update: id=7, type=1, value=200
+[2025-04-11T02:08:50.842Z] Value updated for topic /server/counter: 200
+[2025-04-11T02:08:51.841Z] Binary message received, length: 14
+[2025-04-11T02:08:51.842Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 08 67 e8 01 cc c9
+[2025-04-11T02:08:51.842Z] Decoded MessagePack: [7,1744337331841000,1,201]
+[2025-04-11T02:08:51.842Z] Value update: id=7, type=1, value=201
+[2025-04-11T02:08:51.842Z] Value updated for topic /server/counter: 201
+[2025-04-11T02:08:52.843Z] Binary message received, length: 14
+[2025-04-11T02:08:52.843Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 17 b1 f8 01 cc ca
+[2025-04-11T02:08:52.843Z] Decoded MessagePack: [7,1744337332843000,1,202]
+[2025-04-11T02:08:52.843Z] Value update: id=7, type=1, value=202
+[2025-04-11T02:08:52.843Z] Value updated for topic /server/counter: 202
+[2025-04-11T02:08:53.848Z] Binary message received, length: 14
+[2025-04-11T02:08:53.848Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 27 07 c0 01 cc cb
+[2025-04-11T02:08:53.848Z] Decoded MessagePack: [7,1744337333848000,1,203]
+[2025-04-11T02:08:53.848Z] Value update: id=7, type=1, value=203
+[2025-04-11T02:08:53.848Z] Value updated for topic /server/counter: 203
+[2025-04-11T02:08:54.861Z] Binary message received, length: 14
+[2025-04-11T02:08:54.861Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 36 7c c8 01 cc cc
+[2025-04-11T02:08:54.861Z] Decoded MessagePack: [7,1744337334861000,1,204]
+[2025-04-11T02:08:54.861Z] Value update: id=7, type=1, value=204
+[2025-04-11T02:08:54.862Z] Value updated for topic /server/counter: 204
+[2025-04-11T02:08:55.873Z] Binary message received, length: 14
+[2025-04-11T02:08:55.873Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 45 ed e8 01 cc cd
+[2025-04-11T02:08:55.873Z] Decoded MessagePack: [7,1744337335873000,1,205]
+[2025-04-11T02:08:55.873Z] Value update: id=7, type=1, value=205
+[2025-04-11T02:08:55.874Z] Value updated for topic /server/counter: 205
+[2025-04-11T02:08:56.883Z] Binary message received, length: 14
+[2025-04-11T02:08:56.884Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 55 57 38 01 cc ce
+[2025-04-11T02:08:56.884Z] Decoded MessagePack: [7,1744337336883000,1,206]
+[2025-04-11T02:08:56.884Z] Value update: id=7, type=1, value=206
+[2025-04-11T02:08:56.884Z] Value updated for topic /server/counter: 206
+[2025-04-11T02:08:57.898Z] Binary message received, length: 14
+[2025-04-11T02:08:57.899Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 64 d0 28 01 cc cf
+[2025-04-11T02:08:57.899Z] Decoded MessagePack: [7,1744337337897000,1,207]
+[2025-04-11T02:08:57.899Z] Value update: id=7, type=1, value=207
+[2025-04-11T02:08:57.900Z] Value updated for topic /server/counter: 207
+[2025-04-11T02:08:58.907Z] Binary message received, length: 14
+[2025-04-11T02:08:58.908Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 74 3d 60 01 cc d0
+[2025-04-11T02:08:58.908Z] Decoded MessagePack: [7,1744337338908000,1,208]
+[2025-04-11T02:08:58.908Z] Value update: id=7, type=1, value=208
+[2025-04-11T02:08:58.908Z] Value updated for topic /server/counter: 208
+[2025-04-11T02:08:59.914Z] Binary message received, length: 14
+[2025-04-11T02:08:59.914Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 83 93 28 01 cc d1
+[2025-04-11T02:08:59.914Z] Decoded MessagePack: [7,1744337339913000,1,209]
+[2025-04-11T02:08:59.914Z] Value update: id=7, type=1, value=209
+[2025-04-11T02:08:59.914Z] Value updated for topic /server/counter: 209
+[2025-04-11T02:09:00.922Z] Binary message received, length: 14
+[2025-04-11T02:09:00.923Z] First 32 bytes: 94 07 cf 00 06 32 77 2f 92 f8 90 01 cc d2
+[2025-04-11T02:09:00.923Z] Decoded MessagePack: [7,1744337340922000,1,210]
+[2025-04-11T02:09:00.923Z] Value update: id=7, type=1, value=210
+[2025-04-11T02:09:00.924Z] Value updated for topic /server/counter: 210
+[2025-04-11T02:09:01.931Z] Binary message received, length: 14
+[2025-04-11T02:09:01.931Z] First 32 bytes: 94 07 cf 00 06 32 77 2f a2 5d f8 01 cc d3
+[2025-04-11T02:09:01.932Z] Decoded MessagePack: [7,1744337341931000,1,211]
+[2025-04-11T02:09:01.932Z] Value update: id=7, type=1, value=211
+[2025-04-11T02:09:01.932Z] Value updated for topic /server/counter: 211
+[2025-04-11T02:09:02.931Z] Binary message received, length: 14
+[2025-04-11T02:09:02.932Z] First 32 bytes: 94 07 cf 00 06 32 77 2f b1 a0 38 01 cc d4
+[2025-04-11T02:09:02.932Z] Decoded MessagePack: [7,1744337342931000,1,212]
+[2025-04-11T02:09:02.932Z] Value update: id=7, type=1, value=212
+[2025-04-11T02:09:02.932Z] Value updated for topic /server/counter: 212
+[2025-04-11T02:09:03.944Z] Binary message received, length: 14
+[2025-04-11T02:09:03.945Z] First 32 bytes: 94 07 cf 00 06 32 77 2f c1 15 40 01 cc d5
+[2025-04-11T02:09:03.945Z] Decoded MessagePack: [7,1744337343944000,1,213]
+[2025-04-11T02:09:03.945Z] Value update: id=7, type=1, value=213
+[2025-04-11T02:09:03.945Z] Value updated for topic /server/counter: 213
+[2025-04-11T02:09:04.948Z] Binary message received, length: 14
+[2025-04-11T02:09:04.948Z] First 32 bytes: 94 07 cf 00 06 32 77 2f d0 67 20 01 cc d6
+[2025-04-11T02:09:04.948Z] Decoded MessagePack: [7,1744337344948000,1,214]
+[2025-04-11T02:09:04.948Z] Value update: id=7, type=1, value=214
+[2025-04-11T02:09:04.949Z] Value updated for topic /server/counter: 214
+[2025-04-11T02:09:05.962Z] Binary message received, length: 14
+[2025-04-11T02:09:05.963Z] First 32 bytes: 94 07 cf 00 06 32 77 2f df e0 10 01 cc d7
+[2025-04-11T02:09:05.963Z] Decoded MessagePack: [7,1744337345962000,1,215]
+[2025-04-11T02:09:05.963Z] Value update: id=7, type=1, value=215
+[2025-04-11T02:09:05.963Z] Value updated for topic /server/counter: 215
+[2025-04-11T02:09:06.973Z] Binary message received, length: 14
+[2025-04-11T02:09:06.973Z] First 32 bytes: 94 07 cf 00 06 32 77 2f ef 49 60 01 cc d8
+[2025-04-11T02:09:06.973Z] Decoded MessagePack: [7,1744337346972000,1,216]
+[2025-04-11T02:09:06.973Z] Value update: id=7, type=1, value=216
+[2025-04-11T02:09:06.973Z] Value updated for topic /server/counter: 216
+[2025-04-11T02:09:07.983Z] Binary message received, length: 14
+[2025-04-11T02:09:07.983Z] First 32 bytes: 94 07 cf 00 06 32 77 2f fe b6 98 01 cc d9
+[2025-04-11T02:09:07.983Z] Decoded MessagePack: [7,1744337347983000,1,217]
+[2025-04-11T02:09:07.983Z] Value update: id=7, type=1, value=217
+[2025-04-11T02:09:07.983Z] Value updated for topic /server/counter: 217
+[2025-04-11T02:09:08.994Z] Binary message received, length: 14
+[2025-04-11T02:09:08.994Z] First 32 bytes: 94 07 cf 00 06 32 77 30 0e 23 d0 01 cc da
+[2025-04-11T02:09:08.994Z] Decoded MessagePack: [7,1744337348994000,1,218]
+[2025-04-11T02:09:08.994Z] Value update: id=7, type=1, value=218
+[2025-04-11T02:09:08.995Z] Value updated for topic /server/counter: 218
+[2025-04-11T02:09:10.006Z] Binary message received, length: 14
+[2025-04-11T02:09:10.006Z] First 32 bytes: 94 07 cf 00 06 32 77 30 1d 94 f0 01 cc db
+[2025-04-11T02:09:10.007Z] Decoded MessagePack: [7,1744337350006000,1,219]
+[2025-04-11T02:09:10.007Z] Value update: id=7, type=1, value=219
+[2025-04-11T02:09:10.007Z] Value updated for topic /server/counter: 219
+[2025-04-11T02:09:11.020Z] Binary message received, length: 14
+[2025-04-11T02:09:11.021Z] First 32 bytes: 94 07 cf 00 06 32 77 30 2d 0d e0 01 cc dc
+[2025-04-11T02:09:11.021Z] Decoded MessagePack: [7,1744337351020000,1,220]
+[2025-04-11T02:09:11.021Z] Value update: id=7, type=1, value=220
+[2025-04-11T02:09:11.021Z] Value updated for topic /server/counter: 220
+[2025-04-11T02:09:12.034Z] Binary message received, length: 14
+[2025-04-11T02:09:12.035Z] First 32 bytes: 94 07 cf 00 06 32 77 30 3c 86 d0 01 cc dd
+[2025-04-11T02:09:12.035Z] Decoded MessagePack: [7,1744337352034000,1,221]
+[2025-04-11T02:09:12.035Z] Value update: id=7, type=1, value=221
+[2025-04-11T02:09:12.035Z] Value updated for topic /server/counter: 221
+[2025-04-11T02:09:13.041Z] Binary message received, length: 14
+[2025-04-11T02:09:13.042Z] First 32 bytes: 94 07 cf 00 06 32 77 30 4b e0 80 01 cc de
+[2025-04-11T02:09:13.042Z] Decoded MessagePack: [7,1744337353040000,1,222]
+[2025-04-11T02:09:13.042Z] Value update: id=7, type=1, value=222
+[2025-04-11T02:09:13.043Z] Value updated for topic /server/counter: 222
+[2025-04-11T02:09:14.055Z] Binary message received, length: 14
+[2025-04-11T02:09:14.055Z] First 32 bytes: 94 07 cf 00 06 32 77 30 5b 59 70 01 cc df
+[2025-04-11T02:09:14.055Z] Decoded MessagePack: [7,1744337354054000,1,223]
+[2025-04-11T02:09:14.055Z] Value update: id=7, type=1, value=223
+[2025-04-11T02:09:14.055Z] Value updated for topic /server/counter: 223
+[2025-04-11T02:09:15.055Z] Binary message received, length: 14
+[2025-04-11T02:09:15.056Z] First 32 bytes: 94 07 cf 00 06 32 77 30 6a 9f 98 01 cc e0
+[2025-04-11T02:09:15.056Z] Decoded MessagePack: [7,1744337355055000,1,224]
+[2025-04-11T02:09:15.056Z] Value update: id=7, type=1, value=224
+[2025-04-11T02:09:15.056Z] Value updated for topic /server/counter: 224
+[2025-04-11T02:09:16.068Z] Binary message received, length: 14
+[2025-04-11T02:09:16.069Z] First 32 bytes: 94 07 cf 00 06 32 77 30 7a 14 a0 01 cc e1
+[2025-04-11T02:09:16.069Z] Decoded MessagePack: [7,1744337356068000,1,225]
+[2025-04-11T02:09:16.069Z] Value update: id=7, type=1, value=225
+[2025-04-11T02:09:16.069Z] Value updated for topic /server/counter: 225
+[2025-04-11T02:09:17.079Z] Binary message received, length: 14
+[2025-04-11T02:09:17.079Z] First 32 bytes: 94 07 cf 00 06 32 77 30 89 81 d8 01 cc e2
+[2025-04-11T02:09:17.079Z] Decoded MessagePack: [7,1744337357079000,1,226]
+[2025-04-11T02:09:17.079Z] Value update: id=7, type=1, value=226
+[2025-04-11T02:09:17.079Z] Value updated for topic /server/counter: 226
+[2025-04-11T02:09:18.094Z] Binary message received, length: 14
+[2025-04-11T02:09:18.094Z] First 32 bytes: 94 07 cf 00 06 32 77 30 98 fa c8 01 cc e3
+[2025-04-11T02:09:18.094Z] Decoded MessagePack: [7,1744337358093000,1,227]
+[2025-04-11T02:09:18.094Z] Value update: id=7, type=1, value=227
+[2025-04-11T02:09:18.094Z] Value updated for topic /server/counter: 227
+[2025-04-11T02:09:19.100Z] Binary message received, length: 14
+[2025-04-11T02:09:19.101Z] First 32 bytes: 94 07 cf 00 06 32 77 30 a8 58 60 01 cc e4
+[2025-04-11T02:09:19.101Z] Decoded MessagePack: [7,1744337359100000,1,228]
+[2025-04-11T02:09:19.101Z] Value update: id=7, type=1, value=228
+[2025-04-11T02:09:19.101Z] Value updated for topic /server/counter: 228
+[2025-04-11T02:09:20.114Z] Binary message received, length: 14
+[2025-04-11T02:09:20.114Z] First 32 bytes: 94 07 cf 00 06 32 77 30 b7 d1 50 01 cc e5
+[2025-04-11T02:09:20.115Z] Decoded MessagePack: [7,1744337360114000,1,229]
+[2025-04-11T02:09:20.115Z] Value update: id=7, type=1, value=229
+[2025-04-11T02:09:20.115Z] Value updated for topic /server/counter: 229
+[2025-04-11T02:09:21.127Z] Binary message received, length: 14
+[2025-04-11T02:09:21.127Z] First 32 bytes: 94 07 cf 00 06 32 77 30 c7 46 58 01 cc e6
+[2025-04-11T02:09:21.127Z] Decoded MessagePack: [7,1744337361127000,1,230]
+[2025-04-11T02:09:21.127Z] Value update: id=7, type=1, value=230
+[2025-04-11T02:09:21.127Z] Value updated for topic /server/counter: 230
+[2025-04-11T02:09:22.139Z] Binary message received, length: 14
+[2025-04-11T02:09:22.139Z] First 32 bytes: 94 07 cf 00 06 32 77 30 d6 b7 78 01 cc e7
+[2025-04-11T02:09:22.140Z] Decoded MessagePack: [7,1744337362139000,1,231]
+[2025-04-11T02:09:22.140Z] Value update: id=7, type=1, value=231
+[2025-04-11T02:09:22.140Z] Value updated for topic /server/counter: 231
+[2025-04-11T02:09:23.151Z] Binary message received, length: 14
+[2025-04-11T02:09:23.151Z] First 32 bytes: 94 07 cf 00 06 32 77 30 e6 24 b0 01 cc e8
+[2025-04-11T02:09:23.151Z] Decoded MessagePack: [7,1744337363150000,1,232]
+[2025-04-11T02:09:23.151Z] Value update: id=7, type=1, value=232
+[2025-04-11T02:09:23.151Z] Value updated for topic /server/counter: 232
+[2025-04-11T02:09:24.160Z] Binary message received, length: 14
+[2025-04-11T02:09:24.160Z] First 32 bytes: 94 07 cf 00 06 32 77 30 f5 8e 00 01 cc e9
+[2025-04-11T02:09:24.160Z] Decoded MessagePack: [7,1744337364160000,1,233]
+[2025-04-11T02:09:24.160Z] Value update: id=7, type=1, value=233
+[2025-04-11T02:09:24.160Z] Value updated for topic /server/counter: 233
+[2025-04-11T02:09:25.169Z] Binary message received, length: 14
+[2025-04-11T02:09:25.169Z] First 32 bytes: 94 07 cf 00 06 32 77 31 04 ef 80 01 cc ea
+[2025-04-11T02:09:25.169Z] Decoded MessagePack: [7,1744337365168000,1,234]
+[2025-04-11T02:09:25.169Z] Value update: id=7, type=1, value=234
+[2025-04-11T02:09:25.169Z] Value updated for topic /server/counter: 234
+[2025-04-11T02:09:26.183Z] Binary message received, length: 14
+[2025-04-11T02:09:26.184Z] First 32 bytes: 94 07 cf 00 06 32 77 31 14 6c 58 01 cc eb
+[2025-04-11T02:09:26.184Z] Decoded MessagePack: [7,1744337366183000,1,235]
+[2025-04-11T02:09:26.184Z] Value update: id=7, type=1, value=235
+[2025-04-11T02:09:26.184Z] Value updated for topic /server/counter: 235
+[2025-04-11T02:09:27.195Z] Binary message received, length: 14
+[2025-04-11T02:09:27.195Z] First 32 bytes: 94 07 cf 00 06 32 77 31 23 dd 78 01 cc ec
+[2025-04-11T02:09:27.196Z] Decoded MessagePack: [7,1744337367195000,1,236]
+[2025-04-11T02:09:27.196Z] Value update: id=7, type=1, value=236
+[2025-04-11T02:09:27.196Z] Value updated for topic /server/counter: 236
+[2025-04-11T02:09:28.196Z] Binary message received, length: 14
+[2025-04-11T02:09:28.196Z] First 32 bytes: 94 07 cf 00 06 32 77 31 33 23 a0 01 cc ed
+[2025-04-11T02:09:28.197Z] Decoded MessagePack: [7,1744337368196000,1,237]
+[2025-04-11T02:09:28.197Z] Value update: id=7, type=1, value=237
+[2025-04-11T02:09:28.197Z] Value updated for topic /server/counter: 237
+[2025-04-11T02:09:28.200Z] Disconnected from server
+[2025-04-11T02:09:33.207Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:09:33.210Z] WebSocket error: AggregateError
+[2025-04-11T02:09:33.210Z] Disconnected from server
+[2025-04-11T02:09:38.211Z] Connecting to ws://localhost:5810...
+[2025-04-11T02:09:38.213Z] WebSocket error: AggregateError
+[2025-04-11T02:09:38.213Z] Disconnected from server

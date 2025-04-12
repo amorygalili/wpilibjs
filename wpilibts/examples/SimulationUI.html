@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPILib Simulation UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    .panel {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .full-width {
+      grid-column: 1 / span 2;
+    }
+    h1, h2 {
+      color: #333;
+      margin-top: 0;
+    }
+    .status {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .status-item {
+      text-align: center;
+    }
+    .status-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .status-value {
+      padding: 5px 10px;
+      border-radius: 3px;
+      background-color: #eee;
+    }
+    .status-value.enabled {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .status-value.disabled {
+      background-color: #F44336;
+      color: white;
+    }
+    .control-group {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .control-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0b7dda;
+    }
+    button.active {
+      background-color: #0b7dda;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .joystick-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .joystick {
+      width: 200px;
+      height: 200px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      position: relative;
+      margin: 0 auto;
+      border: 2px solid #ccc;
+    }
+    .joystick-handle {
+      width: 40px;
+      height: 40px;
+      background-color: #2196F3;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+    .joystick-label {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .sensor-group {
+      margin-bottom: 20px;
+    }
+    .sensor-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .sensor-label {
+      font-weight: bold;
+    }
+    .sensor-value {
+      font-family: monospace;
+    }
+    .motor-controls {
+      display: flex;
+      justify-content: space-between;
+    }
+    .motor-control {
+      width: 45%;
+    }
+    .motor-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .motor-value {
+      font-family: monospace;
+      margin-bottom: 10px;
+    }
+    .slider-container {
+      display: flex;
+      align-items: center;
+    }
+    .slider {
+      flex-grow: 1;
+      margin: 0 10px;
+    }
+    .log {
+      height: 200px;
+      overflow-y: auto;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      font-family: monospace;
+      border-radius: 5px;
+    }
+    .log-entry {
+      margin-bottom: 5px;
+      border-bottom: 1px solid #555;
+      padding-bottom: 5px;
+    }
+    .visualization {
+      height: 300px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+    .robot {
+      width: 100px;
+      height: 80px;
+      background-color: #2196F3;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      transition: left 0.3s ease;
+    }
+    .robot-wheels {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+    }
+    .robot-wheel {
+      width: 20px;
+      height: 20px;
+      background-color: #333;
+      border-radius: 50%;
+    }
+    .limit-switch {
+      width: 20px;
+      height: 20px;
+      background-color: #F44336;
+      position: absolute;
+      bottom: 20px;
+      right: 100px;
+      border-radius: 50%;
+    }
+    .limit-switch.active {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel full-width">
+      <h1>WPILib Simulation UI with Separate WebSockets</h1>
+      <div class="status">
+        <div class="status-item">
+          <div class="status-label">Robot State</div>
+          <div id="robotState" class="status-value disabled">Disabled</div>
+        </div>
+        <div class="status-item">
+          <div class="status-label">Robot Mode</div>
+          <div id="robotMode" class="status-value">Teleop</div>
+        </div>
+        <div class="status-item">
+          <div class="status-label">Connection</div>
+          <div id="connectionStatus" class="status-value disabled">Disconnected</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Robot Controls</h2>
+      <div class="control-group">
+        <div class="control-title">Robot Control</div>
+        <button id="enableBtn">Enable</button>
+        <button id="disableBtn" class="active">Disable</button>
+      </div>
+
+      <div class="control-group">
+        <div class="control-title">Robot Mode</div>
+        <button id="teleopBtn" class="active">Teleop</button>
+        <button id="autonomousBtn">Autonomous</button>
+        <button id="testBtn">Test</button>
+      </div>
+
+      <div class="control-group">
+        <div class="control-title">Joysticks</div>
+        <div class="joystick-container">
+          <div>
+            <div id="leftJoystick" class="joystick">
+              <div id="leftJoystickHandle" class="joystick-handle"></div>
+            </div>
+            <div class="joystick-label">Left Joystick</div>
+          </div>
+          <div>
+            <div id="rightJoystick" class="joystick">
+              <div id="rightJoystickHandle" class="joystick-handle"></div>
+            </div>
+            <div class="joystick-label">Right Joystick</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Robot Status</h2>
+      <div class="sensor-group">
+        <div class="sensor-item">
+          <div class="sensor-label">Encoder</div>
+          <div id="encoderValue" class="sensor-value">0</div>
+        </div>
+        <div class="sensor-item">
+          <div class="sensor-label">Limit Switch</div>
+          <div id="limitSwitchValue" class="sensor-value">False</div>
+        </div>
+        <div class="sensor-item">
+          <div class="sensor-label">Potentiometer</div>
+          <div id="potentiometerValue" class="sensor-value">0.00 V</div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-title">Motor Controls</div>
+        <div class="motor-controls">
+          <div class="motor-control">
+            <div class="motor-label">Left Motor</div>
+            <div id="leftMotorValue" class="motor-value">0.00</div>
+            <div class="slider-container">
+              <span>-1.0</span>
+              <input id="leftMotorSlider" type="range" min="-100" max="100" value="0" class="slider">
+              <span>1.0</span>
+            </div>
+          </div>
+          <div class="motor-control">
+            <div class="motor-label">Right Motor</div>
+            <div id="rightMotorValue" class="motor-value">0.00</div>
+            <div class="slider-container">
+              <span>-1.0</span>
+              <input id="rightMotorSlider" type="range" min="-100" max="100" value="0" class="slider">
+              <span>1.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="visualization">
+        <div id="robot" class="robot">
+          <div class="robot-wheels">
+            <div class="robot-wheel"></div>
+            <div class="robot-wheel"></div>
+          </div>
+        </div>
+        <div id="limitSwitch" class="limit-switch"></div>
+      </div>
+    </div>
+
+    <div class="panel full-width">
+      <h2>Log</h2>
+      <div id="log" class="log"></div>
+    </div>
+  </div>
+
+  <script>
+    // Robot state
+    let robotState = {
+      enabled: false,
+      autonomous: false,
+      test: false,
+      teleop: true,
+      leftMotor: 0,
+      rightMotor: 0,
+      encoder: 0,
+      limitSwitch: false,
+      potentiometer: 0,
+      connected: false,
+      ntConnected: false,
+      halSimConnected: false
+    };
+
+    // WebSocket connections
+    let ntSocket = null;
+    let halSimSocket = null;
+
+    // UI elements
+    const robotStateEl = document.getElementById('robotState');
+    const robotModeEl = document.getElementById('robotMode');
+    const connectionStatusEl = document.getElementById('connectionStatus');
+    const enableBtn = document.getElementById('enableBtn');
+    const disableBtn = document.getElementById('disableBtn');
+    const teleopBtn = document.getElementById('teleopBtn');
+    const autonomousBtn = document.getElementById('autonomousBtn');
+    const testBtn = document.getElementById('testBtn');
+    const leftJoystick = document.getElementById('leftJoystick');
+    const leftJoystickHandle = document.getElementById('leftJoystickHandle');
+    const rightJoystick = document.getElementById('rightJoystick');
+    const rightJoystickHandle = document.getElementById('rightJoystickHandle');
+    const encoderValueEl = document.getElementById('encoderValue');
+    const limitSwitchValueEl = document.getElementById('limitSwitchValue');
+    const potentiometerValueEl = document.getElementById('potentiometerValue');
+    const leftMotorValueEl = document.getElementById('leftMotorValue');
+    const rightMotorValueEl = document.getElementById('rightMotorValue');
+    const leftMotorSlider = document.getElementById('leftMotorSlider');
+    const rightMotorSlider = document.getElementById('rightMotorSlider');
+    const robotEl = document.getElementById('robot');
+    const limitSwitchEl = document.getElementById('limitSwitch');
+    const logEl = document.getElementById('log');
+
+    // Joystick state
+    let leftJoystickActive = false;
+    let rightJoystickActive = false;
+    let leftJoystickPos = { x: 0, y: 0 };
+    let rightJoystickPos = { x: 0, y: 0 };
+
+    // Log a message
+    function log(message) {
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+      logEl.appendChild(entry);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    // Update the robot state
+    function updateRobotState(state) {
+      robotState = state;
+
+      // Update UI
+      robotStateEl.textContent = state.enabled ? 'Enabled' : 'Disabled';
+      robotStateEl.className = 'status-value ' + (state.enabled ? 'enabled' : 'disabled');
+
+      if (state.autonomous) {
+        robotModeEl.textContent = 'Autonomous';
+      } else if (state.test) {
+        robotModeEl.textContent = 'Test';
+      } else {
+        robotModeEl.textContent = 'Teleop';
+      }
+
+      // Update buttons
+      enableBtn.className = state.enabled ? 'active' : '';
+      disableBtn.className = !state.enabled ? 'active' : '';
+      teleopBtn.className = (!state.autonomous && !state.test) ? 'active' : '';
+      autonomousBtn.className = state.autonomous ? 'active' : '';
+      testBtn.className = state.test ? 'active' : '';
+
+      // Update sensor values
+      encoderValueEl.textContent = state.encoder;
+      limitSwitchValueEl.textContent = state.limitSwitch ? 'True' : 'False';
+      potentiometerValueEl.textContent = state.potentiometer.toFixed(2) + ' V';
+
+      // Update motor values
+      leftMotorValueEl.textContent = state.leftMotor.toFixed(2);
+      rightMotorValueEl.textContent = state.rightMotor.toFixed(2);
+
+      // Update sliders if not being dragged
+      if (!leftJoystickActive) {
+        leftMotorSlider.value = state.leftMotor * 100;
+      }
+      if (!rightJoystickActive) {
+        rightMotorSlider.value = state.rightMotor * 100;
+      }
+
+      // Update visualization
+      const position = 50 + (state.encoder / 20);
+      robotEl.style.left = `${position}%`;
+      limitSwitchEl.className = state.limitSwitch ? 'limit-switch active' : 'limit-switch';
+    }
+
+    // Send control word to the robot
+    function sendControlWord() {
+      if (!robotState.connected) {
+        return;
+      }
+
+      // Set the Robot/Enabled topic
+      setNetworkTablesValue('Robot/Enabled', robotState.enabled);
+
+      // Set the Robot/Mode topic
+      let mode = 'Disabled';
+      if (robotState.enabled) {
+        if (robotState.autonomous) {
+          mode = 'Autonomous';
+        } else if (robotState.test) {
+          mode = 'Test';
+        } else {
+          mode = 'Teleop';
+        }
+      }
+      setNetworkTablesValue('Robot/Mode', mode);
+    }
+
+    // Subscribe to a NetworkTables topic
+    function subscribeToNetworkTablesTopic(key) {
+      if (!ntSocket || ntSocket.readyState !== WebSocket.OPEN) {
+        return;
+      }
+
+      const message = {
+        type: 'subscribe',
+        key
+      };
+
+      ntSocket.send(JSON.stringify(message));
+    }
+
+    // Set a NetworkTables value
+    function setNetworkTablesValue(key, value) {
+      if (!ntSocket || ntSocket.readyState !== WebSocket.OPEN) {
+        return;
+      }
+
+      const message = {
+        type: 'setValue',
+        key,
+        value
+      };
+
+      ntSocket.send(JSON.stringify(message));
+    }
+
+    // Handle a NetworkTables message
+    function handleNetworkTablesMessage(data) {
+      try {
+        const message = JSON.parse(data);
+
+        switch (message.type) {
+          case 'valueChanged':
+            handleNetworkTablesValueChanged(message.key, message.value);
+            break;
+          case 'topicsList':
+            log(`Received NetworkTables topics list: ${message.topics.length} topics`);
+            break;
+          case 'error':
+            console.error('NetworkTables error:', message.error);
+            log(`NetworkTables error: ${message.error}`);
+            break;
+        }
+      } catch (error) {
+        console.error('Error handling NetworkTables message:', error);
+      }
+    }
+
+    // Handle a NetworkTables value changed message
+    function handleNetworkTablesValueChanged(key, value) {
+      switch (key) {
+        case 'Robot/LeftMotor':
+          robotState.leftMotor = value;
+          leftMotorValueEl.textContent = value.toFixed(2);
+          if (!leftJoystickActive) {
+            leftMotorSlider.value = value * 100;
+          }
+          break;
+        case 'Robot/RightMotor':
+          robotState.rightMotor = value;
+          rightMotorValueEl.textContent = value.toFixed(2);
+          if (!rightJoystickActive) {
+            rightMotorSlider.value = value * 100;
+          }
+          break;
+        case 'Robot/Encoder':
+          robotState.encoder = value;
+          encoderValueEl.textContent = value;
+          break;
+        case 'Robot/LimitSwitch':
+          robotState.limitSwitch = value;
+          limitSwitchValueEl.textContent = value ? 'True' : 'False';
+          limitSwitchEl.className = value ? 'limit-switch active' : 'limit-switch';
+          break;
+        case 'Robot/Potentiometer':
+          robotState.potentiometer = value;
+          potentiometerValueEl.textContent = value.toFixed(2) + ' V';
+          break;
+        case 'Robot/Enabled':
+          robotState.enabled = value;
+          robotStateEl.textContent = value ? 'Enabled' : 'Disabled';
+          robotStateEl.className = 'status-value ' + (value ? 'enabled' : 'disabled');
+          enableBtn.className = value ? 'active' : '';
+          disableBtn.className = !value ? 'active' : '';
+          break;
+        case 'Robot/Mode':
+          robotModeEl.textContent = value;
+          teleopBtn.className = (value === 'Teleop') ? 'active' : '';
+          autonomousBtn.className = (value === 'Autonomous') ? 'active' : '';
+          testBtn.className = (value === 'Test') ? 'active' : '';
+
+          robotState.autonomous = (value === 'Autonomous');
+          robotState.test = (value === 'Test');
+          robotState.teleop = (value === 'Teleop');
+          break;
+      }
+
+      // Update the robot visualization
+      updateRobotVisualization();
+    }
+
+    // Handle a HALSim message
+    function handleHALSimMessage(data) {
+      try {
+        const message = JSON.parse(data);
+
+        switch (message.type) {
+          case 'deviceValueChanged':
+            handleHALSimDeviceValueChanged(message.deviceType, message.deviceIndex, message.property, message.value);
+            break;
+          case 'devicesList':
+            log(`Received HALSim devices list: ${message.devices.length} devices`);
+            break;
+          case 'timingChanged':
+            log(`Simulation timing changed: paused=${message.timing.paused}`);
+            break;
+          case 'error':
+            console.error('HALSim error:', message.error);
+            log(`HALSim error: ${message.error}`);
+            break;
+        }
+      } catch (error) {
+        console.error('Error handling HALSim message:', error);
+      }
+    }
+
+    // Handle a HALSim device value changed message
+    function handleHALSimDeviceValueChanged(deviceType, deviceIndex, property, value) {
+      // For now, we'll just log the device value change
+      log(`HALSim device value changed: ${deviceType}[${deviceIndex}].${property} = ${value}`);
+    }
+
+    // Update the robot visualization
+    function updateRobotVisualization() {
+      // Update the robot position based on the encoder value
+      const position = 50 + (robotState.encoder / 20);
+      robotEl.style.left = `${position}%`;
+
+      // Update the limit switch visualization
+      limitSwitchEl.className = robotState.limitSwitch ? 'limit-switch active' : 'limit-switch';
+    }
+
+    // Send joystick data to the robot
+    function sendJoystickData() {
+      if (!robotState.connected) {
+        return;
+      }
+
+      // Set the motor values based on joystick positions
+      setNetworkTablesValue('Robot/LeftMotor', -leftJoystickPos.y);
+      setNetworkTablesValue('Robot/RightMotor', -rightJoystickPos.y);
+
+      // Also set the motor values in the robot state
+      robotState.leftMotor = -leftJoystickPos.y;
+      robotState.rightMotor = -rightJoystickPos.y;
+
+      // Update the motor value displays
+      leftMotorValueEl.textContent = (-leftJoystickPos.y).toFixed(2);
+      rightMotorValueEl.textContent = (-rightJoystickPos.y).toFixed(2);
+    }
+
+    // Send motor values to the robot
+    function sendMotorValues() {
+      if (!robotState.connected) {
+        return;
+      }
+
+      // Set the motor values in NetworkTables
+      setNetworkTablesValue('Robot/LeftMotor', robotState.leftMotor);
+      setNetworkTablesValue('Robot/RightMotor', robotState.rightMotor);
+    }
+
+    // Connect to the robot
+    function connectToRobot() {
+      // Connect to NetworkTables WebSocket server
+      connectToNetworkTables();
+
+      // Connect to HALSim WebSocket server
+      connectToHALSim();
+
+      // Update connection status
+      updateConnectionStatus();
+
+      // Start polling for robot state (as a fallback)
+      setInterval(fetchRobotState, 100);
+    }
+
+    // Connect to NetworkTables WebSocket server
+    function connectToNetworkTables() {
+      try {
+        // Close existing connection if any
+        if (ntSocket) {
+          ntSocket.close();
+          ntSocket = null;
+        }
+
+        // Connect to NetworkTables WebSocket server
+        ntSocket = new WebSocket('ws://localhost:8082');
+
+        ntSocket.onopen = () => {
+          log('Connected to NetworkTables WebSocket server');
+          robotState.ntConnected = true;
+          updateConnectionStatus();
+
+          // Subscribe to topics
+          subscribeToNetworkTablesTopic('Robot/LeftMotor');
+          subscribeToNetworkTablesTopic('Robot/RightMotor');
+          subscribeToNetworkTablesTopic('Robot/Encoder');
+          subscribeToNetworkTablesTopic('Robot/LimitSwitch');
+          subscribeToNetworkTablesTopic('Robot/Potentiometer');
+          subscribeToNetworkTablesTopic('Robot/Enabled');
+          subscribeToNetworkTablesTopic('Robot/Mode');
+        };
+
+        ntSocket.onclose = () => {
+          log('Disconnected from NetworkTables WebSocket server');
+          robotState.ntConnected = false;
+          updateConnectionStatus();
+
+          // Try to reconnect after a delay
+          setTimeout(connectToNetworkTables, 5000);
+        };
+
+        ntSocket.onerror = (error) => {
+          console.error('NetworkTables WebSocket error:', error);
+          log('NetworkTables WebSocket error');
+        };
+
+        ntSocket.onmessage = (event) => {
+          handleNetworkTablesMessage(event.data);
+        };
+      } catch (error) {
+        console.error('Failed to connect to NetworkTables WebSocket server:', error);
+        log('Failed to connect to NetworkTables WebSocket server');
+      }
+    }
+
+    // Connect to HALSim WebSocket server
+    function connectToHALSim() {
+      try {
+        // Close existing connection if any
+        if (halSimSocket) {
+          halSimSocket.close();
+          halSimSocket = null;
+        }
+
+        // Connect to HALSim WebSocket server
+        halSimSocket = new WebSocket('ws://localhost:8083');
+
+        halSimSocket.onopen = () => {
+          log('Connected to HALSim WebSocket server');
+          robotState.halSimConnected = true;
+          updateConnectionStatus();
+        };
+
+        halSimSocket.onclose = () => {
+          log('Disconnected from HALSim WebSocket server');
+          robotState.halSimConnected = false;
+          updateConnectionStatus();
+
+          // Try to reconnect after a delay
+          setTimeout(connectToHALSim, 5000);
+        };
+
+        halSimSocket.onerror = (error) => {
+          console.error('HALSim WebSocket error:', error);
+          log('HALSim WebSocket error');
+        };
+
+        halSimSocket.onmessage = (event) => {
+          handleHALSimMessage(event.data);
+        };
+      } catch (error) {
+        console.error('Failed to connect to HALSim WebSocket server:', error);
+        log('Failed to connect to HALSim WebSocket server');
+      }
+    }
+
+    // Update connection status
+    function updateConnectionStatus() {
+      robotState.connected = robotState.ntConnected || robotState.halSimConnected;
+      connectionStatusEl.textContent = robotState.connected ? 'Connected' : 'Disconnected';
+      connectionStatusEl.className = 'status-value ' + (robotState.connected ? 'enabled' : 'disabled');
+    }
+
+    // Fetch robot state
+    function fetchRobotState() {
+      // This is a fallback method that simulates the robot state when not connected to the WebSocket servers
+      // In a real implementation, we would get the robot state from the WebSocket servers
+
+      // Only simulate if not connected to NetworkTables
+      if (!robotState.ntConnected) {
+        // Simulate encoder counting when motors are running
+        if (robotState.enabled) {
+          robotState.encoder += Math.round((robotState.leftMotor + robotState.rightMotor) * 5);
+
+          // Simulate limit switch
+          robotState.limitSwitch = robotState.encoder > 1000;
+
+          // Simulate potentiometer
+          robotState.potentiometer = Math.min(5, Math.max(0, robotState.encoder / 200));
+        }
+
+        // Update the UI with the simulated state
+        updateRobotState(robotState);
+      }
+    }
+
+    // Handle joystick movement
+    function handleJoystickMove(joystick, handle, event, active) {
+      if (!active) {
+        return;
+      }
+
+      const rect = joystick.getBoundingClientRect();
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      let x = (event.clientX - rect.left - centerX) / centerX;
+      let y = (event.clientY - rect.top - centerY) / centerY;
+
+      // Clamp values to -1 to 1
+      x = Math.max(-1, Math.min(1, x));
+      y = Math.max(-1, Math.min(1, y));
+
+      // Calculate distance from center
+      const distance = Math.sqrt(x * x + y * y);
+
+      // If distance > 1, normalize
+      if (distance > 1) {
+        x /= distance;
+        y /= distance;
+      }
+
+      // Update handle position
+      handle.style.left = `${centerX + x * centerX}px`;
+      handle.style.top = `${centerY + y * centerY}px`;
+
+      // Update joystick position
+      if (joystick === leftJoystick) {
+        leftJoystickPos = { x, y };
+        robotState.leftMotor = -y; // Invert Y axis
+      } else {
+        rightJoystickPos = { x, y };
+        robotState.rightMotor = -y; // Invert Y axis
+      }
+
+      // Send joystick data
+      sendJoystickData();
+    }
+
+    // Initialize the UI
+    function initUI() {
+      // Button event listeners
+      enableBtn.addEventListener('click', () => {
+        robotState.enabled = true;
+        sendControlWord();
+        log('Robot enabled');
+      });
+
+      disableBtn.addEventListener('click', () => {
+        robotState.enabled = false;
+        sendControlWord();
+        log('Robot disabled');
+      });
+
+      teleopBtn.addEventListener('click', () => {
+        robotState.autonomous = false;
+        robotState.test = false;
+        sendControlWord();
+        log('Teleop mode selected');
+      });
+
+      autonomousBtn.addEventListener('click', () => {
+        robotState.autonomous = true;
+        robotState.test = false;
+        sendControlWord();
+        log('Autonomous mode selected');
+      });
+
+      testBtn.addEventListener('click', () => {
+        robotState.autonomous = false;
+        robotState.test = true;
+        sendControlWord();
+        log('Test mode selected');
+      });
+
+      // Joystick event listeners
+      leftJoystick.addEventListener('mousedown', (event) => {
+        leftJoystickActive = true;
+        handleJoystickMove(leftJoystick, leftJoystickHandle, event, leftJoystickActive);
+      });
+
+      rightJoystick.addEventListener('mousedown', (event) => {
+        rightJoystickActive = true;
+        handleJoystickMove(rightJoystick, rightJoystickHandle, event, rightJoystickActive);
+      });
+
+      document.addEventListener('mousemove', (event) => {
+        handleJoystickMove(leftJoystick, leftJoystickHandle, event, leftJoystickActive);
+        handleJoystickMove(rightJoystick, rightJoystickHandle, event, rightJoystickActive);
+      });
+
+      document.addEventListener('mouseup', () => {
+        leftJoystickActive = false;
+        rightJoystickActive = false;
+
+        // Reset joystick handles
+        leftJoystickHandle.style.left = '50%';
+        leftJoystickHandle.style.top = '50%';
+        rightJoystickHandle.style.left = '50%';
+        rightJoystickHandle.style.top = '50%';
+
+        // Reset joystick positions
+        leftJoystickPos = { x: 0, y: 0 };
+        rightJoystickPos = { x: 0, y: 0 };
+
+        // Send joystick data
+        sendJoystickData();
+      });
+
+      // Motor slider event listeners
+      leftMotorSlider.addEventListener('input', () => {
+        robotState.leftMotor = leftMotorSlider.value / 100;
+        leftMotorValueEl.textContent = robotState.leftMotor.toFixed(2);
+        sendMotorValues();
+      });
+
+      rightMotorSlider.addEventListener('input', () => {
+        robotState.rightMotor = rightMotorSlider.value / 100;
+        rightMotorValueEl.textContent = robotState.rightMotor.toFixed(2);
+        sendMotorValues();
+      });
+
+      // Connect to robot
+      connectToRobot();
+
+      // Initial update
+      updateRobotState(robotState);
+      log('Simulation UI initialized');
+    }
+
+    // Initialize the UI when the page loads
+    window.addEventListener('load', initUI);
+  </script>
+</body>
+</html>

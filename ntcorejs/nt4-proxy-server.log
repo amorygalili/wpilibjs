@@ -1,0 +1,790 @@
+[2025-04-11T01:53:58.904Z] NetworkTables 4.1 Proxy Server started on port 5810
+[2025-04-11T01:53:58.908Z] Forwarding to localhost:5820
+[2025-04-11T01:53:58.908Z] Connect OutlineViewer to localhost:5810
+[2025-04-11T01:53:59.521Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:53:59.521Z] Using NT 4.1 protocol
+[2025-04-11T01:53:59.522Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:53:59.524Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:53:59.554Z] Connected to target server at localhost:5820
+[2025-04-11T01:53:59.554Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:53:59.559Z] Target -> Client: Binary message, length: 226
+[2025-04-11T01:53:59.559Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.560Z] Failed to decode MessagePack: RangeError: Extra 225 of 226 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.560Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true,"rawType":"boolean","typeString":"boolean",".type":"boolean","source":"nt4-server"},"pubuid":1}}]
+[2025-04-11T01:53:59.561Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true,"rawType":"boolean","typeString":"boolean",".type":"boolean","source":"nt4-server"},"pubuid":1}}]
+[2025-04-11T01:53:59.562Z] Target -> Client: Binary message, length: 221
+[2025-04-11T01:53:59.563Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.563Z] Failed to decode MessagePack: RangeError: Extra 220 of 221 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.563Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":2}}]
+[2025-04-11T01:53:59.564Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":2}}]
+[2025-04-11T01:53:59.564Z] Target -> Client: Binary message, length: 221
+[2025-04-11T01:53:59.565Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.565Z] Failed to decode MessagePack: RangeError: Extra 220 of 221 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.565Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true,"rawType":"string","typeString":"string",".type":"string","source":"nt4-server"},"pubuid":3}}]
+[2025-04-11T01:53:59.566Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true,"rawType":"string","typeString":"string",".type":"string","source":"nt4-server"},"pubuid":3}}]
+[2025-04-11T01:53:59.566Z] Target -> Client: Binary message, length: 240
+[2025-04-11T01:53:59.566Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.566Z] Failed to decode MessagePack: RangeError: Extra 239 of 240 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.567Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true,"rawType":"boolean[]","typeString":"boolean[]",".type":"boolean[]","source":"nt4-server"},"pubuid":4}}]
+[2025-04-11T01:53:59.567Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true,"rawType":"boolean[]","typeString":"boolean[]",".type":"boolean[]","source":"nt4-server"},"pubuid":4}}]
+[2025-04-11T01:53:59.567Z] Target -> Client: Binary message, length: 235
+[2025-04-11T01:53:59.567Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.567Z] Failed to decode MessagePack: RangeError: Extra 234 of 235 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.568Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true,"rawType":"double[]","typeString":"double[]",".type":"double[]","source":"nt4-server"},"pubuid":5}}]
+[2025-04-11T01:53:59.568Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true,"rawType":"double[]","typeString":"double[]",".type":"double[]","source":"nt4-server"},"pubuid":5}}]
+[2025-04-11T01:53:59.568Z] Target -> Client: Binary message, length: 235
+[2025-04-11T01:53:59.568Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.568Z] Failed to decode MessagePack: RangeError: Extra 234 of 235 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.568Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true,"rawType":"string[]","typeString":"string[]",".type":"string[]","source":"nt4-server"},"pubuid":6}}]
+[2025-04-11T01:53:59.568Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true,"rawType":"string[]","typeString":"string[]",".type":"string[]","source":"nt4-server"},"pubuid":6}}]
+[2025-04-11T01:53:59.569Z] Target -> Client: Binary message, length: 222
+[2025-04-11T01:53:59.569Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:53:59.569Z] Failed to decode MessagePack: RangeError: Extra 221 of 222 byte(s) found at buffer[1]
+[2025-04-11T01:53:59.569Z] As UTF-8: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":7}}]
+[2025-04-11T01:53:59.569Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":7}}]
+[2025-04-11T01:53:59.673Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:53:59.674Z] First 32 bytes: 94 01 cf 00 06 32 76 f9 d9 37 a0 00 c3
+[2025-04-11T01:53:59.674Z] Decoded MessagePack: [1,1744336439556000,0,true]
+[2025-04-11T01:53:59.675Z] Target -> Client: Binary message, length: 21
+[2025-04-11T01:53:59.675Z] First 32 bytes: 94 02 cf 00 06 32 76 f9 d9 37 a0 01 cb 40 09 21 f9 f0 1b 86 6e
+[2025-04-11T01:53:59.675Z] Decoded MessagePack: [2,1744336439556000,1,3.14159]
+[2025-04-11T01:53:59.675Z] Target -> Client: Binary message, length: 35
+[2025-04-11T01:53:59.675Z] First 32 bytes: 94 03 cf 00 06 32 76 f9 d9 37 a0 04 b6 48 65 6c 6c 6f 20 66 72 6f 6d 20 4e 54 34 20 73 65 72 76
+[2025-04-11T01:53:59.675Z] Decoded MessagePack: [3,1744336439556000,4,"Hello from NT4 server!"]
+[2025-04-11T01:53:59.676Z] Target -> Client: Binary message, length: 16
+[2025-04-11T01:53:59.676Z] First 32 bytes: 94 04 cf 00 06 32 76 f9 d9 3b 88 10 93 c3 c2 c3
+[2025-04-11T01:53:59.676Z] Decoded MessagePack: [4,1744336439557000,16,[true,false,true]]
+[2025-04-11T01:53:59.676Z] Target -> Client: Binary message, length: 49
+[2025-04-11T01:53:59.676Z] First 32 bytes: 94 05 cf 00 06 32 76 f9 d9 3b 88 11 94 cb 3f f1 99 99 99 99 99 9a cb 40 01 99 99 99 99 99 9a cb
+[2025-04-11T01:53:59.677Z] Decoded MessagePack: [5,1744336439557000,17,[1.1,2.2,3.3,4.4]]
+[2025-04-11T01:53:59.677Z] Target -> Client: Binary message, length: 27
+[2025-04-11T01:53:59.677Z] First 32 bytes: 94 06 cf 00 06 32 76 f9 d9 3b 88 14 93 a3 6f 6e 65 a3 74 77 6f a5 74 68 72 65 65
+[2025-04-11T01:53:59.677Z] Decoded MessagePack: [6,1744336439557000,20,["one","two","three"]]
+[2025-04-11T01:53:59.677Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:53:59.677Z] First 32 bytes: 94 07 cf 00 06 32 76 f9 d9 3b 88 01 00
+[2025-04-11T01:53:59.677Z] Decoded MessagePack: [7,1744336439557000,1,0]
+[2025-04-11T01:54:00.561Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:00.561Z] First 32 bytes: 94 07 cf 00 06 32 76 f9 e8 8d 68 01 00
+[2025-04-11T01:54:00.561Z] Decoded MessagePack: [7,1744336440561000,1,0]
+[2025-04-11T01:54:01.567Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:01.567Z] First 32 bytes: 94 07 cf 00 06 32 76 f9 f7 e7 18 01 01
+[2025-04-11T01:54:01.568Z] Decoded MessagePack: [7,1744336441567000,1,1]
+[2025-04-11T01:54:02.496Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:54:02.497Z] Using NT 4.1 protocol
+[2025-04-11T01:54:02.497Z] Client connected from ::1
+[2025-04-11T01:54:02.497Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:54:02.500Z] Connected to target server at localhost:5820
+[2025-04-11T01:54:02.500Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:54:02.500Z] Target -> Client: Binary message, length: 226
+[2025-04-11T01:54:02.500Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.501Z] Failed to decode MessagePack: RangeError: Extra 225 of 226 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.501Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true,"rawType":"boolean","typeString":"boolean",".type":"boolean","source":"nt4-server"},"pubuid":1}}]
+[2025-04-11T01:54:02.501Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean","id":1,"type":"boolean","properties":{"persistent":true,"retained":true,"rawType":"boolean","typeString":"boolean",".type":"boolean","source":"nt4-server"},"pubuid":1}}]
+[2025-04-11T01:54:02.501Z] Target -> Client: Binary message, length: 221
+[2025-04-11T01:54:02.502Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.502Z] Failed to decode MessagePack: RangeError: Extra 220 of 221 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.502Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":2}}]
+[2025-04-11T01:54:02.502Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number","id":2,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":2}}]
+[2025-04-11T01:54:02.502Z] Target -> Client: Binary message, length: 221
+[2025-04-11T01:54:02.502Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.502Z] Failed to decode MessagePack: RangeError: Extra 220 of 221 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.503Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true,"rawType":"string","typeString":"string",".type":"string","source":"nt4-server"},"pubuid":3}}]
+[2025-04-11T01:54:02.503Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string","id":3,"type":"string","properties":{"persistent":true,"retained":true,"rawType":"string","typeString":"string",".type":"string","source":"nt4-server"},"pubuid":3}}]
+[2025-04-11T01:54:02.503Z] Target -> Client: Binary message, length: 240
+[2025-04-11T01:54:02.503Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.503Z] Failed to decode MessagePack: RangeError: Extra 239 of 240 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.503Z] As UTF-8: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true,"rawType":"boolean[]","typeString":"boolean[]",".type":"boolean[]","source":"nt4-server"},"pubuid":4}}]
+[2025-04-11T01:54:02.503Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/boolean_array","id":4,"type":"boolean[]","properties":{"persistent":true,"retained":true,"rawType":"boolean[]","typeString":"boolean[]",".type":"boolean[]","source":"nt4-server"},"pubuid":4}}]
+[2025-04-11T01:54:02.504Z] Target -> Client: Binary message, length: 235
+[2025-04-11T01:54:02.504Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.504Z] Failed to decode MessagePack: RangeError: Extra 234 of 235 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.504Z] As UTF-8: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true,"rawType":"double[]","typeString":"double[]",".type":"double[]","source":"nt4-server"},"pubuid":5}}]
+[2025-04-11T01:54:02.504Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/number_array","id":5,"type":"double[]","properties":{"persistent":true,"retained":true,"rawType":"double[]","typeString":"double[]",".type":"double[]","source":"nt4-server"},"pubuid":5}}]
+[2025-04-11T01:54:02.504Z] Target -> Client: Binary message, length: 235
+[2025-04-11T01:54:02.504Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.505Z] Failed to decode MessagePack: RangeError: Extra 234 of 235 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.505Z] As UTF-8: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true,"rawType":"string[]","typeString":"string[]",".type":"string[]","source":"nt4-server"},"pubuid":6}}]
+[2025-04-11T01:54:02.505Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/string_array","id":6,"type":"string[]","properties":{"persistent":true,"retained":true,"rawType":"string[]","typeString":"string[]",".type":"string[]","source":"nt4-server"},"pubuid":6}}]
+[2025-04-11T01:54:02.505Z] Target -> Client: Binary message, length: 222
+[2025-04-11T01:54:02.505Z] First 32 bytes: 5b 7b 22 6d 65 74 68 6f 64 22 3a 22 61 6e 6e 6f 75 6e 63 65 22 2c 22 70 61 72 61 6d 73 22 3a 7b
+[2025-04-11T01:54:02.505Z] Failed to decode MessagePack: RangeError: Extra 221 of 222 byte(s) found at buffer[1]
+[2025-04-11T01:54:02.505Z] As UTF-8: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":7}}]
+[2025-04-11T01:54:02.505Z] Parsed JSON: [{"method":"announce","params":{"name":"/server/counter","id":7,"type":"double","properties":{"persistent":true,"retained":true,"rawType":"double","typeString":"double",".type":"double","source":"nt4-server"},"pubuid":7}}]
+[2025-04-11T01:54:02.574Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:02.574Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 07 44 b0 01 02
+[2025-04-11T01:54:02.575Z] Decoded MessagePack: [7,1744336442574000,1,2]
+[2025-04-11T01:54:02.575Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:02.575Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 07 44 b0 01 02
+[2025-04-11T01:54:02.575Z] Decoded MessagePack: [7,1744336442574000,1,2]
+[2025-04-11T01:54:02.605Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:02.605Z] First 32 bytes: 94 01 cf 00 06 32 76 f9 d9 37 a0 00 c3
+[2025-04-11T01:54:02.605Z] Decoded MessagePack: [1,1744336439556000,0,true]
+[2025-04-11T01:54:02.606Z] Target -> Client: Binary message, length: 21
+[2025-04-11T01:54:02.606Z] First 32 bytes: 94 02 cf 00 06 32 76 f9 d9 37 a0 01 cb 40 09 21 f9 f0 1b 86 6e
+[2025-04-11T01:54:02.606Z] Decoded MessagePack: [2,1744336439556000,1,3.14159]
+[2025-04-11T01:54:02.606Z] Target -> Client: Binary message, length: 35
+[2025-04-11T01:54:02.606Z] First 32 bytes: 94 03 cf 00 06 32 76 f9 d9 37 a0 04 b6 48 65 6c 6c 6f 20 66 72 6f 6d 20 4e 54 34 20 73 65 72 76
+[2025-04-11T01:54:02.606Z] Decoded MessagePack: [3,1744336439556000,4,"Hello from NT4 server!"]
+[2025-04-11T01:54:02.606Z] Target -> Client: Binary message, length: 16
+[2025-04-11T01:54:02.607Z] First 32 bytes: 94 04 cf 00 06 32 76 f9 d9 3b 88 10 93 c3 c2 c3
+[2025-04-11T01:54:02.607Z] Decoded MessagePack: [4,1744336439557000,16,[true,false,true]]
+[2025-04-11T01:54:02.607Z] Target -> Client: Binary message, length: 49
+[2025-04-11T01:54:02.607Z] First 32 bytes: 94 05 cf 00 06 32 76 f9 d9 3b 88 11 94 cb 3f f1 99 99 99 99 99 9a cb 40 01 99 99 99 99 99 9a cb
+[2025-04-11T01:54:02.607Z] Decoded MessagePack: [5,1744336439557000,17,[1.1,2.2,3.3,4.4]]
+[2025-04-11T01:54:02.607Z] Target -> Client: Binary message, length: 27
+[2025-04-11T01:54:02.607Z] First 32 bytes: 94 06 cf 00 06 32 76 f9 d9 3b 88 14 93 a3 6f 6e 65 a3 74 77 6f a5 74 68 72 65 65
+[2025-04-11T01:54:02.607Z] Decoded MessagePack: [6,1744336439557000,20,["one","two","three"]]
+[2025-04-11T01:54:02.607Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:02.607Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 07 44 b0 01 02
+[2025-04-11T01:54:02.608Z] Decoded MessagePack: [7,1744336442574000,1,2]
+[2025-04-11T01:54:03.589Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:03.589Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 16 c1 88 01 03
+[2025-04-11T01:54:03.589Z] Decoded MessagePack: [7,1744336443589000,1,3]
+[2025-04-11T01:54:03.590Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:03.590Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 16 c1 88 01 03
+[2025-04-11T01:54:03.590Z] Decoded MessagePack: [7,1744336443589000,1,3]
+[2025-04-11T01:54:04.601Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:04.602Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 26 32 a8 01 04
+[2025-04-11T01:54:04.602Z] Decoded MessagePack: [7,1744336444601000,1,4]
+[2025-04-11T01:54:04.602Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:04.603Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 26 32 a8 01 04
+[2025-04-11T01:54:04.603Z] Decoded MessagePack: [7,1744336444601000,1,4]
+[2025-04-11T01:54:05.607Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:05.607Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 35 8c 58 01 05
+[2025-04-11T01:54:05.608Z] Decoded MessagePack: [7,1744336445607000,1,5]
+[2025-04-11T01:54:05.608Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:05.608Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 35 8c 58 01 05
+[2025-04-11T01:54:05.609Z] Decoded MessagePack: [7,1744336445607000,1,5]
+[2025-04-11T01:54:06.613Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:06.613Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 44 e6 08 01 06
+[2025-04-11T01:54:06.614Z] Decoded MessagePack: [7,1744336446613000,1,6]
+[2025-04-11T01:54:06.614Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:06.615Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 44 e6 08 01 06
+[2025-04-11T01:54:06.615Z] Decoded MessagePack: [7,1744336446613000,1,6]
+[2025-04-11T01:54:07.619Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:07.620Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 54 3f b8 01 07
+[2025-04-11T01:54:07.620Z] Decoded MessagePack: [7,1744336447619000,1,7]
+[2025-04-11T01:54:07.621Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:07.621Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 54 3f b8 01 07
+[2025-04-11T01:54:07.621Z] Decoded MessagePack: [7,1744336447619000,1,7]
+[2025-04-11T01:54:08.628Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:08.629Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 63 a5 20 01 08
+[2025-04-11T01:54:08.630Z] Decoded MessagePack: [7,1744336448628000,1,8]
+[2025-04-11T01:54:08.630Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:08.630Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 63 a5 20 01 08
+[2025-04-11T01:54:08.631Z] Decoded MessagePack: [7,1744336448628000,1,8]
+[2025-04-11T01:54:09.637Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:09.637Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 73 0a 88 01 09
+[2025-04-11T01:54:09.638Z] Decoded MessagePack: [7,1744336449637000,1,9]
+[2025-04-11T01:54:09.638Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:09.638Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 73 0a 88 01 09
+[2025-04-11T01:54:09.638Z] Decoded MessagePack: [7,1744336449637000,1,9]
+[2025-04-11T01:54:10.648Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:10.648Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 82 77 c0 01 0a
+[2025-04-11T01:54:10.649Z] Decoded MessagePack: [7,1744336450648000,1,10]
+[2025-04-11T01:54:10.649Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:10.650Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 82 77 c0 01 0a
+[2025-04-11T01:54:10.650Z] Decoded MessagePack: [7,1744336450648000,1,10]
+[2025-04-11T01:54:11.653Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:11.654Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 91 d1 70 01 0b
+[2025-04-11T01:54:11.654Z] Decoded MessagePack: [7,1744336451654000,1,11]
+[2025-04-11T01:54:11.655Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:11.655Z] First 32 bytes: 94 07 cf 00 06 32 76 fa 91 d1 70 01 0b
+[2025-04-11T01:54:11.655Z] Decoded MessagePack: [7,1744336451654000,1,11]
+[2025-04-11T01:54:12.663Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:12.664Z] First 32 bytes: 94 07 cf 00 06 32 76 fa a1 36 d8 01 0c
+[2025-04-11T01:54:12.664Z] Decoded MessagePack: [7,1744336452663000,1,12]
+[2025-04-11T01:54:12.665Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:12.665Z] First 32 bytes: 94 07 cf 00 06 32 76 fa a1 36 d8 01 0c
+[2025-04-11T01:54:12.666Z] Decoded MessagePack: [7,1744336452663000,1,12]
+[2025-04-11T01:54:13.665Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:13.666Z] First 32 bytes: 94 07 cf 00 06 32 76 fa b0 84 d0 01 0d
+[2025-04-11T01:54:13.667Z] Decoded MessagePack: [7,1744336453666000,1,13]
+[2025-04-11T01:54:13.668Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:13.668Z] First 32 bytes: 94 07 cf 00 06 32 76 fa b0 84 d0 01 0d
+[2025-04-11T01:54:13.669Z] Decoded MessagePack: [7,1744336453666000,1,13]
+[2025-04-11T01:54:14.676Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:14.677Z] First 32 bytes: 94 07 cf 00 06 32 76 fa bf ee 20 01 0e
+[2025-04-11T01:54:14.677Z] Decoded MessagePack: [7,1744336454676000,1,14]
+[2025-04-11T01:54:14.678Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:14.678Z] First 32 bytes: 94 07 cf 00 06 32 76 fa bf ee 20 01 0e
+[2025-04-11T01:54:14.678Z] Decoded MessagePack: [7,1744336454676000,1,14]
+[2025-04-11T01:54:15.684Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:15.684Z] First 32 bytes: 94 07 cf 00 06 32 76 fa cf 4f a0 01 0f
+[2025-04-11T01:54:15.685Z] Decoded MessagePack: [7,1744336455684000,1,15]
+[2025-04-11T01:54:15.685Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:15.686Z] First 32 bytes: 94 07 cf 00 06 32 76 fa cf 4f a0 01 0f
+[2025-04-11T01:54:15.686Z] Decoded MessagePack: [7,1744336455684000,1,15]
+[2025-04-11T01:54:16.693Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:16.694Z] First 32 bytes: 94 07 cf 00 06 32 76 fa de b5 08 01 10
+[2025-04-11T01:54:16.694Z] Decoded MessagePack: [7,1744336456693000,1,16]
+[2025-04-11T01:54:16.695Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:16.695Z] First 32 bytes: 94 07 cf 00 06 32 76 fa de b5 08 01 10
+[2025-04-11T01:54:16.696Z] Decoded MessagePack: [7,1744336456693000,1,16]
+[2025-04-11T01:54:17.704Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:17.705Z] First 32 bytes: 94 07 cf 00 06 32 76 fa ee 22 40 01 11
+[2025-04-11T01:54:17.705Z] Decoded MessagePack: [7,1744336457704000,1,17]
+[2025-04-11T01:54:17.705Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:17.705Z] First 32 bytes: 94 07 cf 00 06 32 76 fa ee 22 40 01 11
+[2025-04-11T01:54:17.706Z] Decoded MessagePack: [7,1744336457704000,1,17]
+[2025-04-11T01:54:18.712Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:18.713Z] First 32 bytes: 94 07 cf 00 06 32 76 fa fd 83 c0 01 12
+[2025-04-11T01:54:18.714Z] Decoded MessagePack: [7,1744336458712000,1,18]
+[2025-04-11T01:54:18.714Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:18.715Z] First 32 bytes: 94 07 cf 00 06 32 76 fa fd 83 c0 01 12
+[2025-04-11T01:54:18.715Z] Decoded MessagePack: [7,1744336458712000,1,18]
+[2025-04-11T01:54:19.725Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:19.726Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 0c f8 c8 01 13
+[2025-04-11T01:54:19.726Z] Decoded MessagePack: [7,1744336459725000,1,19]
+[2025-04-11T01:54:19.726Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:19.726Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 0c f8 c8 01 13
+[2025-04-11T01:54:19.726Z] Decoded MessagePack: [7,1744336459725000,1,19]
+[2025-04-11T01:54:20.732Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:20.733Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 1c 56 60 01 14
+[2025-04-11T01:54:20.733Z] Decoded MessagePack: [7,1744336460732000,1,20]
+[2025-04-11T01:54:20.734Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:20.734Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 1c 56 60 01 14
+[2025-04-11T01:54:20.735Z] Decoded MessagePack: [7,1744336460732000,1,20]
+[2025-04-11T01:54:21.738Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:21.738Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 2b b0 10 01 15
+[2025-04-11T01:54:21.738Z] Decoded MessagePack: [7,1744336461738000,1,21]
+[2025-04-11T01:54:21.739Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:21.739Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 2b b0 10 01 15
+[2025-04-11T01:54:21.739Z] Decoded MessagePack: [7,1744336461738000,1,21]
+[2025-04-11T01:54:22.742Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:22.743Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 3b 01 f0 01 16
+[2025-04-11T01:54:22.743Z] Decoded MessagePack: [7,1744336462742000,1,22]
+[2025-04-11T01:54:22.743Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:22.743Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 3b 01 f0 01 16
+[2025-04-11T01:54:22.743Z] Decoded MessagePack: [7,1744336462742000,1,22]
+[2025-04-11T01:54:23.756Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:23.756Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 4a 7a e0 01 17
+[2025-04-11T01:54:23.757Z] Decoded MessagePack: [7,1744336463756000,1,23]
+[2025-04-11T01:54:23.757Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:23.757Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 4a 7a e0 01 17
+[2025-04-11T01:54:23.757Z] Decoded MessagePack: [7,1744336463756000,1,23]
+[2025-04-11T01:54:24.769Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:24.770Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 59 f3 d0 01 18
+[2025-04-11T01:54:24.770Z] Decoded MessagePack: [7,1744336464770000,1,24]
+[2025-04-11T01:54:24.770Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:24.770Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 59 f3 d0 01 18
+[2025-04-11T01:54:24.771Z] Decoded MessagePack: [7,1744336464770000,1,24]
+[2025-04-11T01:54:25.776Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:25.777Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 69 4d 80 01 19
+[2025-04-11T01:54:25.777Z] Decoded MessagePack: [7,1744336465776000,1,25]
+[2025-04-11T01:54:25.778Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:25.778Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 69 4d 80 01 19
+[2025-04-11T01:54:25.779Z] Decoded MessagePack: [7,1744336465776000,1,25]
+[2025-04-11T01:54:26.783Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:26.783Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 78 ab 18 01 1a
+[2025-04-11T01:54:26.784Z] Decoded MessagePack: [7,1744336466783000,1,26]
+[2025-04-11T01:54:26.784Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:26.784Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 78 ab 18 01 1a
+[2025-04-11T01:54:26.784Z] Decoded MessagePack: [7,1744336466783000,1,26]
+[2025-04-11T01:54:27.784Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:27.784Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 87 f1 40 01 1b
+[2025-04-11T01:54:27.784Z] Decoded MessagePack: [7,1744336467784000,1,27]
+[2025-04-11T01:54:27.785Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:27.785Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 87 f1 40 01 1b
+[2025-04-11T01:54:27.785Z] Decoded MessagePack: [7,1744336467784000,1,27]
+[2025-04-11T01:54:28.796Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:28.797Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 97 62 60 01 1c
+[2025-04-11T01:54:28.797Z] Decoded MessagePack: [7,1744336468796000,1,28]
+[2025-04-11T01:54:28.797Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:28.798Z] First 32 bytes: 94 07 cf 00 06 32 76 fb 97 62 60 01 1c
+[2025-04-11T01:54:28.798Z] Decoded MessagePack: [7,1744336468796000,1,28]
+[2025-04-11T01:54:29.798Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:29.799Z] First 32 bytes: 94 07 cf 00 06 32 76 fb a6 ac 70 01 1d
+[2025-04-11T01:54:29.799Z] Decoded MessagePack: [7,1744336469798000,1,29]
+[2025-04-11T01:54:29.800Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:29.800Z] First 32 bytes: 94 07 cf 00 06 32 76 fb a6 ac 70 01 1d
+[2025-04-11T01:54:29.800Z] Decoded MessagePack: [7,1744336469798000,1,29]
+[2025-04-11T01:54:30.812Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:30.813Z] First 32 bytes: 94 07 cf 00 06 32 76 fb b6 25 60 01 1e
+[2025-04-11T01:54:30.813Z] Decoded MessagePack: [7,1744336470812000,1,30]
+[2025-04-11T01:54:30.813Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:30.814Z] First 32 bytes: 94 07 cf 00 06 32 76 fb b6 25 60 01 1e
+[2025-04-11T01:54:30.814Z] Decoded MessagePack: [7,1744336470812000,1,30]
+[2025-04-11T01:54:31.815Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:31.815Z] First 32 bytes: 94 07 cf 00 06 32 76 fb c5 73 58 01 1f
+[2025-04-11T01:54:31.815Z] Decoded MessagePack: [7,1744336471815000,1,31]
+[2025-04-11T01:54:31.816Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:31.816Z] First 32 bytes: 94 07 cf 00 06 32 76 fb c5 73 58 01 1f
+[2025-04-11T01:54:31.816Z] Decoded MessagePack: [7,1744336471815000,1,31]
+[2025-04-11T01:54:32.826Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:32.826Z] First 32 bytes: 94 07 cf 00 06 32 76 fb d4 e0 90 01 20
+[2025-04-11T01:54:32.827Z] Decoded MessagePack: [7,1744336472826000,1,32]
+[2025-04-11T01:54:32.827Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:32.827Z] First 32 bytes: 94 07 cf 00 06 32 76 fb d4 e0 90 01 20
+[2025-04-11T01:54:32.827Z] Decoded MessagePack: [7,1744336472826000,1,32]
+[2025-04-11T01:54:33.836Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:33.837Z] First 32 bytes: 94 07 cf 00 06 32 76 fb e4 4d c8 01 21
+[2025-04-11T01:54:33.837Z] Decoded MessagePack: [7,1744336473837000,1,33]
+[2025-04-11T01:54:33.838Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:33.838Z] First 32 bytes: 94 07 cf 00 06 32 76 fb e4 4d c8 01 21
+[2025-04-11T01:54:33.838Z] Decoded MessagePack: [7,1744336473837000,1,33]
+[2025-04-11T01:54:34.846Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:34.847Z] First 32 bytes: 94 07 cf 00 06 32 76 fb f3 b3 30 01 22
+[2025-04-11T01:54:34.847Z] Decoded MessagePack: [7,1744336474846000,1,34]
+[2025-04-11T01:54:34.848Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:34.848Z] First 32 bytes: 94 07 cf 00 06 32 76 fb f3 b3 30 01 22
+[2025-04-11T01:54:34.848Z] Decoded MessagePack: [7,1744336474846000,1,34]
+[2025-04-11T01:54:35.856Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:35.856Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 03 1c 80 01 23
+[2025-04-11T01:54:35.857Z] Decoded MessagePack: [7,1744336475856000,1,35]
+[2025-04-11T01:54:35.857Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:35.858Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 03 1c 80 01 23
+[2025-04-11T01:54:35.858Z] Decoded MessagePack: [7,1744336475856000,1,35]
+[2025-04-11T01:54:36.862Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:36.862Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 12 72 48 01 24
+[2025-04-11T01:54:36.863Z] Decoded MessagePack: [7,1744336476861000,1,36]
+[2025-04-11T01:54:36.863Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:36.864Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 12 72 48 01 24
+[2025-04-11T01:54:36.864Z] Decoded MessagePack: [7,1744336476861000,1,36]
+[2025-04-11T01:54:37.872Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:37.872Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 21 df 80 01 25
+[2025-04-11T01:54:37.873Z] Decoded MessagePack: [7,1744336477872000,1,37]
+[2025-04-11T01:54:37.873Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:37.873Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 21 df 80 01 25
+[2025-04-11T01:54:37.873Z] Decoded MessagePack: [7,1744336477872000,1,37]
+[2025-04-11T01:54:38.873Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:38.874Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 31 21 c0 01 26
+[2025-04-11T01:54:38.874Z] Decoded MessagePack: [7,1744336478872000,1,38]
+[2025-04-11T01:54:38.875Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:38.875Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 31 21 c0 01 26
+[2025-04-11T01:54:38.875Z] Decoded MessagePack: [7,1744336478872000,1,38]
+[2025-04-11T01:54:39.884Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:39.884Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 40 92 e0 01 27
+[2025-04-11T01:54:39.885Z] Decoded MessagePack: [7,1744336479884000,1,39]
+[2025-04-11T01:54:39.885Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:39.885Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 40 92 e0 01 27
+[2025-04-11T01:54:39.886Z] Decoded MessagePack: [7,1744336479884000,1,39]
+[2025-04-11T01:54:40.889Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:40.890Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 4f e8 a8 01 28
+[2025-04-11T01:54:40.890Z] Decoded MessagePack: [7,1744336480889000,1,40]
+[2025-04-11T01:54:40.891Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:40.891Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 4f e8 a8 01 28
+[2025-04-11T01:54:40.891Z] Decoded MessagePack: [7,1744336480889000,1,40]
+[2025-04-11T01:54:41.899Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:41.899Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 5f 51 f8 01 29
+[2025-04-11T01:54:41.900Z] Decoded MessagePack: [7,1744336481899000,1,41]
+[2025-04-11T01:54:41.900Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:41.901Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 5f 51 f8 01 29
+[2025-04-11T01:54:41.901Z] Decoded MessagePack: [7,1744336481899000,1,41]
+[2025-04-11T01:54:42.909Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:42.910Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 6e bb 48 01 2a
+[2025-04-11T01:54:42.910Z] Decoded MessagePack: [7,1744336482909000,1,42]
+[2025-04-11T01:54:42.911Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:42.911Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 6e bb 48 01 2a
+[2025-04-11T01:54:42.912Z] Decoded MessagePack: [7,1744336482909000,1,42]
+[2025-04-11T01:54:43.923Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:43.924Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 7e 34 38 01 2b
+[2025-04-11T01:54:43.925Z] Decoded MessagePack: [7,1744336483923000,1,43]
+[2025-04-11T01:54:43.925Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:43.925Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 7e 34 38 01 2b
+[2025-04-11T01:54:43.926Z] Decoded MessagePack: [7,1744336483923000,1,43]
+[2025-04-11T01:54:44.932Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:44.933Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 8d 99 a0 01 2c
+[2025-04-11T01:54:44.933Z] Decoded MessagePack: [7,1744336484932000,1,44]
+[2025-04-11T01:54:44.934Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:44.934Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 8d 99 a0 01 2c
+[2025-04-11T01:54:44.935Z] Decoded MessagePack: [7,1744336484932000,1,44]
+[2025-04-11T01:54:45.937Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:45.938Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 9c ef 68 01 2d
+[2025-04-11T01:54:45.939Z] Decoded MessagePack: [7,1744336485937000,1,45]
+[2025-04-11T01:54:45.939Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:45.939Z] First 32 bytes: 94 07 cf 00 06 32 76 fc 9c ef 68 01 2d
+[2025-04-11T01:54:45.940Z] Decoded MessagePack: [7,1744336485937000,1,45]
+[2025-04-11T01:54:46.949Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:46.949Z] First 32 bytes: 94 07 cf 00 06 32 76 fc ac 60 88 01 2e
+[2025-04-11T01:54:46.950Z] Decoded MessagePack: [7,1744336486949000,1,46]
+[2025-04-11T01:54:46.950Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:46.950Z] First 32 bytes: 94 07 cf 00 06 32 76 fc ac 60 88 01 2e
+[2025-04-11T01:54:46.951Z] Decoded MessagePack: [7,1744336486949000,1,46]
+[2025-04-11T01:54:47.961Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:47.962Z] First 32 bytes: 94 07 cf 00 06 32 76 fc bb d1 a8 01 2f
+[2025-04-11T01:54:47.962Z] Decoded MessagePack: [7,1744336487961000,1,47]
+[2025-04-11T01:54:47.962Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:47.962Z] First 32 bytes: 94 07 cf 00 06 32 76 fc bb d1 a8 01 2f
+[2025-04-11T01:54:47.963Z] Decoded MessagePack: [7,1744336487961000,1,47]
+[2025-04-11T01:54:48.969Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:48.970Z] First 32 bytes: 94 07 cf 00 06 32 76 fc cb 33 28 01 30
+[2025-04-11T01:54:48.970Z] Decoded MessagePack: [7,1744336488969000,1,48]
+[2025-04-11T01:54:48.971Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:48.972Z] First 32 bytes: 94 07 cf 00 06 32 76 fc cb 33 28 01 30
+[2025-04-11T01:54:48.972Z] Decoded MessagePack: [7,1744336488969000,1,48]
+[2025-04-11T01:54:49.979Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:49.980Z] First 32 bytes: 94 07 cf 00 06 32 76 fc da 9c 78 01 31
+[2025-04-11T01:54:49.980Z] Decoded MessagePack: [7,1744336489979000,1,49]
+[2025-04-11T01:54:49.981Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:49.981Z] First 32 bytes: 94 07 cf 00 06 32 76 fc da 9c 78 01 31
+[2025-04-11T01:54:49.982Z] Decoded MessagePack: [7,1744336489979000,1,49]
+[2025-04-11T01:54:50.988Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:50.989Z] First 32 bytes: 94 07 cf 00 06 32 76 fc ea 01 e0 01 32
+[2025-04-11T01:54:50.990Z] Decoded MessagePack: [7,1744336490988000,1,50]
+[2025-04-11T01:54:50.990Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:50.991Z] First 32 bytes: 94 07 cf 00 06 32 76 fc ea 01 e0 01 32
+[2025-04-11T01:54:50.991Z] Decoded MessagePack: [7,1744336490988000,1,50]
+[2025-04-11T01:54:51.998Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:51.998Z] First 32 bytes: 94 07 cf 00 06 32 76 fc f9 6b 30 01 33
+[2025-04-11T01:54:51.999Z] Decoded MessagePack: [7,1744336491998000,1,51]
+[2025-04-11T01:54:51.999Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:52.000Z] First 32 bytes: 94 07 cf 00 06 32 76 fc f9 6b 30 01 33
+[2025-04-11T01:54:52.000Z] Decoded MessagePack: [7,1744336491998000,1,51]
+[2025-04-11T01:54:53.009Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:53.009Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 08 d8 68 01 34
+[2025-04-11T01:54:53.009Z] Decoded MessagePack: [7,1744336493009000,1,52]
+[2025-04-11T01:54:53.010Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:53.010Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 08 d8 68 01 34
+[2025-04-11T01:54:53.010Z] Decoded MessagePack: [7,1744336493009000,1,52]
+[2025-04-11T01:54:54.009Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:54.010Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 18 1a a8 01 35
+[2025-04-11T01:54:54.010Z] Decoded MessagePack: [7,1744336494009000,1,53]
+[2025-04-11T01:54:54.010Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:54.010Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 18 1a a8 01 35
+[2025-04-11T01:54:54.011Z] Decoded MessagePack: [7,1744336494009000,1,53]
+[2025-04-11T01:54:55.024Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:55.024Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 27 97 80 01 36
+[2025-04-11T01:54:55.025Z] Decoded MessagePack: [7,1744336495024000,1,54]
+[2025-04-11T01:54:55.025Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:55.026Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 27 97 80 01 36
+[2025-04-11T01:54:55.026Z] Decoded MessagePack: [7,1744336495024000,1,54]
+[2025-04-11T01:54:56.032Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:56.032Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 36 f9 00 01 37
+[2025-04-11T01:54:56.033Z] Decoded MessagePack: [7,1744336496032000,1,55]
+[2025-04-11T01:54:56.033Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:56.034Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 36 f9 00 01 37
+[2025-04-11T01:54:56.034Z] Decoded MessagePack: [7,1744336496032000,1,55]
+[2025-04-11T01:54:57.042Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:57.042Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 46 62 50 01 38
+[2025-04-11T01:54:57.043Z] Decoded MessagePack: [7,1744336497042000,1,56]
+[2025-04-11T01:54:57.044Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:57.044Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 46 62 50 01 38
+[2025-04-11T01:54:57.045Z] Decoded MessagePack: [7,1744336497042000,1,56]
+[2025-04-11T01:54:58.050Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:58.050Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 55 bf e8 01 39
+[2025-04-11T01:54:58.051Z] Decoded MessagePack: [7,1744336498049000,1,57]
+[2025-04-11T01:54:58.051Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:58.052Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 55 bf e8 01 39
+[2025-04-11T01:54:58.052Z] Decoded MessagePack: [7,1744336498049000,1,57]
+[2025-04-11T01:54:59.062Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:59.062Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 65 34 f0 01 3a
+[2025-04-11T01:54:59.063Z] Decoded MessagePack: [7,1744336499062000,1,58]
+[2025-04-11T01:54:59.063Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:54:59.064Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 65 34 f0 01 3a
+[2025-04-11T01:54:59.064Z] Decoded MessagePack: [7,1744336499062000,1,58]
+[2025-04-11T01:55:00.075Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:00.076Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 74 a9 f8 01 3b
+[2025-04-11T01:55:00.077Z] Decoded MessagePack: [7,1744336500075000,1,59]
+[2025-04-11T01:55:00.077Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:00.077Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 74 a9 f8 01 3b
+[2025-04-11T01:55:00.078Z] Decoded MessagePack: [7,1744336500075000,1,59]
+[2025-04-11T01:55:01.089Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:01.089Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 84 22 e8 01 3c
+[2025-04-11T01:55:01.089Z] Decoded MessagePack: [7,1744336501089000,1,60]
+[2025-04-11T01:55:01.089Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:01.090Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 84 22 e8 01 3c
+[2025-04-11T01:55:01.090Z] Decoded MessagePack: [7,1744336501089000,1,60]
+[2025-04-11T01:55:02.102Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:02.102Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 93 97 f0 01 3d
+[2025-04-11T01:55:02.103Z] Decoded MessagePack: [7,1744336502102000,1,61]
+[2025-04-11T01:55:02.103Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:02.103Z] First 32 bytes: 94 07 cf 00 06 32 76 fd 93 97 f0 01 3d
+[2025-04-11T01:55:02.104Z] Decoded MessagePack: [7,1744336502102000,1,61]
+[2025-04-11T01:55:03.114Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:03.115Z] First 32 bytes: 94 07 cf 00 06 32 76 fd a3 09 10 01 3e
+[2025-04-11T01:55:03.115Z] Decoded MessagePack: [7,1744336503114000,1,62]
+[2025-04-11T01:55:03.116Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:03.116Z] First 32 bytes: 94 07 cf 00 06 32 76 fd a3 09 10 01 3e
+[2025-04-11T01:55:03.117Z] Decoded MessagePack: [7,1744336503114000,1,62]
+[2025-04-11T01:55:04.125Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:04.126Z] First 32 bytes: 94 07 cf 00 06 32 76 fd b2 76 48 01 3f
+[2025-04-11T01:55:04.126Z] Decoded MessagePack: [7,1744336504125000,1,63]
+[2025-04-11T01:55:04.127Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:04.127Z] First 32 bytes: 94 07 cf 00 06 32 76 fd b2 76 48 01 3f
+[2025-04-11T01:55:04.128Z] Decoded MessagePack: [7,1744336504125000,1,63]
+[2025-04-11T01:55:05.132Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:05.133Z] First 32 bytes: 94 07 cf 00 06 32 76 fd c1 d3 e0 01 40
+[2025-04-11T01:55:05.133Z] Decoded MessagePack: [7,1744336505132000,1,64]
+[2025-04-11T01:55:05.134Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:05.134Z] First 32 bytes: 94 07 cf 00 06 32 76 fd c1 d3 e0 01 40
+[2025-04-11T01:55:05.134Z] Decoded MessagePack: [7,1744336505132000,1,64]
+[2025-04-11T01:55:06.146Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:06.146Z] First 32 bytes: 94 07 cf 00 06 32 76 fd d1 4c d0 01 41
+[2025-04-11T01:55:06.146Z] Decoded MessagePack: [7,1744336506146000,1,65]
+[2025-04-11T01:55:06.147Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:06.147Z] First 32 bytes: 94 07 cf 00 06 32 76 fd d1 4c d0 01 41
+[2025-04-11T01:55:06.148Z] Decoded MessagePack: [7,1744336506146000,1,65]
+[2025-04-11T01:55:07.157Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:07.158Z] First 32 bytes: 94 07 cf 00 06 32 76 fd e0 ba 08 01 42
+[2025-04-11T01:55:07.158Z] Decoded MessagePack: [7,1744336507157000,1,66]
+[2025-04-11T01:55:07.159Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:07.159Z] First 32 bytes: 94 07 cf 00 06 32 76 fd e0 ba 08 01 42
+[2025-04-11T01:55:07.160Z] Decoded MessagePack: [7,1744336507157000,1,66]
+[2025-04-11T01:55:08.170Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:08.170Z] First 32 bytes: 94 07 cf 00 06 32 76 fd f0 2f 10 01 43
+[2025-04-11T01:55:08.171Z] Decoded MessagePack: [7,1744336508170000,1,67]
+[2025-04-11T01:55:08.171Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:08.171Z] First 32 bytes: 94 07 cf 00 06 32 76 fd f0 2f 10 01 43
+[2025-04-11T01:55:08.171Z] Decoded MessagePack: [7,1744336508170000,1,67]
+[2025-04-11T01:55:09.184Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:09.184Z] First 32 bytes: 94 07 cf 00 06 32 76 fd ff a8 00 01 44
+[2025-04-11T01:55:09.185Z] Decoded MessagePack: [7,1744336509184000,1,68]
+[2025-04-11T01:55:09.185Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:09.186Z] First 32 bytes: 94 07 cf 00 06 32 76 fd ff a8 00 01 44
+[2025-04-11T01:55:09.186Z] Decoded MessagePack: [7,1744336509184000,1,68]
+[2025-04-11T01:55:10.198Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:10.198Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 0f 1d 08 01 45
+[2025-04-11T01:55:10.199Z] Decoded MessagePack: [7,1744336510197000,1,69]
+[2025-04-11T01:55:10.199Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:10.200Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 0f 1d 08 01 45
+[2025-04-11T01:55:10.200Z] Decoded MessagePack: [7,1744336510197000,1,69]
+[2025-04-11T01:55:11.206Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:11.207Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 1e 82 70 01 46
+[2025-04-11T01:55:11.208Z] Decoded MessagePack: [7,1744336511206000,1,70]
+[2025-04-11T01:55:11.209Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:11.209Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 1e 82 70 01 46
+[2025-04-11T01:55:11.210Z] Decoded MessagePack: [7,1744336511206000,1,70]
+[2025-04-11T01:55:12.216Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:12.217Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 2d eb c0 01 47
+[2025-04-11T01:55:12.217Z] Decoded MessagePack: [7,1744336512216000,1,71]
+[2025-04-11T01:55:12.217Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:12.218Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 2d eb c0 01 47
+[2025-04-11T01:55:12.218Z] Decoded MessagePack: [7,1744336512216000,1,71]
+[2025-04-11T01:55:13.220Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:13.221Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 3d 3d a0 01 48
+[2025-04-11T01:55:13.221Z] Decoded MessagePack: [7,1744336513220000,1,72]
+[2025-04-11T01:55:13.221Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:13.222Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 3d 3d a0 01 48
+[2025-04-11T01:55:13.222Z] Decoded MessagePack: [7,1744336513220000,1,72]
+[2025-04-11T01:55:14.229Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:14.230Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 4c a3 08 01 49
+[2025-04-11T01:55:14.231Z] Decoded MessagePack: [7,1744336514229000,1,73]
+[2025-04-11T01:55:14.231Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:14.231Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 4c a3 08 01 49
+[2025-04-11T01:55:14.232Z] Decoded MessagePack: [7,1744336514229000,1,73]
+[2025-04-11T01:55:15.240Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:15.241Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 5c 10 40 01 4a
+[2025-04-11T01:55:15.241Z] Decoded MessagePack: [7,1744336515240000,1,74]
+[2025-04-11T01:55:15.242Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:15.242Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 5c 10 40 01 4a
+[2025-04-11T01:55:15.243Z] Decoded MessagePack: [7,1744336515240000,1,74]
+[2025-04-11T01:55:16.249Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:16.250Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 6b 75 a8 01 4b
+[2025-04-11T01:55:16.250Z] Decoded MessagePack: [7,1744336516249000,1,75]
+[2025-04-11T01:55:16.251Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:16.251Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 6b 75 a8 01 4b
+[2025-04-11T01:55:16.252Z] Decoded MessagePack: [7,1744336516249000,1,75]
+[2025-04-11T01:55:17.253Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:17.253Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 7a c7 88 01 4c
+[2025-04-11T01:55:17.253Z] Decoded MessagePack: [7,1744336517253000,1,76]
+[2025-04-11T01:55:17.254Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:17.254Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 7a c7 88 01 4c
+[2025-04-11T01:55:17.255Z] Decoded MessagePack: [7,1744336517253000,1,76]
+[2025-04-11T01:55:18.266Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:18.266Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 8a 3c 90 01 4d
+[2025-04-11T01:55:18.267Z] Decoded MessagePack: [7,1744336518266000,1,77]
+[2025-04-11T01:55:18.267Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:18.267Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 8a 3c 90 01 4d
+[2025-04-11T01:55:18.267Z] Decoded MessagePack: [7,1744336518266000,1,77]
+[2025-04-11T01:55:19.271Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:19.272Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 99 92 58 01 4e
+[2025-04-11T01:55:19.272Z] Decoded MessagePack: [7,1744336519271000,1,78]
+[2025-04-11T01:55:19.273Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:19.273Z] First 32 bytes: 94 07 cf 00 06 32 76 fe 99 92 58 01 4e
+[2025-04-11T01:55:19.273Z] Decoded MessagePack: [7,1744336519271000,1,78]
+[2025-04-11T01:55:20.271Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:20.272Z] First 32 bytes: 94 07 cf 00 06 32 76 fe a8 d4 98 01 4f
+[2025-04-11T01:55:20.272Z] Decoded MessagePack: [7,1744336520271000,1,79]
+[2025-04-11T01:55:20.272Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:20.273Z] First 32 bytes: 94 07 cf 00 06 32 76 fe a8 d4 98 01 4f
+[2025-04-11T01:55:20.273Z] Decoded MessagePack: [7,1744336520271000,1,79]
+[2025-04-11T01:55:21.279Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:21.280Z] First 32 bytes: 94 07 cf 00 06 32 76 fe b8 36 18 01 50
+[2025-04-11T01:55:21.280Z] Decoded MessagePack: [7,1744336521279000,1,80]
+[2025-04-11T01:55:21.280Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:21.281Z] First 32 bytes: 94 07 cf 00 06 32 76 fe b8 36 18 01 50
+[2025-04-11T01:55:21.281Z] Decoded MessagePack: [7,1744336521279000,1,80]
+[2025-04-11T01:55:22.288Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:22.288Z] First 32 bytes: 94 07 cf 00 06 32 76 fe c7 9b 80 01 51
+[2025-04-11T01:55:22.288Z] Decoded MessagePack: [7,1744336522288000,1,81]
+[2025-04-11T01:55:22.289Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:22.289Z] First 32 bytes: 94 07 cf 00 06 32 76 fe c7 9b 80 01 51
+[2025-04-11T01:55:22.289Z] Decoded MessagePack: [7,1744336522288000,1,81]
+[2025-04-11T01:55:23.298Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:23.299Z] First 32 bytes: 94 07 cf 00 06 32 76 fe d7 04 d0 01 52
+[2025-04-11T01:55:23.299Z] Decoded MessagePack: [7,1744336523298000,1,82]
+[2025-04-11T01:55:23.299Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:23.300Z] First 32 bytes: 94 07 cf 00 06 32 76 fe d7 04 d0 01 52
+[2025-04-11T01:55:23.300Z] Decoded MessagePack: [7,1744336523298000,1,82]
+[2025-04-11T01:55:24.310Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:24.311Z] First 32 bytes: 94 07 cf 00 06 32 76 fe e6 75 f0 01 53
+[2025-04-11T01:55:24.311Z] Decoded MessagePack: [7,1744336524310000,1,83]
+[2025-04-11T01:55:24.311Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:24.311Z] First 32 bytes: 94 07 cf 00 06 32 76 fe e6 75 f0 01 53
+[2025-04-11T01:55:24.312Z] Decoded MessagePack: [7,1744336524310000,1,83]
+[2025-04-11T01:55:25.324Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:25.325Z] First 32 bytes: 94 07 cf 00 06 32 76 fe f5 ee e0 01 54
+[2025-04-11T01:55:25.326Z] Decoded MessagePack: [7,1744336525324000,1,84]
+[2025-04-11T01:55:25.327Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:25.327Z] First 32 bytes: 94 07 cf 00 06 32 76 fe f5 ee e0 01 54
+[2025-04-11T01:55:25.327Z] Decoded MessagePack: [7,1744336525324000,1,84]
+[2025-04-11T01:55:26.337Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:26.338Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 05 63 e8 01 55
+[2025-04-11T01:55:26.338Z] Decoded MessagePack: [7,1744336526337000,1,85]
+[2025-04-11T01:55:26.338Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:26.338Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 05 63 e8 01 55
+[2025-04-11T01:55:26.339Z] Decoded MessagePack: [7,1744336526337000,1,85]
+[2025-04-11T01:55:27.352Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:27.352Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 14 e0 c0 01 56
+[2025-04-11T01:55:27.352Z] Decoded MessagePack: [7,1744336527352000,1,86]
+[2025-04-11T01:55:27.353Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:27.353Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 14 e0 c0 01 56
+[2025-04-11T01:55:27.353Z] Decoded MessagePack: [7,1744336527352000,1,86]
+[2025-04-11T01:55:28.358Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:28.359Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 24 3e 58 01 57
+[2025-04-11T01:55:28.360Z] Decoded MessagePack: [7,1744336528359000,1,87]
+[2025-04-11T01:55:28.360Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:28.361Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 24 3e 58 01 57
+[2025-04-11T01:55:28.361Z] Decoded MessagePack: [7,1744336528359000,1,87]
+[2025-04-11T01:55:29.372Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:29.373Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 33 b3 60 01 58
+[2025-04-11T01:55:29.373Z] Decoded MessagePack: [7,1744336529372000,1,88]
+[2025-04-11T01:55:29.374Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:29.374Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 33 b3 60 01 58
+[2025-04-11T01:55:29.374Z] Decoded MessagePack: [7,1744336529372000,1,88]
+[2025-04-11T01:55:30.384Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:30.384Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 43 24 80 01 59
+[2025-04-11T01:55:30.385Z] Decoded MessagePack: [7,1744336530384000,1,89]
+[2025-04-11T01:55:30.385Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:30.385Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 43 24 80 01 59
+[2025-04-11T01:55:30.386Z] Decoded MessagePack: [7,1744336530384000,1,89]
+[2025-04-11T01:55:31.392Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:31.392Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 52 86 00 01 5a
+[2025-04-11T01:55:31.393Z] Decoded MessagePack: [7,1744336531392000,1,90]
+[2025-04-11T01:55:31.393Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:31.394Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 52 86 00 01 5a
+[2025-04-11T01:55:31.394Z] Decoded MessagePack: [7,1744336531392000,1,90]
+[2025-04-11T01:55:32.402Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:32.402Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 61 ef 50 01 5b
+[2025-04-11T01:55:32.403Z] Decoded MessagePack: [7,1744336532402000,1,91]
+[2025-04-11T01:55:32.404Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:32.404Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 61 ef 50 01 5b
+[2025-04-11T01:55:32.404Z] Decoded MessagePack: [7,1744336532402000,1,91]
+[2025-04-11T01:55:33.411Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:33.411Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 71 54 b8 01 5c
+[2025-04-11T01:55:33.411Z] Decoded MessagePack: [7,1744336533411000,1,92]
+[2025-04-11T01:55:33.412Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:33.412Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 71 54 b8 01 5c
+[2025-04-11T01:55:33.413Z] Decoded MessagePack: [7,1744336533411000,1,92]
+[2025-04-11T01:55:34.422Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:34.422Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 80 c1 f0 01 5d
+[2025-04-11T01:55:34.423Z] Decoded MessagePack: [7,1744336534422000,1,93]
+[2025-04-11T01:55:34.423Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:34.423Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 80 c1 f0 01 5d
+[2025-04-11T01:55:34.423Z] Decoded MessagePack: [7,1744336534422000,1,93]
+[2025-04-11T01:55:35.427Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:35.428Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 90 17 b8 01 5e
+[2025-04-11T01:55:35.428Z] Decoded MessagePack: [7,1744336535427000,1,94]
+[2025-04-11T01:55:35.428Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:35.429Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 90 17 b8 01 5e
+[2025-04-11T01:55:35.429Z] Decoded MessagePack: [7,1744336535427000,1,94]
+[2025-04-11T01:55:36.428Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:36.429Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 9f 5d e0 01 5f
+[2025-04-11T01:55:36.429Z] Decoded MessagePack: [7,1744336536428000,1,95]
+[2025-04-11T01:55:36.429Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:36.430Z] First 32 bytes: 94 07 cf 00 06 32 76 ff 9f 5d e0 01 5f
+[2025-04-11T01:55:36.430Z] Decoded MessagePack: [7,1744336536428000,1,95]
+[2025-04-11T01:55:37.440Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:37.441Z] First 32 bytes: 94 07 cf 00 06 32 76 ff ae cf 00 01 60
+[2025-04-11T01:55:37.441Z] Decoded MessagePack: [7,1744336537440000,1,96]
+[2025-04-11T01:55:37.441Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:37.441Z] First 32 bytes: 94 07 cf 00 06 32 76 ff ae cf 00 01 60
+[2025-04-11T01:55:37.441Z] Decoded MessagePack: [7,1744336537440000,1,96]
+[2025-04-11T01:55:38.441Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:38.442Z] First 32 bytes: 94 07 cf 00 06 32 76 ff be 19 10 01 61
+[2025-04-11T01:55:38.442Z] Decoded MessagePack: [7,1744336538442000,1,97]
+[2025-04-11T01:55:38.442Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:38.443Z] First 32 bytes: 94 07 cf 00 06 32 76 ff be 19 10 01 61
+[2025-04-11T01:55:38.443Z] Decoded MessagePack: [7,1744336538442000,1,97]
+[2025-04-11T01:55:39.451Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:39.451Z] First 32 bytes: 94 07 cf 00 06 32 76 ff cd 7e 78 01 62
+[2025-04-11T01:55:39.452Z] Decoded MessagePack: [7,1744336539451000,1,98]
+[2025-04-11T01:55:39.452Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:39.452Z] First 32 bytes: 94 07 cf 00 06 32 76 ff cd 7e 78 01 62
+[2025-04-11T01:55:39.452Z] Decoded MessagePack: [7,1744336539451000,1,98]
+[2025-04-11T01:55:40.462Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:40.462Z] First 32 bytes: 94 07 cf 00 06 32 76 ff dc eb b0 01 63
+[2025-04-11T01:55:40.463Z] Decoded MessagePack: [7,1744336540462000,1,99]
+[2025-04-11T01:55:40.463Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:40.463Z] First 32 bytes: 94 07 cf 00 06 32 76 ff dc eb b0 01 63
+[2025-04-11T01:55:40.464Z] Decoded MessagePack: [7,1744336540462000,1,99]
+[2025-04-11T01:55:41.476Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:41.476Z] First 32 bytes: 94 07 cf 00 06 32 76 ff ec 64 a0 01 64
+[2025-04-11T01:55:41.477Z] Decoded MessagePack: [7,1744336541476000,1,100]
+[2025-04-11T01:55:41.477Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:41.478Z] First 32 bytes: 94 07 cf 00 06 32 76 ff ec 64 a0 01 64
+[2025-04-11T01:55:41.478Z] Decoded MessagePack: [7,1744336541476000,1,100]
+[2025-04-11T01:55:42.487Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:42.488Z] First 32 bytes: 94 07 cf 00 06 32 76 ff fb d5 c0 01 65
+[2025-04-11T01:55:42.488Z] Decoded MessagePack: [7,1744336542488000,1,101]
+[2025-04-11T01:55:42.488Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:42.489Z] First 32 bytes: 94 07 cf 00 06 32 76 ff fb d5 c0 01 65
+[2025-04-11T01:55:42.489Z] Decoded MessagePack: [7,1744336542488000,1,101]
+[2025-04-11T01:55:43.489Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:43.489Z] First 32 bytes: 94 07 cf 00 06 32 77 00 0b 1b e8 01 66
+[2025-04-11T01:55:43.489Z] Decoded MessagePack: [7,1744336543489000,1,102]
+[2025-04-11T01:55:43.490Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:43.490Z] First 32 bytes: 94 07 cf 00 06 32 77 00 0b 1b e8 01 66
+[2025-04-11T01:55:43.490Z] Decoded MessagePack: [7,1744336543489000,1,102]
+[2025-04-11T01:55:44.503Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:44.503Z] First 32 bytes: 94 07 cf 00 06 32 77 00 1a 94 d8 01 67
+[2025-04-11T01:55:44.504Z] Decoded MessagePack: [7,1744336544503000,1,103]
+[2025-04-11T01:55:44.504Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:44.504Z] First 32 bytes: 94 07 cf 00 06 32 77 00 1a 94 d8 01 67
+[2025-04-11T01:55:44.504Z] Decoded MessagePack: [7,1744336544503000,1,103]
+[2025-04-11T01:55:45.511Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:45.511Z] First 32 bytes: 94 07 cf 00 06 32 77 00 29 f6 58 01 68
+[2025-04-11T01:55:45.511Z] Decoded MessagePack: [7,1744336545511000,1,104]
+[2025-04-11T01:55:45.512Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:45.512Z] First 32 bytes: 94 07 cf 00 06 32 77 00 29 f6 58 01 68
+[2025-04-11T01:55:45.513Z] Decoded MessagePack: [7,1744336545511000,1,104]
+[2025-04-11T01:55:46.511Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:46.512Z] First 32 bytes: 94 07 cf 00 06 32 77 00 39 38 98 01 69
+[2025-04-11T01:55:46.512Z] Decoded MessagePack: [7,1744336546511000,1,105]
+[2025-04-11T01:55:46.513Z] Target -> Client: Binary message, length: 13
+[2025-04-11T01:55:46.513Z] First 32 bytes: 94 07 cf 00 06 32 77 00 39 38 98 01 69
+[2025-04-11T01:55:46.513Z] Decoded MessagePack: [7,1744336546511000,1,105]
+[2025-04-11T01:55:47.133Z] Target disconnected
+[2025-04-11T01:55:47.134Z] Target disconnected
+[2025-04-11T01:55:47.135Z] Client disconnected
+[2025-04-11T01:55:48.146Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:55:48.147Z] Using NT 4.1 protocol
+[2025-04-11T01:55:48.147Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:55:48.147Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:55:48.149Z] Error connecting to target server: AggregateError
+[2025-04-11T01:55:49.156Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:55:49.156Z] Using NT 4.1 protocol
+[2025-04-11T01:55:49.156Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:55:49.157Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:55:49.158Z] Error connecting to target server: AggregateError
+[2025-04-11T01:55:50.167Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:55:50.167Z] Using NT 4.1 protocol
+[2025-04-11T01:55:50.167Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:55:50.167Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:55:50.169Z] Error connecting to target server: AggregateError
+[2025-04-11T01:55:51.174Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:55:51.174Z] Using NT 4.1 protocol
+[2025-04-11T01:55:51.174Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:55:51.174Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:55:51.176Z] Error connecting to target server: AggregateError
+[2025-04-11T01:55:52.138Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:55:52.139Z] Using NT 4.1 protocol
+[2025-04-11T01:55:52.139Z] Client connected from ::1
+[2025-04-11T01:55:52.139Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:55:52.140Z] Error connecting to target server: AggregateError
+[2025-04-11T01:55:52.183Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu","networktables.first.wpi.edu"]
+[2025-04-11T01:55:52.184Z] Using NT 4.1 protocol
+[2025-04-11T01:55:52.184Z] Client connected from ::ffff:127.0.0.1
+[2025-04-11T01:55:52.184Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:55:52.186Z] Error connecting to target server: AggregateError

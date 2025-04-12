@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetworkTables Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333;
+      margin-top: 0;
+    }
+    
+    .connection-status {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    
+    .connection-status.connected {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .connection-status.disconnected {
+      background-color: #f44336;
+      color: white;
+    }
+    
+    .connection-form {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    
+    .connection-form input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    
+    .connection-form button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .topics {
+      margin-top: 20px;
+    }
+    
+    .topic {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    
+    .topic-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .topic-value {
+      font-family: monospace;
+    }
+    
+    .topic-type {
+      color: #666;
+      font-size: 0.8em;
+    }
+    
+    .tree-view {
+      margin-top: 20px;
+    }
+    
+    .tree-node {
+      margin-bottom: 5px;
+    }
+    
+    .tree-node-header {
+      cursor: pointer;
+      padding: 5px;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+    }
+    
+    .tree-node-header:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .tree-node-children {
+      margin-left: 20px;
+      padding-left: 10px;
+      border-left: 1px solid #ccc;
+    }
+    
+    .tree-node-value {
+      font-family: monospace;
+      margin-left: 10px;
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>NetworkTables Viewer</h1>
+    
+    <div class="connection-status disconnected" id="connectionStatus">Disconnected</div>
+    
+    <div class="connection-form">
+      <label for="serverUrl">Server URL:</label>
+      <input type="text" id="serverUrl" value="ws://localhost:5810/nt/client" />
+      <button id="connectButton">Connect</button>
+      <button id="disconnectButton" disabled>Disconnect</button>
+    </div>
+    
+    <div class="tree-view" id="treeView"></div>
+  </div>
+  
+  <script>
+    // NetworkTables client
+    let socket;
+    let connected = false;
+    let topics = new Map();
+    
+    // DOM elements
+    const connectionStatus = document.getElementById('connectionStatus');
+    const serverUrl = document.getElementById('serverUrl');
+    const connectButton = document.getElementById('connectButton');
+    const disconnectButton = document.getElementById('disconnectButton');
+    const treeView = document.getElementById('treeView');
+    
+    // Connect to the NetworkTables server
+    function connect() {
+      const url = serverUrl.value;
+      
+      socket = new WebSocket(url);
+      
+      socket.onopen = function() {
+        console.log('Connected to NetworkTables server');
+        connected = true;
+        updateConnectionStatus();
+        
+        // Send client hello message
+        socket.send(JSON.stringify({
+          method: 'hello',
+          params: {
+            id: 'web-client',
+            version: '4.0.0'
+          }
+        }));
+        
+        // Subscribe to all topics
+        socket.send(JSON.stringify({
+          method: 'subscribe',
+          params: {
+            topics: [{ all: true }],
+            options: { immediate: true }
+          }
+        }));
+      };
+      
+      socket.onclose = function() {
+        console.log('Disconnected from NetworkTables server');
+        connected = false;
+        updateConnectionStatus();
+      };
+      
+      socket.onerror = function(error) {
+        console.error('WebSocket error:', error);
+      };
+      
+      socket.onmessage = function(event) {
+        try {
+          const message = JSON.parse(event.data);
+          
+          if (message.method === 'announce') {
+            handleAnnounce(message.params);
+          } else if (message.method === 'value') {
+            handleValue(message.params);
+          } else if (message.method === 'properties') {
+            handleProperties(message.params);
+          } else if (message.method === 'unannounce') {
+            handleUnannounce(message.params);
+          } else if (message.method === 'server_hello') {
+            handleServerHello(message.params);
+          }
+        } catch (error) {
+          console.error('Error handling message:', error);
+        }
+      };
+    }
+    
+    // Disconnect from the NetworkTables server
+    function disconnect() {
+      if (socket) {
+        socket.close();
+      }
+    }
+    
+    // Handle announce message
+    function handleAnnounce(params) {
+      const { name, id, type, properties } = params;
+      
+      topics.set(name, {
+        id,
+        type,
+        properties: properties || {},
+        value: null
+      });
+      
+      console.log(`Topic announced: ${name} (id: ${id}, type: ${type})`);
+      
+      updateTreeView();
+    }
+    
+    // Handle value message
+    function handleValue(params) {
+      const { id, value } = params;
+      
+      // Find the topic by ID
+      for (const [name, topic] of topics.entries()) {
+        if (topic.id === id) {
+          topic.value = value;
+          console.log(`Topic value updated: ${name} = ${JSON.stringify(value)}`);
+          updateTreeView();
+          break;
+        }
+      }
+    }
+    
+    // Handle properties message
+    function handleProperties(params) {
+      const { id, properties } = params;
+      
+      // Find the topic by ID
+      for (const [name, topic] of topics.entries()) {
+        if (topic.id === id) {
+          topic.properties = properties;
+          console.log(`Topic properties updated: ${name}`);
+          updateTreeView();
+          break;
+        }
+      }
+    }
+    
+    // Handle unannounce message
+    function handleUnannounce(params) {
+      const { id } = params;
+      
+      // Find the topic by ID
+      for (const [name, topic] of topics.entries()) {
+        if (topic.id === id) {
+          topics.delete(name);
+          console.log(`Topic unannounced: ${name}`);
+          updateTreeView();
+          break;
+        }
+      }
+    }
+    
+    // Handle server hello message
+    function handleServerHello(params) {
+      console.log('Server hello:', params);
+    }
+    
+    // Update connection status
+    function updateConnectionStatus() {
+      if (connected) {
+        connectionStatus.textContent = 'Connected';
+        connectionStatus.className = 'connection-status connected';
+        connectButton.disabled = true;
+        disconnectButton.disabled = false;
+      } else {
+        connectionStatus.textContent = 'Disconnected';
+        connectionStatus.className = 'connection-status disconnected';
+        connectButton.disabled = false;
+        disconnectButton.disabled = true;
+        
+        // Clear topics
+        topics.clear();
+        updateTreeView();
+      }
+    }
+    
+    // Update tree view
+    function updateTreeView() {
+      // Clear tree view
+      treeView.innerHTML = '';
+      
+      // Build tree structure
+      const tree = buildTree();
+      
+      // Render tree
+      renderTree(tree, treeView);
+    }
+    
+    // Build tree structure from topics
+    function buildTree() {
+      const root = {
+        name: 'root',
+        children: {},
+        topics: []
+      };
+      
+      // Add topics to tree
+      for (const [name, topic] of topics.entries()) {
+        // Split path into segments
+        const segments = name.split('/').filter(segment => segment !== '');
+        
+        // Add to tree
+        let node = root;
+        for (let i = 0; i < segments.length; i++) {
+          const segment = segments[i];
+          
+          // Last segment is the topic name
+          if (i === segments.length - 1) {
+            node.topics.push({
+              name: segment,
+              fullName: name,
+              ...topic
+            });
+          } else {
+            // Create node if it doesn't exist
+            if (!node.children[segment]) {
+              node.children[segment] = {
+                name: segment,
+                children: {},
+                topics: []
+              };
+            }
+            
+            // Move to next node
+            node = node.children[segment];
+          }
+        }
+      }
+      
+      return root;
+    }
+    
+    // Render tree
+    function renderTree(node, container) {
+      // Render children
+      for (const childName in node.children) {
+        const child = node.children[childName];
+        
+        // Create node element
+        const nodeElement = document.createElement('div');
+        nodeElement.className = 'tree-node';
+        
+        // Create header
+        const headerElement = document.createElement('div');
+        headerElement.className = 'tree-node-header';
+        headerElement.textContent = child.name;
+        
+        // Create children container
+        const childrenElement = document.createElement('div');
+        childrenElement.className = 'tree-node-children';
+        
+        // Add click handler to toggle children
+        headerElement.addEventListener('click', () => {
+          childrenElement.style.display = childrenElement.style.display === 'none' ? 'block' : 'none';
+        });
+        
+        // Add to node
+        nodeElement.appendChild(headerElement);
+        nodeElement.appendChild(childrenElement);
+        
+        // Render children
+        renderTree(child, childrenElement);
+        
+        // Add to container
+        container.appendChild(nodeElement);
+      }
+      
+      // Render topics
+      for (const topic of node.topics) {
+        // Create topic element
+        const topicElement = document.createElement('div');
+        topicElement.className = 'topic';
+        
+        // Create name element
+        const nameElement = document.createElement('div');
+        nameElement.className = 'topic-name';
+        nameElement.textContent = topic.name;
+        
+        // Create type element
+        const typeElement = document.createElement('div');
+        typeElement.className = 'topic-type';
+        typeElement.textContent = topic.type;
+        
+        // Create value element
+        const valueElement = document.createElement('div');
+        valueElement.className = 'topic-value';
+        valueElement.textContent = formatValue(topic.value, topic.type);
+        
+        // Add to topic
+        topicElement.appendChild(nameElement);
+        topicElement.appendChild(typeElement);
+        topicElement.appendChild(valueElement);
+        
+        // Add to container
+        container.appendChild(topicElement);
+      }
+    }
+    
+    // Format value based on type
+    function formatValue(value, type) {
+      if (value === null || value === undefined) {
+        return 'null';
+      }
+      
+      if (type === 'boolean') {
+        return value ? 'true' : 'false';
+      } else if (type === 'double' || type === 'float') {
+        return value.toFixed(2);
+      } else if (type === 'string') {
+        return `"${value}"`;
+      } else if (type === 'boolean[]') {
+        return `[${value.map(v => v ? 'true' : 'false').join(', ')}]`;
+      } else if (type === 'double[]' || type === 'float[]') {
+        return `[${value.map(v => v.toFixed(2)).join(', ')}]`;
+      } else if (type === 'string[]') {
+        return `[${value.map(v => `"${v}"`).join(', ')}]`;
+      } else {
+        return JSON.stringify(value);
+      }
+    }
+    
+    // Add event listeners
+    connectButton.addEventListener('click', connect);
+    disconnectButton.addEventListener('click', disconnect);
+    
+    // Connect on page load
+    window.addEventListener('load', () => {
+      // Try to connect automatically
+      connect();
+    });
+  </script>
+</body>
+</html>

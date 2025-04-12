@@ -1,0 +1,37 @@
+{
+  "name": "@wpilib/ntcore",
+  "version": "0.1.0",
+  "description": "TypeScript implementation of WPILib NetworkTables",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "clean": "rimraf dist",
+    "clean:all": "rimraf dist coverage",
+    "example:server": "ts-node examples/simple-server.ts",
+    "example:client": "ts-node examples/simple-client.ts"
+  },
+  "keywords": [
+    "wpilib",
+    "robotics",
+    "frc",
+    "networktables"
+  ],
+  "author": "WPILib",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "jest": "^29.5.0",
+    "rimraf": "^4.4.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@wpilib/wpiutil": "file:../wpiutil"
+  }
+}

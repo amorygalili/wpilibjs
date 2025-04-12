@@ -1,0 +1,33 @@
+[2025-04-10T23:29:01.821Z] NetworkTables Client for OutlineViewer
+[2025-04-10T23:29:01.826Z] Make sure OutlineViewer is running in server mode
+[2025-04-10T23:29:01.826Z] In OutlineViewer, go to File -> Start Server
+[2025-04-10T23:29:01.826Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:01.842Z] WebSocket error: AggregateError
+[2025-04-10T23:29:01.843Z] Disconnected from server
+[2025-04-10T23:29:06.854Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:06.856Z] WebSocket error: AggregateError
+[2025-04-10T23:29:06.856Z] Disconnected from server
+[2025-04-10T23:29:11.862Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:11.866Z] WebSocket error: AggregateError
+[2025-04-10T23:29:11.866Z] Disconnected from server
+[2025-04-10T23:29:16.882Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:16.886Z] WebSocket error: AggregateError
+[2025-04-10T23:29:16.886Z] Disconnected from server
+[2025-04-10T23:29:21.893Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:21.897Z] WebSocket error: AggregateError
+[2025-04-10T23:29:21.898Z] Disconnected from server
+[2025-04-10T23:29:26.900Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:26.903Z] WebSocket error: AggregateError
+[2025-04-10T23:29:26.903Z] Disconnected from server
+[2025-04-10T23:29:31.909Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:31.913Z] WebSocket error: AggregateError
+[2025-04-10T23:29:31.913Z] Disconnected from server
+[2025-04-10T23:29:36.918Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:36.919Z] WebSocket error: AggregateError
+[2025-04-10T23:29:36.920Z] Disconnected from server
+[2025-04-10T23:29:41.934Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:41.939Z] WebSocket error: AggregateError
+[2025-04-10T23:29:41.940Z] Disconnected from server
+[2025-04-10T23:29:46.944Z] Connecting to ws://localhost:5810...
+[2025-04-10T23:29:46.947Z] WebSocket error: AggregateError
+[2025-04-10T23:29:46.947Z] Disconnected from server

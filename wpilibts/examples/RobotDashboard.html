@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333;
+      margin-top: 0;
+    }
+    
+    .status {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .status-item {
+      margin-right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+    }
+    
+    .status-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .status-value {
+      font-size: 18px;
+    }
+    
+    .controls {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .control-group {
+      margin-right: 20px;
+    }
+    
+    .control-group h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    
+    button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    button.disabled {
+      background-color: #f44336;
+    }
+    
+    button.disabled:hover {
+      background-color: #d32f2f;
+    }
+    
+    .slider-container {
+      margin-bottom: 15px;
+    }
+    
+    .slider-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .slider-value {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+    }
+    
+    input[type="range"] {
+      width: 200px;
+      margin-right: 10px;
+    }
+    
+    .topics {
+      margin-top: 20px;
+    }
+    
+    .topic {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    
+    .topic-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .topic-value {
+      font-family: monospace;
+    }
+    
+    .connection-status {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    
+    .connection-status.connected {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .connection-status.disconnected {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="connection-status disconnected" id="connectionStatus">Disconnected</div>
+  
+  <div class="container">
+    <h1>Robot Dashboard</h1>
+    
+    <div class="status">
+      <div class="status-item">
+        <div class="status-label">Robot State</div>
+        <div class="status-value" id="robotState">Disabled</div>
+      </div>
+      
+      <div class="status-item">
+        <div class="status-label">Mode</div>
+        <div class="status-value" id="robotMode">Disabled</div>
+      </div>
+      
+      <div class="status-item">
+        <div class="status-label">Counter</div>
+        <div class="status-value" id="robotCounter">0</div>
+      </div>
+      
+      <div class="status-item">
+        <div class="status-label">Message</div>
+        <div class="status-value" id="robotMessage">-</div>
+      </div>
+    </div>
+    
+    <div class="controls">
+      <div class="control-group">
+        <h2>Robot Control</h2>
+        <button id="enableButton">Enable</button>
+        <button id="disableButton" class="disabled">Disable</button>
+      </div>
+      
+      <div class="control-group">
+        <h2>Mode Control</h2>
+        <button id="teleopButton">Teleop</button>
+        <button id="autonomousButton">Autonomous</button>
+        <button id="testButton">Test</button>
+      </div>
+      
+      <div class="control-group">
+        <h2>Input Control</h2>
+        <div class="slider-container">
+          <label class="slider-label">Input Value</label>
+          <input type="range" id="inputSlider" min="-1" max="1" step="0.01" value="0">
+          <span class="slider-value" id="inputValue">0.00</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="topics">
+      <h2>Robot Topics</h2>
+      <div id="topicsList"></div>
+    </div>
+  </div>
+  
+  <script>
+    // NetworkTables WebSocket client
+    let socket;
+    let connected = false;
+    let topics = new Map();
+    
+    // Connect to the NetworkTables server
+    function connect() {
+      socket = new WebSocket('ws://localhost:5810');
+      
+      socket.onopen = function() {
+        console.log('Connected to NetworkTables server');
+        connected = true;
+        updateConnectionStatus();
+        
+        // Subscribe to all topics
+        socket.send(JSON.stringify({
+          method: 'subscribe',
+          params: {
+            topics: [{ all: true }],
+            options: { immediate: true }
+          }
+        }));
+      };
+      
+      socket.onclose = function() {
+        console.log('Disconnected from NetworkTables server');
+        connected = false;
+        updateConnectionStatus();
+        
+        // Try to reconnect after a delay
+        setTimeout(connect, 3000);
+      };
+      
+      socket.onerror = function(error) {
+        console.error('WebSocket error:', error);
+      };
+      
+      socket.onmessage = function(event) {
+        const message = JSON.parse(event.data);
+        
+        if (message.method === 'announce') {
+          handleAnnounce(message.params);
+        } else if (message.method === 'value') {
+          handleValue(message.params);
+        }
+      };
+    }
+    
+    // Handle announce message
+    function handleAnnounce(params) {
+      const { name, id, type } = params;
+      
+      topics.set(id, {
+        name,
+        type,
+        value: null
+      });
+      
+      console.log(`Topic announced: ${name} (id: ${id}, type: ${type})`);
+    }
+    
+    // Handle value message
+    function handleValue(params) {
+      const { id, value } = params;
+      
+      if (topics.has(id)) {
+        const topic = topics.get(id);
+        topic.value = value;
+        
+        // Update UI
+        updateTopicValue(topic.name, value);
+        
+        console.log(`Topic value updated: ${topic.name} = ${JSON.stringify(value)}`);
+      }
+    }
+    
+    // Update connection status
+    function updateConnectionStatus() {
+      const statusElement = document.getElementById('connectionStatus');
+      
+      if (connected) {
+        statusElement.textContent = 'Connected';
+        statusElement.className = 'connection-status connected';
+      } else {
+        statusElement.textContent = 'Disconnected';
+        statusElement.className = 'connection-status disconnected';
+      }
+    }
+    
+    // Update topic value in UI
+    function updateTopicValue(name, value) {
+      // Update specific UI elements based on topic name
+      if (name === 'Robot/Enabled') {
+        document.getElementById('robotState').textContent = value ? 'Enabled' : 'Disabled';
+      } else if (name === 'Robot/Mode') {
+        document.getElementById('robotMode').textContent = value;
+      } else if (name === 'Robot/Counter') {
+        document.getElementById('robotCounter').textContent = value;
+      } else if (name === 'Robot/Message') {
+        document.getElementById('robotMessage').textContent = value;
+      }
+      
+      // Update topics list
+      updateTopicsList();
+    }
+    
+    // Update topics list
+    function updateTopicsList() {
+      const topicsListElement = document.getElementById('topicsList');
+      topicsListElement.innerHTML = '';
+      
+      // Sort topics by name
+      const sortedTopics = Array.from(topics.values()).sort((a, b) => a.name.localeCompare(b.name));
+      
+      for (const topic of sortedTopics) {
+        const topicElement = document.createElement('div');
+        topicElement.className = 'topic';
+        
+        const nameElement = document.createElement('div');
+        nameElement.className = 'topic-name';
+        nameElement.textContent = `${topic.name} (${topic.type})`;
+        
+        const valueElement = document.createElement('div');
+        valueElement.className = 'topic-value';
+        valueElement.textContent = JSON.stringify(topic.value);
+        
+        topicElement.appendChild(nameElement);
+        topicElement.appendChild(valueElement);
+        
+        topicsListElement.appendChild(topicElement);
+      }
+    }
+    
+    // Publish a value to a topic
+    function publishValue(name, value) {
+      if (connected) {
+        socket.send(JSON.stringify({
+          method: 'publish',
+          params: {
+            name,
+            type: typeof value === 'number' ? 'double' : typeof value === 'boolean' ? 'boolean' : 'string',
+            value
+          }
+        }));
+      }
+    }
+    
+    // Initialize UI
+    function initUI() {
+      // Enable/disable buttons
+      document.getElementById('enableButton').addEventListener('click', function() {
+        publishValue('External/Command', 'enable');
+      });
+      
+      document.getElementById('disableButton').addEventListener('click', function() {
+        publishValue('External/Command', 'disable');
+      });
+      
+      // Mode buttons
+      document.getElementById('teleopButton').addEventListener('click', function() {
+        publishValue('External/Command', 'teleop');
+      });
+      
+      document.getElementById('autonomousButton').addEventListener('click', function() {
+        publishValue('External/Command', 'autonomous');
+      });
+      
+      document.getElementById('testButton').addEventListener('click', function() {
+        publishValue('External/Command', 'test');
+      });
+      
+      // Input slider
+      const inputSlider = document.getElementById('inputSlider');
+      const inputValue = document.getElementById('inputValue');
+      
+      inputSlider.addEventListener('input', function() {
+        const value = parseFloat(inputSlider.value);
+        inputValue.textContent = value.toFixed(2);
+        publishValue('External/Input', value);
+      });
+    }
+    
+    // Initialize
+    window.addEventListener('load', function() {
+      initUI();
+      connect();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPILib Driver Station Client</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .status {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    .status-item {
+      text-align: center;
+    }
+    .status-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .status-value {
+      padding: 5px 10px;
+      border-radius: 3px;
+      background-color: #ddd;
+    }
+    .enabled {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .disabled {
+      background-color: #F44336;
+      color: white;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .control-group {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    .control-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      background-color: #2196F3;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0b7dda;
+    }
+    button.active {
+      background-color: #4CAF50;
+    }
+    .joystick {
+      width: 150px;
+      height: 150px;
+      background-color: #ddd;
+      border-radius: 50%;
+      position: relative;
+      margin: 20px auto;
+    }
+    .stick {
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: move;
+    }
+    .log {
+      height: 150px;
+      overflow-y: auto;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+    .log-entry {
+      margin-bottom: 5px;
+      padding: 3px;
+      border-bottom: 1px solid #ddd;
+    }
+    .connection-status {
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .connected {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .disconnected {
+      background-color: #F44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WPILib Driver Station Client</h1>
+
+    <div id="connectionStatus" class="connection-status disconnected">
+      Disconnected
+    </div>
+
+    <div class="status">
+      <div class="status-item">
+        <div class="status-label">Robot State</div>
+        <div id="robotState" class="status-value disabled">Disabled</div>
+      </div>
+      <div class="status-item">
+        <div class="status-label">Mode</div>
+        <div id="robotMode" class="status-value">Teleop</div>
+      </div>
+      <div class="status-item">
+        <div class="status-label">E-Stop</div>
+        <div id="eStop" class="status-value disabled">Inactive</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <div class="control-title">Robot Control</div>
+        <button id="enableBtn">Enable</button>
+        <button id="disableBtn" class="active">Disable</button>
+        <button id="eStopBtn">E-Stop</button>
+        <button id="resetEStopBtn">Reset E-Stop</button>
+      </div>
+
+      <div class="control-group">
+        <div class="control-title">Mode Selection</div>
+        <button id="teleopBtn" class="active">Teleop</button>
+        <button id="autonomousBtn">Autonomous</button>
+        <button id="testBtn">Test</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="control-title">Joystick Control</div>
+      <div class="joystick" id="joystick">
+        <div class="stick" id="stick"></div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="control-title">Log</div>
+      <div class="log" id="log"></div>
+    </div>
+  </div>
+
+  <script>
+    // WebSocket connection
+    let socket = null;
+    let connected = false;
+    let joystickData = {
+      x: 0,
+      y: 0
+    };
+
+    // Robot state
+    let robotState = {
+      enabled: false,
+      autonomous: false,
+      test: false,
+      estopped: false,
+      dsAttached: false,
+      fmsAttached: false
+    };
+
+    // DOM elements
+    const connectionStatus = document.getElementById('connectionStatus');
+    const robotStateEl = document.getElementById('robotState');
+    const robotModeEl = document.getElementById('robotMode');
+    const eStopEl = document.getElementById('eStop');
+    const enableBtn = document.getElementById('enableBtn');
+    const disableBtn = document.getElementById('disableBtn');
+    const eStopBtn = document.getElementById('eStopBtn');
+    const resetEStopBtn = document.getElementById('resetEStopBtn');
+    const teleopBtn = document.getElementById('teleopBtn');
+    const autonomousBtn = document.getElementById('autonomousBtn');
+    const testBtn = document.getElementById('testBtn');
+    const logEl = document.getElementById('log');
+
+    // Connect to the WebSocket server
+    function connect() {
+      log('Attempting to connect to ws://localhost:5810');
+      socket = new WebSocket('ws://localhost:5810');
+
+      socket.onopen = () => {
+        connected = true;
+        updateConnectionStatus();
+        log('Connected to robot');
+
+        // Send initial state
+        sendControlWord();
+        log('Sent initial control word');
+      };
+
+      socket.onclose = () => {
+        connected = false;
+        updateConnectionStatus();
+        log('Disconnected from robot');
+
+        // Try to reconnect after 2 seconds
+        setTimeout(connect, 2000);
+      };
+
+      socket.onerror = (error) => {
+        log('WebSocket error: ' + JSON.stringify(error));
+        console.error('WebSocket error:', error);
+      };
+
+      socket.onmessage = (event) => {
+        try {
+          const message = JSON.parse(event.data);
+          handleMessage(message);
+        } catch (error) {
+          log('Error parsing message: ' + error);
+        }
+      };
+    }
+
+    // Handle incoming messages
+    function handleMessage(message) {
+      switch (message.type) {
+        case 'robot_state':
+          updateRobotState(message.data);
+          break;
+        case 'pong':
+          // Handle ping response
+          break;
+        default:
+          log('Unknown message type: ' + message.type);
+          break;
+      }
+    }
+
+    // Update the robot state
+    function updateRobotState(state) {
+      robotState = state;
+
+      // Update UI
+      robotStateEl.textContent = state.enabled ? 'Enabled' : 'Disabled';
+      robotStateEl.className = 'status-value ' + (state.enabled ? 'enabled' : 'disabled');
+
+      if (state.autonomous) {
+        robotModeEl.textContent = 'Autonomous';
+      } else if (state.test) {
+        robotModeEl.textContent = 'Test';
+      } else {
+        robotModeEl.textContent = 'Teleop';
+      }
+
+      eStopEl.textContent = state.estopped ? 'Active' : 'Inactive';
+      eStopEl.className = 'status-value ' + (state.estopped ? 'enabled' : 'disabled');
+
+      // Update buttons
+      enableBtn.className = state.enabled ? 'active' : '';
+      disableBtn.className = !state.enabled ? 'active' : '';
+      eStopBtn.className = state.estopped ? 'active' : '';
+      teleopBtn.className = (!state.autonomous && !state.test) ? 'active' : '';
+      autonomousBtn.className = state.autonomous ? 'active' : '';
+      testBtn.className = state.test ? 'active' : '';
+
+      // Disable enable button if e-stopped
+      enableBtn.disabled = state.estopped;
+      if (state.estopped) {
+        log('Robot is E-Stopped! You must reset the E-Stop to enable the robot.');
+      }
+    }
+
+    // Send the control word to the robot
+    function sendControlWord() {
+      if (!connected) {
+        log('Not connected, cannot send control word');
+        return;
+      }
+
+      const message = {
+        type: 'control_word',
+        data: {
+          enabled: robotState.enabled,
+          autonomous: robotState.autonomous,
+          test: robotState.test,
+          estopped: robotState.estopped,
+          fmsAttached: robotState.fmsAttached,
+          dsAttached: true
+        }
+      };
+
+      try {
+        const messageString = JSON.stringify(message);
+        socket.send(messageString);
+        log('Sent control word: ' + messageString);
+      } catch (error) {
+        log('Error sending control word: ' + error);
+        console.error('Error sending control word:', error);
+      }
+    }
+
+    // Send joystick data to the robot
+    function sendJoystickData() {
+      if (!connected) {
+        log('Not connected, cannot send joystick data');
+        return;
+      }
+
+      const message = {
+        type: 'joystick_data',
+        data: {
+          joystickIndex: 0,
+          axes: {
+            0: joystickData.x,  // X axis
+            1: joystickData.y   // Y axis
+          },
+          buttons: {}
+          // Don't send POV data for now as it's causing errors
+        }
+      };
+
+      try {
+        const messageString = JSON.stringify(message);
+        socket.send(messageString);
+        // Don't log every joystick update to avoid flooding the log
+      } catch (error) {
+        log('Error sending joystick data: ' + error);
+        console.error('Error sending joystick data:', error);
+      }
+    }
+
+    // Update the connection status
+    function updateConnectionStatus() {
+      connectionStatus.textContent = connected ? 'Connected' : 'Disconnected';
+      connectionStatus.className = 'connection-status ' + (connected ? 'connected' : 'disconnected');
+    }
+
+    // Add a log entry
+    function log(message) {
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      entry.textContent = new Date().toLocaleTimeString() + ': ' + message;
+      logEl.appendChild(entry);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    // Button event listeners
+    enableBtn.addEventListener('click', () => {
+      robotState.enabled = true;
+      robotState.estopped = false;
+      sendControlWord();
+    });
+
+    disableBtn.addEventListener('click', () => {
+      robotState.enabled = false;
+      sendControlWord();
+    });
+
+    eStopBtn.addEventListener('click', () => {
+      robotState.enabled = false;
+      robotState.estopped = true;
+      sendControlWord();
+    });
+
+    resetEStopBtn.addEventListener('click', () => {
+      robotState.estopped = false;
+      sendControlWord();
+      log('E-Stop reset. You can now enable the robot.');
+    });
+
+    teleopBtn.addEventListener('click', () => {
+      robotState.autonomous = false;
+      robotState.test = false;
+      sendControlWord();
+    });
+
+    autonomousBtn.addEventListener('click', () => {
+      robotState.autonomous = true;
+      robotState.test = false;
+      sendControlWord();
+    });
+
+    testBtn.addEventListener('click', () => {
+      robotState.autonomous = false;
+      robotState.test = true;
+      sendControlWord();
+    });
+
+    // Joystick control
+    const joystickEl = document.getElementById('joystick');
+    const stickEl = document.getElementById('stick');
+    let isDragging = false;
+
+    stickEl.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+
+      const rect = joystickEl.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const radius = rect.width / 2;
+
+      let x = e.clientX - centerX;
+      let y = e.clientY - centerY;
+
+      // Limit to circle
+      const distance = Math.sqrt(x * x + y * y);
+      if (distance > radius - 20) {
+        x = x * (radius - 20) / distance;
+        y = y * (radius - 20) / distance;
+      }
+
+      // Update stick position
+      stickEl.style.left = (x + radius) + 'px';
+      stickEl.style.top = (y + radius) + 'px';
+
+      // Normalize to -1 to 1
+      joystickData.x = x / (radius - 20);
+      joystickData.y = -y / (radius - 20);  // Invert Y axis
+
+      // Send joystick data
+      sendJoystickData();
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+
+      // Center the stick
+      const rect = joystickEl.getBoundingClientRect();
+      const radius = rect.width / 2;
+      stickEl.style.left = radius + 'px';
+      stickEl.style.top = radius + 'px';
+
+      // Reset joystick data
+      joystickData.x = 0;
+      joystickData.y = 0;
+
+      // Send joystick data
+      sendJoystickData();
+    });
+
+    // Start the connection
+    connect();
+
+    // Send ping every 1 second
+    setInterval(() => {
+      if (connected) {
+        socket.send(JSON.stringify({
+          type: 'ping',
+          data: {
+            timestamp: Date.now()
+          }
+        }));
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

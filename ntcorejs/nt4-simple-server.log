@@ -1,0 +1,58 @@
+[2025-04-11T01:53:35.830Z] Simple NetworkTables 4.1 Server started on port 5820
+[2025-04-11T01:53:59.552Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu"]
+[2025-04-11T01:53:59.553Z] Using NT 4.1 protocol
+[2025-04-11T01:53:59.554Z] Client connected from ::1
+[2025-04-11T01:53:59.555Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:53:59.555Z] Creating test topics...
+[2025-04-11T01:53:59.556Z] Created topic: /server/boolean (boolean)
+[2025-04-11T01:53:59.556Z] Created topic: /server/number (double)
+[2025-04-11T01:53:59.557Z] Created topic: /server/string (string)
+[2025-04-11T01:53:59.557Z] Created topic: /server/boolean_array (boolean[])
+[2025-04-11T01:53:59.557Z] Created topic: /server/number_array (double[])
+[2025-04-11T01:53:59.557Z] Created topic: /server/string_array (string[])
+[2025-04-11T01:53:59.557Z] Created topic: /server/counter (double)
+[2025-04-11T01:53:59.558Z] Created 7 test topics
+[2025-04-11T01:53:59.558Z] Sending 7 topics to client...
+[2025-04-11T01:53:59.559Z] Sent announce message for /server/boolean
+[2025-04-11T01:53:59.560Z] Sent announce message for /server/number
+[2025-04-11T01:53:59.560Z] Sent announce message for /server/string
+[2025-04-11T01:53:59.561Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:53:59.561Z] Sent announce message for /server/number_array
+[2025-04-11T01:53:59.562Z] Sent announce message for /server/string_array
+[2025-04-11T01:53:59.562Z] Sent announce message for /server/counter
+[2025-04-11T01:53:59.562Z] All topics sent to client
+[2025-04-11T01:53:59.674Z] Sent binary value message for /server/boolean
+[2025-04-11T01:53:59.674Z] Sent binary value message for /server/number
+[2025-04-11T01:53:59.675Z] Sent binary value message for /server/string
+[2025-04-11T01:53:59.675Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:53:59.676Z] Sent binary value message for /server/number_array
+[2025-04-11T01:53:59.676Z] Sent binary value message for /server/string_array
+[2025-04-11T01:54:02.499Z] Client requested protocols: ["v4.1.networktables.first.wpi.edu"]
+[2025-04-11T01:54:02.500Z] Using NT 4.1 protocol
+[2025-04-11T01:54:02.500Z] Client connected from ::1
+[2025-04-11T01:54:02.500Z] Protocol: v4.1.networktables.first.wpi.edu
+[2025-04-11T01:54:02.500Z] Sending 7 topics to client...
+[2025-04-11T01:54:02.501Z] Sent announce message for /server/boolean
+[2025-04-11T01:54:02.501Z] Sent announce message for /server/number
+[2025-04-11T01:54:02.501Z] Sent announce message for /server/string
+[2025-04-11T01:54:02.501Z] Sent announce message for /server/boolean_array
+[2025-04-11T01:54:02.502Z] Sent announce message for /server/number_array
+[2025-04-11T01:54:02.502Z] Sent announce message for /server/string_array
+[2025-04-11T01:54:02.502Z] Sent announce message for /server/counter
+[2025-04-11T01:54:02.502Z] All topics sent to client
+[2025-04-11T01:54:02.605Z] Sent binary value message for /server/boolean
+[2025-04-11T01:54:02.606Z] Sent binary value message for /server/number
+[2025-04-11T01:54:02.606Z] Sent binary value message for /server/string
+[2025-04-11T01:54:02.606Z] Sent binary value message for /server/boolean_array
+[2025-04-11T01:54:02.607Z] Sent binary value message for /server/number_array
+[2025-04-11T01:54:02.607Z] Sent binary value message for /server/string_array
+[2025-04-11T01:54:09.637Z] Counter updated: 9
+[2025-04-11T01:54:19.725Z] Counter updated: 19
+[2025-04-11T01:54:29.798Z] Counter updated: 29
+[2025-04-11T01:54:39.884Z] Counter updated: 39
+[2025-04-11T01:54:49.980Z] Counter updated: 49
+[2025-04-11T01:55:00.076Z] Counter updated: 59
+[2025-04-11T01:55:10.198Z] Counter updated: 69
+[2025-04-11T01:55:20.272Z] Counter updated: 79
+[2025-04-11T01:55:30.384Z] Counter updated: 89
+[2025-04-11T01:55:40.462Z] Counter updated: 99

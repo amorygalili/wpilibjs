@@ -1,0 +1,43 @@
+{
+  "name": "@wpilibjs/wpilibts",
+  "version": "0.1.0",
+  "description": "WPILib implementation in TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:simulation": "node tests/simulation/run-all-tests.js",
+    "test:simhooks": "node tests/simulation/run-simhooks-test.js",
+    "test:networktables": "node tests/simulation/run-networktables-test.js",
+    "test:sim": "node tests/simulation/run-simulation-test.js",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "example": "node run-example.js",
+    "driverstation": "node run-driverstation.js",
+    "simulation": "node run-simulation.js"
+  },
+  "keywords": [
+    "wpilib",
+    "frc",
+    "robotics",
+    "typescript"
+  ],
+  "author": "WPILib",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/ws": "^8.18.1",
+    "jest": "^29.5.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  }
+}
