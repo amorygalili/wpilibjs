@@ -4,14 +4,15 @@
   "description": "NetworkTables 4 client for Node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepublishOnly": "pnpm run build",
-    "example:basic": "ts-node examples/basic-usage.ts",
-    "example:advanced": "ts-node examples/advanced-usage.ts"
+    "example:basic": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/basic-usage.ts",
+    "example:advanced": "node --experimental-specifier-resolution=node --loader ts-node/esm examples/advanced-usage.ts"
   },
   "keywords": ["networktables", "wpilib", "frc", "robotics"],
   "author": "",

@@ -1,6 +1,7 @@
 import { Decoder, Encoder } from '@msgpack/msgpack';
 import WebSocket from 'ws';
 import fetch from 'node-fetch';
+import { CloseEvent, MessageEvent, createCloseEvent, FetchResponse } from './types';
 
 const typestrIdxLookup: { [id: string]: number } = {
   boolean: 0,
@@ -170,7 +171,7 @@ export class NT4_Client {
 
   private async connectOnAlive() {
     if (!this.serverConnectionRequested) return;
-    let result: Response | null = null;
+    let result: FetchResponse | null = null;
     const requestStart = new Date().getTime();
     try {
       result = await fetch(
@@ -206,17 +207,22 @@ export class NT4_Client {
     if (this.serverConnectionRequested) {
       this.serverConnectionRequested = false;
       if (this.serverConnectionActive && this.ws) {
-        this.ws_onClose(new CloseEvent('close'), this.ws);
+        this.ws_onClose(createCloseEvent('close'), this.ws);
       }
-      if (this.timestampInterval !== null) {
-        clearInterval(this.timestampInterval);
-      }
-      if (this.rttWsTimestampInterval !== null) {
-        clearInterval(this.rttWsTimestampInterval);
-      }
-      if (this.disconnectTimeout !== null) {
-        clearTimeout(this.disconnectTimeout);
-      }
+    }
+
+    // Always clean up intervals and timeouts, even if not requested
+    if (this.timestampInterval !== null) {
+      clearInterval(this.timestampInterval);
+      this.timestampInterval = null;
+    }
+    if (this.rttWsTimestampInterval !== null) {
+      clearInterval(this.rttWsTimestampInterval);
+      this.rttWsTimestampInterval = null;
+    }
+    if (this.disconnectTimeout !== null) {
+      clearTimeout(this.disconnectTimeout);
+      this.disconnectTimeout = null;
     }
   }
 
@@ -718,7 +724,7 @@ export class NT4_Client {
     this.disconnectTimeout = setTimeout(() => {
       console.log('[NT4] No data for ' + timeout.toString() + 'ms, closing');
       if (this.ws) {
-        this.ws_onClose(new CloseEvent('close'), this.ws);
+        this.ws_onClose(createCloseEvent('close'), this.ws);
       }
     }, timeout);
   }
@@ -738,7 +744,7 @@ export class NT4_Client {
         ? ['rtt.networktables.first.wpi.edu']
         : ['v4.1.networktables.first.wpi.edu', 'networktables.first.wpi.edu'],
     );
-    
+
     if (rttWs) {
       this.rttWs = ws;
     } else {
