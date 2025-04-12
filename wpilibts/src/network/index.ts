@@ -5,7 +5,6 @@
  */
 
 // Export our NetworkTables interface
-export { NetworkTablesInterface, networkTables } from './NetworkTablesInterface';
 
 // Export the Driver Station WebSocket server
 export { DSWebSocketServer, DSMessageType, DSMessage } from './DSWebSocketServer';

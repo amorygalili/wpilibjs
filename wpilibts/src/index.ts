@@ -10,7 +10,7 @@ export { DSControlWord } from './DSControlWord';
 export { DriverStationThread } from './DriverStationThread';
 
 // Export network classes
-export { DSWebSocketServer, DSMessageType, DSMessage, NetworkTablesInterface, networkTables, NetworkTablesWebSocketServer, ntWebSocketServer, NTMessageType } from './network';
+export { DSWebSocketServer, DSMessageType, DSMessage, NetworkTablesWebSocketServer, ntWebSocketServer, NTMessageType } from './network';
 
 // Export command-based framework
 export * from './commands';

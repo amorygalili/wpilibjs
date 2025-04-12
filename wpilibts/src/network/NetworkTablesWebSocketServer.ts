@@ -5,8 +5,7 @@
  */
 import { EventEmitter } from 'events';
 import * as WebSocket from 'ws';
-import { networkTables } from './NetworkTablesInterface';
-
+import { NetworkTableInstance } from 'ntcore-client';
 /**
  * Message types for the NetworkTables WebSocket protocol.
  */
