@@ -153,11 +153,11 @@ export abstract class RobotBase {
     // Initialize simulation hooks
     simHooks.setProgramStarted();
 
-    // Initialize NetworkTables (don't initialize in tests as they handle it themselves)
-    const isNetworkTablesTest = process.argv.some(arg =>
-      arg.includes('NetworkTablesTest.ts') ||
-      arg.includes('SimulationTest.ts')
-    );
+    // Check if we're in a test environment
+    // Tests should set NODE_ENV=test or TEST=true
+    // TODO: Implement proper test mocking with Mock Service Worker (MSW) or similar
+    // to intercept WebSocket connections and provide mock responses for NetworkTables
+    const isTestEnvironment = process.env.NODE_ENV === 'test' || process.env.TEST === 'true';
 
     // Use the standard NT4 port (5810)
     const port = 5810;
@@ -165,7 +165,7 @@ export abstract class RobotBase {
     // Create a NetworkTables instance
     let ntInstance: NetworkTableInstance | null = null;
 
-    if (!isNetworkTablesTest) {
+    if (!isTestEnvironment) {
       // Always connect as a client, even in simulation mode
       // In simulation, connect to a server like OutlineViewer
       try {
