@@ -5,7 +5,8 @@
  * to create a simple robot program that logs its state.
  */
 
-import { TimedRobot, NetworkTableInstance } from '../src';
+import { TimedRobot } from '../src';
+import { NetworkTableInstance } from 'ntcore-client';
 
 /**
  * Simple robot example that logs its state to the console and NetworkTables.
