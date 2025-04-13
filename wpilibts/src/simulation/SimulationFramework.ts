@@ -24,12 +24,16 @@ export class SimulationFramework extends EventEmitter {
    * Create a new simulation framework.
    *
    * @param robotClass The robot class to simulate.
-   * @param ntServerUrl The URL of the NetworkTables server.
+   * @param ntServerUrl The address of the NetworkTables server.
    */
-  constructor(robotClass: new () => RobotBase, ntServerUrl: string = 'ws://localhost:5810') {
+  constructor(robotClass: new () => RobotBase, ntServerUrl: string = 'localhost') {
+    // Use the standard NT4 port (5810)
+    const ntPort = 5810;
     super();
     this.robotClass = robotClass;
-    this.ntClient = new NT4_Client(ntServerUrl, 'WPILib-Simulation',
+    this.ntClient = new NT4_Client(
+      ntServerUrl, // Server address
+      'WPILib-Simulation', // Client name
       () => {}, // onTopicAnnounce
       () => {}, // onTopicUnannounce
       () => {}, // onNewTopicData
@@ -40,7 +44,8 @@ export class SimulationFramework extends EventEmitter {
       () => {
         console.log('Disconnected from NetworkTables server');
         this.emit('ntDisconnected');
-      } // onDisconnect
+      }, // onDisconnect
+      ntPort // Port number
     );
   }
 

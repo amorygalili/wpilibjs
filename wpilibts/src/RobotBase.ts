@@ -159,12 +159,8 @@ export abstract class RobotBase {
       arg.includes('SimulationTest.ts')
     );
 
-    // Use a different port for SimulationExample to avoid conflicts
-    const isSimulationExample = process.argv.some(arg =>
-      arg.includes('SimulationExample.ts') ||
-      arg.includes('SimulationExample')
-    );
-    const port = isSimulationExample ? 1739 : 1735;
+    // Use the standard NT4 port (5810)
+    const port = 5810;
 
     // Create a NetworkTables instance
     let ntInstance: NetworkTableInstance | null = null;
