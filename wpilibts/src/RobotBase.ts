@@ -1,5 +1,5 @@
 import { DriverStation } from './DriverStation';
-import { networkTables } from './network/NetworkTablesInterface';
+import { NetworkTableInstance } from 'ntcore-client';
 import { simHooks } from './simulation/SimHooks';
 
 /**
@@ -166,17 +166,19 @@ export abstract class RobotBase {
     );
     const port = isSimulationExample ? 1739 : 1735;
 
+    // Create a NetworkTables instance
+    let ntInstance: NetworkTableInstance | null = null;
+
     if (!isNetworkTablesTest) {
-      if (RobotBase.isSimulation()) {
-        // Start NetworkTables server in simulation mode
-        networkTables.startServer(port).catch(error => {
-          console.error("Failed to start NetworkTables server:", error);
-        });
-      } else {
-        // Connect to NetworkTables server in real mode
-        networkTables.connectAsClient().catch(error => {
-          console.error("Failed to connect to NetworkTables server:", error);
-        });
+      // Always connect as a client, even in simulation mode
+      // In simulation, connect to a server like OutlineViewer
+      try {
+        ntInstance = NetworkTableInstance.getDefault();
+        const clientName = `WPILib-TS-${Date.now()}`;
+        ntInstance.startClient4(clientName, 'localhost', port);
+        console.log(`Connected to NetworkTables server on port ${port}`);
+      } catch (error) {
+        console.error("Failed to connect to NetworkTables server:", error);
       }
     }
 
@@ -202,9 +204,14 @@ export abstract class RobotBase {
         try {
           robot.close();
           // Disconnect from NetworkTables
-          networkTables.disconnect().catch(error => {
-            console.error("Failed to disconnect from NetworkTables:", error);
-          });
+          if (ntInstance) {
+            try {
+              ntInstance.stopClient();
+              console.log("Disconnected from NetworkTables server");
+            } catch (error) {
+              console.error("Failed to disconnect from NetworkTables:", error);
+            }
+          }
         } catch (error) {
           console.error("Exception during close()", error);
         }

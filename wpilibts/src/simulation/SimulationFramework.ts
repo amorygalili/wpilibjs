@@ -6,7 +6,6 @@
 import { EventEmitter } from 'events';
 import { RobotBase } from '../RobotBase';
 import { SimHooks } from './SimHooks';
-import { NT4Bridge } from '../network/NT4Bridge';
 import { NT4_Client } from 'ntcore-client';
 import { DriverStation } from '../DriverStation';
 
@@ -18,7 +17,6 @@ import { DriverStation } from '../DriverStation';
 export class SimulationFramework extends EventEmitter {
   private robotClass: new () => RobotBase;
   private robot: RobotBase | null = null;
-  private ntBridge: NT4Bridge;
   private ntClient: NT4_Client;
   private running: boolean = false;
 
@@ -35,10 +33,15 @@ export class SimulationFramework extends EventEmitter {
       () => {}, // onTopicAnnounce
       () => {}, // onTopicUnannounce
       () => {}, // onNewTopicData
-      () => {}, // onConnect
-      () => {} // onDisconnect
+      () => {
+        console.log('Connected to NetworkTables server');
+        this.emit('ntConnected');
+      }, // onConnect
+      () => {
+        console.log('Disconnected from NetworkTables server');
+        this.emit('ntDisconnected');
+      } // onDisconnect
     );
-    this.ntBridge = new NT4Bridge(this.ntClient);
   }
 
   /**
@@ -53,8 +56,8 @@ export class SimulationFramework extends EventEmitter {
 
     // Connect to the NetworkTables server
     try {
-      await this.ntBridge.connect();
-      console.log('Connected to NetworkTables server');
+      this.ntClient.connect();
+      console.log('Connecting to NetworkTables server...');
     } catch (error) {
       console.error('Failed to connect to NetworkTables server:', error);
       // Continue without NetworkTables
@@ -89,7 +92,7 @@ export class SimulationFramework extends EventEmitter {
     SimHooks.getInstance().pauseTiming();
 
     // Disconnect from NetworkTables server
-    this.ntBridge.disconnect();
+    this.ntClient.disconnect();
 
     this.running = false;
     this.emit('stopped');
@@ -102,6 +105,42 @@ export class SimulationFramework extends EventEmitter {
    */
   public isRunning(): boolean {
     return this.running;
+  }
+
+  /**
+   * Set the robot instance.
+   *
+   * @param robot The robot instance.
+   */
+  public setRobot(robot: RobotBase): void {
+    this.robot = robot;
+  }
+
+  /**
+   * Get the robot instance.
+   *
+   * @returns The robot instance.
+   */
+  public getRobot(): RobotBase | null {
+    return this.robot;
+  }
+
+  /**
+   * Get the robot class.
+   *
+   * @returns The robot class.
+   */
+  public getRobotClass(): new () => RobotBase {
+    return this.robotClass;
+  }
+
+  /**
+   * Get the NetworkTables client.
+   *
+   * @returns The NetworkTables client.
+   */
+  public getNetworkTablesClient(): NT4_Client {
+    return this.ntClient;
   }
 
   /**
@@ -129,6 +168,16 @@ export class SimulationFramework extends EventEmitter {
    */
   public setTest(test: boolean): void {
     DriverStation.getInstance().setTest(test);
+  }
+
+  /**
+   * Check if connected to NetworkTables.
+   *
+   * @returns True if connected to NetworkTables.
+   */
+  public isConnectedToNetworkTables(): boolean {
+    // NT4_Client doesn't have an isConnected method, so we'll check if we have a server time
+    return this.ntClient.getServerTime_us() !== null;
   }
 
   /**
