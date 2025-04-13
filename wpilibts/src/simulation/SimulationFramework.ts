@@ -26,9 +26,8 @@ export class SimulationFramework extends EventEmitter {
    * Create a new simulation framework.
    *
    * @param robotClass The robot class to simulate.
-   * @param ntServerUrl The address of the NetworkTables server.
    */
-  constructor(robotClass: new () => RobotBase, private ntServerUrl: string = 'localhost') {
+  constructor(robotClass: new () => RobotBase) {
     super();
     this.robotClass = robotClass;
 
@@ -46,29 +45,19 @@ export class SimulationFramework extends EventEmitter {
       return;
     }
 
-    // Connect to the NetworkTables server
-    try {
-      // Start the client with the default instance
-      this.ntInstance.startClient4('WPILib-Simulation', this.ntServerUrl);
-      console.log('Connecting to NetworkTables server on port 5810');
-
-      // Set up a timer to check connection status and emit events
-      this._connectionCheckInterval = setInterval(() => {
-        const isConnected = this.ntInstance.isConnected();
-        if (isConnected && !this._lastConnectionState) {
-          console.log('Connected to NetworkTables server');
-          this.emit('ntConnected');
-        } else if (!isConnected && this._lastConnectionState) {
-          console.log('Disconnected from NetworkTables server');
-          this.emit('ntDisconnected');
-        }
-        this._lastConnectionState = isConnected;
-      }, 1000);
-
-    } catch (error) {
-      console.error('Failed to connect to NetworkTables server:', error);
-      // Continue without NetworkTables
-    }
+    // Set up a timer to check NetworkTables connection status and emit events
+    // We don't initiate the connection here - RobotBase will handle that
+    this._connectionCheckInterval = setInterval(() => {
+      const isConnected = this.ntInstance.isConnected();
+      if (isConnected && !this._lastConnectionState) {
+        console.log('Connected to NetworkTables server');
+        this.emit('ntConnected');
+      } else if (!isConnected && this._lastConnectionState) {
+        console.log('Disconnected from NetworkTables server');
+        this.emit('ntDisconnected');
+      }
+      this._lastConnectionState = isConnected;
+    }, 1000);
 
     // Create robot instance
     // We need to use RobotBase.main to create and start the robot
@@ -104,8 +93,8 @@ export class SimulationFramework extends EventEmitter {
       this._connectionCheckInterval = null;
     }
 
-    // Disconnect from NetworkTables server
-    this.ntInstance.stopClient();
+    // We don't disconnect from NetworkTables here
+    // RobotBase will handle the disconnection
 
     this.running = false;
     this.emit('stopped');

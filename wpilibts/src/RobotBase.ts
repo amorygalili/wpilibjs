@@ -170,9 +170,15 @@ export abstract class RobotBase {
       // In simulation, connect to a server like OutlineViewer
       try {
         ntInstance = NetworkTableInstance.getDefault();
-        const clientName = `WPILib-TS-${Date.now()}`;
-        ntInstance.startClient4(clientName, 'localhost', port);
-        console.log(`Connected to NetworkTables server on port ${port}`);
+
+        // Only start a client if we're not already connected
+        if (!ntInstance.isConnected()) {
+          const clientName = `WPILib-TS-${Date.now()}`;
+          ntInstance.startClient4(clientName, 'localhost', port);
+          console.log(`Connected to NetworkTables server on port ${port}`);
+        } else {
+          console.log(`Using existing NetworkTables connection`);
+        }
       } catch (error) {
         console.error("Failed to connect to NetworkTables server:", error);
       }
