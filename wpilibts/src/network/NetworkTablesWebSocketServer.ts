@@ -5,7 +5,7 @@
  */
 import { EventEmitter } from 'events';
 import * as WebSocket from 'ws';
-import { NetworkTableInstance } from 'ntcore-client';
+import { NetworkTableInstance, NT4_Topic } from 'ntcore-client';
 /**
  * Message types for the NetworkTables WebSocket protocol.
  */
@@ -51,6 +51,8 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
   private _clients: Set<WebSocket.WebSocket> = new Set();
   private _subscriptions: Map<WebSocket.WebSocket, Set<string>> = new Map();
   private _topicListeners: Map<string, (value: any) => void> = new Map();
+  private _ntInstance: NetworkTableInstance;
+  private _topicSubscriptionId: number = -1;
   private _port: number = 8080;
 
   /**
@@ -65,6 +67,24 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
 
   private constructor() {
     super();
+    this._ntInstance = NetworkTableInstance.getDefault();
+
+    // Subscribe to all topics
+    const client = this._ntInstance.getClient();
+    this._topicSubscriptionId = client.subscribe(["/"], true);
+
+    // Set up a callback for new topic data
+    const onNewTopicData = (topic: NT4_Topic, _timestamp: number, value: any) => {
+      // Find all clients subscribed to this topic
+      this._subscriptions.forEach((subs, client) => {
+        if (subs.has(topic.name)) {
+          this.sendValueChanged(client, topic.name, value);
+        }
+      });
+    };
+
+    // Replace the client's onNewTopicData callback with our own
+    (client as any).onNewTopicData = onNewTopicData;
   }
 
   /**
@@ -113,30 +133,19 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
         return;
       }
 
-      // Remove all topic listeners
-      this._topicListeners.forEach((listener, key) => {
-        try {
-          const topic = networkTables.getBoolean(key);
-          const entry = topic.getEntry();
-          entry.removeListener(listener);
-        } catch (e) {
-          // Try other types
-          try {
-            const topic = networkTables.getNumber(key);
-            const entry = topic.getEntry();
-            entry.removeListener(listener);
-          } catch (e) {
-            try {
-              const topic = networkTables.getString(key);
-              const entry = topic.getEntry();
-              entry.removeListener(listener);
-            } catch (e) {
-              console.error(`Failed to remove listener for topic ${key}:`, e);
-            }
-          }
-        }
-      });
+      // Clear all topic listeners
       this._topicListeners.clear();
+
+      // Unsubscribe from all topics
+      if (this._topicSubscriptionId !== -1) {
+        try {
+          const client = this._ntInstance.getClient();
+          client.unsubscribe(this._topicSubscriptionId);
+          this._topicSubscriptionId = -1;
+        } catch (e) {
+          console.error('Failed to unsubscribe from topics:', e);
+        }
+      }
 
       // Close all client connections
       this._clients.forEach((client) => {
@@ -242,29 +251,8 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
         if (!hasOtherSubscribers) {
           const listener = this._topicListeners.get(key);
           if (listener) {
-            try {
-              const topic = networkTables.getBoolean(key);
-              const entry = topic.getEntry();
-              entry.removeListener(listener);
-              this._topicListeners.delete(key);
-            } catch (e) {
-              // Try other types
-              try {
-                const topic = networkTables.getNumber(key);
-                const entry = topic.getEntry();
-                entry.removeListener(listener);
-                this._topicListeners.delete(key);
-              } catch (e) {
-                try {
-                  const topic = networkTables.getString(key);
-                  const entry = topic.getEntry();
-                  entry.removeListener(listener);
-                  this._topicListeners.delete(key);
-                } catch (e) {
-                  console.error(`Failed to remove listener for topic ${key}:`, e);
-                }
-              }
-            }
+            // Just remove the listener from our map
+            this._topicListeners.delete(key);
           }
         }
       });
@@ -297,9 +285,6 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
 
     // Add a listener for this topic if we don't already have one
     if (!this._topicListeners.has(key)) {
-      // Get the topic (we'll use getBoolean as a default, but it doesn't matter for the listener)
-      const topic = networkTables.getBoolean(key);
-
       // Create a listener for value changes
       const listener = (value: any) => {
         // Send the value to all subscribed clients
@@ -310,13 +295,18 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
         });
       };
 
-      // Add the listener to the entry
-      const entry = topic.getEntry();
-      entry.addListener(listener);
+      // Store the listener
       this._topicListeners.set(key, listener);
 
-      // Send the current value
-      this.sendValueChanged(ws, key, entry.get());
+      // Get the current value
+      const table = this._ntInstance.getTable('');
+      const entry = table.getEntry(key);
+      const currentValue = entry.getValue();
+
+      // Send the current value if it exists
+      if (currentValue !== null) {
+        this.sendValueChanged(ws, key, currentValue);
+      }
     }
   }
 
@@ -353,29 +343,8 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
     if (!hasOtherSubscribers) {
       const listener = this._topicListeners.get(key);
       if (listener) {
-        try {
-          const topic = networkTables.getBoolean(key);
-          const entry = topic.getEntry();
-          entry.removeListener(listener);
-          this._topicListeners.delete(key);
-        } catch (e) {
-          // Try other types
-          try {
-            const topic = networkTables.getNumber(key);
-            const entry = topic.getEntry();
-            entry.removeListener(listener);
-            this._topicListeners.delete(key);
-          } catch (e) {
-            try {
-              const topic = networkTables.getString(key);
-              const entry = topic.getEntry();
-              entry.removeListener(listener);
-              this._topicListeners.delete(key);
-            } catch (e) {
-              console.error(`Failed to remove listener for topic ${key}:`, e);
-            }
-          }
-        }
+        // Just remove the listener from our map
+        this._topicListeners.delete(key);
       }
     }
   }
@@ -402,38 +371,37 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
 
     // Set the value in NetworkTables
     try {
-      // Determine the type of the value and get the appropriate topic
-      let topic;
+      // Get the entry for this topic
+      const table = this._ntInstance.getTable('');
+      const entry = table.getEntry(key);
+
+      // Set the value based on its type
       if (typeof value === 'boolean') {
-        topic = networkTables.getBoolean(key);
+        entry.setBoolean(value);
       } else if (typeof value === 'number') {
-        topic = networkTables.getNumber(key);
+        entry.setDouble(value);
       } else if (typeof value === 'string') {
-        topic = networkTables.getString(key);
+        entry.setString(value);
       } else if (Array.isArray(value)) {
         if (value.length > 0) {
           if (typeof value[0] === 'boolean') {
-            topic = networkTables.getBooleanArray(key);
+            entry.setBooleanArray(value as boolean[]);
           } else if (typeof value[0] === 'number') {
-            topic = networkTables.getNumberArray(key);
+            entry.setDoubleArray(value as number[]);
           } else if (typeof value[0] === 'string') {
-            topic = networkTables.getStringArray(key);
+            entry.setStringArray(value as string[]);
           } else {
             this.sendError(ws, `Unsupported array element type: ${typeof value[0]}`);
             return;
           }
         } else {
           // Empty array, default to number array
-          topic = networkTables.getNumberArray(key);
+          entry.setDoubleArray([]);
         }
       } else {
         this.sendError(ws, `Unsupported value type: ${typeof value}`);
         return;
       }
-
-      // Set the value
-      const entry = topic.getEntry();
-      entry.set(value);
     } catch (error) {
       console.error('Error setting NetworkTables value:', error);
       this.sendError(ws, `Error setting value: ${error}`);
@@ -478,17 +446,19 @@ export class NetworkTablesWebSocketServer extends EventEmitter {
    * @param ws The WebSocket connection.
    */
   private sendTopicsList(ws: WebSocket.WebSocket): void {
-    // In a real implementation, we would get the list of topics from NetworkTables
-    // For now, we'll just send a hardcoded list
-    const topics = [
-      'Robot/LeftMotor',
-      'Robot/RightMotor',
-      'Robot/Encoder',
-      'Robot/LimitSwitch',
-      'Robot/Potentiometer',
-      'Robot/Enabled',
-      'Robot/Mode'
-    ];
+    // Get the list of topics from NetworkTables
+    const topics: string[] = [];
+
+    // Get all topics from the NT instance
+    const client = this._ntInstance.getClient();
+
+    // Use the client's internal topics map
+    const clientTopics = (client as any)._topics as Map<string, NT4_Topic>;
+
+    // Extract the topic names
+    clientTopics.forEach((_topic, name) => {
+      topics.push(name);
+    });
 
     const message: NTMessage = {
       type: NTMessageType.TopicsList,
