@@ -6,18 +6,18 @@
  */
 
 import { TimedRobot } from '../src';
-import { NetworkTableInstance } from 'ntcore-client';
+import { NetworkTableInstance, NetworkTable, NetworkTableEntry } from 'ntcore-client';
 
 /**
  * Simple robot example that logs its state to the console and NetworkTables.
  */
 export class SimpleRobot extends TimedRobot {
   private ntInstance: NetworkTableInstance;
-  private stateTable: any;
-  private currentStateEntry: any;
-  private lastStateEntry: any;
-  private initCountEntry: any;
-  private periodicCountEntry: any;
+  private stateTable: NetworkTable;
+  private currentStateEntry: NetworkTableEntry;
+  private lastStateEntry: NetworkTableEntry;
+  private initCountEntry: NetworkTableEntry;
+  private periodicCountEntry: NetworkTableEntry;
 
   private periodicCounter = 0;
   private initCounter = 0;
