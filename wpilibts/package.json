@@ -13,7 +13,8 @@
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.ts",
     "prepublishOnly": "npm run build",
-    "example:simple-robot-sim": "node --loader ts-node/esm ./examples/SimpleRobotSimulation.ts"
+    "example:simple-robot-sim": "node --loader ts-node/esm ./examples/SimpleRobotSimulation.ts",
+    "example:simple-nt-test": "node --loader ts-node/esm ./examples/SimpleNTTest.ts"
   },
   "keywords": [
     "wpilib",
