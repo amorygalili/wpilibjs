@@ -9,16 +9,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:simulation": "node tests/simulation/run-all-tests.js",
-    "test:simhooks": "node tests/simulation/run-simhooks-test.js",
-    "test:networktables": "node tests/simulation/run-networktables-test.js",
-    "test:sim": "node tests/simulation/run-simulation-test.js",
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build",
-    "example": "node run-example.js",
-    "driverstation": "node run-driverstation.js",
-    "simulation": "node run-simulation.js"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "wpilib",
