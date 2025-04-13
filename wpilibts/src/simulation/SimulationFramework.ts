@@ -6,7 +6,7 @@
 import { EventEmitter } from 'events';
 import { RobotBase } from '../RobotBase';
 import { SimHooks } from './SimHooks';
-import { NT4_Client } from 'ntcore-client';
+import { NetworkTableInstance } from 'ntcore-client';
 import { DriverStation } from '../DriverStation';
 
 /**
@@ -17,8 +17,10 @@ import { DriverStation } from '../DriverStation';
 export class SimulationFramework extends EventEmitter {
   private robotClass: new () => RobotBase;
   private robot: RobotBase | null = null;
-  private ntClient: NT4_Client;
+  private ntInstance: NetworkTableInstance;
   private running: boolean = false;
+  private _lastConnectionState: boolean = false;
+  private _connectionCheckInterval: NodeJS.Timeout | null = null;
 
   /**
    * Create a new simulation framework.
@@ -26,27 +28,12 @@ export class SimulationFramework extends EventEmitter {
    * @param robotClass The robot class to simulate.
    * @param ntServerUrl The address of the NetworkTables server.
    */
-  constructor(robotClass: new () => RobotBase, ntServerUrl: string = 'localhost') {
-    // Use the standard NT4 port (5810)
-    const ntPort = 5810;
+  constructor(robotClass: new () => RobotBase, private ntServerUrl: string = 'localhost') {
     super();
     this.robotClass = robotClass;
-    this.ntClient = new NT4_Client(
-      ntServerUrl, // Server address
-      'WPILib-Simulation', // Client name
-      () => {}, // onTopicAnnounce
-      () => {}, // onTopicUnannounce
-      () => {}, // onNewTopicData
-      () => {
-        console.log('Connected to NetworkTables server');
-        this.emit('ntConnected');
-      }, // onConnect
-      () => {
-        console.log('Disconnected from NetworkTables server');
-        this.emit('ntDisconnected');
-      }, // onDisconnect
-      ntPort // Port number
-    );
+
+    // Get the default NetworkTables instance
+    this.ntInstance = NetworkTableInstance.getDefault();
   }
 
   /**
@@ -61,8 +48,23 @@ export class SimulationFramework extends EventEmitter {
 
     // Connect to the NetworkTables server
     try {
-      this.ntClient.connect();
-      console.log('Connecting to NetworkTables server...');
+      // Start the client with the default instance
+      this.ntInstance.startClient4('WPILib-Simulation', this.ntServerUrl);
+      console.log('Connecting to NetworkTables server on port 5810');
+
+      // Set up a timer to check connection status and emit events
+      this._connectionCheckInterval = setInterval(() => {
+        const isConnected = this.ntInstance.isConnected();
+        if (isConnected && !this._lastConnectionState) {
+          console.log('Connected to NetworkTables server');
+          this.emit('ntConnected');
+        } else if (!isConnected && this._lastConnectionState) {
+          console.log('Disconnected from NetworkTables server');
+          this.emit('ntDisconnected');
+        }
+        this._lastConnectionState = isConnected;
+      }, 1000);
+
     } catch (error) {
       console.error('Failed to connect to NetworkTables server:', error);
       // Continue without NetworkTables
@@ -96,8 +98,14 @@ export class SimulationFramework extends EventEmitter {
     // Stop simulation
     SimHooks.getInstance().pauseTiming();
 
+    // Clear the connection check interval
+    if (this._connectionCheckInterval) {
+      clearInterval(this._connectionCheckInterval);
+      this._connectionCheckInterval = null;
+    }
+
     // Disconnect from NetworkTables server
-    this.ntClient.disconnect();
+    this.ntInstance.stopClient();
 
     this.running = false;
     this.emit('stopped');
@@ -140,12 +148,12 @@ export class SimulationFramework extends EventEmitter {
   }
 
   /**
-   * Get the NetworkTables client.
+   * Get the NetworkTables instance.
    *
-   * @returns The NetworkTables client.
+   * @returns The NetworkTables instance.
    */
-  public getNetworkTablesClient(): NT4_Client {
-    return this.ntClient;
+  public getNetworkTablesInstance(): NetworkTableInstance {
+    return this.ntInstance;
   }
 
   /**
@@ -181,8 +189,7 @@ export class SimulationFramework extends EventEmitter {
    * @returns True if connected to NetworkTables.
    */
   public isConnectedToNetworkTables(): boolean {
-    // NT4_Client doesn't have an isConnected method, so we'll check if we have a server time
-    return this.ntClient.getServerTime_us() !== null;
+    return this.ntInstance.isConnected();
   }
 
   /**
