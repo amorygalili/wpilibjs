@@ -55,6 +55,8 @@ export class TimedRobot extends IterativeRobotBase {
    */
   public endCompetition(): void {
     this.stopTimer();
+    // Call the parent class's endCompetition method to signal that the robot has finished running
+    super.endCompetition();
   }
 
   /**
