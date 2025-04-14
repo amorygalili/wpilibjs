@@ -48,10 +48,11 @@ export class Topic {
   /**
    * Determines if the topic exists.
    *
-   * @returns True if the topic exists
+   * @returns True if the topic exists and the client is connected
    */
   public exists(): boolean {
-    return this.exists_;
+    // Only consider the topic to exist if the client is connected
+    return this.exists_ && this.instance.isConnected();
   }
 
   /**
@@ -128,7 +129,10 @@ export class Topic {
       }
       this.type = typeStr;
       this.properties = { ...properties };
-      this.exists_ = true;
+      // Only set exists_ to true if the client is connected
+      if (this.instance.isConnected()) {
+        this.exists_ = true;
+      }
       return true;
     } catch (error) {
       console.error(`Error publishing topic ${this.name}:`, error);

@@ -366,6 +366,23 @@ export class NetworkTableInstance {
 
   private onConnect(): void {
     this.connected = true;
+
+    // Republish all topics when connection is established
+    this.republishAllTopics();
+  }
+
+  /**
+   * Republishes all topics in the instance.
+   * This is called automatically when a connection is established.
+   */
+  private republishAllTopics(): void {
+    // Iterate through all topics and republish them
+    for (const topic of this.topics.values()) {
+      // Only republish if the topic has a type (was previously published)
+      if (topic.getType() !== '') {
+        topic.publish(topic.getType(), topic.getProperties());
+      }
+    }
   }
 
   private onDisconnect(): void {
