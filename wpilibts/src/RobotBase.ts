@@ -1,5 +1,5 @@
 import { DriverStation } from './DriverStation';
-import { networkTables } from './network/NetworkTablesInterface';
+import { NetworkTableInstance } from 'ntcore-client';
 import { simHooks } from './simulation/SimHooks';
 
 /**
@@ -95,7 +95,11 @@ export abstract class RobotBase {
    * Ends the main robot program.
    */
   public endCompetition(): void {
-    RobotBase.m_robotRunning = false;
+    if (RobotBase.m_robotRunning) {
+      console.log('Robot competition ending...');
+      RobotBase.m_robotRunning = false;
+      RobotBase.cleanup();
+    }
   }
 
   /**
@@ -143,6 +147,44 @@ export abstract class RobotBase {
   }
 
   /**
+   * Determine if the robot is currently running.
+   *
+   * @return True if the robot is currently running.
+   */
+  public static isRunning(): boolean {
+    return RobotBase.m_robotRunning;
+  }
+
+  // Static reference to the current robot instance for cleanup
+  private static m_currentRobot: RobotBase | undefined;
+  private static m_ntInstance: NetworkTableInstance | null = null;
+
+  /**
+   * Perform cleanup when the robot is shutting down.
+   * This is called by endCompetition() to clean up resources.
+   */
+  private static cleanup(): void {
+    if (RobotBase.m_currentRobot) {
+      try {
+        RobotBase.m_currentRobot.close();
+        // Disconnect from NetworkTables
+        if (RobotBase.m_ntInstance) {
+          try {
+            RobotBase.m_ntInstance.stopClient();
+            console.log("Disconnected from NetworkTables server");
+          } catch (error) {
+            console.error("Failed to disconnect from NetworkTables:", error);
+          }
+          RobotBase.m_ntInstance = null;
+        }
+      } catch (error) {
+        console.error("Exception during close()", error);
+      }
+      RobotBase.m_currentRobot = undefined;
+    }
+  }
+
+  /**
    * Starting point for the robot applications.
    */
   public static main(robotClass: new () => RobotBase): void {
@@ -153,62 +195,99 @@ export abstract class RobotBase {
     // Initialize simulation hooks
     simHooks.setProgramStarted();
 
-    // Initialize NetworkTables (don't initialize in tests as they handle it themselves)
-    const isNetworkTablesTest = process.argv.some(arg =>
-      arg.includes('NetworkTablesTest.ts') ||
-      arg.includes('SimulationTest.ts')
-    );
+    // Check if we're in a test environment
+    // Tests should set NODE_ENV=test or TEST=true
+    // TODO: Implement proper test mocking with Mock Service Worker (MSW) or similar
+    // to intercept WebSocket connections and provide mock responses for NetworkTables
+    const isTestEnvironment = process.env.NODE_ENV === 'test' || process.env.TEST === 'true';
 
-    // Use a different port for SimulationExample to avoid conflicts
-    const isSimulationExample = process.argv.some(arg =>
-      arg.includes('SimulationExample.ts') ||
-      arg.includes('SimulationExample')
-    );
-    const port = isSimulationExample ? 1739 : 1735;
+    // Use the standard NT4 port (5810)
+    const port = 5810;
 
-    if (!isNetworkTablesTest) {
-      if (RobotBase.isSimulation()) {
-        // Start NetworkTables server in simulation mode
-        networkTables.startServer(port).catch(error => {
-          console.error("Failed to start NetworkTables server:", error);
-        });
-      } else {
-        // Connect to NetworkTables server in real mode
-        networkTables.connectAsClient().catch(error => {
-          console.error("Failed to connect to NetworkTables server:", error);
-        });
+    // Create a NetworkTables instance
+    if (!isTestEnvironment) {
+      // Always connect as a client, even in simulation mode
+      // In simulation, connect to a server like OutlineViewer
+      try {
+        RobotBase.m_ntInstance = NetworkTableInstance.getDefault();
+
+        // Only start a client if we're not already connected
+        if (!RobotBase.m_ntInstance.isConnected()) {
+          const clientName = `WPILib-TS-${Date.now()}`;
+          RobotBase.m_ntInstance.startClient4(clientName, 'localhost', port);
+          console.log(`Connected to NetworkTables server on port ${port}`);
+        } else {
+          console.log(`Using existing NetworkTables connection`);
+        }
+      } catch (error) {
+        console.error("Failed to connect to NetworkTables server:", error);
       }
     }
 
     RobotBase.m_robotInitialized = true;
     RobotBase.m_robotRunning = true;
 
-    let robot: RobotBase | undefined;
     try {
-      robot = new robotClass();
+      // Create the robot instance
+      const robot = new robotClass();
+      RobotBase.m_currentRobot = robot;
 
       try {
+        // Start the robot competition
         robot.startCompetition();
         console.log('********** Robot program startup complete **********');
+
+        // In Java/C++ implementations, startCompetition() is a blocking call that contains
+        // a while loop that runs until the robot is shut down. In TypeScript, TimedRobot.startCompetition()
+        // calls startTimer() which sets up a non-blocking setInterval() call.
+        if (isTestEnvironment) {
+          // In test environment, we don't want to block, so we'll clean up immediately
+          RobotBase.m_robotRunning = false;
+          RobotBase.cleanup();
+        } else {
+          // For non-test environments, we need to set up a way to clean up when endCompetition is called
+          // We'll use the static m_robotRunning flag to track when the robot is done
+
+          // Set up a process.on('exit') handler to ensure cleanup happens when the process exits
+          process.on('exit', () => {
+            if (RobotBase.m_robotRunning) {
+              console.log('Process exiting, cleaning up robot resources...');
+              RobotBase.m_robotRunning = false;
+              RobotBase.cleanup();
+            }
+          });
+
+          // Also set up handlers for common termination signals
+          process.on('SIGINT', () => {
+            console.log('\nReceived SIGINT, shutting down...');
+            if (RobotBase.m_robotRunning) {
+              RobotBase.m_robotRunning = false;
+              RobotBase.cleanup();
+              process.exit(0);
+            }
+          });
+
+          process.on('SIGTERM', () => {
+            console.log('\nReceived SIGTERM, shutting down...');
+            if (RobotBase.m_robotRunning) {
+              RobotBase.m_robotRunning = false;
+              RobotBase.cleanup();
+              process.exit(0);
+            }
+          });
+
+          console.log('Robot running. Press Ctrl+C to exit.');
+        }
       } catch (error) {
         console.error("startCompetition() failed", error);
+        RobotBase.m_robotRunning = false;
+        RobotBase.cleanup();
         throw error;
       }
     } catch (error) {
       console.error("Unhandled exception", error);
+      RobotBase.m_robotRunning = false;
       throw error;
-    } finally {
-      if (robot) {
-        try {
-          robot.close();
-          // Disconnect from NetworkTables
-          networkTables.disconnect().catch(error => {
-            console.error("Failed to disconnect from NetworkTables:", error);
-          });
-        } catch (error) {
-          console.error("Exception during close()", error);
-        }
-      }
     }
   }
 }

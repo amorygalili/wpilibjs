@@ -1,101 +1,195 @@
-import { TimedRobot } from '../src/TimedRobot';
-import { RobotBase } from '../src/RobotBase';
+/**
+ * Simple robot example that logs its state to the console and NetworkTables.
+ *
+ * This example demonstrates how to use the TimedRobot class and NetworkTables
+ * to create a simple robot program that logs its state.
+ */
+
+import { TimedRobot } from '../src';
+import { NetworkTableInstance, NetworkTable, NetworkTableEntry } from 'ntcore-client';
 
 /**
- * A simple robot example that demonstrates the basic structure of a robot program.
+ * Simple robot example that logs its state to the console and NetworkTables.
  */
-class SimpleRobot extends TimedRobot {
-  private counter: number = 0;
-  
+export class SimpleRobot extends TimedRobot {
+  private ntInstance: NetworkTableInstance;
+  private stateTable: NetworkTable;
+  private currentStateEntry: NetworkTableEntry;
+  private lastStateEntry: NetworkTableEntry;
+  private initCountEntry: NetworkTableEntry;
+  private periodicCountEntry: NetworkTableEntry;
+
+  private periodicCounter = 0;
+  private initCounter = 0;
+
   /**
-   * This function is run when the robot is first started up.
+   * Constructor for the SimpleRobot.
    */
-  public override robotInit(): void {
-    console.log('Robot initialized!');
+  constructor() {
+    super();
+    console.log('SimpleRobot: Constructor called');
+
+    // Initialize counters
+    this.initCounter = 0;
+    this.periodicCounter = 0;
+
+    // Get the default NetworkTables instance
+    this.ntInstance = NetworkTableInstance.getDefault();
+
+    // Create a table for robot state
+    this.stateTable = this.ntInstance.getTable('RobotState');
+
+    // Create entries for the current state, last state, and counters
+    this.currentStateEntry = this.stateTable.getEntry('CurrentState');
+    this.lastStateEntry = this.stateTable.getEntry('LastState');
+    this.initCountEntry = this.stateTable.getEntry('InitCount');
+    this.periodicCountEntry = this.stateTable.getEntry('PeriodicCount');
+    
+    // Set initial values
+    this.currentStateEntry.setString('Constructor');
+    this.lastStateEntry.setString('None');
+    this.initCountEntry.setDouble(0);
+    this.periodicCountEntry.setDouble(0);
   }
-  
+
   /**
-   * This function is called periodically in all robot modes.
+   * Log the current state to console and NetworkTables.
+   *
+   * @param state The current state
+   * @param isInit Whether this is an init method
+   * @param isPeriodic Whether this is a periodic method
    */
-  public override robotPeriodic(): void {
-    this.counter++;
-    if (this.counter % 50 === 0) {
-      console.log(`Robot running for ${this.counter * this.getPeriod()} seconds`);
+  private logState(state: string, isInit = false, isPeriodic = false): void {
+    // Log to console
+    
+    // Update NetworkTables
+    const lastState = this.currentStateEntry.getString('Unknown');
+    
+    if (state === lastState) {
+      return;
+    }
+    console.log(`SimpleRobot: ${state}`);
+
+    console.log(`SimpleRobot: Updating NetworkTables - LastState: ${lastState} -> ${this.currentStateEntry.getString('Unknown')}`);
+    console.log(`SimpleRobot: Updating NetworkTables - CurrentState: ${this.currentStateEntry.getString('Unknown')} -> ${state}`);
+
+
+    // Set the values
+    this.lastStateEntry.setString(lastState);
+    this.currentStateEntry.setString(state);
+
+    // Update counters
+    if (isInit) {
+      this.initCounter++;
+      console.log(`SimpleRobot: Updating NetworkTables - InitCount: ${this.initCounter-1} -> ${this.initCounter}`);
+      this.initCountEntry.setDouble(this.initCounter);
+    }
+
+    if (isPeriodic) {
+      this.periodicCounter++;
+      console.log(`SimpleRobot: Updating NetworkTables - PeriodicCount: ${this.periodicCounter-1} -> ${this.periodicCounter}`);
+      this.periodicCountEntry.setDouble(this.periodicCounter);
     }
   }
-  
+
   /**
-   * This function is called once when the robot enters disabled mode.
+   * Robot-wide initialization code should go here.
+   *
+   * This method is called once when the robot is first started up.
+   */
+  public override robotInit(): void {
+    this.logState('robotInit', true, false);
+  }
+
+  /**
+   * Robot-wide periodic code should go here.
+   *
+   * This method is called periodically at a regular rate regardless of mode.
+   */
+  public override robotPeriodic(): void {
+    // this.logState('robotPeriodic', false, true);
+  }
+
+  /**
+   * Initialization code for disabled mode should go here.
+   *
+   * This method is called once each time the robot enters disabled mode.
    */
   public override disabledInit(): void {
-    console.log('Robot disabled!');
+    this.logState('disabledInit', true, false);
   }
-  
+
   /**
-   * This function is called periodically when the robot is in disabled mode.
+   * Periodic code for disabled mode should go here.
+   *
+   * This method is called periodically when the robot is in disabled mode.
    */
   public override disabledPeriodic(): void {
-    // Nothing to do here
+    this.logState('disabledPeriodic', false, true);
   }
-  
+
   /**
-   * This function is called once when the robot enters autonomous mode.
+   * Initialization code for autonomous mode should go here.
+   *
+   * This method is called once each time the robot enters autonomous mode.
    */
   public override autonomousInit(): void {
-    console.log('Autonomous mode started!');
+    this.logState('autonomousInit', true, false);
   }
-  
+
   /**
-   * This function is called periodically when the robot is in autonomous mode.
+   * Periodic code for autonomous mode should go here.
+   *
+   * This method is called periodically when the robot is in autonomous mode.
    */
   public override autonomousPeriodic(): void {
-    // Autonomous code would go here
+    this.logState('autonomousPeriodic', false, true);
   }
-  
+
   /**
-   * This function is called once when the robot enters teleop mode.
+   * Initialization code for teleop mode should go here.
+   *
+   * This method is called once each time the robot enters teleop mode.
    */
   public override teleopInit(): void {
-    console.log('Teleop mode started!');
+    this.logState('teleopInit', true, false);
   }
-  
+
   /**
-   * This function is called periodically when the robot is in teleop mode.
+   * Periodic code for teleop mode should go here.
+   *
+   * This method is called periodically when the robot is in teleop mode.
    */
   public override teleopPeriodic(): void {
-    // Teleop code would go here
+    this.logState('teleopPeriodic', false, true);
   }
-  
+
   /**
-   * This function is called once when the robot enters test mode.
+   * Initialization code for test mode should go here.
+   *
+   * This method is called once each time the robot enters test mode.
    */
   public override testInit(): void {
-    console.log('Test mode started!');
+    this.logState('testInit', true, false);
   }
-  
+
   /**
-   * This function is called periodically when the robot is in test mode.
+   * Periodic code for test mode should go here.
+   *
+   * This method is called periodically when the robot is in test mode.
    */
   public override testPeriodic(): void {
-    // Test code would go here
-  }
-  
-  /**
-   * This function is called once when the robot enters simulation mode.
-   */
-  public override simulationInit(): void {
-    console.log('Simulation mode started!');
-  }
-  
-  /**
-   * This function is called periodically when the robot is in simulation mode.
-   */
-  public override simulationPeriodic(): void {
-    // Simulation code would go here
+    this.logState('testPeriodic', false, true);
   }
 }
 
-// Start the robot program
-if (require.main === module) {
-  RobotBase.main(SimpleRobot);
+// Main entry point
+// Note: This code will only run when the file is executed directly
+// When imported by another module, this code won't execute
+// This is the ES module equivalent of the CommonJS require.main === module check
+import { fileURLToPath } from 'url';
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  // This will start the robot program
+  console.log('Starting SimpleRobot...');
+  SimpleRobot.main(SimpleRobot);
 }

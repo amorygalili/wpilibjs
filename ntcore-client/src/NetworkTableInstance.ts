@@ -309,20 +309,80 @@ export class NetworkTableInstance {
   }
 
   // Internal callback handlers
-  private onTopicAnnounce(topic: any): void {
+  private onTopicAnnounce(ntTopic: any): void {
     // Handle topic announcement
+    if (this.topics.has(ntTopic.name)) {
+      // Update existing topic
+      const topic = this.topics.get(ntTopic.name)!;
+
+      // Use the publish method to update type and existence
+      if (!topic.exists()) {
+        topic.publish(ntTopic.type);
+      }
+
+      // Update properties if any
+      if (ntTopic.properties && Object.keys(ntTopic.properties).length > 0) {
+        Object.entries(ntTopic.properties).forEach(([key, value]) => {
+          topic.setProperty(key, value);
+        });
+      }
+    } else {
+      // Create new topic
+      const topic = new Topic(this, ntTopic.name);
+
+      // Use the publish method to set type and existence
+      topic.publish(ntTopic.type);
+
+      // Update properties if any
+      if (ntTopic.properties && Object.keys(ntTopic.properties).length > 0) {
+        Object.entries(ntTopic.properties).forEach(([key, value]) => {
+          topic.setProperty(key, value);
+        });
+      }
+
+      this.topics.set(ntTopic.name, topic);
+    }
   }
 
-  private onTopicUnannounce(topic: any): void {
+  private onTopicUnannounce(ntTopic: any): void {
     // Handle topic unannouncement
+    if (this.topics.has(ntTopic.name)) {
+      const topic = this.topics.get(ntTopic.name)!;
+      // Use unpublish to mark the topic as not existing
+      topic.unpublish();
+    }
   }
 
-  private onNewTopicData(topic: any, timestamp: number, value: any): void {
+  private onNewTopicData(ntTopic: any, timestamp: number, value: any): void {
     // Handle new topic data
+    if (this.topics.has(ntTopic.name)) {
+      const topic = this.topics.get(ntTopic.name)!;
+      // Update the topic's existence state if needed
+      if (!topic.exists()) {
+        topic.publish(ntTopic.type);
+      }
+    }
   }
 
   private onConnect(): void {
     this.connected = true;
+
+    // Republish all topics when connection is established
+    this.republishAllTopics();
+  }
+
+  /**
+   * Republishes all topics in the instance.
+   * This is called automatically when a connection is established.
+   */
+  private republishAllTopics(): void {
+    // Iterate through all topics and republish them
+    for (const topic of this.topics.values()) {
+      // Only republish if the topic has a type (was previously published)
+      if (topic.getType() !== '') {
+        topic.publish(topic.getType(), topic.getProperties());
+      }
+    }
   }
 
   private onDisconnect(): void {

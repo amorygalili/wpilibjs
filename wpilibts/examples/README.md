@@ -1,192 +1,82 @@
-# wpilibts Examples
+# WPILib TypeScript Examples
 
-This directory contains example robot programs that demonstrate how to use the wpilibts library.
+This directory contains examples for using WPILib TypeScript.
 
-## Running Examples
+## SimpleRobot Example
 
-You can run any example using the provided run-example.js script:
+The SimpleRobot example demonstrates a basic robot program that logs its state to both the console and NetworkTables. This example is useful for verifying that the NetworkTables integration works correctly.
 
-```bash
-node run-example.js <ExampleName>
-```
+### Prerequisites
 
-Or using the npm script:
+1. Make sure you have Node.js and npm installed
+2. Install dependencies by running `npm install` in the wpilibts directory
+3. Build the project by running `npm run build` in the wpilibts directory
 
-```bash
-npm run example <ExampleName>
-```
+### Running the Example
 
-## Examples
+#### Step 1: Start OutlineViewer
 
-### BasicRobot.ts
+First, you need to start OutlineViewer to act as a NetworkTables server:
 
-A simple robot example that demonstrates the basic structure of a robot program using the TimedRobot class. It shows:
+1. Start OutlineViewer
+2. Configure it as a server on port 5810 (the default NT4 port)
+3. Click "Start"
 
-- How to override the various lifecycle methods (init, periodic, exit)
-- How to handle different robot modes (disabled, autonomous, teleop, test)
-- How to use the robot's periodic timing
+#### Step 2: Run the SimpleRobot Simulation
 
-### DrivetrainRobot.ts
-
-A more advanced example that demonstrates a simple differential drivetrain. It shows:
-
-- How to create and use motor controllers
-- How to implement a differential drive system
-- How to handle joystick input
-- How to create a simple autonomous routine
-- How to implement test mode functionality
-
-### DriverStationExample.ts
-
-A comprehensive example that demonstrates how to use the DriverStation class with WebSocket integration. It shows:
-
-- How to initialize the Driver Station communication
-- How to handle robot mode changes (enabled/disabled, autonomous/teleop/test)
-- How to read joystick input from the Driver Station
-- How to implement E-Stop functionality
-
-This example works with the DriverStationClient.html web interface. To run this example:
-
-1. Start the robot program:
-   ```bash
-   node run-example.js DriverStationExample
-   ```
-
-2. Open the DriverStationClient.html file in your web browser
-
-For detailed instructions, see [DriverStationExample.md](./DriverStationExample.md)
-
-### SimulationExample.ts
-
-A simulation example that demonstrates how to use the simulation features of WPILib, including HALSim and NetworkTables. It shows:
-
-- How to initialize and use simulated devices (motors, encoders, sensors)
-- How to communicate with NetworkTables
-- How to update simulated sensors based on robot state
-- How to visualize the robot's state in a web-based UI
-
-This example works with the SimulationUI.html web interface. To run this example:
-
-1. Start the robot program and open the UI with a single command:
-   ```bash
-   npm run simulation
-   ```
-
-Or manually:
-
-1. Start the robot program:
-   ```bash
-   node run-example.js SimulationExample
-   ```
-
-2. Open the SimulationUI.html file in your web browser
-
-For detailed instructions, see [SimulationExample.md](./SimulationExample.md)
-
-### SimpleRobot.ts
-
-A simple robot project that demonstrates the basic structure of a robot program.
-
-### MinimalRobot.ts
-
-A minimal robot project that can be run in simulation without using NetworkTables or starting a server.
-
-### MinimalRobotWithDS.ts
-
-A minimal robot project that uses a custom driver station.
-
-### SimulationRobot.ts
-
-A robot project that can be run in simulation with NetworkTables.
-
-### NT4BridgeExample.ts
-
-A simple example that demonstrates how to use the NetworkTables 4 bridge to connect to external NetworkTables clients like Shuffleboard and OutlineViewer.
-
-### NT4BridgeRobot.ts
-
-A complete robot example that demonstrates how to use the NetworkTables 4 bridge with a robot simulation, allowing bidirectional communication with external NetworkTables clients.
-
-## Simulation Framework Examples
-
-### MinimalSimulationUI.html
-
-A simple HTML UI that can be used to control a robot in simulation.
-
-### MinimalSimulationServer.js
-
-A simple WebSocket server that can communicate with the MinimalSimulationUI.html.
-
-### MinimalSimulationRobot.js
-
-A simple robot implementation that can communicate with the MinimalSimulationServer.js.
-
-### Running the Minimal Simulation Framework
-
-To run the minimal simulation framework:
-
-1. Start the WebSocket server:
+In a terminal, navigate to the wpilibts directory and run:
 
 ```bash
-node examples/MinimalSimulationServer.js
+npx ts-node examples/SimpleRobotSimulation.ts
 ```
 
-2. Open the UI in a web browser:
+This will start the simulation and display a menu of commands:
 
 ```
-file:///path/to/examples/MinimalSimulationUI.html
+--- SimpleRobot Simulation Controls ---
+1. Enable Robot (Teleop)
+2. Enable Robot (Autonomous)
+3. Enable Robot (Test)
+4. Disable Robot
+5. Exit Simulation
+----------------------------------------
 ```
 
-3. Start the robot program:
+#### Step 3: Control the Robot
 
-```bash
-node examples/MinimalSimulationRobot.js
-```
+Use the menu to change the robot's mode:
 
-4. Use the UI to control the robot:
-   - Click the "Enable" button to enable the robot
-   - Click the "Teleop", "Autonomous", or "Test" buttons to switch modes
-   - Click the "Disable" button to disable the robot
+- Option 1: Enable the robot in Teleop mode
+- Option 2: Enable the robot in Autonomous mode
+- Option 3: Enable the robot in Test mode
+- Option 4: Disable the robot
+- Option 5: Exit the simulation
 
-For detailed instructions, see [MinimalSimulationFramework.md](./MinimalSimulationFramework.md)
+#### Step 4: Observe the Results
 
-## Documentation
+As you change the robot's mode, you should see:
 
-### [RunningInSimulation.md](./RunningInSimulation.md)
+1. Console output showing the robot's state changes
+2. NetworkTables entries updating in OutlineViewer
 
-A comprehensive guide on how to run any TypeScript robot project in simulation, with or without external NetworkTables clients.
+In OutlineViewer, look for the "RobotState" table, which contains:
+- CurrentState: The current state of the robot
+- LastState: The previous state of the robot
+- InitCount: The number of init methods called
+- PeriodicCount: The number of periodic methods called
 
-### [ExternalNetworkTables.md](./ExternalNetworkTables.md)
+### Troubleshooting
 
-A detailed guide on how to connect your TypeScript robot projects to external NetworkTables clients like Shuffleboard and OutlineViewer.
+If you encounter issues:
 
-## Creating Your Own Robot Program
+1. Make sure OutlineViewer is running and configured as a server on port 5810
+2. Check that you've built the wpilibts project with `npm run build`
+3. Verify that there are no errors in the console output
 
-To create your own robot program:
+### Next Steps
 
-1. Create a new TypeScript file
-2. Import the necessary classes from wpilibts
-3. Create a class that extends TimedRobot
-4. Override the necessary methods for your robot's functionality
-5. Call RobotBase.main() with your robot class
+Once you've verified that the basic example works, you can:
 
-Example:
-
-```typescript
-import { TimedRobot, RobotBase } from '@wpilibjs/wpilibts';
-
-class MyRobot extends TimedRobot {
-  public override robotInit(): void {
-    console.log('Robot initialized!');
-  }
-
-  public override teleopPeriodic(): void {
-    // Your teleop code here
-  }
-}
-
-// Start the robot program
-if (require.main === module) {
-  RobotBase.main(MyRobot);
-}
-```
+1. Modify the SimpleRobot example to add more functionality
+2. Create your own robot programs using the WPILib TypeScript library
+3. Explore more advanced features like command-based programming

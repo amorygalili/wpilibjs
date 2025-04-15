@@ -23,7 +23,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the instance for the entry.
-   * 
+   *
    * @returns Instance
    */
   public getInstance(): NetworkTableInstance {
@@ -32,7 +32,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the topic for the entry.
-   * 
+   *
    * @returns Topic
    */
   public getTopic(): Topic {
@@ -41,7 +41,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the name of the entry.
-   * 
+   *
    * @returns Entry name
    */
   public getName(): string {
@@ -50,7 +50,7 @@ export class NetworkTableEntry {
 
   /**
    * Determines if the entry exists.
-   * 
+   *
    * @returns True if the entry exists
    */
   public exists(): boolean {
@@ -60,7 +60,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the last time the entry's value was changed.
-   * 
+   *
    * @returns Time in microseconds
    */
   public getLastChange(): number {
@@ -69,7 +69,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value.
-   * 
+   *
    * @returns The value or null if the entry does not exist
    */
   public getValue(): any {
@@ -78,7 +78,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a boolean.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -91,7 +91,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a double.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -104,7 +104,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as an integer.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -117,7 +117,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a float.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -130,7 +130,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a string.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -143,7 +143,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a raw value (byte array).
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -156,7 +156,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a boolean array.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -169,7 +169,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a double array.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -182,7 +182,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as an integer array.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -195,7 +195,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a float array.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -208,7 +208,7 @@ export class NetworkTableEntry {
 
   /**
    * Gets the entry's value as a string array.
-   * 
+   *
    * @param defaultValue the default value to return if the entry does not exist
    * @returns The value or the default value if the entry does not exist
    */
@@ -221,13 +221,13 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
   public setValue(value: any): boolean {
     const client = this.instance.getClient();
-    
+
     // Determine the type based on the value
     let type: string;
     if (typeof value === 'boolean') {
@@ -257,16 +257,17 @@ export class NetworkTableEntry {
     try {
       // Publish the topic if it doesn't exist
       if (!this.topic.exists()) {
-        client.publishTopic(this.name, type);
+        // Use the topic's publish method to set type and existence
+        this.topic.publish(type);
       }
-      
+
       // Set the value
       client.addSample(this.name, value);
-      
+
       // Update local state
       this.lastValue = value;
       this.lastTimestamp = Date.now() * 1000; // Convert to microseconds
-      
+
       return true;
     } catch (error) {
       console.error(`Error setting value for ${this.name}:`, error);
@@ -276,7 +277,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a boolean.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -286,7 +287,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a double.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -296,7 +297,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as an integer.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -306,7 +307,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a float.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -316,7 +317,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a string.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -326,7 +327,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a raw value (byte array).
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -336,7 +337,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a boolean array.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -346,7 +347,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a double array.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -356,7 +357,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as an integer array.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -366,7 +367,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a float array.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */
@@ -376,7 +377,7 @@ export class NetworkTableEntry {
 
   /**
    * Sets the entry's value as a string array.
-   * 
+   *
    * @param value the value to set
    * @returns False if the entry exists with a different type
    */

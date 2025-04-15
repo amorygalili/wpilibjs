@@ -6,8 +6,7 @@
 import { EventEmitter } from 'events';
 import { RobotBase } from '../RobotBase';
 import { SimHooks } from './SimHooks';
-import { NT4Bridge } from '../network/NT4Bridge';
-import { NT4_Client } from 'ntcore-client';
+import { NetworkTableInstance } from 'ntcore-client';
 import { DriverStation } from '../DriverStation';
 
 /**
@@ -18,27 +17,22 @@ import { DriverStation } from '../DriverStation';
 export class SimulationFramework extends EventEmitter {
   private robotClass: new () => RobotBase;
   private robot: RobotBase | null = null;
-  private ntBridge: NT4Bridge;
-  private ntClient: NT4_Client;
+  private ntInstance: NetworkTableInstance;
   private running: boolean = false;
+  private _lastConnectionState: boolean = false;
+  private _connectionCheckInterval: NodeJS.Timeout | null = null;
 
   /**
    * Create a new simulation framework.
    *
    * @param robotClass The robot class to simulate.
-   * @param ntServerUrl The URL of the NetworkTables server.
    */
-  constructor(robotClass: new () => RobotBase, ntServerUrl: string = 'ws://localhost:5810') {
+  constructor(robotClass: new () => RobotBase) {
     super();
     this.robotClass = robotClass;
-    this.ntClient = new NT4_Client(ntServerUrl, 'WPILib-Simulation',
-      () => {}, // onTopicAnnounce
-      () => {}, // onTopicUnannounce
-      () => {}, // onNewTopicData
-      () => {}, // onConnect
-      () => {} // onDisconnect
-    );
-    this.ntBridge = new NT4Bridge(this.ntClient);
+
+    // Get the default NetworkTables instance
+    this.ntInstance = NetworkTableInstance.getDefault();
   }
 
   /**
@@ -51,14 +45,19 @@ export class SimulationFramework extends EventEmitter {
       return;
     }
 
-    // Connect to the NetworkTables server
-    try {
-      await this.ntBridge.connect();
-      console.log('Connected to NetworkTables server');
-    } catch (error) {
-      console.error('Failed to connect to NetworkTables server:', error);
-      // Continue without NetworkTables
-    }
+    // Set up a timer to check NetworkTables connection status and emit events
+    // We don't initiate the connection here - RobotBase will handle that
+    this._connectionCheckInterval = setInterval(() => {
+      const isConnected = this.ntInstance.isConnected();
+      if (isConnected && !this._lastConnectionState) {
+        console.log('Connected to NetworkTables server');
+        this.emit('ntConnected');
+      } else if (!isConnected && this._lastConnectionState) {
+        console.log('Disconnected from NetworkTables server');
+        this.emit('ntDisconnected');
+      }
+      this._lastConnectionState = isConnected;
+    }, 1000);
 
     // Create robot instance
     // We need to use RobotBase.main to create and start the robot
@@ -88,8 +87,14 @@ export class SimulationFramework extends EventEmitter {
     // Stop simulation
     SimHooks.getInstance().pauseTiming();
 
-    // Disconnect from NetworkTables server
-    this.ntBridge.disconnect();
+    // Clear the connection check interval
+    if (this._connectionCheckInterval) {
+      clearInterval(this._connectionCheckInterval);
+      this._connectionCheckInterval = null;
+    }
+
+    // We don't disconnect from NetworkTables here
+    // RobotBase will handle the disconnection
 
     this.running = false;
     this.emit('stopped');
@@ -102,6 +107,42 @@ export class SimulationFramework extends EventEmitter {
    */
   public isRunning(): boolean {
     return this.running;
+  }
+
+  /**
+   * Set the robot instance.
+   *
+   * @param robot The robot instance.
+   */
+  public setRobot(robot: RobotBase): void {
+    this.robot = robot;
+  }
+
+  /**
+   * Get the robot instance.
+   *
+   * @returns The robot instance.
+   */
+  public getRobot(): RobotBase | null {
+    return this.robot;
+  }
+
+  /**
+   * Get the robot class.
+   *
+   * @returns The robot class.
+   */
+  public getRobotClass(): new () => RobotBase {
+    return this.robotClass;
+  }
+
+  /**
+   * Get the NetworkTables instance.
+   *
+   * @returns The NetworkTables instance.
+   */
+  public getNetworkTablesInstance(): NetworkTableInstance {
+    return this.ntInstance;
   }
 
   /**
@@ -129,6 +170,15 @@ export class SimulationFramework extends EventEmitter {
    */
   public setTest(test: boolean): void {
     DriverStation.getInstance().setTest(test);
+  }
+
+  /**
+   * Check if connected to NetworkTables.
+   *
+   * @returns True if connected to NetworkTables.
+   */
+  public isConnectedToNetworkTables(): boolean {
+    return this.ntInstance.isConnected();
   }
 
   /**

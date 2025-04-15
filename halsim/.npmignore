@@ -1,0 +1,42 @@
+# Source files
+src/
+examples/
+
+# Tests
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+jest.config.js
+
+# Configuration files
+.eslintrc.js
+.prettierrc
+tsconfig.json
+
+# Development files
+.vscode/
+.idea/
+.github/
+.git/
+.gitignore
+.npmignore
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache

@@ -4,21 +4,17 @@
   "description": "WPILib implementation in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:simulation": "node tests/simulation/run-all-tests.js",
-    "test:simhooks": "node tests/simulation/run-simhooks-test.js",
-    "test:networktables": "node tests/simulation/run-networktables-test.js",
-    "test:sim": "node tests/simulation/run-simulation-test.js",
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.ts",
     "prepublishOnly": "npm run build",
-    "example": "node run-example.js",
-    "driverstation": "node run-driverstation.js",
-    "simulation": "node run-simulation.js"
+    "example:simple-robot-sim": "node --loader ts-node/esm ./examples/SimpleRobotSimulation.ts",
+    "example:simple-nt-test": "node --loader ts-node/esm ./examples/SimpleNTTest.ts"
   },
   "keywords": [
     "wpilib",
@@ -39,6 +35,7 @@
     "jest": "^29.5.0",
     "rimraf": "^5.0.0",
     "ts-jest": "^29.1.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "ts-node": "^10.9.2"
   }
 }
