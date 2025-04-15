@@ -2,7 +2,7 @@
  * Digital Input simulation implementation
  */
 
-import { HAL_Bool, HAL_MakeBoolean, HAL_NotifyCallback } from '../HALTypes';
+import { HAL_Bool, HAL_MakeBoolean, HAL_MakeDouble, HAL_MakeInt, HAL_NotifyCallback } from '../HALTypes';
 import { SimDataValue } from '../utils/SimDataValue';
 
 /**
