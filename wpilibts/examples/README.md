@@ -18,10 +18,9 @@ The SimpleRobot example demonstrates a basic robot program that logs its state t
 
 First, you need to start OutlineViewer to act as a NetworkTables server:
 
-1. Download and install OutlineViewer from the WPILib releases page
-2. Start OutlineViewer
-3. Configure it as a server on port 5810 (the default NT4 port)
-4. Click "Start"
+1. Start OutlineViewer
+2. Configure it as a server on port 5810 (the default NT4 port)
+3. Click "Start"
 
 #### Step 2: Run the SimpleRobot Simulation
 
