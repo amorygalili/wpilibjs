@@ -61,10 +61,15 @@ export class SimpleRobot extends TimedRobot {
    */
   private logState(state: string, isInit = false, isPeriodic = false): void {
     // Log to console
-    console.log(`SimpleRobot: ${state}`);
-
+    
     // Update NetworkTables
     const lastState = this.currentStateEntry.getString('Unknown');
+    
+    if (state === lastState) {
+      return;
+    }
+    console.log(`SimpleRobot: ${state}`);
+
     console.log(`SimpleRobot: Updating NetworkTables - LastState: ${lastState} -> ${this.currentStateEntry.getString('Unknown')}`);
     console.log(`SimpleRobot: Updating NetworkTables - CurrentState: ${this.currentStateEntry.getString('Unknown')} -> ${state}`);
 
@@ -102,7 +107,7 @@ export class SimpleRobot extends TimedRobot {
    * This method is called periodically at a regular rate regardless of mode.
    */
   public override robotPeriodic(): void {
-    this.logState('robotPeriodic', false, true);
+    // this.logState('robotPeriodic', false, true);
   }
 
   /**

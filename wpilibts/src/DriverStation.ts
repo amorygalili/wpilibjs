@@ -589,7 +589,7 @@ export class DriverStation extends EventEmitter {
    */
   public static observeUserProgramDisabled(): void {
     // In a real implementation, this would notify the DS
-    console.log('User program disabled');
+    // console.log('User program disabled');
   }
 
   /**
@@ -597,7 +597,7 @@ export class DriverStation extends EventEmitter {
    */
   public static observeUserProgramAutonomous(): void {
     // In a real implementation, this would notify the DS
-    console.log('User program autonomous');
+    // console.log('User program autonomous');
   }
 
   /**
@@ -605,7 +605,7 @@ export class DriverStation extends EventEmitter {
    */
   public static observeUserProgramTeleop(): void {
     // In a real implementation, this would notify the DS
-    console.log('User program teleop');
+    // console.log('User program teleop');
   }
 
   /**
@@ -613,6 +613,6 @@ export class DriverStation extends EventEmitter {
    */
   public static observeUserProgramTest(): void {
     // In a real implementation, this would notify the DS
-    console.log('User program test');
+    // console.log('User program test');
   }
 }
