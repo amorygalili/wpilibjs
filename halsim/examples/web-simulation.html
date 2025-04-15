@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAL Simulation Web Client</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .control-group {
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    input[type="range"] {
+      width: 200px;
+    }
+    .log {
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+      font-family: monospace;
+    }
+    .status {
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .connected {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .disconnected {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HAL Simulation Web Client</h1>
+    
+    <div class="card">
+      <h2>Connection
+        <span id="status" class="status disconnected">Disconnected</span>
+      </h2>
+      <div class="controls">
+        <input type="text" id="wsUrl" value="ws://localhost:3300/wpilibws" style="width: 250px;">
+        <button id="connectBtn">Connect</button>
+        <button id="disconnectBtn" disabled>Disconnect</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>Digital I/O</h2>
+      <div class="controls">
+        <div class="control-group">
+          <label for="dioChannel">Channel:</label>
+          <select id="dioChannel">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="dioValue">Value:</label>
+          <input type="checkbox" id="dioValue">
+        </div>
+        <button id="dioSetBtn">Set</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>PWM</h2>
+      <div class="controls">
+        <div class="control-group">
+          <label for="pwmChannel">Channel:</label>
+          <select id="pwmChannel">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="pwmSpeed">Speed (-1.0 to 1.0):</label>
+          <input type="range" id="pwmSpeed" min="-1" max="1" step="0.01" value="0">
+          <span id="pwmSpeedValue">0.00</span>
+        </div>
+        <button id="pwmSetBtn">Set</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>Analog Input</h2>
+      <div class="controls">
+        <div class="control-group">
+          <label for="aiChannel">Channel:</label>
+          <select id="aiChannel">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="aiVoltage">Voltage (0.0 to 5.0):</label>
+          <input type="range" id="aiVoltage" min="0" max="5" step="0.01" value="0">
+          <span id="aiVoltageValue">0.00</span>
+        </div>
+        <button id="aiSetBtn">Set</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>Encoder</h2>
+      <div class="controls">
+        <div class="control-group">
+          <label for="encoderIndex">Index:</label>
+          <select id="encoderIndex">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="encoderCount">Count:</label>
+          <input type="number" id="encoderCount" value="0">
+        </div>
+        <button id="encoderSetBtn">Set</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>Message Log</h2>
+      <div id="log" class="log"></div>
+      <button id="clearLogBtn" style="margin-top: 10px;">Clear Log</button>
+    </div>
+  </div>
+  
+  <script>
+    // DOM Elements
+    const statusEl = document.getElementById('status');
+    const wsUrlEl = document.getElementById('wsUrl');
+    const connectBtn = document.getElementById('connectBtn');
+    const disconnectBtn = document.getElementById('disconnectBtn');
+    const dioChannelEl = document.getElementById('dioChannel');
+    const dioValueEl = document.getElementById('dioValue');
+    const dioSetBtn = document.getElementById('dioSetBtn');
+    const pwmChannelEl = document.getElementById('pwmChannel');
+    const pwmSpeedEl = document.getElementById('pwmSpeed');
+    const pwmSpeedValueEl = document.getElementById('pwmSpeedValue');
+    const pwmSetBtn = document.getElementById('pwmSetBtn');
+    const aiChannelEl = document.getElementById('aiChannel');
+    const aiVoltageEl = document.getElementById('aiVoltage');
+    const aiVoltageValueEl = document.getElementById('aiVoltageValue');
+    const aiSetBtn = document.getElementById('aiSetBtn');
+    const encoderIndexEl = document.getElementById('encoderIndex');
+    const encoderCountEl = document.getElementById('encoderCount');
+    const encoderSetBtn = document.getElementById('encoderSetBtn');
+    const logEl = document.getElementById('log');
+    const clearLogBtn = document.getElementById('clearLogBtn');
+    
+    // WebSocket
+    let ws = null;
+    
+    // Connect to WebSocket
+    connectBtn.addEventListener('click', () => {
+      if (ws) {
+        ws.close();
+      }
+      
+      const url = wsUrlEl.value;
+      log(`Connecting to ${url}...`);
+      
+      try {
+        ws = new WebSocket(url);
+        
+        ws.onopen = () => {
+          log('Connected to HAL simulator');
+          statusEl.textContent = 'Connected';
+          statusEl.className = 'status connected';
+          connectBtn.disabled = true;
+          disconnectBtn.disabled = false;
+        };
+        
+        ws.onmessage = (event) => {
+          const data = JSON.parse(event.data);
+          log(`Received: ${JSON.stringify(data)}`);
+        };
+        
+        ws.onclose = () => {
+          log('Disconnected from HAL simulator');
+          statusEl.textContent = 'Disconnected';
+          statusEl.className = 'status disconnected';
+          connectBtn.disabled = false;
+          disconnectBtn.disabled = true;
+          ws = null;
+        };
+        
+        ws.onerror = (error) => {
+          log(`WebSocket error: ${error}`);
+        };
+      } catch (error) {
+        log(`Error creating WebSocket: ${error.message}`);
+      }
+    });
+    
+    // Disconnect from WebSocket
+    disconnectBtn.addEventListener('click', () => {
+      if (ws) {
+        ws.close();
+      }
+    });
+    
+    // Set DIO value
+    dioSetBtn.addEventListener('click', () => {
+      if (!ws) {
+        log('Not connected to HAL simulator');
+        return;
+      }
+      
+      const channel = dioChannelEl.value;
+      const value = dioValueEl.checked;
+      
+      const message = {
+        type: 'DIO',
+        device: channel,
+        data: {
+          '>value': value
+        }
+      };
+      
+      ws.send(JSON.stringify(message));
+      log(`Sent DIO ${channel} value: ${value}`);
+    });
+    
+    // Set PWM speed
+    pwmSetBtn.addEventListener('click', () => {
+      if (!ws) {
+        log('Not connected to HAL simulator');
+        return;
+      }
+      
+      const channel = pwmChannelEl.value;
+      const speed = parseFloat(pwmSpeedEl.value);
+      
+      const message = {
+        type: 'PWM',
+        device: channel,
+        data: {
+          '<speed': speed
+        }
+      };
+      
+      ws.send(JSON.stringify(message));
+      log(`Sent PWM ${channel} speed: ${speed}`);
+    });
+    
+    // Set Analog Input voltage
+    aiSetBtn.addEventListener('click', () => {
+      if (!ws) {
+        log('Not connected to HAL simulator');
+        return;
+      }
+      
+      const channel = aiChannelEl.value;
+      const voltage = parseFloat(aiVoltageEl.value);
+      
+      const message = {
+        type: 'AI',
+        device: channel,
+        data: {
+          '>voltage': voltage
+        }
+      };
+      
+      ws.send(JSON.stringify(message));
+      log(`Sent Analog Input ${channel} voltage: ${voltage}`);
+    });
+    
+    // Set Encoder count
+    encoderSetBtn.addEventListener('click', () => {
+      if (!ws) {
+        log('Not connected to HAL simulator');
+        return;
+      }
+      
+      const index = encoderIndexEl.value;
+      const count = parseInt(encoderCountEl.value);
+      
+      const message = {
+        type: 'Encoder',
+        device: index,
+        data: {
+          '>count': count
+        }
+      };
+      
+      ws.send(JSON.stringify(message));
+      log(`Sent Encoder ${index} count: ${count}`);
+    });
+    
+    // Update PWM speed value display
+    pwmSpeedEl.addEventListener('input', () => {
+      pwmSpeedValueEl.textContent = parseFloat(pwmSpeedEl.value).toFixed(2);
+    });
+    
+    // Update Analog Input voltage value display
+    aiVoltageEl.addEventListener('input', () => {
+      aiVoltageValueEl.textContent = parseFloat(aiVoltageEl.value).toFixed(2);
+    });
+    
+    // Clear log
+    clearLogBtn.addEventListener('click', () => {
+      logEl.innerHTML = '';
+    });
+    
+    // Log message
+    function log(message) {
+      const time = new Date().toLocaleTimeString();
+      const logItem = document.createElement('div');
+      logItem.textContent = `[${time}] ${message}`;
+      logEl.appendChild(logItem);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+  </script>
+</body>
+</html>
